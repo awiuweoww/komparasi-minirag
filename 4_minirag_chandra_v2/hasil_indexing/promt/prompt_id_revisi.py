@@ -7,8 +7,10 @@ OR DISCLOSED TO THIRD PARTIES WITHOUT PRIOR WRITTEN AUTHORIZATION BY
 BRIN, AS APPLICABLE.
 
 Author      : Chandra
-Version     : 2.1.0
+Version     : 2.2.0
 Created     : 02-11-2026
+Revised     : 02-11-2026 - prompt indexing: aturan penamaan kanonik (selaras normalisasi_entitas.py),
+              larangan output penalaran/placeholder, wajib relasi per entitas, contoh pasal + chunk 'Cukup jelas'.
 Description : Prompt template resmi MiniRAG untuk Domain Hukum Kelautan, Perikanan, dan Pelayaran.
               Menggunakan 3 Contoh Few-Shot Kemaritiman Nyata:
               1. UU Nomor 45 Tahun 2009 (Perizinan Kapal Penangkap Ikan SIPI & Sanksi WPP-NRI)
@@ -41,47 +43,50 @@ PROMPTS["process_tickers"] = PROCESS_TICKERS
 PROMPTS["DEFAULT_ENTITY_TYPES"] = DEFAULT_ENTITY_TYPES
 
 PROMPTS["entity_extraction"] = """-Tujuan-
-Diberikan teks naskah perundang-undangan Republik Indonesia dan daftar jenis entitas, lakukan ekstraksi pengetahuan hukum (Legal Knowledge Graph) yang komprehensif, presisi tinggi, dan terhubung penuh.
+Diberikan potongan teks peraturan perundang-undangan dan daftar jenis entitas, ekstrak entitas hukum yang TERTULIS di teks beserta hubungan antar-entitas tersebut, untuk membangun knowledge graph.
 
--Standar Taksonomi Perundang-undangan Indonesia (Baku & Berlaku Universal)-
-1. Ketentuan Umum & Definisi Substantif: Ekstrak seluruh batasan pengertian, istilah yuridis pokok (terutama Pasal 1), dan objek pengaturan.
-2. Asas & Tujuan: Ekstrak seluruh prinsip dasar, asas pelaksanaan, landasan filosofis, dan tujuan pengaturan perundang-undangan.
-3. Subjek Hukum & Norma Perilaku: Ekstrak subjek hukum (Setiap Orang, Korporasi, Pemerintah, Menteri, Pejabat Berwenang), norma imperatif ("wajib" -> kewajiban), norma larangan negatif ("dilarang" -> larangan), serta hak/perlindungan hukum.
-4. Instrumen Perizinan & Kepatuhan: Ekstrak seluruh jenis izin, persetujuan, sertifikasi, dokumen legalitas, tanda bukti, serta pungutan resmi negara/retribusi.
-5. Aparat Penegak Hukum & Kelembagaan: Ekstrak aparat pengawas, penyidik, kepolisian, kejaksaan/penuntut umum, hakim, dan lembaga peradilan berwenang.
-6. Sanksi Yuridis: Ekstrak sanksi pidana (pidana penjara/kurungan, besaran nominal denda) dan sanksi administratif (pencabutan izin, pembekuan, pembongkaran).
+-Aturan Output (WAJIB)-
+- Mulai LANGSUNG dengan record pertama. Jangan menulis analisis, penalaran, ringkasan input, judul, markdown, atau bahasa Inggris.
+- Gunakan Bahasa Indonesia. Ikuti format record persis seperti contoh.
+- Jangan pernah menyalin kata dari template seperti <entity_name>, <source_entity>, <description>, entity_name, source, atau target sebagai isi record.
+- Jika teks tidak memuat norma hukum (misalnya hanya "Cukup jelas." atau hanya judul), tulis {completion_delimiter} saja.
 
--Langkah Ekstraksi-
-1. Identifikasi semua entitas hukum nyata yang ada di dalam teks:
-- entity_name: Nama entitas hukum nyata secara baku dan persis (misal: nama konsep, singkatan resmi, nama pasal/ayat, subjek hukum, nama sanksi, atau perizinan). DILARANG menghasilkan token placeholder seperti "<name>", "<source>", "<target>", atau "...".
-- entity_type: Salah satu dari jenis berikut: [{entity_types}]
-- entity_description: Tulis deskripsi padat 1-2 kalimat yang memuat fungsi atau definisi yuridisnya berdasarkan teks naskah. Jaga agar tetap ringkas agar kuota token mencukupi untuk pemetaan relasi.
-Format setiap entitas sebagai: ("entity"{tuple_delimiter}"Nama_Entitas"{tuple_delimiter}"Jenis_Entitas"{tuple_delimiter}"Deskripsi_Entitas")
+-Jenis Entitas-
+Gunakan HANYA jenis berikut: [{entity_types}]
+- dasar_hukum: nama peraturan (UU, PP, Peraturan Menteri, KUHP).
+- struktur: pasal, ayat, huruf, angka, atau bagian penjelasan.
+- pihak: orang, badan, jabatan, atau lembaga (Setiap Orang, Nelayan Kecil, Menteri, Pengawas Perikanan, Pengadilan Perikanan).
+- kewajiban: perbuatan yang diwajibkan atau dilarang.
+- hak: hak atau kewenangan suatu pihak.
+- sanksi: pidana penjara, pidana denda, atau sanksi administratif beserta besarannya.
+- konsep: istilah hukum, izin, dokumen, kapal, alat, atau wilayah (Surat Izin Penangkapan Ikan, Zona Ekonomi Eksklusif Indonesia).
 
-2. Identifikasi SEMUA pasangan entitas yang berhubungan (Prioritas Konektivitas Graf Penuh):
-PENTING: Pastikan setiap entitas yang diekstrak pada langkah 1 terhubung minimal ke satu entitas lain!
-Petakan relasi substantif lengkap:
-- Subjek Hukum <-> Kewajiban / Larangan / Hak (misal: Subjek Hukum memikul kewajiban kepatuhan)
-- Pelanggaran Norma <-> Sanksi Pidana / Administratif (misal: Perbuatan melanggar hukum diancam pidana denda/penjara)
-- Subjek / Kegiatan <-> Instrumen Izin (misal: Pelaku usaha/sarana wajib memiliki izin operasional resmi)
-- Aparat / Pejabat <-> Wewenang Pengawasan / Penyidikan (misal: Pejabat berwenang melakukan pemeriksaan/penindakan)
-- Hierarki Struktur Regulasi (misal: Undang-Undang memuat Pasal, Pasal memuat Ayat)
-- Konsep Induk <-> Definisi / Asas (misal: Kebijakan operasional berlandaskan Asas Pengelolaan)
-Targetkan 15 sampai 30 pasangan relasi substantif per teks.
-Untuk setiap pasangan entitas yang berhubungan, ekstrak:
-- source_entity: nama entitas sumber
-- target_entity: nama entitas target
-- relationship_description: penjelasan hubungan yuridis menurut naskah
-- relationship_strength: skor numerik 1-10
-- relationship_keywords: kata kunci hubungan hukum
-Format setiap hubungan sebagai: ("relationship"{tuple_delimiter}"Entitas_Sumber"{tuple_delimiter}"Entitas_Target"{tuple_delimiter}"Deskripsi_Hubungan"{tuple_delimiter}"Kata_Kunci"{tuple_delimiter}Skor_Bobot)
+-Aturan Penamaan Entitas-
+1. Nama peraturan ditulis "UU Nomor 45 Tahun 2009", "UU Nomor 31 Tahun 2004", "PP Nomor X Tahun Y", "KUHP". Tanpa "tentang ...".
+2. Pasal SELALU disertai nama peraturannya: "Pasal 93 ayat (1) UU Nomor 45 Tahun 2009", "Pasal 7 ayat (2) huruf a UU Nomor 45 Tahun 2009". Ambil nama peraturan dari kepala teks; rujukan "sebagaimana dimaksud dalam Pasal X" tanpa nama peraturan lain berarti peraturan yang sama. Jangan pernah membuat entitas "Ayat 1", "Ayat (2)", atau "Huruf a" tanpa nomor pasal.
+3. Istilah yang punya singkatan ditulis dengan kepanjangannya: "Surat Izin Penangkapan Ikan" (bukan "SIPI"), "Zona Ekonomi Eksklusif Indonesia" (bukan "ZEEI"); sebutkan singkatannya di deskripsi.
+4. Gunakan istilah persis seperti di teks, bentuk dasar dan tunggal, Huruf Kapital Di Awal Kata. Satu konsep = satu nama di seluruh output.
+5. Sanksi ditulis dengan angka seperti di teks: "Pidana penjara paling lama 6 tahun", "Denda paling banyak Rp2.000.000.000,00".
+6. Jangan membuat entitas dari kata umum (ketentuan, hal, kegiatan, pelaksanaan) atau dari pengetahuan di luar teks.
 
-3. Identifikasi kata kunci tingkat tinggi yang merangkum konsep utama keseluruhan teks:
-Format kata kunci tingkat konten sebagai ("content_keywords"{tuple_delimiter}<high_level_keywords>)
+-Langkah-
+1. Untuk setiap entitas, tulis:
+("entity"{tuple_delimiter}<entity_name>{tuple_delimiter}<entity_type>{tuple_delimiter}<entity_description>)
+entity_description: 1-2 kalimat berdasarkan teks, termasuk singkatan resmi bila ada.
 
-4. Kembalikan output dalam Bahasa Indonesia sebagai satu daftar dari semua entitas dan hubungan yang diidentifikasi pada langkah 1 dan 2. Gunakan **{record_delimiter}** sebagai pembatas antar entri.
+2. Untuk setiap pasangan entitas yang jelas berhubungan di teks, tulis:
+("relationship"{tuple_delimiter}<source_entity>{tuple_delimiter}<target_entity>{tuple_delimiter}<relationship_description>{tuple_delimiter}<relationship_keywords>{tuple_delimiter}<relationship_strength>)
+- source_entity dan target_entity harus sama persis dengan nama pada langkah 1.
+- relationship_strength: bilangan 1-10.
+- SETIAP entitas wajib muncul di minimal satu relasi. Entitas yang tidak dapat dihubungkan jangan ditulis.
+- Relasi yang selalu dicari: peraturan memuat pasal; pasal mengatur kewajiban/hak/sanksi; pihak dikenai kewajiban atau memegang hak; pasal merujuk pasal lain ("sebagaimana dimaksud dalam"); pasal sanksi mengenakan sanksi atas pelanggaran pasal kewajiban.
 
-5. Setelah selesai, tutup output dengan {completion_delimiter}
+3. Tulis per ayat: entitas ayat tersebut, lalu langsung relasinya, baru ayat berikutnya. Paling banyak 25 entitas; utamakan pasal, pihak, kewajiban, sanksi, dan istilah yang didefinisikan.
+
+4. Tulis kata kunci tingkat tinggi teks:
+("content_keywords"{tuple_delimiter}<high_level_keywords>)
+
+5. Pisahkan setiap record dengan {record_delimiter} dan akhiri dengan {completion_delimiter}
 
 ######################
 -Contoh-
@@ -90,110 +95,95 @@ Contoh 1:
 
 Entity_types: [dasar_hukum, struktur, konsep, sanksi, pihak, kewajiban, hak]
 Text:
-Pasal 27 ayat (1) Undang-Undang Nomor 45 Tahun 2009 tentang Perikanan menyatakan bahwa setiap orang yang mengoperasikan kapal penangkap ikan berbendera Indonesia di wilayah pengelolaan perikanan Republik Indonesia wajib memiliki Surat Izin Penangkapan Ikan (SIPI). Berdasarkan ketentuan Pasal 93 ayat (1), pengoperasian kapal penangkap ikan tanpa memiliki SIPI dipidana dengan pidana penjara paling lama 6 (enam) tahun dan denda paling banyak Rp2.000.000.000,00 (dua miliar rupiah). Menteri Kelautan dan Perikanan berwenang menetapkan alokasi penangkapan ikan dan menerbitkan izin usaha perikanan.
-
+UU Nomor 45 Tahun 2009 | Pasal 93
+Pasal 93
+(1) Setiap orang yang memiliki dan/atau mengoperasikan kapal penangkap ikan berbendera Indonesia melakukan penangkapan ikan di wilayah pengelolaan perikanan Negara Republik Indonesia dan/atau di laut lepas, yang tidak memiliki SIPI sebagaimana dimaksud dalam Pasal 27 ayat (1), dipidana dengan pidana penjara paling lama 6 (enam) tahun dan denda paling banyak Rp2.000.000.000,00 (dua miliar rupiah).
+(2) Setiap orang yang memiliki dan/atau mengoperasikan kapal penangkap ikan berbendera asing melakukan penangkapan ikan di ZEEI yang tidak memiliki SIPI sebagaimana dimaksud dalam Pasal 27 ayat (2), dipidana dengan pidana penjara paling lama 6 (enam) tahun dan denda paling banyak Rp20.000.000.000,00 (dua puluh miliar rupiah).
 ################
 Output:
-("entity"{tuple_delimiter}"UU Nomor 45 Tahun 2009"{tuple_delimiter}"dasar_hukum"{tuple_delimiter}"Undang-Undang tentang Perubahan atas Undang-Undang Nomor 31 Tahun 2004 tentang Perikanan yang mengatur tata kelola perikanan nasional."){record_delimiter}
-("entity"{tuple_delimiter}"Pasal 27"{tuple_delimiter}"struktur"{tuple_delimiter}"Pasal yang mengatur norma kewajiban kepemilikan Surat Izin Penangkapan Ikan bagi setiap kapal perikanan."){record_delimiter}
-("entity"{tuple_delimiter}"Ayat 1"{tuple_delimiter}"struktur"{tuple_delimiter}"Ayat pertama dari Pasal 27 yang memuat rumusan imperatif kewajiban memiliki SIPI."){record_delimiter}
-("entity"{tuple_delimiter}"Pasal 93"{tuple_delimiter}"struktur"{tuple_delimiter}"Pasal ketentuan pidana yang mengatur ancaman sanksi atas pengoperasian kapal tanpa izin."){record_delimiter}
-("entity"{tuple_delimiter}"Setiap Orang"{tuple_delimiter}"pihak"{tuple_delimiter}"Subjek hukum perorangan atau korporasi yang mengoperasikan kapal penangkap ikan."){record_delimiter}
-("entity"{tuple_delimiter}"Menteri Kelautan dan Perikanan"{tuple_delimiter}"pihak"{tuple_delimiter}"Pejabat pemerintah yang berwenang menetapkan alokasi penangkapan ikan dan menerbitkan izin usaha perikanan."){record_delimiter}
-("entity"{tuple_delimiter}"Surat Izin Penangkapan Ikan"{tuple_delimiter}"konsep"{tuple_delimiter}"Izin tertulis resmi bagi kapal perikanan untuk melakukan kegiatan penangkapan ikan di perairan Indonesia."){record_delimiter}
-("entity"{tuple_delimiter}"Kapal Penangkap Ikan"{tuple_delimiter}"konsep"{tuple_delimiter}"Kapal bermotor yang dipergunakan khusus untuk kegiatan menangkap dan mendinginkan hasil tangkapan."){record_delimiter}
-("entity"{tuple_delimiter}"Wilayah Pengelolaan Perikanan Republik Indonesia"{tuple_delimiter}"konsep"{tuple_delimiter}"Wilayah perairan Indonesia dan ZEEI tempat dilakukannya tata kelola perikanan."){record_delimiter}
-("entity"{tuple_delimiter}"Kewajiban Memiliki SIPI"{tuple_delimiter}"kewajiban"{tuple_delimiter}"Kewajiban hukum imperatif bagi operator kapal penangkap ikan untuk mengantongi izin resmi sebelum melaut."){record_delimiter}
-("entity"{tuple_delimiter}"Pidana Penjara Paling Lama 6 Tahun"{tuple_delimiter}"sanksi"{tuple_delimiter}"Sanksi pidana kurungan badan paling lama 6 tahun atas pengoperasian kapal tanpa izin tangkap."){record_delimiter}
-("entity"{tuple_delimiter}"Denda Paling Banyak Rp2.000.000.000,00"{tuple_delimiter}"sanksi"{tuple_delimiter}"Sanksi kumulatif denda finansial maksimal dua miliar rupiah atas pelanggaran Pasal 27."){record_delimiter}
-("relationship"{tuple_delimiter}"UU Nomor 45 Tahun 2009"{tuple_delimiter}"Pasal 27"{tuple_delimiter}"UU Nomor 45 Tahun 2009 memuat Pasal 27 sebagai ketentuan regulasi izin tangkap perikanan."{tuple_delimiter}"hierarki peraturan"{tuple_delimiter}10){record_delimiter}
-("relationship"{tuple_delimiter}"Pasal 27"{tuple_delimiter}"Ayat 1"{tuple_delimiter}"Pasal 27 memuat Ayat 1 sebagai rumusan norma kewajiban izin operasional kapal."{tuple_delimiter}"hierarki struktur"{tuple_delimiter}10){record_delimiter}
-("relationship"{tuple_delimiter}"Ayat 1"{tuple_delimiter}"Setiap Orang"{tuple_delimiter}"Ayat 1 menetapkan Setiap Orang sebagai subjek hukum yang dikenai kewajiban perizinan."{tuple_delimiter}"subjek hukum"{tuple_delimiter}9){record_delimiter}
-("relationship"{tuple_delimiter}"Setiap Orang"{tuple_delimiter}"Kewajiban Memiliki SIPI"{tuple_delimiter}"Setiap orang yang mengoperasikan kapal penangkap ikan memikul kewajiban memiliki SIPI."{tuple_delimiter}"subjek kewajiban"{tuple_delimiter}10){record_delimiter}
-("relationship"{tuple_delimiter}"Kewajiban Memiliki SIPI"{tuple_delimiter}"Surat Izin Penangkapan Ikan"{tuple_delimiter}"Kewajiban hukum diwujudkan dalam bentuk kepemilikan dokumen resmi SIPI."{tuple_delimiter}"objek kewajiban"{tuple_delimiter}9){record_delimiter}
-("relationship"{tuple_delimiter}"Surat Izin Penangkapan Ikan"{tuple_delimiter}"Wilayah Pengelolaan Perikanan Republik Indonesia"{tuple_delimiter}"SIPI berlaku sah untuk kegiatan tangkap di wilayah perairan Indonesia."{tuple_delimiter}"wilayah keberlakuan"{tuple_delimiter}8){record_delimiter}
-("relationship"{tuple_delimiter}"Menteri Kelautan dan Perikanan"{tuple_delimiter}"Surat Izin Penangkapan Ikan"{tuple_delimiter}"Menteri berwenang menyelenggarakan tata kelola dan menerbitkan izin penangkapan ikan."{tuple_delimiter}"kewenangan penerbitan"{tuple_delimiter}10){record_delimiter}
-("relationship"{tuple_delimiter}"Pasal 27"{tuple_delimiter}"Pasal 93"{tuple_delimiter}"Pasal 27 menetapkan norma kewajiban perizinan sedangkan Pasal 93 menetapkan ancaman sanksi pidananya."{tuple_delimiter}"rujukan sanksi pidana"{tuple_delimiter}10){record_delimiter}
-("relationship"{tuple_delimiter}"Pasal 93"{tuple_delimiter}"Pidana Penjara Paling Lama 6 Tahun"{tuple_delimiter}"Pasal 93 ayat 1 mengancamkan pidana penjara paling lama 6 tahun bagi pelanggar izin tangkap."{tuple_delimiter}"pengenaan sanksi"{tuple_delimiter}10){record_delimiter}
-("relationship"{tuple_delimiter}"Pasal 93"{tuple_delimiter}"Denda Paling Banyak Rp2.000.000.000,00"{tuple_delimiter}"Pasal 93 ayat 1 memuat sanksi denda finansial maksimal dua miliar rupiah."{tuple_delimiter}"pengenaan sanksi"{tuple_delimiter}10){record_delimiter}
-("content_keywords"{tuple_delimiter}"perizinan perikanan, surat izin penangkapan ikan, kapal penangkap ikan, sanksi pidana perikanan, menteri kelautan"){completion_delimiter}
+("entity"{tuple_delimiter}"UU Nomor 45 Tahun 2009"{tuple_delimiter}"dasar_hukum"{tuple_delimiter}"Undang-undang tentang perubahan atas UU Nomor 31 Tahun 2004 tentang Perikanan."){record_delimiter}
+("entity"{tuple_delimiter}"Pasal 93 ayat (1) UU Nomor 45 Tahun 2009"{tuple_delimiter}"struktur"{tuple_delimiter}"Ketentuan pidana bagi kapal penangkap ikan berbendera Indonesia yang menangkap ikan tanpa SIPI."){record_delimiter}
+("entity"{tuple_delimiter}"Pasal 27 ayat (1) UU Nomor 45 Tahun 2009"{tuple_delimiter}"struktur"{tuple_delimiter}"Ketentuan kewajiban memiliki SIPI bagi kapal penangkap ikan berbendera Indonesia."){record_delimiter}
+("entity"{tuple_delimiter}"Setiap Orang"{tuple_delimiter}"pihak"{tuple_delimiter}"Orang yang memiliki dan/atau mengoperasikan kapal penangkap ikan."){record_delimiter}
+("entity"{tuple_delimiter}"Kapal Penangkap Ikan Berbendera Indonesia"{tuple_delimiter}"konsep"{tuple_delimiter}"Kapal penangkap ikan berbendera Indonesia yang menangkap ikan di wilayah pengelolaan perikanan Negara Republik Indonesia dan/atau laut lepas."){record_delimiter}
+("entity"{tuple_delimiter}"Surat Izin Penangkapan Ikan"{tuple_delimiter}"konsep"{tuple_delimiter}"Izin penangkapan ikan yang disingkat SIPI."){record_delimiter}
+("entity"{tuple_delimiter}"Wilayah Pengelolaan Perikanan Negara Republik Indonesia"{tuple_delimiter}"konsep"{tuple_delimiter}"Wilayah tempat kapal berbendera Indonesia melakukan penangkapan ikan."){record_delimiter}
+("entity"{tuple_delimiter}"Pidana Penjara Paling Lama 6 Tahun"{tuple_delimiter}"sanksi"{tuple_delimiter}"Pidana penjara paling lama 6 (enam) tahun."){record_delimiter}
+("entity"{tuple_delimiter}"Denda Paling Banyak Rp2.000.000.000,00"{tuple_delimiter}"sanksi"{tuple_delimiter}"Denda paling banyak dua miliar rupiah."){record_delimiter}
+("relationship"{tuple_delimiter}"UU Nomor 45 Tahun 2009"{tuple_delimiter}"Pasal 93 ayat (1) UU Nomor 45 Tahun 2009"{tuple_delimiter}"UU Nomor 45 Tahun 2009 memuat Pasal 93 ayat (1)."{tuple_delimiter}"hierarki peraturan"{tuple_delimiter}10){record_delimiter}
+("relationship"{tuple_delimiter}"Pasal 93 ayat (1) UU Nomor 45 Tahun 2009"{tuple_delimiter}"Pasal 27 ayat (1) UU Nomor 45 Tahun 2009"{tuple_delimiter}"Pasal 93 ayat (1) memidana pelanggaran kewajiban dalam Pasal 27 ayat (1)."{tuple_delimiter}"rujukan pasal, sanksi atas kewajiban"{tuple_delimiter}10){record_delimiter}
+("relationship"{tuple_delimiter}"Setiap Orang"{tuple_delimiter}"Kapal Penangkap Ikan Berbendera Indonesia"{tuple_delimiter}"Setiap orang memiliki dan/atau mengoperasikan kapal penangkap ikan berbendera Indonesia."{tuple_delimiter}"subjek hukum"{tuple_delimiter}8){record_delimiter}
+("relationship"{tuple_delimiter}"Kapal Penangkap Ikan Berbendera Indonesia"{tuple_delimiter}"Surat Izin Penangkapan Ikan"{tuple_delimiter}"Kapal penangkap ikan berbendera Indonesia wajib memiliki SIPI."{tuple_delimiter}"kewajiban izin"{tuple_delimiter}9){record_delimiter}
+("relationship"{tuple_delimiter}"Kapal Penangkap Ikan Berbendera Indonesia"{tuple_delimiter}"Wilayah Pengelolaan Perikanan Negara Republik Indonesia"{tuple_delimiter}"Kapal melakukan penangkapan ikan di wilayah pengelolaan perikanan Negara Republik Indonesia."{tuple_delimiter}"wilayah berlaku"{tuple_delimiter}7){record_delimiter}
+("relationship"{tuple_delimiter}"Pasal 93 ayat (1) UU Nomor 45 Tahun 2009"{tuple_delimiter}"Pidana Penjara Paling Lama 6 Tahun"{tuple_delimiter}"Pasal 93 ayat (1) mengancam pidana penjara paling lama 6 tahun."{tuple_delimiter}"pengenaan sanksi"{tuple_delimiter}10){record_delimiter}
+("relationship"{tuple_delimiter}"Pasal 93 ayat (1) UU Nomor 45 Tahun 2009"{tuple_delimiter}"Denda Paling Banyak Rp2.000.000.000,00"{tuple_delimiter}"Pasal 93 ayat (1) mengancam denda paling banyak Rp2.000.000.000,00."{tuple_delimiter}"pengenaan sanksi"{tuple_delimiter}10){record_delimiter}
+("entity"{tuple_delimiter}"Pasal 93 ayat (2) UU Nomor 45 Tahun 2009"{tuple_delimiter}"struktur"{tuple_delimiter}"Ketentuan pidana bagi kapal penangkap ikan berbendera asing yang menangkap ikan di ZEEI tanpa SIPI."){record_delimiter}
+("entity"{tuple_delimiter}"Pasal 27 ayat (2) UU Nomor 45 Tahun 2009"{tuple_delimiter}"struktur"{tuple_delimiter}"Ketentuan kewajiban memiliki SIPI bagi kapal penangkap ikan berbendera asing di ZEEI."){record_delimiter}
+("entity"{tuple_delimiter}"Kapal Penangkap Ikan Berbendera Asing"{tuple_delimiter}"konsep"{tuple_delimiter}"Kapal penangkap ikan berbendera asing yang menangkap ikan di ZEEI."){record_delimiter}
+("entity"{tuple_delimiter}"Zona Ekonomi Eksklusif Indonesia"{tuple_delimiter}"konsep"{tuple_delimiter}"Zona Ekonomi Eksklusif Indonesia, disingkat ZEEI."){record_delimiter}
+("entity"{tuple_delimiter}"Denda Paling Banyak Rp20.000.000.000,00"{tuple_delimiter}"sanksi"{tuple_delimiter}"Denda paling banyak dua puluh miliar rupiah."){record_delimiter}
+("relationship"{tuple_delimiter}"UU Nomor 45 Tahun 2009"{tuple_delimiter}"Pasal 93 ayat (2) UU Nomor 45 Tahun 2009"{tuple_delimiter}"UU Nomor 45 Tahun 2009 memuat Pasal 93 ayat (2)."{tuple_delimiter}"hierarki peraturan"{tuple_delimiter}10){record_delimiter}
+("relationship"{tuple_delimiter}"Pasal 93 ayat (2) UU Nomor 45 Tahun 2009"{tuple_delimiter}"Pasal 27 ayat (2) UU Nomor 45 Tahun 2009"{tuple_delimiter}"Pasal 93 ayat (2) memidana pelanggaran kewajiban dalam Pasal 27 ayat (2)."{tuple_delimiter}"rujukan pasal, sanksi atas kewajiban"{tuple_delimiter}10){record_delimiter}
+("relationship"{tuple_delimiter}"Setiap Orang"{tuple_delimiter}"Kapal Penangkap Ikan Berbendera Asing"{tuple_delimiter}"Setiap orang memiliki dan/atau mengoperasikan kapal penangkap ikan berbendera asing."{tuple_delimiter}"subjek hukum"{tuple_delimiter}8){record_delimiter}
+("relationship"{tuple_delimiter}"Kapal Penangkap Ikan Berbendera Asing"{tuple_delimiter}"Zona Ekonomi Eksklusif Indonesia"{tuple_delimiter}"Kapal berbendera asing melakukan penangkapan ikan di ZEEI."{tuple_delimiter}"wilayah berlaku"{tuple_delimiter}7){record_delimiter}
+("relationship"{tuple_delimiter}"Kapal Penangkap Ikan Berbendera Asing"{tuple_delimiter}"Surat Izin Penangkapan Ikan"{tuple_delimiter}"Kapal berbendera asing di ZEEI wajib memiliki SIPI."{tuple_delimiter}"kewajiban izin"{tuple_delimiter}9){record_delimiter}
+("relationship"{tuple_delimiter}"Pasal 93 ayat (2) UU Nomor 45 Tahun 2009"{tuple_delimiter}"Pidana Penjara Paling Lama 6 Tahun"{tuple_delimiter}"Pasal 93 ayat (2) mengancam pidana penjara paling lama 6 tahun."{tuple_delimiter}"pengenaan sanksi"{tuple_delimiter}10){record_delimiter}
+("relationship"{tuple_delimiter}"Pasal 93 ayat (2) UU Nomor 45 Tahun 2009"{tuple_delimiter}"Denda Paling Banyak Rp20.000.000.000,00"{tuple_delimiter}"Pasal 93 ayat (2) mengancam denda paling banyak Rp20.000.000.000,00."{tuple_delimiter}"pengenaan sanksi"{tuple_delimiter}10){record_delimiter}
+("content_keywords"{tuple_delimiter}"sanksi pidana perikanan, surat izin penangkapan ikan, kapal berbendera asing, ZEEI"){completion_delimiter}
 #############################
 Contoh 2:
 
 Entity_types: [dasar_hukum, struktur, konsep, sanksi, pihak, kewajiban, hak]
 Text:
-Pasal 219 ayat (1) Undang-Undang Nomor 17 Tahun 2008 tentang Pelayaran mengatur bahwa setiap kapal yang berlayar di perairan Indonesia wajib memiliki Surat Persetujuan Berlayar (SPB) yang dikeluarkan oleh Syahbandar setelah kapal memenuhi persyaratan kelaiklautan kapal. Nahkoda yang melayarkan kapal tanpa memiliki Surat Persetujuan Berlayar dari Syahbandar sebagaimana dimaksud dalam Pasal 323 ayat (1) dipidana dengan pidana penjara paling lama 5 (lima) tahun dan denda paling banyak Rp600.000.000,00 (enam ratus juta rupiah). Setiap kapal berhak memperoleh pelayanan kepelabuhanan secara tertib dan adil.
-
+UU Nomor 45 Tahun 2009 | Ketentuan Umum | Pasal 25
+Beberapa ketentuan dalam Undang-Undang Nomor 31 Tahun 2004 tentang Perikanan diubah sebagai berikut:
+9. Ketentuan Pasal 25 diubah sehingga Pasal 25 berbunyi sebagai berikut:
+Pasal 25
+(1) Usaha perikanan dilaksanakan dalam sistem bisnis perikanan, meliputi praproduksi, produksi, pengolahan, dan pemasaran.
+(2) Ketentuan lebih lanjut mengenai praproduksi, produksi, pengolahan, dan pemasaran sebagaimana dimaksud pada ayat (1) diatur dalam Peraturan Menteri.
 ################
 Output:
-("entity"{tuple_delimiter}"UU Nomor 17 Tahun 2008 tentang Pelayaran"{tuple_delimiter}"dasar_hukum"{tuple_delimiter}"Undang-Undang yang mengatur keselamatan pelayaran, kepelabuhanan, dan angkutan perairan di Indonesia."){record_delimiter}
-("entity"{tuple_delimiter}"Pasal 219"{tuple_delimiter}"struktur"{tuple_delimiter}"Pasal yang mengatur kewajiban kepemilikan Surat Persetujuan Berlayar bagi seluruh kapal."){record_delimiter}
-("entity"{tuple_delimiter}"Ayat 1"{tuple_delimiter}"struktur"{tuple_delimiter}"Ayat pertama dari Pasal 219 yang memuat norma keharusan memiliki SPB sebelum berlayar."){record_delimiter}
-("entity"{tuple_delimiter}"Pasal 323"{tuple_delimiter}"struktur"{tuple_delimiter}"Pasal ketentuan pidana yang mengatur sanksi bagi nahkoda yang melayarkan kapal tanpa izin resmi."){record_delimiter}
-("entity"{tuple_delimiter}"Syahbandar"{tuple_delimiter}"pihak"{tuple_delimiter}"Pejabat pemerintah di pelabuhan yang memiliki otoritas tertinggi memeriksa kelaiklautan dan menerbitkan SPB."){record_delimiter}
-("entity"{tuple_delimiter}"Nahkoda"{tuple_delimiter}"pihak"{tuple_delimiter}"Pemimpin kapal yang bertanggung jawab penuh atas kelaiklautan, keselamatan, dan kepatuhan navigasi kapal."){record_delimiter}
-("entity"{tuple_delimiter}"Surat Persetujuan Berlayar"{tuple_delimiter}"konsep"{tuple_delimiter}"Dokumen izin resmi negara yang menyatakan kapal telah memenuhi syarat kelaiklautan dan diizinkan berlayar."){record_delimiter}
-("entity"{tuple_delimiter}"Kelaiklautan Kapal"{tuple_delimiter}"konsep"{tuple_delimiter}"Keadaan kapal yang memenuhi persyaratan keselamatan pengawakan, muatan, dan navigasi pelayaran."){record_delimiter}
-("entity"{tuple_delimiter}"Kewajiban Memiliki SPB"{tuple_delimiter}"kewajiban"{tuple_delimiter}"Kewajiban hukum mutlak bagi nahkoda untuk mengantongi persetujuan syahbandar sebelum kapal bertolak."){record_delimiter}
-("entity"{tuple_delimiter}"Hak Pelayanan Kepelabuhanan"{tuple_delimiter}"hak"{tuple_delimiter}"Hak hukum pengguna jasa kapal untuk mendapatkan fasilitas pelayanan kepelabuhanan yang tertib dan adil."){record_delimiter}
-("entity"{tuple_delimiter}"Pidana Penjara Paling Lama 5 Tahun"{tuple_delimiter}"sanksi"{tuple_delimiter}"Ancaman hukuman kurungan badan maksimal 5 tahun bagi nahkoda yang melayarkan kapal tanpa SPB."){record_delimiter}
-("entity"{tuple_delimiter}"Denda Paling Banyak Rp600.000.000,00"{tuple_delimiter}"sanksi"{tuple_delimiter}"Ancaman denda pidana maksimal enam ratus juta rupiah atas pelanggaran Pasal 219 ayat 1."){record_delimiter}
-("relationship"{tuple_delimiter}"UU Nomor 17 Tahun 2008 tentang Pelayaran"{tuple_delimiter}"Pasal 219"{tuple_delimiter}"UU Pelayaran memuat Pasal 219 dalam bab keselamatan dan keamanan pelayaran."{tuple_delimiter}"hierarki peraturan"{tuple_delimiter}10){record_delimiter}
-("relationship"{tuple_delimiter}"Pasal 219"{tuple_delimiter}"Ayat 1"{tuple_delimiter}"Pasal 219 memuat Ayat 1 sebagai rumusan norma imperatif izin berlayar kapal."{tuple_delimiter}"hierarki struktur"{tuple_delimiter}10){record_delimiter}
-("relationship"{tuple_delimiter}"Ayat 1"{tuple_delimiter}"Nahkoda"{tuple_delimiter}"Ayat 1 mewajibkan Nahkoda untuk memastikan terpenuhinya persetujuan berlayar sebelum kapal bertolak."{tuple_delimiter}"subjek kewajiban"{tuple_delimiter}10){record_delimiter}
-("relationship"{tuple_delimiter}"Nahkoda"{tuple_delimiter}"Kewajiban Memiliki SPB"{tuple_delimiter}"Nahkoda memikul tanggung jawab pidana atas kewajiban kepemilikan SPB sebelum melaut."{tuple_delimiter}"penanggung jawab kewajiban"{tuple_delimiter}10){record_delimiter}
-("relationship"{tuple_delimiter}"Syahbandar"{tuple_delimiter}"Surat Persetujuan Berlayar"{tuple_delimiter}"Syahbandar memegang kewenangan eksklusif memeriksa kelaiklautan dan menerbitkan SPB."{tuple_delimiter}"kewenangan penerbitan"{tuple_delimiter}10){record_delimiter}
-("relationship"{tuple_delimiter}"Surat Persetujuan Berlayar"{tuple_delimiter}"Kelaiklautan Kapal"{tuple_delimiter}"Penerbitan SPB mensyaratkan pemenuhan standar kelaiklautan kapal secara menyeluruh."{tuple_delimiter}"prasyarat kelaikan"{tuple_delimiter}9){record_delimiter}
-("relationship"{tuple_delimiter}"Pasal 219"{tuple_delimiter}"Pasal 323"{tuple_delimiter}"Pasal 219 menetapkan norma kewajiban SPB sedangkan Pasal 323 menetapkan ancaman sanksi pidananya."{tuple_delimiter}"rujukan sanksi pidana"{tuple_delimiter}10){record_delimiter}
-("relationship"{tuple_delimiter}"Pasal 323"{tuple_delimiter}"Pidana Penjara Paling Lama 5 Tahun"{tuple_delimiter}"Pasal 323 ayat 1 menetapkan ancaman penjara maksimal 5 tahun bagi nahkoda tanpa SPB."{tuple_delimiter}"pengenaan sanksi"{tuple_delimiter}10){record_delimiter}
-("relationship"{tuple_delimiter}"Pasal 323"{tuple_delimiter}"Denda Paling Banyak Rp600.000.000,00"{tuple_delimiter}"Pasal 323 ayat 1 memuat sanksi kumulatif denda maksimal enam ratus juta rupiah."{tuple_delimiter}"pengenaan sanksi"{tuple_delimiter}10){record_delimiter}
-("relationship"{tuple_delimiter}"Nahkoda"{tuple_delimiter}"Hak Pelayanan Kepelabuhanan"{tuple_delimiter}"Kapal dan nahkoda berhak menerima pelayanan kepelabuhanan yang tertib dan adil."{tuple_delimiter}"penerima hak"{tuple_delimiter}8){record_delimiter}
-("content_keywords"{tuple_delimiter}"keselamatan pelayaran, syahbandar, surat persetujuan berlayar, nahkoda, sanksi kelaiklautan"){completion_delimiter}
+("entity"{tuple_delimiter}"UU Nomor 45 Tahun 2009"{tuple_delimiter}"dasar_hukum"{tuple_delimiter}"Undang-undang yang mengubah UU Nomor 31 Tahun 2004 tentang Perikanan."){record_delimiter}
+("entity"{tuple_delimiter}"UU Nomor 31 Tahun 2004"{tuple_delimiter}"dasar_hukum"{tuple_delimiter}"Undang-undang tentang Perikanan yang sebagian ketentuannya diubah oleh UU Nomor 45 Tahun 2009."){record_delimiter}
+("relationship"{tuple_delimiter}"UU Nomor 45 Tahun 2009"{tuple_delimiter}"UU Nomor 31 Tahun 2004"{tuple_delimiter}"UU Nomor 45 Tahun 2009 mengubah beberapa ketentuan UU Nomor 31 Tahun 2004."{tuple_delimiter}"perubahan peraturan"{tuple_delimiter}10){record_delimiter}
+("entity"{tuple_delimiter}"Pasal 25 ayat (1) UU Nomor 45 Tahun 2009"{tuple_delimiter}"struktur"{tuple_delimiter}"Ketentuan bahwa usaha perikanan dilaksanakan dalam sistem bisnis perikanan."){record_delimiter}
+("entity"{tuple_delimiter}"Usaha Perikanan"{tuple_delimiter}"konsep"{tuple_delimiter}"Usaha yang dilaksanakan dalam sistem bisnis perikanan."){record_delimiter}
+("entity"{tuple_delimiter}"Sistem Bisnis Perikanan"{tuple_delimiter}"konsep"{tuple_delimiter}"Sistem yang meliputi praproduksi, produksi, pengolahan, dan pemasaran."){record_delimiter}
+("relationship"{tuple_delimiter}"UU Nomor 45 Tahun 2009"{tuple_delimiter}"Pasal 25 ayat (1) UU Nomor 45 Tahun 2009"{tuple_delimiter}"UU Nomor 45 Tahun 2009 mengubah dan memuat Pasal 25 ayat (1)."{tuple_delimiter}"hierarki peraturan, perubahan pasal"{tuple_delimiter}10){record_delimiter}
+("relationship"{tuple_delimiter}"Pasal 25 ayat (1) UU Nomor 45 Tahun 2009"{tuple_delimiter}"Usaha Perikanan"{tuple_delimiter}"Pasal 25 ayat (1) mengatur pelaksanaan usaha perikanan."{tuple_delimiter}"pengaturan"{tuple_delimiter}9){record_delimiter}
+("relationship"{tuple_delimiter}"Usaha Perikanan"{tuple_delimiter}"Sistem Bisnis Perikanan"{tuple_delimiter}"Usaha perikanan dilaksanakan dalam sistem bisnis perikanan."{tuple_delimiter}"pelaksanaan usaha"{tuple_delimiter}9){record_delimiter}
+("entity"{tuple_delimiter}"Pasal 25 ayat (2) UU Nomor 45 Tahun 2009"{tuple_delimiter}"struktur"{tuple_delimiter}"Ketentuan delegasi pengaturan sistem bisnis perikanan kepada Peraturan Menteri."){record_delimiter}
+("entity"{tuple_delimiter}"Peraturan Menteri"{tuple_delimiter}"dasar_hukum"{tuple_delimiter}"Peraturan yang mengatur lebih lanjut praproduksi, produksi, pengolahan, dan pemasaran."){record_delimiter}
+("relationship"{tuple_delimiter}"Pasal 25 ayat (2) UU Nomor 45 Tahun 2009"{tuple_delimiter}"Pasal 25 ayat (1) UU Nomor 45 Tahun 2009"{tuple_delimiter}"Pasal 25 ayat (2) merujuk pada ayat (1)."{tuple_delimiter}"rujukan pasal"{tuple_delimiter}8){record_delimiter}
+("relationship"{tuple_delimiter}"Pasal 25 ayat (2) UU Nomor 45 Tahun 2009"{tuple_delimiter}"Peraturan Menteri"{tuple_delimiter}"Pasal 25 ayat (2) mendelegasikan pengaturan lebih lanjut kepada Peraturan Menteri."{tuple_delimiter}"delegasi pengaturan"{tuple_delimiter}9){record_delimiter}
+("content_keywords"{tuple_delimiter}"perubahan UU Perikanan, usaha perikanan, sistem bisnis perikanan, delegasi peraturan menteri"){completion_delimiter}
 #############################
 Contoh 3:
 
 Entity_types: [dasar_hukum, struktur, konsep, sanksi, pihak, kewajiban, hak]
 Text:
-Pasal 8 ayat (1) Undang-Undang Perikanan melarang setiap orang melakukan penangkapan ikan dengan menggunakan bahan kimia, bahan biologis, bahan peledak, racun, dan/atau alat penangkapan ikan yang merusak kelestarian sumber daya ikan di wilayah perairan Indonesia. Pelanggaran terhadap larangan penangkapan ikan yang merusak ini sebagaimana diatur dalam Pasal 84 ayat (1) dipidana dengan pidana penjara paling lama 6 (enam) tahun dan denda paling banyak Rp1.200.000.000,00 (satu miliar dua ratus juta rupiah). Pemerintah berkewajiban melindungi dan memberdayakan Nelayan Kecil melalui penyediaan sarana penangkapan ikan ramah lingkungan.
-
+UU Nomor 45 Tahun 2009 | Penjelasan Resmi | Penjelasan Pasal 25B
+Pasal 25B Cukup jelas.
 ################
 Output:
-("entity"{tuple_delimiter}"Undang-Undang Perikanan"{tuple_delimiter}"dasar_hukum"{tuple_delimiter}"Undang-Undang pokok perikanan Indonesia yang mengatur perlindungan sumber daya hayati laut."){record_delimiter}
-("entity"{tuple_delimiter}"Pasal 8"{tuple_delimiter}"struktur"{tuple_delimiter}"Pasal yang mengatur norma larangan penggunaan bahan berbahaya dan alat tangkap perusak lingkungan."){record_delimiter}
-("entity"{tuple_delimiter}"Pasal 84"{tuple_delimiter}"struktur"{tuple_delimiter}"Pasal penjatuhan sanksi pidana atas perbuatan destructive fishing di perairan Indonesia."){record_delimiter}
-("entity"{tuple_delimiter}"Setiap Orang"{tuple_delimiter}"pihak"{tuple_delimiter}"Subjek hukum yang dilarang menggunakan alat perusak dalam penangkapan ikan."){record_delimiter}
-("entity"{tuple_delimiter}"Pemerintah"{tuple_delimiter}"pihak"{tuple_delimiter}"Penyelenggara negara yang berkewajiban membina dan melindungi kegiatan perikanan rakyat."){record_delimiter}
-("entity"{tuple_delimiter}"Nelayan Kecil"{tuple_delimiter}"pihak"{tuple_delimiter}"Masyarakat yang mata pencahariannya menangkap ikan secara tradisional dengan perahu kecil."){record_delimiter}
-("entity"{tuple_delimiter}"Bahan Peledak"{tuple_delimiter}"konsep"{tuple_delimiter}"Bahan peledak destruktif yang dilarang keras untuk digunakan dalam aktivitas penangkapan ikan."){record_delimiter}
-("entity"{tuple_delimiter}"Kelestarian Sumber Daya Ikan"{tuple_delimiter}"konsep"{tuple_delimiter}"Kondisi terjaganya daya dukung dan populasi biota perairan secara berkelanjutan."){record_delimiter}
-("entity"{tuple_delimiter}"Larangan Penangkapan Ikan Merusak"{tuple_delimiter}"kewajiban"{tuple_delimiter}"Norma larangan negatif untuk tidak merusak lingkungan perairan dengan bahan peledak atau racun."){record_delimiter}
-("entity"{tuple_delimiter}"Hak Pemberdayaan Nelayan Kecil"{tuple_delimiter}"hak"{tuple_delimiter}"Hak hukum nelayan kecil untuk mendapatkan pembinaan dan bantuan sarana tangkap ramah lingkungan."){record_delimiter}
-("entity"{tuple_delimiter}"Pidana Penjara Paling Lama 6 Tahun"{tuple_delimiter}"sanksi"{tuple_delimiter}"Sanksi pidana penjara maksimal 6 tahun atas perbuatan penangkapan ikan destruktif."){record_delimiter}
-("entity"{tuple_delimiter}"Denda Paling Banyak Rp1.200.000.000,00"{tuple_delimiter}"sanksi"{tuple_delimiter}"Sanksi finansial denda maksimal 1,2 miliar rupiah atas pelanggaran Pasal 8."){record_delimiter}
-("relationship"{tuple_delimiter}"Undang-Undang Perikanan"{tuple_delimiter}"Pasal 8"{tuple_delimiter}"Undang-Undang Perikanan memuat Pasal 8 dalam kerangka pelestarian ekosistem laut."{tuple_delimiter}"hierarki peraturan"{tuple_delimiter}10){record_delimiter}
-("relationship"{tuple_delimiter}"Pasal 8"{tuple_delimiter}"Larangan Penangkapan Ikan Merusak"{tuple_delimiter}"Pasal 8 merumuskan larangan keras pemanfaatan bahan kimia dan peledak penangkapan ikan."{tuple_delimiter}"pengaturan larangan"{tuple_delimiter}10){record_delimiter}
-("relationship"{tuple_delimiter}"Setiap Orang"{tuple_delimiter}"Larangan Penangkapan Ikan Merusak"{tuple_delimiter}"Setiap orang terikat secara hukum pada larangan melakukan penangkapan ikan destruktif."{tuple_delimiter}"subjek larangan"{tuple_delimiter}10){record_delimiter}
-("relationship"{tuple_delimiter}"Bahan Peledak"{tuple_delimiter}"Kelestarian Sumber Daya Ikan"{tuple_delimiter}"Penggunaan bahan peledak secara langsung merusak dan menghancurkan kelestarian sumber daya ikan."{tuple_delimiter}"dampak perusakan ekosistem"{tuple_delimiter}9){record_delimiter}
-("relationship"{tuple_delimiter}"Pasal 8"{tuple_delimiter}"Pasal 84"{tuple_delimiter}"Pasal 8 merupakan pasal larangan norma yang ancaman sanksi pidananya dirumuskan pada Pasal 84."{tuple_delimiter}"rujukan sanksi pidana"{tuple_delimiter}10){record_delimiter}
-("relationship"{tuple_delimiter}"Pasal 84"{tuple_delimiter}"Pidana Penjara Paling Lama 6 Tahun"{tuple_delimiter}"Pasal 84 ayat 1 menjatuhkan pidana penjara maksimal 6 tahun bagi pelaku perusakan."{tuple_delimiter}"pengenaan sanksi"{tuple_delimiter}10){record_delimiter}
-("relationship"{tuple_delimiter}"Pasal 84"{tuple_delimiter}"Denda Paling Banyak Rp1.200.000.000,00"{tuple_delimiter}"Pasal 84 ayat 1 memuat sanksi denda kumulatif maksimal 1,2 miliar rupiah."{tuple_delimiter}"pengenaan sanksi"{tuple_delimiter}10){record_delimiter}
-("relationship"{tuple_delimiter}"Pemerintah"{tuple_delimiter}"Nelayan Kecil"{tuple_delimiter}"Pemerintah berkewajiban melindungi dan memberdayakan nelayan kecil dengan alat ramah lingkungan."{tuple_delimiter}"kewajiban pembinaan"{tuple_delimiter}9){record_delimiter}
-("relationship"{tuple_delimiter}"Nelayan Kecil"{tuple_delimiter}"Hak Pemberdayaan Nelayan Kecil"{tuple_delimiter}"Nelayan kecil berhak memperoleh pembinaan dan bantuan sarana penangkapan ikan ramah lingkungan."{tuple_delimiter}"penerima hak"{tuple_delimiter}9){record_delimiter}
-("content_keywords"{tuple_delimiter}"destructive fishing, bahan peledak perikanan, sanksi perusakan biota laut, perlindungan nelayan kecil"){completion_delimiter}
+{completion_delimiter}
 #############################
 -Data Sebenarnya-
 ######################
 Entity_types: {entity_types}
-Text: {input_text}
+Text:
+{input_text}
 ######################
 Output:
 """
 
-PROMPTS["summarize_entity_descriptions"] = """Anda adalah asisten yang bertanggung jawab menghasilkan ringkasan komprehensif dari data yang diberikan di bawah ini.
-Diberikan satu atau dua entitas, dan daftar deskripsi, semuanya terkait dengan entitas yang sama atau kelompok entitas.
-Silakan gabungkan semua ini menjadi satu deskripsi komprehensif. Pastikan untuk menyertakan informasi yang dikumpulkan dari semua deskripsi.
-Jika deskripsi yang diberikan bertentangan, silakan selesaikan kontradiksi tersebut dan berikan ringkasan tunggal yang koheren.
-Pastikan ditulis dalam orang ketiga, dan sertakan nama entitas sehingga kita memiliki konteks lengkap.
+PROMPTS["summarize_entity_descriptions"] = """Anda bertugas menggabungkan beberapa deskripsi dari entitas hukum yang sama menjadi satu deskripsi.
+Aturan:
+- Hapus kalimat yang berulang atau bermakna sama; simpan setiap fakta yang berbeda (nomor pasal, besaran sanksi, pihak, wilayah).
+- Jangan menambahkan informasi yang tidak ada di daftar deskripsi.
+- Jika ada pertentangan, tulis keduanya beserta pasal sumbernya; jangan memilih sendiri.
+- Tulis dalam Bahasa Indonesia, orang ketiga, paling banyak 4 kalimat, dan sebutkan nama entitas.
+- Tulis langsung deskripsinya tanpa pengantar atau penalaran.
 
 #######
 -Data-
@@ -247,27 +237,26 @@ Anda adalah asisten yang bertugas mengidentifikasi kata kunci tingkat tinggi dan
 
 PROMPTS[
     "entiti_continue_extraction"
-] = """BANYAK entitas yang terlewat dalam ekstraksi terakhir. Tambahkan di bawah ini menggunakan format yang sama:
+] = """Periksa kembali teks di atas. Tambahkan HANYA:
+1. entitas yang tertulis di teks tetapi belum diekstrak, dan
+2. relasi untuk entitas yang sudah diekstrak tetapi belum punya relasi.
+Ikuti aturan penamaan dan format yang sama. Jangan mengulang record yang sudah ditulis dan jangan menambah pengetahuan di luar teks.
+Jika tidak ada tambahan, tulis <|SELESAI|> saja.
 """
 
 PROMPTS[
     "entiti_continue_extraction_mini"
-] = """BANYAK entitas yang terlewat dalam ekstraksi terakhir.
-Setelah merangkum semua informasi yang sebelumnya diekstrak, dibandingkan dengan teks asli, terlihat bahwa informasi berikut terutama dihilangkan:
+] = """Beberapa informasi di teks belum terekstrak. Setelah dibandingkan dengan teks asli, informasi berikut terutama terlewat:
 {omit}
 
-Jenis entitas yang perlu ditambahkan dapat diperoleh dari Entity_types,
-atau Anda dapat menambahkannya sendiri.
-
-Entity_types: {entity_types}
-
-
-Tambahkan di bawah ini menggunakan format yang sama:
+Tambahkan entitas dan relasi untuk informasi tersebut saja, dengan aturan penamaan dan format yang sama.
+Jenis entitas yang boleh dipakai: {entity_types}
+Setiap entitas baru wajib dihubungkan ke minimal satu entitas lain. Jangan mengulang record yang sudah ditulis.
 """
 
 PROMPTS[
     "entiti_if_loop_extraction"
-] = """Sepertinya beberapa entitas mungkin masih terlewat. Jawab YA | TIDAK jika masih ada entitas yang perlu ditambahkan.
+] = """Apakah masih ada entitas yang TERTULIS di teks, atau entitas tanpa relasi, yang belum diekstrak? Jawab hanya YA atau TIDAK.
 """
 
 PROMPTS["fail_response"] = "Maaf, saya tidak dapat memberikan jawaban untuk pertanyaan tersebut."

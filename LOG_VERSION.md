@@ -722,6 +722,29 @@ Memperbaiki algoritma fuzzy matching di skrip evaluasi. Sebelumnya, teks hukum d
 
 ---
 
+#### 1. Judul Perbaikan
+**Sinkronisasi Arsip Prompt Hasil Indexing (`hasil_indexing/promt/prompt_id_revisi.py`) ke Versi 2.2.0**
+
+#### 2. Deskripsi Perbaikan
+Menyelaraskan salinan berkas prompt yang disimpan di direktori arsip hasil indexing (`4_minirag_chandra_v2/hasil_indexing/promt/prompt_id_revisi.py`) agar identik 100% dengan versi v2.2.0 yang digunakan oleh pipeline eksekusi MiniRAG (`4_minirag_chandra_v2/proses_indexing/minirag/prompt_id_revisi.py`). Sebelumnya, berkas di `hasil_indexing/promt/` masih berupa salinan lama (v2.1.0) hasil duplikasi awal. Sekaligus menghapus berkas metadata Windows Zone.Identifier dan menyinkronkannya ke klaster HPC Mahameru BRIN (`csupriatna@mahoni01`).
+
+#### 3. Path File
+`4_minirag_chandra_v2/hasil_indexing/promt/prompt_id_revisi.py`
+
+#### 4. File Pembaruan
+`prompt_id_revisi.py`
+
+```diff
+- Version     : 2.1.0
++ Version     : 2.2.0
++ Revised     : 02-11-2026 - prompt indexing: aturan penamaan kanonik (selaras normalisasi_entitas.py),
++               larangan output penalaran/placeholder, wajib relasi per entitas, contoh pasal + chunk 'Cukup jelas'.
+- Diberikan teks naskah perundang-undangan Republik Indonesia dan daftar jenis entitas, lakukan ekstraksi pengetahuan hukum (Legal Knowledge Graph) yang komprehensif, presisi tinggi, dan terhubung penuh.
++ Diberikan potongan teks peraturan perundang-undangan dan daftar jenis entitas, ekstrak entitas hukum yang TERTULIS di teks beserta hubungan antar-entitas tersebut, untuk membangun knowledge graph.
+```
+
+---
+
 ======================================
 perbaikan V3 (Template / Rencana Mendatang)
 ======================================
