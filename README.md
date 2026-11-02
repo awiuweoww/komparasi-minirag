@@ -211,16 +211,8 @@ python3 evaluate_density.py
 ## 5. Tabel Hasil Komparasi Metrik Graf
 
 | Parameter Metrik | Baseline Gemma 3:12B (Arjun) | Gemma 4:12B (Chandra) |
-|---|---|---|
-| Total Chunks | 53 | 144 (Hierarkis MinerU v4) |
-| Total Nodes (Entitas) | 6.881 | 218 (Entitas Substantif Murni) |
-| Total Edges (Relasi) | 1.451 | 428 |
-| Kepatuhan Skema 7 Tipe (%) | 89.43% | **100.0%** |
-| Node Terisolasi (Degree 0) | 5.777 (83.96%) | **0 (0.0%) - Full Connected** |
-| Rasio Edge/Node (Avg Degree) | 0.422 | **3.927** (~10x Lebih Terhubung) |
-| Densitas Struktural Graf | 6.13e-05 | **1.81e-02** (~295x Lebih Padat) |
-| Ukuran File Graf (.graphml) | 4.66 MB | **0.16 MB** (Efisien & Cepat) |
-| Durasi Waktu Indexing | Jam-jaman | **37.45 Menit** |
+
+cooming soon
 
 ---
 
