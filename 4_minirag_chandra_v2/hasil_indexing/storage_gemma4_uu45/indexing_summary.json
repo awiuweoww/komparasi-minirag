@@ -1,11 +1,11 @@
 {
-  "timestamp": "2026-11-02T15:27:38.069352",
+  "timestamp": "2026-11-02T16:27:32.260316",
   "llm_model": "gemma4:12b",
   "embed_model": "bge-m3:latest",
   "concurrency": 4,
-  "total_chunks": 58,
-  "total_nodes": 602,
-  "total_edges": 735,
-  "duration_seconds": 514.69,
-  "duration_minutes": 8.58
+  "total_chunks": 60,
+  "total_nodes": 595,
+  "total_edges": 817,
+  "duration_seconds": 564.85,
+  "duration_minutes": 9.41
 }

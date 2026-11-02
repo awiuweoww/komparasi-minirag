@@ -12,31 +12,31 @@ echo "Running on   : $(hostname)"
 echo "Started at   : $(date)"
 echo "=========================================================="
 
-cd $HOME/projek-legal-rag/3_minirag_chandra/proses_indexing
+cd $HOME/projek-legal-rag/4_minirag_chandra_v2/proses_indexing
 
 unset SSL_CERT_FILE
 
-# Konfigurasi Paralelisme GPU A100 (4 slot paralel murni)
-export OLLAMA_HOST=0.0.0.0:11500
+# Alokasi Port Dinamis Berbasis SLURM Job ID (Anti-Collision 100%)
+PORT=$((11600 + ($SLURM_JOB_ID % 1000)))
+echo "Port Dinamis Ollama: $PORT"
+
+export OLLAMA_HOST=0.0.0.0:$PORT
 export OLLAMA_MODELS=$HOME/projek-legal-rag/models
 export OLLAMA_NUM_PARALLEL=4
 export OLLAMA_MAX_LOADED_MODELS=2
 
-# Bersihkan instans lama jika ada
-pkill -f "ollama serve" || true
-sleep 1
-
-echo "Menjalankan Ollama Server (4 Parallel Slots) di node $(hostname) port 11500..."
+echo "Menjalankan Ollama Server (4 Parallel Slots) di node $(hostname) port $PORT..."
 if [ -f "$HOME/projek-legal-rag/bin/ollama" ]; then
-    $HOME/projek-legal-rag/bin/ollama serve > ollama_compute.log 2>&1 &
+    $HOME/projek-legal-rag/bin/ollama serve > ollama_compute_${SLURM_JOB_ID}.log 2>&1 &
 elif [ -f "$HOME/projek-legal-rag/ollama" ]; then
-    $HOME/projek-legal-rag/ollama serve > ollama_compute.log 2>&1 &
+    $HOME/projek-legal-rag/ollama serve > ollama_compute_${SLURM_JOB_ID}.log 2>&1 &
 fi
+OLLAMA_PID=$!
 
-echo "Menunggu Ollama server siap..."
+echo "Menunggu Ollama server siap di port $PORT..."
 for i in {1..30}; do
-    if curl -s http://127.0.0.1:11500/api/version >/dev/null; then
-        echo "Ollama server siap dalam $i detik!"
+    if curl -s http://127.0.0.1:$PORT/api/version >/dev/null; then
+        echo "Ollama server siap dalam $i detik di port $PORT!"
         break
     fi
     sleep 1
@@ -44,16 +44,16 @@ done
 
 nvidia-smi
 
-echo "Memulai Indexing MiniRAG UU 45/2009 (Concurrency: 4)..."
-export OLLAMA_HOST=http://127.0.0.1:11500
+echo "Memulai Indexing MiniRAG UU 45/2009 (Port: $PORT, Concurrency: 4)..."
+export OLLAMA_HOST=http://127.0.0.1:$PORT
 export CONCURRENCY=4
 export NUM_PREDICT=3072
 export PYTHONUNBUFFERED=1
 
 $HOME/miniconda3/envs/minirag/bin/python index_gemma4_fast.py
 
-echo "Membersihkan Ollama background process..."
-pkill -f "ollama serve" || true
+echo "Membersihkan Ollama background process (PID: $OLLAMA_PID)..."
+kill $OLLAMA_PID || true
 
 echo "=========================================================="
 echo "Indexing Selesai pada: $(date)"

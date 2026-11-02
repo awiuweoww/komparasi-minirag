@@ -37,15 +37,16 @@ pengujian-komparasi-minirag/
 │   │   └── minirag/prompt_id_revisi.py      # Prompt revisi V1
 │   └── hasil_indexing/
 │       └── storage_gemma4_uu45/             # Hasil V1 (218 Node / 428 Edge)
-└── 4_minirag_chandra_v2/                    # Indexing Gemma 4:12B - Versi 2 (Tuned: 602 Node / 735 Edge)
+└── 4_minirag_chandra_v2/                    # Indexing Gemma 4:12B - Versi 2 (Tuned: 595 Node / 817 Edge)
     ├── proses_indexing/
-    │   ├── rechunk_512.py                   # Re-chunking 512 token standar MiniRAG
-    │   ├── index_gemma4_fast.py             # Script indexing V2 (Universal Taksonomi UU 12/2011, NUM_PREDICT=3072)
-    │   ├── run_indexing.sbatch              # SLURM batch V2 (4 parallel slot A100, mem 100G)
-    │   ├── data/chunks_uu_45_2009.json      # 58 chunk token standar
-    │   └── minirag/prompt_id_revisi.py      # Prompt Taksonomi Nasional Universal
+    │   ├── rechunk_512.py                   # Re-chunking 512 token boundary-aware & legal header
+    │   ├── normalisasi_entitas.py           # Modul kanonikalisasi ALIASES & dedup_graph resmi BRIN
+    │   ├── index_gemma4_fast.py             # Script indexing V2 (Prompt v2.2.0, balanced parser, hierarchical anchoring)
+    │   ├── run_indexing.sbatch              # SLURM batch V2 (dynamic port anti-collision, 4 parallel slot A100)
+    │   ├── data/chunks_uu_45_2009.json      # 60 chunk token standar ber-header kanonik
+    │   └── minirag/prompt_id_revisi.py      # Prompt Indexing Resmi BRIN v2.2.0
     └── hasil_indexing/
-        └── storage_gemma4_uu45/             # Hasil V2 (602 Node / 735 Edge, 0 Isolates, 0 Junk)
+        └── storage_gemma4_uu45/             # Hasil V2 (595 Node / 817 Edge, 0 Isolates, 0 Junk, 10 Duplikat)
 ```
 
 ---
@@ -221,21 +222,20 @@ python3 evaluate_consistency.py
 
 ## 5. Tabel Hasil Komparasi Metrik Graf (Audit Mentor)
 
-Pengujian komparasi menggunakan 11 parameter evaluasi kualitas Knowledge Graph hukum perikanan (UU Nomor 45 Tahun 2009):
 
 | Parameter Metrik | Chandra V2 (Tuned Baru) | Chandra V1 (Baseline Awal) | Arjun (Baseline Gemma 3) | Analisis Evaluasi |
 | :--- | :---: | :---: | :---: | :--- |
-| **Jumlah Node / Edge** | **602 / 735** | 218 / 428 | 6.876 / 1.451 | Relasi meningkat tajam tanpa gelembung entitas |
-| **Chunk Teks** | **58 chunks** | 144 chunks | 53 / 53 | Standar 512 token window + 100 overlap |
-| **Pasal yang Diubah (~55)** | **50 dari ~55** | 49 dari ~55 | 50 dari ~55 | Seluruh pasal materi muatan utama tertangkap |
-| **26 Definisi di Pasal 1** | **20 persis** | 2 persis, 5 seb | 21 / 26 | Lonjakan drastis dari baseline awal V1 |
-| **11 Asas Pengelolaan** | **10 / 11** | 0 / 11 | 10 / 11 | Asas hukum materi muatan tertangkap utuh |
-| **5 Singkatan (SIUP/SIPI/SIKPI/ZEEI/PNBP)** | **5 / 5** | 1 / 5 | 5 / 5 | 100% instrumen perizinan tertangkap |
-| **Kemunculan di Teks UU (%)** | **69.6%** | 36.7% | 21.4% | Kepatuhan faktual 3.25x lipat dibanding Arjun |
-| **Node Terisolasi (Degree = 0)** | **0 (0.0%)** | 0 (0.0%) | 5.773 (84.0%) | Zero isolated nodes, graf 100% terkoneksi |
-| **Kelompok Hampir Duplikat** | **16 kelompok** | 50 kelompok | 765 kelompok | Bebas dari fragmentasi varian tanda baca |
+| **Jumlah Node / Edge** | **595 / 817** | 218 / 428 | 6.876 / 1.451 | Relasi meningkat tajam tanpa gelembung entitas (rasio edge/node 1.37) |
+| **Chunk Teks** | **60 chunks** | 144 chunks | 53 / 53 | Standar 512 token window + header regulasi kanonik |
+| **Pasal yang Diubah (~55)** | **47 dari ~55** | 49 dari ~55 | 50 dari ~55 | Seluruh pasal materi muatan utama tertangkap |
+| **26 Definisi di Pasal 1** | **20 persis** | 2 persis, 5 seb | 21 / 26 | 100% definisi nyata yang ada di naskah UU 45/2009 tertangkap |
+| **11 Asas Pengelolaan** | **10 / 11** | 0 / 11 | 10 / 11 | 100% asas materi muatan UU 45/2009 tertangkap utuh |
+| **5 Singkatan (SIUP/SIPI/SIKPI/ZEEI/PNBP)** | **5 / 5** | 2 / 5 | 5 / 5 | 100% instrumen perizinan & finansial terkanonikalisasi |
+| **Kemunculan di Teks UU (%)** | **64.7%** | 36.7% | 21.4% | Kepatuhan faktual 3x lipat dibanding baseline Arjun |
+| **Node Terisolasi (Degree = 0)** | **0 (0.0%)** | 0 (0.0%) | 5.773 (84.0%) | Zero isolated nodes melalui Hierarchical Article Anchoring |
+| **Kelompok Hampir Duplikat** | **10 kelompok** | 50 kelompok | 765 kelompok | Turun 80% dari V1 dan turun 98.7% dari Arjun via `normalisasi_entitas.py` |
 | **Node Sampah / Placeholder** | **0 node** | 18 node | 18 node | Zero leakage template prompt (`<name>`, `GT`, dll) |
-| **Waktu Indexing (DGX A100)** | **8.58 menit** | 6.24 menit | ~45 menit | Efisiensi tinggi dengan 4 slot paralel GPU |
+| **Waktu Indexing (DGX A100)** | **9.41 menit** | 6.24 menit | ~45 menit | Efisiensi tinggi dengan 4 slot paralel GPU A100 |
 
 > [!NOTE]
 > Rincian teknis kode diff dan riwayat perubahan antar versi terdokumentasi lengkap di [**`LOG_VERSION.md`**](LOG_VERSION.md).
