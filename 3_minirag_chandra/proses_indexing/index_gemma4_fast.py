@@ -1,0 +1,404 @@
+"""
+Script Indexing MiniRAG (Optimized High-Throughput):
+LLM: Gemma 4:12B | Embedding: BGE-M3 (1024-dim)
+Dokumen: UU Nomor 45 Tahun 2009 (Perikanan)
+Optimasi: 4 Worker Paralel, Single-Cycle Streamlined Extraction, Robust Delimiter Parser
+"""
+import os
+import sys
+import time
+import json
+import re
+import asyncio
+import httpx
+import numpy as np
+import networkx as nx
+from datetime import datetime
+from collections import defaultdict
+from pathlib import Path
+
+# Pastikan path modul terbaca
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+
+from minirag.prompt_id_revisi import (
+    GRAPH_FIELD_SEP,
+    PROMPTS,
+    DEFAULT_TUPLE_DELIMITER,
+    DEFAULT_RECORD_DELIMITER,
+    DEFAULT_COMPLETION_DELIMITER,
+    DEFAULT_ENTITY_TYPES,
+)
+
+raw_host = os.getenv("OLLAMA_HOST", "http://127.0.0.1:11500")
+if not raw_host.startswith("http://") and not raw_host.startswith("https://"):
+    raw_host = f"http://{raw_host}"
+OLLAMA_HOST = raw_host.replace("0.0.0.0", "127.0.0.1")
+
+OLLAMA_MODEL = os.getenv("OLLAMA_MODEL", "gemma4:12b")
+EMBEDDING_MODEL = os.getenv("OLLAMA_EMBED_MODEL", "bge-m3:latest")
+WORKING_DIR = os.getenv("WORKING_DIR", "../hasil_indexing/storage_gemma4_uu45")
+DATA_PATH = os.getenv("DATA_PATH", "./data/chunks_uu_45_2009.json")
+CONCURRENCY = int(os.getenv("CONCURRENCY", "4"))
+NUM_PREDICT = int(os.getenv("NUM_PREDICT", "1024"))
+
+ALLOWED_ENTITY_TYPES = set(t.lower() for t in DEFAULT_ENTITY_TYPES)
+
+def norm_name(name: str) -> str:
+    return re.sub(r"\s+", " ", (name or "").strip().strip('"').strip("'")).lower()
+
+def extract_pasal_reference(text: str) -> str:
+    m = re.search(r"(?:Pasal\s+\d+\s?[a-zA-Z]?|BAB\s+[IVXLCDM]+)", text, re.IGNORECASE)
+    return re.sub(r"\s+", " ", m.group(0)).strip().title() if m else "Umum"
+
+def parse_extracted_records(raw_text: str):
+    """
+    Parser adaptif dan tangguh yang mampu menangani variasi output Gemma 4:
+    - Format standar: ("entity"<|>name<|>type<|>desc) / ("relationship"<|>src<|>tgt<|>desc<|>kw<|>weight)
+    - Format pipa: ("entity"|name|type|desc) / ("hubungan"|src|tgt|desc|kw|weight)
+    - Format fallback jika keyword label tidak ada: (name|type|desc) atau (name|name|type|desc)
+    """
+    entities = []
+    relationships = []
+    
+    # 1. Bersihkan token stop & markdown codeblock
+    text = re.sub(r"```[a-zA-Z]*", "", raw_text)
+    text = text.replace("<|SELESAI|>", "").replace("<|COMPLETE|>", "").replace("```", "")
+    
+    # 2. Tangkap seluruh tuple dengan label eksplisit ("entity" ...) atau ("relationship" ...)
+    tuple_pattern = re.compile(
+        r'\(\s*\"?(entity|entitas|relationship|hubungan|relasi)\"?\s*(?:<\|>|\|)(.*?)\)',
+        re.IGNORECASE | re.DOTALL
+    )
+    matches = tuple_pattern.findall(text)
+    
+    for rec_type, inner in matches:
+        rec_type = rec_type.lower()
+        sep = "<|>" if "<|>" in inner else "|"
+        parts = [p.strip().strip('"').strip("'").strip() for p in inner.split(sep)]
+        
+        if rec_type in ("entity", "entitas") and len(parts) >= 1:
+            name = parts[0]
+            etype = parts[1].lower() if len(parts) > 1 else "konsep"
+            desc = parts[2] if len(parts) > 2 else ""
+            if etype not in ALLOWED_ENTITY_TYPES:
+                etype = "konsep"
+            if name.strip():
+                entities.append({
+                    "name": name.strip(),
+                    "type": etype,
+                    "description": desc.strip()
+                })
+                
+        elif rec_type in ("relationship", "hubungan", "relasi") and len(parts) >= 2:
+            src = parts[0]
+            tgt = parts[1]
+            desc = parts[2] if len(parts) > 2 else ""
+            keywords = parts[3] if len(parts) > 3 else "hubungan hukum"
+            weight = 8.0
+            if len(parts) > 4:
+                try:
+                    weight = float(re.sub(r"[^0-9.]", "", parts[4]))
+                except ValueError:
+                    weight = 8.0
+            if src.strip() and tgt.strip() and src.lower() != tgt.lower():
+                relationships.append({
+                    "src": src.strip(),
+                    "tgt": tgt.strip(),
+                    "description": desc.strip(),
+                    "keywords": keywords.strip(),
+                    "weight": weight
+                })
+                
+    # 3. Fallback jika model menghasilkan tuple tanpa label eksplisit: (...)
+    if not entities:
+        raw_tuples = re.findall(r"\(([^()]+)\)", text)
+        for item in raw_tuples:
+            item = item.strip()
+            sep = "<|>" if "<|>" in item else ("|" if "|" in item else None)
+            if not sep:
+                continue
+            parts = [p.strip().strip('"').strip("'").strip() for p in item.split(sep)]
+            if not parts:
+                continue
+                
+            lead = parts[0].lower()
+            if lead in ("content_keywords", "keywords"):
+                continue
+            elif lead in ("relasi", "hubungan", "relationship") and len(parts) >= 3:
+                src, tgt = parts[1], parts[2]
+                desc = parts[3] if len(parts) > 3 else ""
+                kw = parts[4] if len(parts) > 4 else "hubungan hukum"
+                weight = 8.0
+                if len(parts) > 5:
+                    try:
+                        weight = float(re.sub(r"[^0-9.]", "", parts[5]))
+                    except ValueError:
+                        weight = 8.0
+                if src.strip() and tgt.strip() and src.lower() != tgt.lower():
+                    relationships.append({"src": src.strip(), "tgt": tgt.strip(), "description": desc.strip(), "keywords": kw.strip(), "weight": weight})
+            elif len(parts) == 4 and parts[0] == parts[1]:
+                # Pola (Nama|Nama|tipe|deskripsi)
+                entities.append({"name": parts[0], "type": parts[2].lower(), "description": parts[3]})
+            elif len(parts) >= 3 and lead not in ("relasi", "hubungan", "relationship"):
+                # Pola (Nama|tipe|deskripsi)
+                entities.append({"name": parts[0], "type": parts[1].lower(), "description": parts[2]})
+                
+    return entities, relationships
+
+async def ollama_bge_m3_embed(texts: list[str]) -> np.ndarray:
+    url = f"{OLLAMA_HOST.rstrip('/')}/api/embed"
+    all_embeddings = []
+    batch_size = 16
+    async with httpx.AsyncClient(timeout=120.0) as client:
+        for i in range(0, len(texts), batch_size):
+            batch = texts[i:i + batch_size]
+            res = await client.post(url, json={"model": EMBEDDING_MODEL, "input": batch})
+            if res.status_code == 200:
+                all_embeddings.extend(res.json()["embeddings"])
+            else:
+                for t in batch:
+                    r2 = await client.post(
+                        f"{OLLAMA_HOST.rstrip('/')}/api/embeddings",
+                        json={"model": EMBEDDING_MODEL, "prompt": t}
+                    )
+                    if r2.status_code == 200:
+                        all_embeddings.append(r2.json()["embedding"])
+                    else:
+                        raise RuntimeError(f"Ollama Embed Error ({r2.status_code}): {r2.text}")
+    return np.array(all_embeddings, dtype=np.float32)
+
+async def extract_chunk_streamlined(
+    chunk_idx: int,
+    total_chunks: int,
+    chunk_data: any,
+    sem: asyncio.Semaphore,
+    client: httpx.AsyncClient
+):
+    chunk_text = chunk_data.get("content", chunk_data.get("text", str(chunk_data))) if isinstance(chunk_data, dict) else str(chunk_data)
+    async with sem:
+        t0 = time.time()
+        pasal_ref = extract_pasal_reference(chunk_text)
+        
+        prompt_extract = PROMPTS["entity_extraction"].format(
+            tuple_delimiter=DEFAULT_TUPLE_DELIMITER,
+            record_delimiter=DEFAULT_RECORD_DELIMITER,
+            completion_delimiter=DEFAULT_COMPLETION_DELIMITER,
+            entity_types=",".join(DEFAULT_ENTITY_TYPES),
+            input_text=chunk_text,
+        )
+        
+        options = {
+            "num_predict": NUM_PREDICT,
+            "temperature": 0.0,
+        }
+        
+        # Ekstraksi Komprehensif Satu Siklus
+        messages = [{"role": "user", "content": prompt_extract}]
+        res = await client.post(
+            f"{OLLAMA_HOST}/api/chat",
+            json={"model": OLLAMA_MODEL, "messages": messages, "stream": False, "options": options},
+            timeout=180.0
+        )
+        res.raise_for_status()
+        msg_obj = res.json().get("message", {})
+        content = msg_obj.get("content", "")
+        thinking = msg_obj.get("thinking", "")
+        
+        # Tangkap output dari content atau thinking block
+        full_text = content if content.strip() else thinking
+        entities, relationships = parse_extracted_records(full_text)
+        
+        # Jika content belum menangkap relasi/entitas tapi ada di thinking
+        if content.strip() and thinking.strip() and (len(entities) == 0 or len(relationships) == 0):
+            e_think, r_think = parse_extracted_records(thinking)
+            if len(entities) == 0:
+                entities.extend(e_think)
+            if len(relationships) == 0:
+                relationships.extend(r_think)
+                
+        duration = time.time() - t0
+        print(f"[{chunk_idx+1:03d}/{total_chunks:03d}] {pasal_ref:<15} | Entitas: {len(entities):<2} | Relasi: {len(relationships):<2} | Durasi: {duration:5.2f}s", flush=True)
+        if len(entities) == 0 and len(full_text.strip()) > 0:
+            print(f"  [RAW SNIPPET]: {repr(full_text[:120])}", flush=True)
+            
+        return chunk_idx, pasal_ref, entities, relationships, chunk_text
+
+async def main():
+    print("=" * 70)
+    print("MEMULAI INDEXING MINIRAG: GEMMA 4:12B + BGE-M3 (HIGH THROUGHPUT)")
+    print(f"Ollama Host   : {OLLAMA_HOST}")
+    print(f"LLM Model     : {OLLAMA_MODEL}")
+    print(f"Embed Model   : {EMBEDDING_MODEL} (1024-dim)")
+    print(f"Concurrency   : {CONCURRENCY} parallel slots")
+    print(f"Max Predict   : {NUM_PREDICT} tokens")
+    print(f"Working Dir   : {WORKING_DIR}")
+    print(f"Input Doc     : {DATA_PATH}")
+    print("=" * 70, flush=True)
+
+    os.makedirs(WORKING_DIR, exist_ok=True)
+
+    with open(DATA_PATH, "r", encoding="utf-8") as f:
+        chunks = json.load(f)
+
+    total_chunks = len(chunks)
+    print(f"Dokumen MinerU berhasil dimuat: {total_chunks} chunk berbasis pasal.\n", flush=True)
+
+    sem = asyncio.Semaphore(CONCURRENCY)
+    start_time = time.time()
+
+    async with httpx.AsyncClient(timeout=180.0) as client:
+        tasks = [
+            extract_chunk_streamlined(i, total_chunks, chunk_item, sem, client)
+            for i, chunk_item in enumerate(chunks)
+        ]
+        results = await asyncio.gather(*tasks)
+
+    print("\n" + "=" * 70)
+    print("Ekstraksi selesai. Merajut Knowledge Graph dan Structural Anchoring...", flush=True)
+
+    graph = nx.Graph()
+    doc_node_id = "uu nomor 45 tahun 2009"
+    graph.add_node(
+        doc_node_id,
+        entity_name="UU Nomor 45 Tahun 2009",
+        entity_type="dasar_hukum",
+        description="Undang-Undang Republik Indonesia Nomor 45 Tahun 2009 tentang Perubahan atas UU Nomor 31 Tahun 2004 tentang Perikanan",
+        source_id="doc_root"
+    )
+
+    kv_chunks = {}
+    nodes_registry = {}
+    edges_registry = defaultdict(list)
+
+    for chunk_idx, pasal_ref, entities, relationships, chunk_text in results:
+        chunk_id = f"chunk-{chunk_idx:04d}"
+        kv_chunks[chunk_id] = {
+            "chunk_id": chunk_id,
+            "pasal": pasal_ref,
+            "content": chunk_text
+        }
+
+        # Structural Node untuk Pasal Ini (Anchoring)
+        pasal_node_id = norm_name(f"{pasal_ref} UU 45/2009")
+        if pasal_node_id not in graph:
+            graph.add_node(
+                pasal_node_id,
+                entity_name=f"{pasal_ref} UU 45/2009",
+                entity_type="struktur",
+                description=f"Ketentuan {pasal_ref} dalam UU Nomor 45 Tahun 2009 tentang Perikanan",
+                source_id=chunk_id
+            )
+            graph.add_edge(
+                doc_node_id,
+                pasal_node_id,
+                weight=10.0,
+                description=f"UU Nomor 45 Tahun 2009 memuat ketentuan {pasal_ref}",
+                keywords="hierarki perundang-undangan",
+                source_id=chunk_id
+            )
+
+        # Merge Entitas & Anchoring ke Pasal
+        for ent in entities:
+            k = norm_name(ent["name"])
+            if not k:
+                continue
+            if k not in graph:
+                graph.add_node(
+                    k,
+                    entity_name=ent["name"],
+                    entity_type=ent["type"],
+                    description=ent["description"],
+                    source_id=chunk_id
+                )
+                nodes_registry[k] = ent
+            else:
+                existing_desc = graph.nodes[k].get("description", "")
+                if ent["description"] and ent["description"] not in existing_desc:
+                    graph.nodes[k]["description"] = (existing_desc + " " + ent["description"]).strip()
+
+            # Anchor: Pastikan entitas terhubung ke pasal (Mencegah Orphan Nodes)
+            if not graph.has_edge(pasal_node_id, k):
+                graph.add_edge(
+                    pasal_node_id,
+                    k,
+                    weight=9.0,
+                    description=f"{pasal_ref} mengatur dan memuat ketentuan terkait {ent['name']}",
+                    keywords="muatan materi pasal",
+                    source_id=chunk_id
+                )
+
+        # Merge Relasi Substantif
+        for rel in relationships:
+            s = norm_name(rel["src"])
+            t = norm_name(rel["tgt"])
+            if not s or not t or s == t:
+                continue
+            if s not in graph:
+                graph.add_node(s, entity_name=rel["src"], entity_type="konsep", description="", source_id=chunk_id)
+            if t not in graph:
+                graph.add_node(t, entity_name=rel["tgt"], entity_type="konsep", description="", source_id=chunk_id)
+
+            if graph.has_edge(s, t):
+                graph.edges[s, t]["weight"] = float(graph.edges[s, t].get("weight", 8.0)) + 1.0
+            else:
+                graph.add_edge(
+                    s,
+                    t,
+                    weight=rel["weight"],
+                    description=rel["description"],
+                    keywords=rel["keywords"],
+                    source_id=chunk_id
+                )
+
+    # Simpan GraphML
+    graphml_path = os.path.join(WORKING_DIR, "graph_chunk_entity_relation.graphml")
+    nx.write_graphml(graph, graphml_path)
+    print(f"GraphML tersimpan di: {graphml_path}")
+    print(f"Total Nodes: {graph.number_of_nodes()} | Total Edges: {graph.number_of_edges()}")
+
+    # Simpan KV Store Chunks
+    chunks_path = os.path.join(WORKING_DIR, "kv_store_text_chunks.json")
+    with open(chunks_path, "w", encoding="utf-8") as f:
+        json.dump(kv_chunks, f, ensure_ascii=False, indent=2)
+
+    # Vektor Embedding BGE-M3 untuk Seluruh Entitas (Batching)
+    print("Membuat Vektor Embedding BGE-M3 (1024-dim) untuk seluruh entitas...", flush=True)
+    all_node_keys = list(graph.nodes.keys())
+    node_texts = [f"{graph.nodes[k].get('entity_name', k)}: {graph.nodes[k].get('description', '')}" for k in all_node_keys]
+    node_vecs = await ollama_bge_m3_embed(node_texts)
+
+    vdb_entities = {}
+    for i, k in enumerate(all_node_keys):
+        vdb_entities[k] = {
+            "entity_name": graph.nodes[k].get("entity_name", k),
+            "entity_type": graph.nodes[k].get("entity_type", "konsep"),
+            "description": graph.nodes[k].get("description", ""),
+            "__vector__": node_vecs[i].tolist()
+        }
+
+    vdb_path = os.path.join(WORKING_DIR, "vdb_entities.json")
+    with open(vdb_path, "w", encoding="utf-8") as f:
+        json.dump(vdb_entities, f, ensure_ascii=False, indent=2)
+
+    total_duration = time.time() - start_time
+    summary = {
+        "timestamp": datetime.now().isoformat(),
+        "llm_model": OLLAMA_MODEL,
+        "embed_model": EMBEDDING_MODEL,
+        "concurrency": CONCURRENCY,
+        "total_chunks": total_chunks,
+        "total_nodes": graph.number_of_nodes(),
+        "total_edges": graph.number_of_edges(),
+        "duration_seconds": round(total_duration, 2),
+        "duration_minutes": round(total_duration / 60, 2),
+    }
+    with open(os.path.join(WORKING_DIR, "indexing_summary.json"), "w") as f:
+        json.dump(summary, f, indent=2)
+
+    print("=" * 70)
+    print(f"INDEXING SELESAI SUKSES DALAM {total_duration/60:.2f} MENIT ({total_duration:.2f} detik)!")
+    print(f"Graf: {graph.number_of_nodes()} Nodes, {graph.number_of_edges()} Edges.")
+    print("=" * 70, flush=True)
+
+if __name__ == "__main__":
+    asyncio.run(main())
