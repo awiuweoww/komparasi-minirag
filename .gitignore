@@ -1,0 +1,45 @@
+# ==============================================================================
+# .gitignore - Pengujian Komparasi MiniRAG UU 45 Tahun 2009
+# Tracked / Upload Target:
+# 1. 1_dokumen_sumber/
+# 2. 2_minirag_mjundewana/
+# 3. 3_minirag_chandra/hasil_indexing/
+#    (+ README.md & .gitignore)
+# ==============================================================================
+
+# Python Cache & Bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Environments & Package Managers
+.venv/
+env/
+venv/
+ENV/
+node_modules/
+
+# OS & System Files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+*:Zone.Identifier
+*Zone.Identifier
+
+# Log & Temporary Files
+*.log
+*.tmp
+*.temp
+
+# Abaikan skrip-skrip eksekusi HPC di root
+check_env.sh
+extract_mineru_hpc.py
+pull_models.sh
+run_mineru_extract.sbatch
+pengujian_bundle.b64
+
+# Abaikan proses indexing di 3_minirag_chandra (HANYA upload hasil_indexing)
+3_minirag_chandra/proses_indexing/

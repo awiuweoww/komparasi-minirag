@@ -1,0 +1,3886 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d7" for="edge" attr.name="source_id" attr.type="string"/>
+<key id="d6" for="edge" attr.name="keywords" attr.type="string"/>
+<key id="d5" for="edge" attr.name="description" attr.type="string"/>
+<key id="d4" for="edge" attr.name="weight" attr.type="double"/>
+<key id="d3" for="node" attr.name="source_id" attr.type="string"/>
+<key id="d2" for="node" attr.name="description" attr.type="string"/>
+<key id="d1" for="node" attr.name="entity_type" attr.type="string"/>
+<key id="d0" for="node" attr.name="entity_name" attr.type="string"/>
+<graph edgedefault="undirected"><node id="uu nomor 45 tahun 2009">
+  <data key="d0">UU Nomor 45 Tahun 2009</data>
+  <data key="d1">dasar_hukum</data>
+  <data key="d2">Undang-Undang Republik Indonesia Nomor 45 Tahun 2009 tentang Perubahan atas UU Nomor 31 Tahun 2004 tentang Perikanan Undang-Undang yang mengatur perubahan pada ketentuan umum perikanan. Undang-Undang tentang Perubahan atas Undang-Undang Nomor 31 Tahun 2004 tentang Perikanan. Undang-Undang tentang Perubahan atas Undang-Undang Nomor 31 Tahun 2004 tentang Perikanan yang mengatur tata kelola perikanan nasional. Undang-Undang yang menjadi dasar hukum utama dalam teks ini, mengatur tentang perikanan. Undang-Undang tentang Perubahan atas Undang-Undang Nomor 31 Tahun 2004 tentang Perikanan yang mengatur tata kelola perikanan. Undang-Undang tentang Perikanan yang mengatur tata kelola dan perizinan kegiatan perikanan. Undang-Undang yang mengatur perubahan atas Undang-Undang Perikanan. Undang-Undang tentang Perubahan atas Undang-Undang Nomor 31 Tahun 2004 tentang Perikanan yang menjadi landasan hukum utama. Undang-Undang yang mengatur tentang perikanan (berdasarkan konteks judul Undang-Undang yang mengatur tentang perikanan, termasuk pengelolaan dan perlindungan sumber daya perikanan. Undang-Undang yang mengatur ketentuan terkait keamanan pangan atau produk tertentu. Undang-Undang yang mengatur tentang Perikanan.</data>
+  <data key="d3">doc_root</data>
+</node>
+<node id="umum uu 45/2009">
+  <data key="d0">Umum UU 45/2009</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Ketentuan Umum dalam UU Nomor 45 Tahun 2009 tentang Perikanan</data>
+  <data key="d3">chunk-0000</data>
+</node>
+<node id="&lt;name&gt;">
+  <data key="d0">&lt;name&gt;</data>
+  <data key="d1">konsep</data>
+  <data key="d2">&lt;description&gt; &lt;desc&gt;</data>
+  <data key="d3">chunk-0000</data>
+</node>
+<node id="&lt;source&gt;">
+  <data key="d0">&lt;source&gt;</data>
+  <data key="d1">konsep</data>
+  <data key="d2"></data>
+  <data key="d3">chunk-0000</data>
+</node>
+<node id="&lt;target&gt;">
+  <data key="d0">&lt;target&gt;</data>
+  <data key="d1">konsep</data>
+  <data key="d2"></data>
+  <data key="d3">chunk-0000</data>
+</node>
+<node id="pasal 20 p uu 45/2009">
+  <data key="d0">Pasal 20 P UU 45/2009</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Ketentuan Pasal 20 P dalam UU Nomor 45 Tahun 2009 tentang Perikanan</data>
+  <data key="d3">chunk-0001</data>
+</node>
+<node id="pasal 1 uu 45/2009">
+  <data key="d0">Pasal 1 UU 45/2009</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Ketentuan Pasal 1 dalam UU Nomor 45 Tahun 2009 tentang Perikanan</data>
+  <data key="d3">chunk-0003</data>
+</node>
+<node id="ketentuan umum">
+  <data key="d0">Ketentuan Umum</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Bagian dari undang-undang yang berisi definisi dan ketentuan dasar. Bagian dalam undang-undang yang memuat definisi dan ketentuan dasar. Bagian dalam peraturan perundang-undangan yang memuat definisi dan ketentuan dasar. Bagian dalam undang-undang yang memuat ketentuan dasar mengenai subjek dan objek hukum. Bagian dalam undang-undang yang memuat definisi dan ketentuan dasar yang berlaku untuk seluruh isi undang-undang. Bagian dari struktur undang-undang yang memuat ketentuan dasar dan definisi umum. Bagian dalam peraturan yang memuat definisi dan ketentuan dasar. Bagian dalam undang-undang yang memuat prinsip-prinsip dasar dan definisi umum. Bagian dalam undang-undang yang memuat ketentuan dasar mengenai perikanan. Bagian dalam peraturan perundang-undangan yang memuat definisi, ruang lingkup, dan ketentuan dasar. Bagian awal undang-undang yang memuat definisi dan ketentuan dasar. Bagian dalam undang-undang yang memuat ketentuan dasar bagi pasal-pasal berikutnya. Bagian dari undang-undang yang memuat definisi dan ketentuan dasar. Bagian dalam undang-undang yang memuat ketentuan dasar dan definisi umum. Bagian dari undang-undang yang memuat ketentuan dasar dan definisi umum. Bagian dari struktur undang-undang yang memuat definisi dan ketentuan dasar. Bagian dalam undang-undang yang memuat definisi dan ruang lingkup umum. Bagian dalam dokumen hukum yang memuat definisi dan ketentuan dasar. Bagian dalam undang-undang yang memuat ketentuan dasar. Bagian awal undang-undang yang memuat ketentuan dasar dan umum.</data>
+  <data key="d3">chunk-0003</data>
+</node>
+<node id="pasal 1">
+  <data key="d0">Pasal 1</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Pasal yang memuat definisi dan ketentuan umum yang diubah dalam undang-undang ini.</data>
+  <data key="d3">chunk-0003</data>
+</node>
+<node id="angka 11">
+  <data key="d0">Angka 11</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Bagian spesifik dari Pasal 1 yang mengalami perubahan redaksi.</data>
+  <data key="d3">chunk-0003</data>
+</node>
+<node id="angka 24">
+  <data key="d0">Angka 24</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Bagian spesifik dari Pasal 1 yang mengalami perubahan redaksi.</data>
+  <data key="d3">chunk-0003</data>
+</node>
+<node id="pasal 1 p uu 45/2009">
+  <data key="d0">Pasal 1 P UU 45/2009</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Ketentuan Pasal 1 P dalam UU Nomor 45 Tahun 2009 tentang Perikanan</data>
+  <data key="d3">chunk-0004</data>
+</node>
+<node id="pasal 2 uu 45/2009">
+  <data key="d0">Pasal 2 UU 45/2009</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Ketentuan Pasal 2 dalam UU Nomor 45 Tahun 2009 tentang Perikanan</data>
+  <data key="d3">chunk-0005</data>
+</node>
+<node id="pasal 2 p uu 45/2009">
+  <data key="d0">Pasal 2 P UU 45/2009</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Ketentuan Pasal 2 P dalam UU Nomor 45 Tahun 2009 tentang Perikanan</data>
+  <data key="d3">chunk-0006</data>
+</node>
+<node id="pasal 7 uu 45/2009">
+  <data key="d0">Pasal 7 UU 45/2009</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Ketentuan Pasal 7 dalam UU Nomor 45 Tahun 2009 tentang Perikanan</data>
+  <data key="d3">chunk-0007</data>
+</node>
+<node id="pasal 7">
+  <data key="d0">Pasal 7</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Pasal spesifik dalam undang-undang yang mengalami perubahan redaksi.</data>
+  <data key="d3">chunk-0007</data>
+</node>
+<node id="perubahan pasal 7">
+  <data key="d0">Perubahan Pasal 7</data>
+  <data key="d1">konsep</data>
+  <data key="d2">Proses perubahan atau amandemen terhadap bunyi Pasal 7 dalam peraturan perundang-undangan.</data>
+  <data key="d3">chunk-0007</data>
+</node>
+<node id="pasal 7 p uu 45/2009">
+  <data key="d0">Pasal 7 P UU 45/2009</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Ketentuan Pasal 7 P dalam UU Nomor 45 Tahun 2009 tentang Perikanan</data>
+  <data key="d3">chunk-0008</data>
+</node>
+<node id="pasal 9 uu 45/2009">
+  <data key="d0">Pasal 9 UU 45/2009</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Ketentuan Pasal 9 dalam UU Nomor 45 Tahun 2009 tentang Perikanan</data>
+  <data key="d3">chunk-0009</data>
+</node>
+<node id="pasal 9">
+  <data key="d0">Pasal 9</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Pasal spesifik dalam undang-undang yang mengalami perubahan redaksi atau isi.</data>
+  <data key="d3">chunk-0009</data>
+</node>
+<node id="pasal 9 p uu 45/2009">
+  <data key="d0">Pasal 9 P UU 45/2009</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Ketentuan Pasal 9 P dalam UU Nomor 45 Tahun 2009 tentang Perikanan</data>
+  <data key="d3">chunk-0010</data>
+</node>
+<node id="pasal 14 uu 45/2009">
+  <data key="d0">Pasal 14 UU 45/2009</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Ketentuan Pasal 14 dalam UU Nomor 45 Tahun 2009 tentang Perikanan</data>
+  <data key="d3">chunk-0011</data>
+</node>
+<node id="pasal 14">
+  <data key="d0">Pasal 14</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Pasal dalam undang-undang yang mengalami perubahan pada ayat (3 Pasal yang memuat penjelasan mengenai definisi plasma nutfah dan ikan jenis baru.</data>
+  <data key="d3">chunk-0011</data>
+</node>
+<node id="ayat (3">
+  <data key="d0">Ayat (3</data>
+  <data key="d1">konsep</data>
+  <data key="d2"></data>
+  <data key="d3">chunk-0011</data>
+</node>
+<node id="pasal 14 p uu 45/2009">
+  <data key="d0">Pasal 14 P UU 45/2009</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Ketentuan Pasal 14 P dalam UU Nomor 45 Tahun 2009 tentang Perikanan</data>
+  <data key="d3">chunk-0012</data>
+</node>
+<node id="pasal 15a uu 45/2009">
+  <data key="d0">Pasal 15A UU 45/2009</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Ketentuan Pasal 15A dalam UU Nomor 45 Tahun 2009 tentang Perikanan</data>
+  <data key="d3">chunk-0013</data>
+</node>
+<node id="pasal 15a">
+  <data key="d0">Pasal 15A</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Pasal yang mengatur kewajiban pemerintah dalam pengendalian mutu induk dan benih ikan. Pasal dalam undang-undang yang menjadi objek penjelasan.</data>
+  <data key="d3">chunk-0013</data>
+</node>
+<node id="pasal 18 uu 45/2009">
+  <data key="d0">Pasal 18 UU 45/2009</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Ketentuan Pasal 18 dalam UU Nomor 45 Tahun 2009 tentang Perikanan</data>
+  <data key="d3">chunk-0014</data>
+</node>
+<node id="pasal 18">
+  <data key="d0">Pasal 18</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Pasal dalam undang-undang yang mengalami penambahan ayat. Pasal yang mengatur tata pemanfaatan air dan lahan untuk pembudidayaan ikan.</data>
+  <data key="d3">chunk-0014</data>
+</node>
+<node id="ayat (4">
+  <data key="d0">Ayat (4</data>
+  <data key="d1">konsep</data>
+  <data key="d2"></data>
+  <data key="d3">chunk-0014</data>
+</node>
+<node id="pasal 18 p uu 45/2009">
+  <data key="d0">Pasal 18 P UU 45/2009</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Ketentuan Pasal 18 P dalam UU Nomor 45 Tahun 2009 tentang Perikanan</data>
+  <data key="d3">chunk-0015</data>
+</node>
+<node id="pasal 23 uu 45/2009">
+  <data key="d0">Pasal 23 UU 45/2009</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Ketentuan Pasal 23 dalam UU Nomor 45 Tahun 2009 tentang Perikanan</data>
+  <data key="d3">chunk-0016</data>
+</node>
+<node id="&lt;entity_name&gt;">
+  <data key="d0">&lt;entity_name&gt;</data>
+  <data key="d1">konsep</data>
+  <data key="d2">&lt;entity_description&gt;</data>
+  <data key="d3">chunk-0016</data>
+</node>
+<node id="pasal 23">
+  <data key="d0">Pasal 23</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Pasal dalam UU Nomor 45 Tahun 2009 yang mengalami penambahan ayat.</data>
+  <data key="d3">chunk-0016</data>
+</node>
+<node id="&lt;source_entity&gt;">
+  <data key="d0">&lt;source_entity&gt;</data>
+  <data key="d1">konsep</data>
+  <data key="d2"></data>
+  <data key="d3">chunk-0016</data>
+</node>
+<node id="&lt;target_entity&gt;">
+  <data key="d0">&lt;target_entity&gt;</data>
+  <data key="d1">konsep</data>
+  <data key="d2"></data>
+  <data key="d3">chunk-0016</data>
+</node>
+<node id="pasal 23 p uu 45/2009">
+  <data key="d0">Pasal 23 P UU 45/2009</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Ketentuan Pasal 23 P dalam UU Nomor 45 Tahun 2009 tentang Perikanan</data>
+  <data key="d3">chunk-0017</data>
+</node>
+<node id="pasal 25 uu 45/2009">
+  <data key="d0">Pasal 25 UU 45/2009</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Ketentuan Pasal 25 dalam UU Nomor 45 Tahun 2009 tentang Perikanan</data>
+  <data key="d3">chunk-0018</data>
+</node>
+<node id="pasal 25 p uu 45/2009">
+  <data key="d0">Pasal 25 P UU 45/2009</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Ketentuan Pasal 25 P dalam UU Nomor 45 Tahun 2009 tentang Perikanan</data>
+  <data key="d3">chunk-0019</data>
+</node>
+<node id="pasal 25">
+  <data key="d0">Pasal 25</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Pasal yang mengatur pelaksanaan usaha perikanan dalam sistem bisnis. Pasal dalam undang-undang yang mengandung ketentuan hukum tertentu.</data>
+  <data key="d3">chunk-0019</data>
+</node>
+<node id="ayat (1">
+  <data key="d0">Ayat (1</data>
+  <data key="d1">konsep</data>
+  <data key="d2"></data>
+  <data key="d3">chunk-0019</data>
+</node>
+<node id="usaha perikanan">
+  <data key="d0">Usaha Perikanan</data>
+  <data key="d1">konsep</data>
+  <data key="d2">Kegiatan ekonomi yang melibatkan pemanfaatan sumber daya ikan.</data>
+  <data key="d3">chunk-0019</data>
+</node>
+<node id="pasal 25a uu 45/2009">
+  <data key="d0">Pasal 25A UU 45/2009</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Ketentuan Pasal 25A dalam UU Nomor 45 Tahun 2009 tentang Perikanan</data>
+  <data key="d3">chunk-0020</data>
+</node>
+<node id="pasal 25b uu 45/2009">
+  <data key="d0">Pasal 25B UU 45/2009</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Ketentuan Pasal 25B dalam UU Nomor 45 Tahun 2009 tentang Perikanan</data>
+  <data key="d3">chunk-0021</data>
+</node>
+<node id="pasal 25b">
+  <data key="d0">Pasal 25B</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Pasal yang mengatur kewajiban pemerintah dalam pemasaran dan iklim usaha perikanan. Pasal dalam undang-undang yang diberikan penjelasan khusus dalam bagian Penjelasan Resmi.</data>
+  <data key="d3">chunk-0021</data>
+</node>
+<node id="pemerintah">
+  <data key="d0">Pemerintah</data>
+  <data key="d1">pihak</data>
+  <data key="d2">Lembaga eksekutif yang bertanggung jawab atas kebijakan dan fasilitasi usaha perikanan. Lembaga eksekutif yang bertanggung jawab atas pengelolaan dan perlindungan data perikanan. Lembaga pemerintah pusat yang memiliki wewenang untuk memberikan tugas pembantuan.</data>
+  <data key="d3">chunk-0021</data>
+</node>
+<node id="pasal 25c uu 45/2009">
+  <data key="d0">Pasal 25C UU 45/2009</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Ketentuan Pasal 25C dalam UU Nomor 45 Tahun 2009 tentang Perikanan</data>
+  <data key="d3">chunk-0022</data>
+</node>
+<node id="pasal 27 uu 45/2009">
+  <data key="d0">Pasal 27 UU 45/2009</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Ketentuan Pasal 27 dalam UU Nomor 45 Tahun 2009 tentang Perikanan</data>
+  <data key="d3">chunk-0023</data>
+</node>
+<node id="pasal 27 p uu 45/2009">
+  <data key="d0">Pasal 27 P UU 45/2009</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Ketentuan Pasal 27 P dalam UU Nomor 45 Tahun 2009 tentang Perikanan</data>
+  <data key="d3">chunk-0024</data>
+</node>
+<node id="pasal 28 uu 45/2009">
+  <data key="d0">Pasal 28 UU 45/2009</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Ketentuan Pasal 28 dalam UU Nomor 45 Tahun 2009 tentang Perikanan</data>
+  <data key="d3">chunk-0025</data>
+</node>
+<node id="pasal 28 p uu 45/2009">
+  <data key="d0">Pasal 28 P UU 45/2009</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Ketentuan Pasal 28 P dalam UU Nomor 45 Tahun 2009 tentang Perikanan</data>
+  <data key="d3">chunk-0026</data>
+</node>
+<node id="pasal 28a uu 45/2009">
+  <data key="d0">Pasal 28A UU 45/2009</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Ketentuan Pasal 28A dalam UU Nomor 45 Tahun 2009 tentang Perikanan</data>
+  <data key="d3">chunk-0027</data>
+</node>
+<node id="pasal 32 uu 45/2009">
+  <data key="d0">Pasal 32 UU 45/2009</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Ketentuan Pasal 32 dalam UU Nomor 45 Tahun 2009 tentang Perikanan</data>
+  <data key="d3">chunk-0028</data>
+</node>
+<node id="pasal 32">
+  <data key="d0">Pasal 32</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Pasal spesifik dalam undang-undang yang mengalami perubahan redaksi.</data>
+  <data key="d3">chunk-0028</data>
+</node>
+<node id="perubahan pasal 32">
+  <data key="d0">Perubahan Pasal 32</data>
+  <data key="d1">konsep</data>
+  <data key="d2">Proses perubahan hukum terhadap isi Pasal 32 dalam undang-undang.</data>
+  <data key="d3">chunk-0028</data>
+</node>
+<node id="pasal 32 p uu 45/2009">
+  <data key="d0">Pasal 32 P UU 45/2009</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Ketentuan Pasal 32 P dalam UU Nomor 45 Tahun 2009 tentang Perikanan</data>
+  <data key="d3">chunk-0029</data>
+</node>
+<node id="pasal 35a uu 45/2009">
+  <data key="d0">Pasal 35A UU 45/2009</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Ketentuan Pasal 35A dalam UU Nomor 45 Tahun 2009 tentang Perikanan</data>
+  <data key="d3">chunk-0030</data>
+</node>
+<node id="pasal 36 uu 45/2009">
+  <data key="d0">Pasal 36 UU 45/2009</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Ketentuan Pasal 36 dalam UU Nomor 45 Tahun 2009 tentang Perikanan</data>
+  <data key="d3">chunk-0031</data>
+</node>
+<node id="pasal 36">
+  <data key="d0">Pasal 36</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Pasal spesifik dalam undang-undang yang mengalami perubahan redaksi atau isi. Pasal yang mengatur tata cara pendaftaran kapal perikanan Indonesia.</data>
+  <data key="d3">chunk-0031</data>
+</node>
+<node id="pasal 36 p uu 45/2009">
+  <data key="d0">Pasal 36 P UU 45/2009</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Ketentuan Pasal 36 P dalam UU Nomor 45 Tahun 2009 tentang Perikanan</data>
+  <data key="d3">chunk-0032</data>
+</node>
+<node id="ayat (2">
+  <data key="d0">Ayat (2</data>
+  <data key="d1">konsep</data>
+  <data key="d2"></data>
+  <data key="d3">chunk-0032</data>
+</node>
+<node id="pasal 41 uu 45/2009">
+  <data key="d0">Pasal 41 UU 45/2009</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Ketentuan Pasal 41 dalam UU Nomor 45 Tahun 2009 tentang Perikanan</data>
+  <data key="d3">chunk-0033</data>
+</node>
+<node id="pasal 41">
+  <data key="d0">Pasal 41</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Pasal yang mengalami perubahan redaksi atau substansi dalam peraturan ini.</data>
+  <data key="d3">chunk-0033</data>
+</node>
+<node id="pasal 41 p uu 45/2009">
+  <data key="d0">Pasal 41 P UU 45/2009</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Ketentuan Pasal 41 P dalam UU Nomor 45 Tahun 2009 tentang Perikanan</data>
+  <data key="d3">chunk-0034</data>
+</node>
+<node id="pasal 41a uu 45/2009">
+  <data key="d0">Pasal 41A UU 45/2009</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Ketentuan Pasal 41A dalam UU Nomor 45 Tahun 2009 tentang Perikanan</data>
+  <data key="d3">chunk-0035</data>
+</node>
+<node id="pasal 42 uu 45/2009">
+  <data key="d0">Pasal 42 UU 45/2009</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Ketentuan Pasal 42 dalam UU Nomor 45 Tahun 2009 tentang Perikanan</data>
+  <data key="d3">chunk-0036</data>
+</node>
+<node id="pasal 42">
+  <data key="d0">Pasal 42</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Pasal spesifik dalam undang-undang yang mengalami perubahan redaksi.</data>
+  <data key="d3">chunk-0036</data>
+</node>
+<node id="perubahan pasal 42">
+  <data key="d0">Perubahan Pasal 42</data>
+  <data key="d1">konsep</data>
+  <data key="d2">Proses perubahan atau revisi terhadap bunyi Pasal 42 dalam peraturan perundang-undangan.</data>
+  <data key="d3">chunk-0036</data>
+</node>
+<node id="pasal 42 p uu 45/2009">
+  <data key="d0">Pasal 42 P UU 45/2009</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Ketentuan Pasal 42 P dalam UU Nomor 45 Tahun 2009 tentang Perikanan</data>
+  <data key="d3">chunk-0037</data>
+</node>
+<node id="pasal 43 uu 45/2009">
+  <data key="d0">Pasal 43 UU 45/2009</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Ketentuan Pasal 43 dalam UU Nomor 45 Tahun 2009 tentang Perikanan</data>
+  <data key="d3">chunk-0038</data>
+</node>
+<node id="pasal 43 p uu 45/2009">
+  <data key="d0">Pasal 43 P UU 45/2009</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Ketentuan Pasal 43 P dalam UU Nomor 45 Tahun 2009 tentang Perikanan</data>
+  <data key="d3">chunk-0039</data>
+</node>
+<node id="pasal 44 uu 45/2009">
+  <data key="d0">Pasal 44 UU 45/2009</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Ketentuan Pasal 44 dalam UU Nomor 45 Tahun 2009 tentang Perikanan</data>
+  <data key="d3">chunk-0040</data>
+</node>
+<node id="pasal 44">
+  <data key="d0">Pasal 44</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Pasal spesifik yang mengalami perubahan ketentuan dalam undang-undang. Pasal yang mengatur prosedur penerbitan Surat Persetujuan Berlayar dan Surat Laik Operasi. Pasal dalam UU Nomor 45 Tahun 2009 yang menjadi objek penjelasan.</data>
+  <data key="d3">chunk-0040</data>
+</node>
+<node id="perubahan pasal 44">
+  <data key="d0">Perubahan Pasal 44</data>
+  <data key="d1">konsep</data>
+  <data key="d2">Proses perubahan atau amandemen terhadap bunyi ketentuan pada Pasal 44.</data>
+  <data key="d3">chunk-0040</data>
+</node>
+<node id="pasal 44 p uu 45/2009">
+  <data key="d0">Pasal 44 P UU 45/2009</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Ketentuan Pasal 44 P dalam UU Nomor 45 Tahun 2009 tentang Perikanan</data>
+  <data key="d3">chunk-0041</data>
+</node>
+<node id="pasal 46 uu 45/2009">
+  <data key="d0">Pasal 46 UU 45/2009</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Ketentuan Pasal 46 dalam UU Nomor 45 Tahun 2009 tentang Perikanan</data>
+  <data key="d3">chunk-0042</data>
+</node>
+<node id="pasal 46">
+  <data key="d0">Pasal 46</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Pasal spesifik dalam undang-undang yang mengalami perubahan redaksi.</data>
+  <data key="d3">chunk-0042</data>
+</node>
+<node id="pasal 46 p uu 45/2009">
+  <data key="d0">Pasal 46 P UU 45/2009</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Ketentuan Pasal 46 P dalam UU Nomor 45 Tahun 2009 tentang Perikanan</data>
+  <data key="d3">chunk-0043</data>
+</node>
+<node id="pasal 46a uu 45/2009">
+  <data key="d0">Pasal 46A UU 45/2009</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Ketentuan Pasal 46A dalam UU Nomor 45 Tahun 2009 tentang Perikanan</data>
+  <data key="d3">chunk-0044</data>
+</node>
+<node id="pasal 46a">
+  <data key="d0">Pasal 46A</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Pasal yang mengatur jaminan kerahasiaan data dan informasi dalam sektor perikanan. Pasal spesifik dalam undang-undang yang menjadi objek penjelasan.</data>
+  <data key="d3">chunk-0044</data>
+</node>
+<node id="kerahasiaan data dan informasi perikanan">
+  <data key="d0">Kerahasiaan Data dan Informasi Perikanan</data>
+  <data key="d1">konsep</data>
+  <data key="d2">Prinsip perlindungan data sensitif terkait aktivitas perikanan agar tidak disalahgunakan.</data>
+  <data key="d3">chunk-0044</data>
+</node>
+<node id="data log book penangkapan dan pengangkutan ikan">
+  <data key="d0">Data Log Book Penangkapan dan Pengangkutan Ikan</data>
+  <data key="d1">konsep</data>
+  <data key="d2">Catatan resmi mengenai aktivitas penangkapan dan logistik pengangkutan ikan.</data>
+  <data key="d3">chunk-0044</data>
+</node>
+<node id="data pengamat">
+  <data key="d0">Data Pengamat</data>
+  <data key="d1">konsep</data>
+  <data key="d2">Informasi yang dikumpulkan oleh pengamat atau peneliti di sektor perikanan.</data>
+  <data key="d3">chunk-0044</data>
+</node>
+<node id="data perusahaan">
+  <data key="d0">Data Perusahaan</data>
+  <data key="d1">konsep</data>
+  <data key="d2">Informasi privat milik badan usaha yang digunakan dalam proses perizinan.</data>
+  <data key="d3">chunk-0044</data>
+</node>
+<node id="proses perizinan usaha perikanan">
+  <data key="d0">Proses Perizinan Usaha Perikanan</data>
+  <data key="d1">konsep</data>
+  <data key="d2">Tahapan administratif untuk mendapatkan izin legal dalam menjalankan usaha perikanan.</data>
+  <data key="d3">chunk-0044</data>
+</node>
+<node id="pasal 48 uu 45/2009">
+  <data key="d0">Pasal 48 UU 45/2009</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Ketentuan Pasal 48 dalam UU Nomor 45 Tahun 2009 tentang Perikanan</data>
+  <data key="d3">chunk-0045</data>
+</node>
+<node id="pasal 48 p uu 45/2009">
+  <data key="d0">Pasal 48 P UU 45/2009</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Ketentuan Pasal 48 P dalam UU Nomor 45 Tahun 2009 tentang Perikanan</data>
+  <data key="d3">chunk-0046</data>
+</node>
+<node id="pasal 48">
+  <data key="d0">Pasal 48</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Pasal yang mengatur mengenai pungutan perikanan bagi pihak yang memperoleh manfaat dari sumber daya ikan. Pasal yang mengatur mengenai pungutan perikanan bagi pelaku usaha di bidang penangkapan atau pembudidayaan ikan.</data>
+  <data key="d3">chunk-0046</data>
+</node>
+<node id="ayat (1a">
+  <data key="d0">Ayat (1a</data>
+  <data key="d1">konsep</data>
+  <data key="d2"></data>
+  <data key="d3">chunk-0046</data>
+</node>
+<node id="pasal 50 uu 45/2009">
+  <data key="d0">Pasal 50 UU 45/2009</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Ketentuan Pasal 50 dalam UU Nomor 45 Tahun 2009 tentang Perikanan</data>
+  <data key="d3">chunk-0047</data>
+</node>
+<node id="pasal 50">
+  <data key="d0">Pasal 50</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Pasal spesifik dalam undang-undang yang mengalami perubahan redaksi atau substansi.</data>
+  <data key="d3">chunk-0047</data>
+</node>
+<node id="perubahan pasal 50">
+  <data key="d0">Perubahan Pasal 50</data>
+  <data key="d1">konsep</data>
+  <data key="d2">Proses perubahan hukum terhadap bunyi atau isi Pasal 50.</data>
+  <data key="d3">chunk-0047</data>
+</node>
+<node id="pasal 50 p uu 45/2009">
+  <data key="d0">Pasal 50 P UU 45/2009</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Ketentuan Pasal 50 P dalam UU Nomor 45 Tahun 2009 tentang Perikanan</data>
+  <data key="d3">chunk-0048</data>
+</node>
+<node id="pasal 65 uu 45/2009">
+  <data key="d0">Pasal 65 UU 45/2009</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Ketentuan Pasal 65 dalam UU Nomor 45 Tahun 2009 tentang Perikanan</data>
+  <data key="d3">chunk-0049</data>
+</node>
+<node id="name">
+  <data key="d0">name</data>
+  <data key="d1">konsep</data>
+  <data key="d2">description</data>
+  <data key="d3">chunk-0049</data>
+</node>
+<node id="pasal 65">
+  <data key="d0">Pasal 65</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Pasal yang mengalami perubahan ketentuan dalam UU Nomor 45 Tahun 2009. Pasal yang mengatur mekanisme pemberian tugas pembantuan di bidang perikanan.</data>
+  <data key="d3">chunk-0049</data>
+</node>
+<node id="source">
+  <data key="d0">source</data>
+  <data key="d1">konsep</data>
+  <data key="d2"></data>
+  <data key="d3">chunk-0049</data>
+</node>
+<node id="target">
+  <data key="d0">target</data>
+  <data key="d1">konsep</data>
+  <data key="d2"></data>
+  <data key="d3">chunk-0049</data>
+</node>
+<node id="pasal 65 p uu 45/2009">
+  <data key="d0">Pasal 65 P UU 45/2009</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Ketentuan Pasal 65 P dalam UU Nomor 45 Tahun 2009 tentang Perikanan</data>
+  <data key="d3">chunk-0050</data>
+</node>
+<node id="pasal 66 uu 45/2009">
+  <data key="d0">Pasal 66 UU 45/2009</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Ketentuan Pasal 66 dalam UU Nomor 45 Tahun 2009 tentang Perikanan</data>
+  <data key="d3">chunk-0051</data>
+</node>
+<node id="pasal 66 p uu 45/2009">
+  <data key="d0">Pasal 66 P UU 45/2009</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Ketentuan Pasal 66 P dalam UU Nomor 45 Tahun 2009 tentang Perikanan</data>
+  <data key="d3">chunk-0052</data>
+</node>
+<node id="pasal 66">
+  <data key="d0">Pasal 66</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Pasal yang mengatur mengenai mekanisme dan ruang lingkup pengawasan perikanan.</data>
+  <data key="d3">chunk-0052</data>
+</node>
+<node id="pasal 66a uu 45/2009">
+  <data key="d0">Pasal 66A UU 45/2009</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Ketentuan Pasal 66A dalam UU Nomor 45 Tahun 2009 tentang Perikanan</data>
+  <data key="d3">chunk-0053</data>
+</node>
+<node id="pasal 66b uu 45/2009">
+  <data key="d0">Pasal 66B UU 45/2009</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Ketentuan Pasal 66B dalam UU Nomor 45 Tahun 2009 tentang Perikanan</data>
+  <data key="d3">chunk-0054</data>
+</node>
+<node id="pasal 66c uu 45/2009">
+  <data key="d0">Pasal 66C UU 45/2009</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Ketentuan Pasal 66C dalam UU Nomor 45 Tahun 2009 tentang Perikanan</data>
+  <data key="d3">chunk-0055</data>
+</node>
+<node id="pasal 69 p uu 45/2009">
+  <data key="d0">Pasal 69 P UU 45/2009</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Ketentuan Pasal 69 P dalam UU Nomor 45 Tahun 2009 tentang Perikanan</data>
+  <data key="d3">chunk-0056</data>
+</node>
+<node id="pasal 71 uu 45/2009">
+  <data key="d0">Pasal 71 UU 45/2009</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Ketentuan Pasal 71 dalam UU Nomor 45 Tahun 2009 tentang Perikanan</data>
+  <data key="d3">chunk-0057</data>
+</node>
+<node id="pasal 71 p uu 45/2009">
+  <data key="d0">Pasal 71 P UU 45/2009</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Ketentuan Pasal 71 P dalam UU Nomor 45 Tahun 2009 tentang Perikanan</data>
+  <data key="d3">chunk-0058</data>
+</node>
+<node id="pasal 71">
+  <data key="d0">Pasal 71</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Pasal yang mengatur pembentukan, kedudukan, dan kewenangan pengadilan perikanan.</data>
+  <data key="d3">chunk-0058</data>
+</node>
+<node id="pengadilan perikanan">
+  <data key="d0">Pengadilan Perikanan</data>
+  <data key="d1">konsep</data>
+  <data key="d2">Pengadilan khusus yang berwenang memeriksa, mengadili, dan memutus tindak pidana di bidang perikanan.</data>
+  <data key="d3">chunk-0058</data>
+</node>
+<node id="peradilan umum">
+  <data key="d0">Peradilan Umum</data>
+  <data key="d1">konsep</data>
+  <data key="d2">Sistem peradilan umum yang menjadi lingkungan bagi pengadilan khusus.</data>
+  <data key="d3">chunk-0058</data>
+</node>
+<node id="pasal 71a uu 45/2009">
+  <data key="d0">Pasal 71A UU 45/2009</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Ketentuan Pasal 71A dalam UU Nomor 45 Tahun 2009 tentang Perikanan</data>
+  <data key="d3">chunk-0059</data>
+</node>
+<node id="pasal 73 uu 45/2009">
+  <data key="d0">Pasal 73 UU 45/2009</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Ketentuan Pasal 73 dalam UU Nomor 45 Tahun 2009 tentang Perikanan</data>
+  <data key="d3">chunk-0060</data>
+</node>
+<node id="pasal 73 p uu 45/2009">
+  <data key="d0">Pasal 73 P UU 45/2009</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Ketentuan Pasal 73 P dalam UU Nomor 45 Tahun 2009 tentang Perikanan</data>
+  <data key="d3">chunk-0061</data>
+</node>
+<node id="pasal 73">
+  <data key="d0">Pasal 73</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Pasal yang mengatur kewenangan dan koordinasi penyidikan tindak pidana di bidang perikanan.</data>
+  <data key="d3">chunk-0061</data>
+</node>
+<node id="penyidik pegawai negeri sipil perikanan">
+  <data key="d0">Penyidik Pegawai Negeri Sipil Perikanan</data>
+  <data key="d1">pihak</data>
+  <data key="d2">Pejabat sipil yang memiliki kewenangan khusus untuk melakukan penyidikan tindak pidana perikanan.</data>
+  <data key="d3">chunk-0061</data>
+</node>
+<node id="penyidik perwira tni al">
+  <data key="d0">Penyidik Perwira TNI AL</data>
+  <data key="d1">pihak</data>
+  <data key="d2">Personel militer Angkatan Laut yang berwenang melakukan penyidikan tindak pidana perikanan.</data>
+  <data key="d3">chunk-0061</data>
+</node>
+<node id="pasal 73a uu 45/2009">
+  <data key="d0">Pasal 73A UU 45/2009</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Ketentuan Pasal 73A dalam UU Nomor 45 Tahun 2009 tentang Perikanan</data>
+  <data key="d3">chunk-0062</data>
+</node>
+<node id="pasal 73b uu 45/2009">
+  <data key="d0">Pasal 73B UU 45/2009</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Ketentuan Pasal 73B dalam UU Nomor 45 Tahun 2009 tentang Perikanan</data>
+  <data key="d3">chunk-0063</data>
+</node>
+<node id="pasal 75 uu 45/2009">
+  <data key="d0">Pasal 75 UU 45/2009</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Ketentuan Pasal 75 dalam UU Nomor 45 Tahun 2009 tentang Perikanan</data>
+  <data key="d3">chunk-0064</data>
+</node>
+<node id="pasal 75 p uu 45/2009">
+  <data key="d0">Pasal 75 P UU 45/2009</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Ketentuan Pasal 75 P dalam UU Nomor 45 Tahun 2009 tentang Perikanan</data>
+  <data key="d3">chunk-0065</data>
+</node>
+<node id="pasal 76 uu 45/2009">
+  <data key="d0">Pasal 76 UU 45/2009</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Ketentuan Pasal 76 dalam UU Nomor 45 Tahun 2009 tentang Perikanan</data>
+  <data key="d3">chunk-0066</data>
+</node>
+<node id="pasal 76">
+  <data key="d0">Pasal 76</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Pasal dalam undang-undang yang mengalami perubahan atau penambahan ayat.</data>
+  <data key="d3">chunk-0066</data>
+</node>
+<node id="ayat (9">
+  <data key="d0">Ayat (9</data>
+  <data key="d1">konsep</data>
+  <data key="d2"></data>
+  <data key="d3">chunk-0066</data>
+</node>
+<node id="pasal 76 p uu 45/2009">
+  <data key="d0">Pasal 76 P UU 45/2009</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Ketentuan Pasal 76 P dalam UU Nomor 45 Tahun 2009 tentang Perikanan</data>
+  <data key="d3">chunk-0067</data>
+</node>
+<node id="pasal 76a uu 45/2009">
+  <data key="d0">Pasal 76A UU 45/2009</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Ketentuan Pasal 76A dalam UU Nomor 45 Tahun 2009 tentang Perikanan</data>
+  <data key="d3">chunk-0068</data>
+</node>
+<node id="pasal 76b uu 45/2009">
+  <data key="d0">Pasal 76B UU 45/2009</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Ketentuan Pasal 76B dalam UU Nomor 45 Tahun 2009 tentang Perikanan</data>
+  <data key="d3">chunk-0069</data>
+</node>
+<node id="pasal 76c uu 45/2009">
+  <data key="d0">Pasal 76C UU 45/2009</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Ketentuan Pasal 76C dalam UU Nomor 45 Tahun 2009 tentang Perikanan</data>
+  <data key="d3">chunk-0070</data>
+</node>
+<node id="pasal 78a uu 45/2009">
+  <data key="d0">Pasal 78A UU 45/2009</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Ketentuan Pasal 78A dalam UU Nomor 45 Tahun 2009 tentang Perikanan</data>
+  <data key="d3">chunk-0071</data>
+</node>
+<node id="pasal 83a uu 45/2009">
+  <data key="d0">Pasal 83A UU 45/2009</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Ketentuan Pasal 83A dalam UU Nomor 45 Tahun 2009 tentang Perikanan</data>
+  <data key="d3">chunk-0072</data>
+</node>
+<node id="pasal 85 uu 45/2009">
+  <data key="d0">Pasal 85 UU 45/2009</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Ketentuan Pasal 85 dalam UU Nomor 45 Tahun 2009 tentang Perikanan</data>
+  <data key="d3">chunk-0073</data>
+</node>
+<node id="pasal 85">
+  <data key="d0">Pasal 85</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Pasal spesifik dalam undang-undang yang mengalami perubahan redaksi atau substansi. Pasal yang mengatur larangan dan sanksi atas penggunaan alat penangkap ikan yang merusak keberlanjutan sumber daya ikan.</data>
+  <data key="d3">chunk-0073</data>
+</node>
+<node id="perubahan pasal 85">
+  <data key="d0">Perubahan Pasal 85</data>
+  <data key="d1">konsep</data>
+  <data key="d2">Proses perubahan hukum terhadap isi Pasal 85 dalam kerangka regulasi perikanan.</data>
+  <data key="d3">chunk-0073</data>
+</node>
+<node id="pasal 85 p uu 45/2009">
+  <data key="d0">Pasal 85 P UU 45/2009</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Ketentuan Pasal 85 P dalam UU Nomor 45 Tahun 2009 tentang Perikanan</data>
+  <data key="d3">chunk-0074</data>
+</node>
+<node id="pasal 93 uu 45/2009">
+  <data key="d0">Pasal 93 UU 45/2009</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Ketentuan Pasal 93 dalam UU Nomor 45 Tahun 2009 tentang Perikanan</data>
+  <data key="d3">chunk-0075</data>
+</node>
+<node id="pasal 93 p uu 45/2009">
+  <data key="d0">Pasal 93 P UU 45/2009</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Ketentuan Pasal 93 P dalam UU Nomor 45 Tahun 2009 tentang Perikanan</data>
+  <data key="d3">chunk-0076</data>
+</node>
+<node id="pasal 98 uu 45/2009">
+  <data key="d0">Pasal 98 UU 45/2009</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Ketentuan Pasal 98 dalam UU Nomor 45 Tahun 2009 tentang Perikanan</data>
+  <data key="d3">chunk-0077</data>
+</node>
+<node id="pasal 98">
+  <data key="d0">Pasal 98</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Pasal spesifik dalam undang-undang yang mengalami perubahan redaksi atau substansi. Pasal yang mengatur sanksi pidana bagi nakhoda kapal perikanan tanpa surat persetujuan berlayar.</data>
+  <data key="d3">chunk-0077</data>
+</node>
+<node id="perubahan pasal 98">
+  <data key="d0">Perubahan Pasal 98</data>
+  <data key="d1">konsep</data>
+  <data key="d2">Proses perubahan hukum terhadap isi Pasal 98 dalam kerangka UU Nomor 45 Tahun 2009.</data>
+  <data key="d3">chunk-0077</data>
+</node>
+<node id="pasal 98 p uu 45/2009">
+  <data key="d0">Pasal 98 P UU 45/2009</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Ketentuan Pasal 98 P dalam UU Nomor 45 Tahun 2009 tentang Perikanan</data>
+  <data key="d3">chunk-0078</data>
+</node>
+<node id="pasal 100a uu 45/2009">
+  <data key="d0">Pasal 100A UU 45/2009</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Ketentuan Pasal 100A dalam UU Nomor 45 Tahun 2009 tentang Perikanan</data>
+  <data key="d3">chunk-0079</data>
+</node>
+<node id="pasal 100b uu 45/2009">
+  <data key="d0">Pasal 100B UU 45/2009</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Ketentuan Pasal 100B dalam UU Nomor 45 Tahun 2009 tentang Perikanan</data>
+  <data key="d3">chunk-0080</data>
+</node>
+<node id="pasal 100c uu 45/2009">
+  <data key="d0">Pasal 100C UU 45/2009</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Ketentuan Pasal 100C dalam UU Nomor 45 Tahun 2009 tentang Perikanan</data>
+  <data key="d3">chunk-0081</data>
+</node>
+<node id="pasal 100c">
+  <data key="d0">Pasal 100C</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Pasal yang mengatur sanksi denda khusus bagi nelayan kecil dan pembudi daya-ikan kecil. Pasal spesifik dalam undang-undang yang sedang dijelaskan.</data>
+  <data key="d3">chunk-0081</data>
+</node>
+<node id="pasal 7 ayat (2">
+  <data key="d0">Pasal 7 ayat (2</data>
+  <data key="d1">konsep</data>
+  <data key="d2"></data>
+  <data key="d3">chunk-0081</data>
+</node>
+<node id="nelayan kecil">
+  <data key="d0">Nelayan Kecil</data>
+  <data key="d1">pihak</data>
+  <data key="d2">Masyarakat yang melakukan kegiatan penangkapan ikan dengan skala kecil.</data>
+  <data key="d3">chunk-0081</data>
+</node>
+<node id="pembudi daya-ikan kecil">
+  <data key="d0">Pembudi Daya-Ikan Kecil</data>
+  <data key="d1">pihak</data>
+  <data key="d2">Pelaku usaha atau individu yang melakukan kegiatan budidaya ikan skala kecil.</data>
+  <data key="d3">chunk-0081</data>
+</node>
+<node id="tindak pidana">
+  <data key="d0">Tindak Pidana</data>
+  <data key="d1">konsep</data>
+  <data key="d2">Perbuatan yang melanggar hukum pidana sebagaimana diatur dalam undang-undang.</data>
+  <data key="d3">chunk-0081</data>
+</node>
+<node id="pidana denda paling banyak rp100.000.000,00">
+  <data key="d0">Pidana Denda Paling Banyak Rp100.000.000,00</data>
+  <data key="d1">sanksi</data>
+  <data key="d2">Sanksi denda finansial maksimal seratus juta rupiah untuk pelanggaran tertentu oleh pelaku kecil.</data>
+  <data key="d3">chunk-0081</data>
+</node>
+<node id="pasal 100d uu 45/2009">
+  <data key="d0">Pasal 100D UU 45/2009</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Ketentuan Pasal 100D dalam UU Nomor 45 Tahun 2009 tentang Perikanan</data>
+  <data key="d3">chunk-0082</data>
+</node>
+<node id="pasal 100d">
+  <data key="d0">Pasal 100D</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Pasal yang mengatur mekanisme penyetoran denda pidana ke kas negara.</data>
+  <data key="d3">chunk-0082</data>
+</node>
+<node id="pengadilan">
+  <data key="d0">Pengadilan</data>
+  <data key="d1">pihak</data>
+  <data key="d2">Lembaga peradilan yang berwenang menjatuhkan putusan pidana denda.</data>
+  <data key="d3">chunk-0082</data>
+</node>
+<node id="pidana denda">
+  <data key="d0">Pidana Denda</data>
+  <data key="d1">sanksi</data>
+  <data key="d2">Sanksi finansial yang dijatuhkan oleh pengadilan kepada pelanggar hukum.</data>
+  <data key="d3">chunk-0082</data>
+</node>
+<node id="kas negara">
+  <data key="d0">Kas Negara</data>
+  <data key="d1">konsep</data>
+  <data key="d2">Rekening atau wadah keuangan negara untuk menampung pendapatan dan pengeluaran negara.</data>
+  <data key="d3">chunk-0082</data>
+</node>
+<node id="penerimaan negara bukan pajak">
+  <data key="d0">Penerimaan Negara Bukan Pajak</data>
+  <data key="d1">konsep</data>
+  <data key="d2">Pendapatan negara yang berasal dari sumber selain pajak.</data>
+  <data key="d3">chunk-0082</data>
+</node>
+<node id="kementerian yang membidangi urusan perikanan">
+  <data key="d0">Kementerian yang membidangi urusan perikanan</data>
+  <data key="d1">pihak</data>
+  <data key="d2">Instansi pemerintah yang bertanggung jawab atas pengelolaan sumber daya perikanan.</data>
+  <data key="d3">chunk-0082</data>
+</node>
+<node id="kewajiban penyetoran denda">
+  <data key="d0">Kewajiban Penyetoran Denda</data>
+  <data key="d1">kewajiban</data>
+  <data key="d2">Kewajiban hukum untuk menyetorkan denda pidana ke kas negara.</data>
+  <data key="d3">chunk-0082</data>
+</node>
+<node id="pasal 105 uu 45/2009">
+  <data key="d0">Pasal 105 UU 45/2009</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Ketentuan Pasal 105 dalam UU Nomor 45 Tahun 2009 tentang Perikanan</data>
+  <data key="d3">chunk-0083</data>
+</node>
+<node id="pasal 110 uu 45/2009">
+  <data key="d0">Pasal 110 UU 45/2009</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Ketentuan Pasal 110 dalam UU Nomor 45 Tahun 2009 tentang Perikanan</data>
+  <data key="d3">chunk-0084</data>
+</node>
+<node id="pasal 110">
+  <data key="d0">Pasal 110</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Pasal spesifik dalam undang-undang yang mengalami perubahan redaksi. Pasal yang mengatur pencabutan undang-undang lama dan penyisipan pasal baru. Pasal dalam undang-undang yang dijelaskan dalam bagian Penjelasan Angka 45.</data>
+  <data key="d3">chunk-0084</data>
+</node>
+<node id="perubahan pasal 110">
+  <data key="d0">Perubahan Pasal 110</data>
+  <data key="d1">konsep</data>
+  <data key="d2">Tindakan hukum untuk mengubah bunyi atau isi dari Pasal 110.</data>
+  <data key="d3">chunk-0084</data>
+</node>
+<node id="pasal 110 p uu 45/2009">
+  <data key="d0">Pasal 110 P UU 45/2009</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Ketentuan Pasal 110 P dalam UU Nomor 45 Tahun 2009 tentang Perikanan</data>
+  <data key="d3">chunk-0085</data>
+</node>
+<node id="pasal 110a uu 45/2009">
+  <data key="d0">Pasal 110A UU 45/2009</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Ketentuan Pasal 110A dalam UU Nomor 45 Tahun 2009 tentang Perikanan</data>
+  <data key="d3">chunk-0086</data>
+</node>
+<node id="penjelasan resmi">
+  <data key="d0">Penjelasan Resmi</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Bagian dokumen yang memberikan penjelasan atau interpretasi terhadap isi pasal-pasal dalam undang-undang. Bagian dokumen hukum yang memberikan keterangan tambahan terhadap isi pasal-pasal undang-undang. Bagian dokumen hukum yang memberikan interpretasi atau penjelasan terhadap pasal-pasal undang-undang. Bagian dokumen hukum yang memberikan interpretasi atau penjelasan terhadap pasal-pasal. Bagian dari dokumen hukum yang memberikan penjelasan atau interpretasi terhadap pasal-pasal dalam undang-undang. Bagian penjelasan yang memberikan interpretasi atau penjelasan tambahan terhadap pasal-pasal dalam undang-undang. Bagian dokumen hukum yang memberikan interpretasi atau penjelasan terhadap pasal-pasal dalam undang-undang. Bagian dalam peraturan perundang-undangan yang memberikan penjelasan atau interpretasi terhadap pasal-pasal. Bagian dokumen hukum yang memberikan interpretasi atau penjelasan terhadap isi pasal-pasal. Bagian dokumen hukum yang berfungsi memberikan interpretasi atau penjelasan terhadap pasal-pasal. Bagian dokumen hukum yang berisi penjelasan atau interpretasi terhadap pasal-pasal dalam undang-undang. Bagian dokumen hukum yang memberikan keterangan atau interpretasi terhadap pasal-pasal dalam undang-undang. Bagian dari dokumen hukum yang memberikan penjelasan tambahan atau interpretasi terhadap pasal-pasal dalam undang-undang. Bagian dokumen hukum yang memberikan penjelasan terhadap pasal-pasal dalam undang-undang. Bagian dalam dokumen hukum yang memberikan keterangan tambahan terhadap pasal-pasal. Bagian dokumen hukum yang memberikan penjelasan tambahan terhadap isi pasal-pasal. Bagian dokumen hukum yang memberikan interpretasi atau keterangan tambahan terhadap pasal-pasal. Bagian dokumen yang memberikan penjelasan teknis atau spesifik terhadap pasal-pasal undang-undang.</data>
+  <data key="d3">chunk-0089</data>
+</node>
+<node id="penjelasan pasal demi pasal">
+  <data key="d0">Penjelasan Pasal demi Pasal</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Bagian spesifik dalam penjelasan yang menguraikan isi setiap pasal secara mendetail.</data>
+  <data key="d3">chunk-0089</data>
+</node>
+<node id="pasal demi pasal">
+  <data key="d0">PASAL DEMI PASAL</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Judul bagian yang menandakan dimulainya uraian penjelasan untuk setiap pasal.</data>
+  <data key="d3">chunk-0089</data>
+</node>
+<node id="pasal i">
+  <data key="d0">Pasal I</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Penanda awal untuk penjelasan pasal pertama dalam dokumen tersebut.</data>
+  <data key="d3">chunk-0089</data>
+</node>
+<node id="pasal 1 c uu 45/2009">
+  <data key="d0">Pasal 1 C UU 45/2009</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Ketentuan Pasal 1 C dalam UU Nomor 45 Tahun 2009 tentang Perikanan</data>
+  <data key="d3">chunk-0090</data>
+</node>
+<node id="penjelasan pasal 9">
+  <data key="d0">Penjelasan Pasal 9</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Bagian penjelasan yang merinci jenis alat penangkapan ikan yang dilarang atau merusak.</data>
+  <data key="d3">chunk-0093</data>
+</node>
+<node id="alat penangkapan ikan">
+  <data key="d0">Alat Penangkapan Ikan</data>
+  <data key="d1">konsep</data>
+  <data key="d2">Perangkat atau sarana yang digunakan untuk menangkap ikan di perairan.</data>
+  <data key="d3">chunk-0093</data>
+</node>
+<node id="alat bantu penangkapan ikan">
+  <data key="d0">Alat Bantu Penangkapan Ikan</data>
+  <data key="d1">konsep</data>
+  <data key="d2">Perangkat pendukung yang digunakan untuk mempermudah proses penangkapan ikan.</data>
+  <data key="d3">chunk-0093</data>
+</node>
+<node id="plasma nutfah">
+  <data key="d0">Plasma Nutfah</data>
+  <data key="d1">konsep</data>
+  <data key="d2">Substansi dalam kelompok makhluk hidup yang merupakan sumber atau sifat keturunan untuk pengembangan jenis unggul baru.</data>
+  <data key="d3">chunk-0094</data>
+</node>
+<node id="angka 6">
+  <data key="d0">Angka 6</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Bagian spesifik dari penjelasan yang merujuk pada poin tertentu dalam pasal.</data>
+  <data key="d3">chunk-0095</data>
+</node>
+<node id="cukup jelas">
+  <data key="d0">Cukup Jelas</data>
+  <data key="d1">konsep</data>
+  <data key="d2">Status penjelasan yang menyatakan bahwa isi pasal sudah cukup terang dan tidak memerlukan penjelasan tambahan. Frasa yang menunjukkan bahwa norma hukum dalam pasal tersebut sudah cukup terang dan tidak memerlukan penjelasan tambahan. Indikasi bahwa norma hukum dalam pasal tersebut sudah cukup jelas dan tidak memerlukan penjelasan tambahan. Frasa hukum yang menyatakan bahwa norma dalam pasal sudah cukup eksplisit. Frasa yang menunjukkan bahwa isi pasal sudah cukup jelas dan tidak memerlukan penjelasan tambahan. Indikasi bahwa norma hukum dalam pasal tersebut sudah cukup gamblang dan tidak memerlukan penjelasan tambahan. Frasa hukum yang menunjukkan bahwa isi pasal sudah cukup jelas dan tidak memerlukan penjelasan tambahan. Keterangan yang menunjukkan bahwa isi pasal sudah cukup jelas dan tidak memerlukan penjelasan tambahan. Frasa yang menunjukkan bahwa ketentuan hukum sudah cukup terang dan tidak memerlukan penjelasan tambahan.</data>
+  <data key="d3">chunk-0095</data>
+</node>
+<node id="penjelasan pasal 18">
+  <data key="d0">Penjelasan Pasal 18</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Bagian penjelasan resmi yang memberikan interpretasi terhadap isi Pasal 18.</data>
+  <data key="d3">chunk-0096</data>
+</node>
+<node id="tata pemanfaatan air dan lahan pembudidayaan ikan">
+  <data key="d0">Tata Pemanfaatan Air dan Lahan Pembudidayaan Ikan</data>
+  <data key="d1">konsep</data>
+  <data key="d2">Prinsip pengaturan penggunaan sumber daya air dan lahan untuk kegiatan budidaya ikan.</data>
+  <data key="d3">chunk-0096</data>
+</node>
+<node id="pembudidayaan ikan">
+  <data key="d0">Pembudidayaan Ikan</data>
+  <data key="d1">konsep</data>
+  <data key="d2">Kegiatan memelihara dan membesarkan ikan atau organisme air lainnya untuk tujuan ekonomi atau konsumsi.</data>
+  <data key="d3">chunk-0096</data>
+</node>
+<node id="sabuk hijau (greenbelt">
+  <data key="d0">Sabuk Hijau (Greenbelt</data>
+  <data key="d1">konsep</data>
+  <data key="d2"></data>
+  <data key="d3">chunk-0096</data>
+</node>
+<node id="penjelasan pasal 23">
+  <data key="d0">Penjelasan Pasal 23</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Bagian penjelasan resmi yang memberikan interpretasi terhadap isi Pasal 23.</data>
+  <data key="d3">chunk-0097</data>
+</node>
+<node id="pasal 25 c uu 45/2009">
+  <data key="d0">Pasal 25 C UU 45/2009</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Ketentuan Pasal 25 C dalam UU Nomor 45 Tahun 2009 tentang Perikanan</data>
+  <data key="d3">chunk-0098</data>
+</node>
+<node id="penjelasan angka 9">
+  <data key="d0">Penjelasan Angka 9</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Bagian spesifik dalam penjelasan yang merujuk pada Angka 9 dari Pasal 25.</data>
+  <data key="d3">chunk-0098</data>
+</node>
+<node id="angka 10">
+  <data key="d0">Angka 10</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Bagian spesifik dalam penjelasan yang merujuk pada poin tertentu.</data>
+  <data key="d3">chunk-0099</data>
+</node>
+<node id="pasal 25a">
+  <data key="d0">Pasal 25A</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Pasal dalam undang-undang yang menjadi objek penjelasan.</data>
+  <data key="d3">chunk-0099</data>
+</node>
+<node id="pasal 27 a uu 45/2009">
+  <data key="d0">Pasal 27 A UU 45/2009</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Ketentuan Pasal 27 A dalam UU Nomor 45 Tahun 2009 tentang Perikanan</data>
+  <data key="d3">chunk-0102</data>
+</node>
+<node id="pasal 28">
+  <data key="d0">Pasal 28</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Pasal yang memuat ketentuan mengenai dokumen SIKPI dan kewajiban pengangkut ikan.</data>
+  <data key="d3">chunk-0103</data>
+</node>
+<node id="sikpi asli">
+  <data key="d0">SIKPI asli</data>
+  <data key="d1">konsep</data>
+  <data key="d2">Dokumen SIKPI yang bukan fotokopi atau salinan dan diterbitkan oleh pejabat berwenang.</data>
+  <data key="d3">chunk-0103</data>
+</node>
+<node id="pasal 32 c uu 45/2009">
+  <data key="d0">Pasal 32 C UU 45/2009</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Ketentuan Pasal 32 C dalam UU Nomor 45 Tahun 2009 tentang Perikanan</data>
+  <data key="d3">chunk-0105</data>
+</node>
+<node id="penjelasan angka 17">
+  <data key="d0">Penjelasan Angka 17</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Bagian penjelasan dalam peraturan yang merinci klasifikasi dan operasional pelabuhan perikanan.</data>
+  <data key="d3">chunk-0108</data>
+</node>
+<node id="pelabuhan perikanan samudera">
+  <data key="d0">Pelabuhan Perikanan Samudera</data>
+  <data key="d1">konsep</data>
+  <data key="d2">Jenis pelabuhan perikanan yang melayani kapal-kapal besar dan kegiatan perikanan skala besar.</data>
+  <data key="d3">chunk-0108</data>
+</node>
+<node id="pelabuhan perikanan nusantara">
+  <data key="d0">Pelabuhan Perikanan Nusantara</data>
+  <data key="d1">konsep</data>
+  <data key="d2">Jenis pelabuhan perikanan yang melayani kapal-kapal berukuran sedang dan kegiatan perikanan skala menengah.</data>
+  <data key="d3">chunk-0108</data>
+</node>
+<node id="pasal 42 a uu 45/2009">
+  <data key="d0">Pasal 42 A UU 45/2009</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Ketentuan Pasal 42 A dalam UU Nomor 45 Tahun 2009 tentang Perikanan</data>
+  <data key="d3">chunk-0110</data>
+</node>
+<node id="pasal 43 c uu 45/2009">
+  <data key="d0">Pasal 43 C UU 45/2009</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Ketentuan Pasal 43 C dalam UU Nomor 45 Tahun 2009 tentang Perikanan</data>
+  <data key="d3">chunk-0111</data>
+</node>
+<node id="pasal 44 c uu 45/2009">
+  <data key="d0">Pasal 44 C UU 45/2009</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Ketentuan Pasal 44 C dalam UU Nomor 45 Tahun 2009 tentang Perikanan</data>
+  <data key="d3">chunk-0112</data>
+</node>
+<node id="penjelasan angka 21">
+  <data key="d0">Penjelasan Angka 21</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Bagian spesifik dalam penjelasan yang merujuk pada Pasal 44.</data>
+  <data key="d3">chunk-0112</data>
+</node>
+<node id="pasal 50 c uu 45/2009">
+  <data key="d0">Pasal 50 C UU 45/2009</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Ketentuan Pasal 50 C dalam UU Nomor 45 Tahun 2009 tentang Perikanan</data>
+  <data key="d3">chunk-0116</data>
+</node>
+<node id="pasal 65 c uu 45/2009">
+  <data key="d0">Pasal 65 C UU 45/2009</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Ketentuan Pasal 65 C dalam UU Nomor 45 Tahun 2009 tentang Perikanan</data>
+  <data key="d3">chunk-0117</data>
+</node>
+<node id="pasal 66 c uu 45/2009">
+  <data key="d0">Pasal 66 C UU 45/2009</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Ketentuan Pasal 66 C dalam UU Nomor 45 Tahun 2009 tentang Perikanan</data>
+  <data key="d3">chunk-0118</data>
+</node>
+<node id="pasal 71 c uu 45/2009">
+  <data key="d0">Pasal 71 C UU 45/2009</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Ketentuan Pasal 71 C dalam UU Nomor 45 Tahun 2009 tentang Perikanan</data>
+  <data key="d3">chunk-0121</data>
+</node>
+<node id="pasal 73 a uu 45/2009">
+  <data key="d0">Pasal 73 A UU 45/2009</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Ketentuan Pasal 73 A dalam UU Nomor 45 Tahun 2009 tentang Perikanan</data>
+  <data key="d3">chunk-0123</data>
+</node>
+<node id="pasal 73a">
+  <data key="d0">Pasal 73A</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Pasal spesifik dalam undang-undang yang memiliki penjelasan tersendiri.</data>
+  <data key="d3">chunk-0124</data>
+</node>
+<node id="pasal 73b">
+  <data key="d0">Pasal 73B</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Pasal spesifik dalam undang-undang yang menjadi objek penjelasan.</data>
+  <data key="d3">chunk-0125</data>
+</node>
+<node id="pasal 76 c uu 45/2009">
+  <data key="d0">Pasal 76 C UU 45/2009</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Ketentuan Pasal 76 C dalam UU Nomor 45 Tahun 2009 tentang Perikanan</data>
+  <data key="d3">chunk-0127</data>
+</node>
+<node id="penjelasan pasal 76">
+  <data key="d0">Penjelasan Pasal 76</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Bagian khusus dalam penjelasan resmi yang memberikan interpretasi terhadap Pasal 76.</data>
+  <data key="d3">chunk-0129</data>
+</node>
+<node id="pasal 76 b">
+  <data key="d0">Pasal 76 B</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Pasal dalam undang-undang yang menjadi objek penjelasan.</data>
+  <data key="d3">chunk-0129</data>
+</node>
+<node id="pasal 85 c uu 45/2009">
+  <data key="d0">Pasal 85 C UU 45/2009</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Ketentuan Pasal 85 C dalam UU Nomor 45 Tahun 2009 tentang Perikanan</data>
+  <data key="d3">chunk-0133</data>
+</node>
+<node id="pasal 93 c uu 45/2009">
+  <data key="d0">Pasal 93 C UU 45/2009</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Ketentuan Pasal 93 C dalam UU Nomor 45 Tahun 2009 tentang Perikanan</data>
+  <data key="d3">chunk-0134</data>
+</node>
+<node id="pasal 94a uu 45/2009">
+  <data key="d0">Pasal 94A UU 45/2009</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Ketentuan Pasal 94A dalam UU Nomor 45 Tahun 2009 tentang Perikanan</data>
+  <data key="d3">chunk-0135</data>
+</node>
+<node id="pasal 98 c uu 45/2009">
+  <data key="d0">Pasal 98 C UU 45/2009</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Ketentuan Pasal 98 C dalam UU Nomor 45 Tahun 2009 tentang Perikanan</data>
+  <data key="d3">chunk-0136</data>
+</node>
+<node id="penjelasan angka 43">
+  <data key="d0">Penjelasan Angka 43</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Bagian spesifik dalam penjelasan yang memberikan keterangan tambahan untuk pasal tertentu.</data>
+  <data key="d3">chunk-0137</data>
+</node>
+<node id="pasal 100a">
+  <data key="d0">Pasal 100A</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Pasal dalam undang-undang yang dijelaskan dalam bagian Penjelasan Angka 43.</data>
+  <data key="d3">chunk-0137</data>
+</node>
+<node id="pasal 100b">
+  <data key="d0">Pasal 100B</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Pasal dalam undang-undang yang dijelaskan dalam bagian Penjelasan Angka 43.</data>
+  <data key="d3">chunk-0137</data>
+</node>
+<node id="pasal 110 c uu 45/2009">
+  <data key="d0">Pasal 110 C UU 45/2009</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Ketentuan Pasal 110 C dalam UU Nomor 45 Tahun 2009 tentang Perikanan</data>
+  <data key="d3">chunk-0141</data>
+</node>
+<node id="penjelasan angka 45">
+  <data key="d0">Penjelasan Angka 45</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Bagian spesifik dalam penjelasan yang memberikan keterangan mengenai isi Pasal 110.</data>
+  <data key="d3">chunk-0141</data>
+</node>
+<node id="penjelasan angka 46">
+  <data key="d0">Penjelasan Angka 46</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Bagian spesifik dalam penjelasan yang merujuk pada pasal tertentu.</data>
+  <data key="d3">chunk-0142</data>
+</node>
+<node id="pasal 110a">
+  <data key="d0">Pasal 110A</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Pasal dalam undang-undang yang menjadi objek penjelasan.</data>
+  <data key="d3">chunk-0142</data>
+</node>
+<node id="pasal ii">
+  <data key="d0">Pasal II</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Pasal atau bagian peraturan yang memerlukan keterangan.</data>
+  <data key="d3">chunk-0142</data>
+</node>
+<node id="penjelasan umum">
+  <data key="d0">Penjelasan Umum</data>
+  <data key="d1">struktur</data>
+  <data key="d2">Bagian dokumen yang memberikan gambaran umum mengenai latar belakang dan tujuan undang-undang.</data>
+  <data key="d3">chunk-0143</data>
+</node>
+<node id="tambahan lembaran negara republik indonesia nomor 5073">
+  <data key="d0">TAMBAHAN LEMBARAN NEGARA REPUBLIK INDONESIA NOMOR 5073</data>
+  <data key="d1">dasar_hukum</data>
+  <data key="d2">Dokumen publikasi resmi negara yang memuat pengundangan undang-undang.</data>
+  <data key="d3">chunk-0143</data>
+</node>
+<edge source="uu nomor 45 tahun 2009" target="umum uu 45/2009">
+  <data key="d4">10.0</data>
+  <data key="d5">UU Nomor 45 Tahun 2009 memuat ketentuan Umum</data>
+  <data key="d6">hierarki perundang-undangan</data>
+  <data key="d7">chunk-0000</data>
+</edge>
+<edge source="uu nomor 45 tahun 2009" target="pasal 20 p uu 45/2009">
+  <data key="d4">10.0</data>
+  <data key="d5">UU Nomor 45 Tahun 2009 memuat ketentuan Pasal 20 P</data>
+  <data key="d6">hierarki perundang-undangan</data>
+  <data key="d7">chunk-0001</data>
+</edge>
+<edge source="uu nomor 45 tahun 2009" target="pasal 1 uu 45/2009">
+  <data key="d4">10.0</data>
+  <data key="d5">UU Nomor 45 Tahun 2009 memuat ketentuan Pasal 1</data>
+  <data key="d6">hierarki perundang-undangan</data>
+  <data key="d7">chunk-0003</data>
+</edge>
+<edge source="uu nomor 45 tahun 2009" target="pasal 1 p uu 45/2009">
+  <data key="d4">10.0</data>
+  <data key="d5">UU Nomor 45 Tahun 2009 memuat ketentuan Pasal 1 P</data>
+  <data key="d6">hierarki perundang-undangan</data>
+  <data key="d7">chunk-0004</data>
+</edge>
+<edge source="uu nomor 45 tahun 2009" target="pasal 2 uu 45/2009">
+  <data key="d4">10.0</data>
+  <data key="d5">UU Nomor 45 Tahun 2009 memuat ketentuan Pasal 2</data>
+  <data key="d6">hierarki perundang-undangan</data>
+  <data key="d7">chunk-0005</data>
+</edge>
+<edge source="uu nomor 45 tahun 2009" target="pasal 2 p uu 45/2009">
+  <data key="d4">10.0</data>
+  <data key="d5">UU Nomor 45 Tahun 2009 memuat ketentuan Pasal 2 P</data>
+  <data key="d6">hierarki perundang-undangan</data>
+  <data key="d7">chunk-0006</data>
+</edge>
+<edge source="uu nomor 45 tahun 2009" target="pasal 7 uu 45/2009">
+  <data key="d4">10.0</data>
+  <data key="d5">UU Nomor 45 Tahun 2009 memuat ketentuan Pasal 7</data>
+  <data key="d6">hierarki perundang-undangan</data>
+  <data key="d7">chunk-0007</data>
+</edge>
+<edge source="uu nomor 45 tahun 2009" target="ketentuan umum">
+  <data key="d4">22.0</data>
+  <data key="d5">UU Nomor 45 Tahun 2009 memuat bagian Ketentuan Umum.</data>
+  <data key="d6">hierarki peraturan</data>
+  <data key="d7">chunk-0007</data>
+</edge>
+<edge source="uu nomor 45 tahun 2009" target="pasal 7">
+  <data key="d4">10.0</data>
+  <data key="d5">UU Nomor 45 Tahun 2009 memuat Pasal 7 sebagai bagian dari struktur hukumnya.</data>
+  <data key="d6">hierarki peraturan</data>
+  <data key="d7">chunk-0007</data>
+</edge>
+<edge source="uu nomor 45 tahun 2009" target="pasal 7 p uu 45/2009">
+  <data key="d4">10.0</data>
+  <data key="d5">UU Nomor 45 Tahun 2009 memuat ketentuan Pasal 7 P</data>
+  <data key="d6">hierarki perundang-undangan</data>
+  <data key="d7">chunk-0008</data>
+</edge>
+<edge source="uu nomor 45 tahun 2009" target="pasal 9 uu 45/2009">
+  <data key="d4">10.0</data>
+  <data key="d5">UU Nomor 45 Tahun 2009 memuat ketentuan Pasal 9</data>
+  <data key="d6">hierarki perundang-undangan</data>
+  <data key="d7">chunk-0009</data>
+</edge>
+<edge source="uu nomor 45 tahun 2009" target="pasal 9 p uu 45/2009">
+  <data key="d4">10.0</data>
+  <data key="d5">UU Nomor 45 Tahun 2009 memuat ketentuan Pasal 9 P</data>
+  <data key="d6">hierarki perundang-undangan</data>
+  <data key="d7">chunk-0010</data>
+</edge>
+<edge source="uu nomor 45 tahun 2009" target="pasal 14 uu 45/2009">
+  <data key="d4">10.0</data>
+  <data key="d5">UU Nomor 45 Tahun 2009 memuat ketentuan Pasal 14</data>
+  <data key="d6">hierarki perundang-undangan</data>
+  <data key="d7">chunk-0011</data>
+</edge>
+<edge source="uu nomor 45 tahun 2009" target="pasal 14 p uu 45/2009">
+  <data key="d4">10.0</data>
+  <data key="d5">UU Nomor 45 Tahun 2009 memuat ketentuan Pasal 14 P</data>
+  <data key="d6">hierarki perundang-undangan</data>
+  <data key="d7">chunk-0012</data>
+</edge>
+<edge source="uu nomor 45 tahun 2009" target="pasal 15a uu 45/2009">
+  <data key="d4">10.0</data>
+  <data key="d5">UU Nomor 45 Tahun 2009 memuat ketentuan Pasal 15A</data>
+  <data key="d6">hierarki perundang-undangan</data>
+  <data key="d7">chunk-0013</data>
+</edge>
+<edge source="uu nomor 45 tahun 2009" target="pasal 18 uu 45/2009">
+  <data key="d4">10.0</data>
+  <data key="d5">UU Nomor 45 Tahun 2009 memuat ketentuan Pasal 18</data>
+  <data key="d6">hierarki perundang-undangan</data>
+  <data key="d7">chunk-0014</data>
+</edge>
+<edge source="uu nomor 45 tahun 2009" target="pasal 18 p uu 45/2009">
+  <data key="d4">10.0</data>
+  <data key="d5">UU Nomor 45 Tahun 2009 memuat ketentuan Pasal 18 P</data>
+  <data key="d6">hierarki perundang-undangan</data>
+  <data key="d7">chunk-0015</data>
+</edge>
+<edge source="uu nomor 45 tahun 2009" target="pasal 23 uu 45/2009">
+  <data key="d4">10.0</data>
+  <data key="d5">UU Nomor 45 Tahun 2009 memuat ketentuan Pasal 23</data>
+  <data key="d6">hierarki perundang-undangan</data>
+  <data key="d7">chunk-0016</data>
+</edge>
+<edge source="uu nomor 45 tahun 2009" target="pasal 23 p uu 45/2009">
+  <data key="d4">10.0</data>
+  <data key="d5">UU Nomor 45 Tahun 2009 memuat ketentuan Pasal 23 P</data>
+  <data key="d6">hierarki perundang-undangan</data>
+  <data key="d7">chunk-0017</data>
+</edge>
+<edge source="uu nomor 45 tahun 2009" target="pasal 25 uu 45/2009">
+  <data key="d4">10.0</data>
+  <data key="d5">UU Nomor 45 Tahun 2009 memuat ketentuan Pasal 25</data>
+  <data key="d6">hierarki perundang-undangan</data>
+  <data key="d7">chunk-0018</data>
+</edge>
+<edge source="uu nomor 45 tahun 2009" target="pasal 25 p uu 45/2009">
+  <data key="d4">10.0</data>
+  <data key="d5">UU Nomor 45 Tahun 2009 memuat ketentuan Pasal 25 P</data>
+  <data key="d6">hierarki perundang-undangan</data>
+  <data key="d7">chunk-0019</data>
+</edge>
+<edge source="uu nomor 45 tahun 2009" target="pasal 25a uu 45/2009">
+  <data key="d4">10.0</data>
+  <data key="d5">UU Nomor 45 Tahun 2009 memuat ketentuan Pasal 25A</data>
+  <data key="d6">hierarki perundang-undangan</data>
+  <data key="d7">chunk-0020</data>
+</edge>
+<edge source="uu nomor 45 tahun 2009" target="pasal 25b uu 45/2009">
+  <data key="d4">10.0</data>
+  <data key="d5">UU Nomor 45 Tahun 2009 memuat ketentuan Pasal 25B</data>
+  <data key="d6">hierarki perundang-undangan</data>
+  <data key="d7">chunk-0021</data>
+</edge>
+<edge source="uu nomor 45 tahun 2009" target="pasal 25c uu 45/2009">
+  <data key="d4">10.0</data>
+  <data key="d5">UU Nomor 45 Tahun 2009 memuat ketentuan Pasal 25C</data>
+  <data key="d6">hierarki perundang-undangan</data>
+  <data key="d7">chunk-0022</data>
+</edge>
+<edge source="uu nomor 45 tahun 2009" target="pasal 27 uu 45/2009">
+  <data key="d4">10.0</data>
+  <data key="d5">UU Nomor 45 Tahun 2009 memuat ketentuan Pasal 27</data>
+  <data key="d6">hierarki perundang-undangan</data>
+  <data key="d7">chunk-0023</data>
+</edge>
+<edge source="uu nomor 45 tahun 2009" target="pasal 27 p uu 45/2009">
+  <data key="d4">10.0</data>
+  <data key="d5">UU Nomor 45 Tahun 2009 memuat ketentuan Pasal 27 P</data>
+  <data key="d6">hierarki perundang-undangan</data>
+  <data key="d7">chunk-0024</data>
+</edge>
+<edge source="uu nomor 45 tahun 2009" target="pasal 28 uu 45/2009">
+  <data key="d4">10.0</data>
+  <data key="d5">UU Nomor 45 Tahun 2009 memuat ketentuan Pasal 28</data>
+  <data key="d6">hierarki perundang-undangan</data>
+  <data key="d7">chunk-0025</data>
+</edge>
+<edge source="uu nomor 45 tahun 2009" target="pasal 28 p uu 45/2009">
+  <data key="d4">10.0</data>
+  <data key="d5">UU Nomor 45 Tahun 2009 memuat ketentuan Pasal 28 P</data>
+  <data key="d6">hierarki perundang-undangan</data>
+  <data key="d7">chunk-0026</data>
+</edge>
+<edge source="uu nomor 45 tahun 2009" target="pasal 28a uu 45/2009">
+  <data key="d4">10.0</data>
+  <data key="d5">UU Nomor 45 Tahun 2009 memuat ketentuan Pasal 28A</data>
+  <data key="d6">hierarki perundang-undangan</data>
+  <data key="d7">chunk-0027</data>
+</edge>
+<edge source="uu nomor 45 tahun 2009" target="pasal 32 uu 45/2009">
+  <data key="d4">10.0</data>
+  <data key="d5">UU Nomor 45 Tahun 2009 memuat ketentuan Pasal 32</data>
+  <data key="d6">hierarki perundang-undangan</data>
+  <data key="d7">chunk-0028</data>
+</edge>
+<edge source="uu nomor 45 tahun 2009" target="pasal 32">
+  <data key="d4">10.0</data>
+  <data key="d5">UU Nomor 45 Tahun 2009 memuat Pasal 32 sebagai bagian dari struktur hukumnya.</data>
+  <data key="d6">hierarki peraturan</data>
+  <data key="d7">chunk-0028</data>
+</edge>
+<edge source="uu nomor 45 tahun 2009" target="pasal 32 p uu 45/2009">
+  <data key="d4">10.0</data>
+  <data key="d5">UU Nomor 45 Tahun 2009 memuat ketentuan Pasal 32 P</data>
+  <data key="d6">hierarki perundang-undangan</data>
+  <data key="d7">chunk-0029</data>
+</edge>
+<edge source="uu nomor 45 tahun 2009" target="pasal 35a uu 45/2009">
+  <data key="d4">10.0</data>
+  <data key="d5">UU Nomor 45 Tahun 2009 memuat ketentuan Pasal 35A</data>
+  <data key="d6">hierarki perundang-undangan</data>
+  <data key="d7">chunk-0030</data>
+</edge>
+<edge source="uu nomor 45 tahun 2009" target="pasal 36 uu 45/2009">
+  <data key="d4">10.0</data>
+  <data key="d5">UU Nomor 45 Tahun 2009 memuat ketentuan Pasal 36</data>
+  <data key="d6">hierarki perundang-undangan</data>
+  <data key="d7">chunk-0031</data>
+</edge>
+<edge source="uu nomor 45 tahun 2009" target="pasal 36 p uu 45/2009">
+  <data key="d4">10.0</data>
+  <data key="d5">UU Nomor 45 Tahun 2009 memuat ketentuan Pasal 36 P</data>
+  <data key="d6">hierarki perundang-undangan</data>
+  <data key="d7">chunk-0032</data>
+</edge>
+<edge source="uu nomor 45 tahun 2009" target="pasal 41 uu 45/2009">
+  <data key="d4">10.0</data>
+  <data key="d5">UU Nomor 45 Tahun 2009 memuat ketentuan Pasal 41</data>
+  <data key="d6">hierarki perundang-undangan</data>
+  <data key="d7">chunk-0033</data>
+</edge>
+<edge source="uu nomor 45 tahun 2009" target="pasal 41 p uu 45/2009">
+  <data key="d4">10.0</data>
+  <data key="d5">UU Nomor 45 Tahun 2009 memuat ketentuan Pasal 41 P</data>
+  <data key="d6">hierarki perundang-undangan</data>
+  <data key="d7">chunk-0034</data>
+</edge>
+<edge source="uu nomor 45 tahun 2009" target="pasal 41a uu 45/2009">
+  <data key="d4">10.0</data>
+  <data key="d5">UU Nomor 45 Tahun 2009 memuat ketentuan Pasal 41A</data>
+  <data key="d6">hierarki perundang-undangan</data>
+  <data key="d7">chunk-0035</data>
+</edge>
+<edge source="uu nomor 45 tahun 2009" target="pasal 42 uu 45/2009">
+  <data key="d4">10.0</data>
+  <data key="d5">UU Nomor 45 Tahun 2009 memuat ketentuan Pasal 42</data>
+  <data key="d6">hierarki perundang-undangan</data>
+  <data key="d7">chunk-0036</data>
+</edge>
+<edge source="uu nomor 45 tahun 2009" target="pasal 42 p uu 45/2009">
+  <data key="d4">10.0</data>
+  <data key="d5">UU Nomor 45 Tahun 2009 memuat ketentuan Pasal 42 P</data>
+  <data key="d6">hierarki perundang-undangan</data>
+  <data key="d7">chunk-0037</data>
+</edge>
+<edge source="uu nomor 45 tahun 2009" target="pasal 43 uu 45/2009">
+  <data key="d4">10.0</data>
+  <data key="d5">UU Nomor 45 Tahun 2009 memuat ketentuan Pasal 43</data>
+  <data key="d6">hierarki perundang-undangan</data>
+  <data key="d7">chunk-0038</data>
+</edge>
+<edge source="uu nomor 45 tahun 2009" target="pasal 43 p uu 45/2009">
+  <data key="d4">10.0</data>
+  <data key="d5">UU Nomor 45 Tahun 2009 memuat ketentuan Pasal 43 P</data>
+  <data key="d6">hierarki perundang-undangan</data>
+  <data key="d7">chunk-0039</data>
+</edge>
+<edge source="uu nomor 45 tahun 2009" target="pasal 44 uu 45/2009">
+  <data key="d4">10.0</data>
+  <data key="d5">UU Nomor 45 Tahun 2009 memuat ketentuan Pasal 44</data>
+  <data key="d6">hierarki perundang-undangan</data>
+  <data key="d7">chunk-0040</data>
+</edge>
+<edge source="uu nomor 45 tahun 2009" target="pasal 44 p uu 45/2009">
+  <data key="d4">10.0</data>
+  <data key="d5">UU Nomor 45 Tahun 2009 memuat ketentuan Pasal 44 P</data>
+  <data key="d6">hierarki perundang-undangan</data>
+  <data key="d7">chunk-0041</data>
+</edge>
+<edge source="uu nomor 45 tahun 2009" target="pasal 46 uu 45/2009">
+  <data key="d4">10.0</data>
+  <data key="d5">UU Nomor 45 Tahun 2009 memuat ketentuan Pasal 46</data>
+  <data key="d6">hierarki perundang-undangan</data>
+  <data key="d7">chunk-0042</data>
+</edge>
+<edge source="uu nomor 45 tahun 2009" target="pasal 46 p uu 45/2009">
+  <data key="d4">10.0</data>
+  <data key="d5">UU Nomor 45 Tahun 2009 memuat ketentuan Pasal 46 P</data>
+  <data key="d6">hierarki perundang-undangan</data>
+  <data key="d7">chunk-0043</data>
+</edge>
+<edge source="uu nomor 45 tahun 2009" target="pasal 46a uu 45/2009">
+  <data key="d4">10.0</data>
+  <data key="d5">UU Nomor 45 Tahun 2009 memuat ketentuan Pasal 46A</data>
+  <data key="d6">hierarki perundang-undangan</data>
+  <data key="d7">chunk-0044</data>
+</edge>
+<edge source="uu nomor 45 tahun 2009" target="pasal 48 uu 45/2009">
+  <data key="d4">10.0</data>
+  <data key="d5">UU Nomor 45 Tahun 2009 memuat ketentuan Pasal 48</data>
+  <data key="d6">hierarki perundang-undangan</data>
+  <data key="d7">chunk-0045</data>
+</edge>
+<edge source="uu nomor 45 tahun 2009" target="pasal 48 p uu 45/2009">
+  <data key="d4">10.0</data>
+  <data key="d5">UU Nomor 45 Tahun 2009 memuat ketentuan Pasal 48 P</data>
+  <data key="d6">hierarki perundang-undangan</data>
+  <data key="d7">chunk-0046</data>
+</edge>
+<edge source="uu nomor 45 tahun 2009" target="pasal 50 uu 45/2009">
+  <data key="d4">10.0</data>
+  <data key="d5">UU Nomor 45 Tahun 2009 memuat ketentuan Pasal 50</data>
+  <data key="d6">hierarki perundang-undangan</data>
+  <data key="d7">chunk-0047</data>
+</edge>
+<edge source="uu nomor 45 tahun 2009" target="pasal 50">
+  <data key="d4">10.0</data>
+  <data key="d5">UU Nomor 45 Tahun 2009 memuat Pasal 50 sebagai bagian dari ketentuan hukumnya.</data>
+  <data key="d6">hierarki peraturan</data>
+  <data key="d7">chunk-0047</data>
+</edge>
+<edge source="uu nomor 45 tahun 2009" target="pasal 50 p uu 45/2009">
+  <data key="d4">10.0</data>
+  <data key="d5">UU Nomor 45 Tahun 2009 memuat ketentuan Pasal 50 P</data>
+  <data key="d6">hierarki perundang-undangan</data>
+  <data key="d7">chunk-0048</data>
+</edge>
+<edge source="uu nomor 45 tahun 2009" target="pasal 65 uu 45/2009">
+  <data key="d4">10.0</data>
+  <data key="d5">UU Nomor 45 Tahun 2009 memuat ketentuan Pasal 65</data>
+  <data key="d6">hierarki perundang-undangan</data>
+  <data key="d7">chunk-0049</data>
+</edge>
+<edge source="uu nomor 45 tahun 2009" target="pasal 65 p uu 45/2009">
+  <data key="d4">10.0</data>
+  <data key="d5">UU Nomor 45 Tahun 2009 memuat ketentuan Pasal 65 P</data>
+  <data key="d6">hierarki perundang-undangan</data>
+  <data key="d7">chunk-0050</data>
+</edge>
+<edge source="uu nomor 45 tahun 2009" target="pasal 66 uu 45/2009">
+  <data key="d4">10.0</data>
+  <data key="d5">UU Nomor 45 Tahun 2009 memuat ketentuan Pasal 66</data>
+  <data key="d6">hierarki perundang-undangan</data>
+  <data key="d7">chunk-0051</data>
+</edge>
+<edge source="uu nomor 45 tahun 2009" target="pasal 66 p uu 45/2009">
+  <data key="d4">10.0</data>
+  <data key="d5">UU Nomor 45 Tahun 2009 memuat ketentuan Pasal 66 P</data>
+  <data key="d6">hierarki perundang-undangan</data>
+  <data key="d7">chunk-0052</data>
+</edge>
+<edge source="uu nomor 45 tahun 2009" target="pasal 66a uu 45/2009">
+  <data key="d4">10.0</data>
+  <data key="d5">UU Nomor 45 Tahun 2009 memuat ketentuan Pasal 66A</data>
+  <data key="d6">hierarki perundang-undangan</data>
+  <data key="d7">chunk-0053</data>
+</edge>
+<edge source="uu nomor 45 tahun 2009" target="pasal 66b uu 45/2009">
+  <data key="d4">10.0</data>
+  <data key="d5">UU Nomor 45 Tahun 2009 memuat ketentuan Pasal 66B</data>
+  <data key="d6">hierarki perundang-undangan</data>
+  <data key="d7">chunk-0054</data>
+</edge>
+<edge source="uu nomor 45 tahun 2009" target="pasal 66c uu 45/2009">
+  <data key="d4">10.0</data>
+  <data key="d5">UU Nomor 45 Tahun 2009 memuat ketentuan Pasal 66C</data>
+  <data key="d6">hierarki perundang-undangan</data>
+  <data key="d7">chunk-0055</data>
+</edge>
+<edge source="uu nomor 45 tahun 2009" target="pasal 69 p uu 45/2009">
+  <data key="d4">10.0</data>
+  <data key="d5">UU Nomor 45 Tahun 2009 memuat ketentuan Pasal 69 P</data>
+  <data key="d6">hierarki perundang-undangan</data>
+  <data key="d7">chunk-0056</data>
+</edge>
+<edge source="uu nomor 45 tahun 2009" target="pasal 71 uu 45/2009">
+  <data key="d4">10.0</data>
+  <data key="d5">UU Nomor 45 Tahun 2009 memuat ketentuan Pasal 71</data>
+  <data key="d6">hierarki perundang-undangan</data>
+  <data key="d7">chunk-0057</data>
+</edge>
+<edge source="uu nomor 45 tahun 2009" target="pasal 71 p uu 45/2009">
+  <data key="d4">10.0</data>
+  <data key="d5">UU Nomor 45 Tahun 2009 memuat ketentuan Pasal 71 P</data>
+  <data key="d6">hierarki perundang-undangan</data>
+  <data key="d7">chunk-0058</data>
+</edge>
+<edge source="uu nomor 45 tahun 2009" target="pasal 71a uu 45/2009">
+  <data key="d4">10.0</data>
+  <data key="d5">UU Nomor 45 Tahun 2009 memuat ketentuan Pasal 71A</data>
+  <data key="d6">hierarki perundang-undangan</data>
+  <data key="d7">chunk-0059</data>
+</edge>
+<edge source="uu nomor 45 tahun 2009" target="pasal 73 uu 45/2009">
+  <data key="d4">10.0</data>
+  <data key="d5">UU Nomor 45 Tahun 2009 memuat ketentuan Pasal 73</data>
+  <data key="d6">hierarki perundang-undangan</data>
+  <data key="d7">chunk-0060</data>
+</edge>
+<edge source="uu nomor 45 tahun 2009" target="pasal 73 p uu 45/2009">
+  <data key="d4">10.0</data>
+  <data key="d5">UU Nomor 45 Tahun 2009 memuat ketentuan Pasal 73 P</data>
+  <data key="d6">hierarki perundang-undangan</data>
+  <data key="d7">chunk-0061</data>
+</edge>
+<edge source="uu nomor 45 tahun 2009" target="pasal 73a uu 45/2009">
+  <data key="d4">10.0</data>
+  <data key="d5">UU Nomor 45 Tahun 2009 memuat ketentuan Pasal 73A</data>
+  <data key="d6">hierarki perundang-undangan</data>
+  <data key="d7">chunk-0062</data>
+</edge>
+<edge source="uu nomor 45 tahun 2009" target="pasal 73b uu 45/2009">
+  <data key="d4">10.0</data>
+  <data key="d5">UU Nomor 45 Tahun 2009 memuat ketentuan Pasal 73B</data>
+  <data key="d6">hierarki perundang-undangan</data>
+  <data key="d7">chunk-0063</data>
+</edge>
+<edge source="uu nomor 45 tahun 2009" target="pasal 75 uu 45/2009">
+  <data key="d4">10.0</data>
+  <data key="d5">UU Nomor 45 Tahun 2009 memuat ketentuan Pasal 75</data>
+  <data key="d6">hierarki perundang-undangan</data>
+  <data key="d7">chunk-0064</data>
+</edge>
+<edge source="uu nomor 45 tahun 2009" target="pasal 75 p uu 45/2009">
+  <data key="d4">10.0</data>
+  <data key="d5">UU Nomor 45 Tahun 2009 memuat ketentuan Pasal 75 P</data>
+  <data key="d6">hierarki perundang-undangan</data>
+  <data key="d7">chunk-0065</data>
+</edge>
+<edge source="uu nomor 45 tahun 2009" target="pasal 76 uu 45/2009">
+  <data key="d4">10.0</data>
+  <data key="d5">UU Nomor 45 Tahun 2009 memuat ketentuan Pasal 76</data>
+  <data key="d6">hierarki perundang-undangan</data>
+  <data key="d7">chunk-0066</data>
+</edge>
+<edge source="uu nomor 45 tahun 2009" target="pasal 76 p uu 45/2009">
+  <data key="d4">10.0</data>
+  <data key="d5">UU Nomor 45 Tahun 2009 memuat ketentuan Pasal 76 P</data>
+  <data key="d6">hierarki perundang-undangan</data>
+  <data key="d7">chunk-0067</data>
+</edge>
+<edge source="uu nomor 45 tahun 2009" target="pasal 76a uu 45/2009">
+  <data key="d4">10.0</data>
+  <data key="d5">UU Nomor 45 Tahun 2009 memuat ketentuan Pasal 76A</data>
+  <data key="d6">hierarki perundang-undangan</data>
+  <data key="d7">chunk-0068</data>
+</edge>
+<edge source="uu nomor 45 tahun 2009" target="pasal 76b uu 45/2009">
+  <data key="d4">10.0</data>
+  <data key="d5">UU Nomor 45 Tahun 2009 memuat ketentuan Pasal 76B</data>
+  <data key="d6">hierarki perundang-undangan</data>
+  <data key="d7">chunk-0069</data>
+</edge>
+<edge source="uu nomor 45 tahun 2009" target="pasal 76c uu 45/2009">
+  <data key="d4">10.0</data>
+  <data key="d5">UU Nomor 45 Tahun 2009 memuat ketentuan Pasal 76C</data>
+  <data key="d6">hierarki perundang-undangan</data>
+  <data key="d7">chunk-0070</data>
+</edge>
+<edge source="uu nomor 45 tahun 2009" target="pasal 78a uu 45/2009">
+  <data key="d4">10.0</data>
+  <data key="d5">UU Nomor 45 Tahun 2009 memuat ketentuan Pasal 78A</data>
+  <data key="d6">hierarki perundang-undangan</data>
+  <data key="d7">chunk-0071</data>
+</edge>
+<edge source="uu nomor 45 tahun 2009" target="pasal 83a uu 45/2009">
+  <data key="d4">10.0</data>
+  <data key="d5">UU Nomor 45 Tahun 2009 memuat ketentuan Pasal 83A</data>
+  <data key="d6">hierarki perundang-undangan</data>
+  <data key="d7">chunk-0072</data>
+</edge>
+<edge source="uu nomor 45 tahun 2009" target="pasal 85 uu 45/2009">
+  <data key="d4">10.0</data>
+  <data key="d5">UU Nomor 45 Tahun 2009 memuat ketentuan Pasal 85</data>
+  <data key="d6">hierarki perundang-undangan</data>
+  <data key="d7">chunk-0073</data>
+</edge>
+<edge source="uu nomor 45 tahun 2009" target="pasal 85">
+  <data key="d4">10.0</data>
+  <data key="d5">UU Nomor 45 Tahun 2009 memuat Pasal 85 sebagai bagian dari struktur regulasi.</data>
+  <data key="d6">hierarki peraturan</data>
+  <data key="d7">chunk-0073</data>
+</edge>
+<edge source="uu nomor 45 tahun 2009" target="pasal 85 p uu 45/2009">
+  <data key="d4">10.0</data>
+  <data key="d5">UU Nomor 45 Tahun 2009 memuat ketentuan Pasal 85 P</data>
+  <data key="d6">hierarki perundang-undangan</data>
+  <data key="d7">chunk-0074</data>
+</edge>
+<edge source="uu nomor 45 tahun 2009" target="pasal 93 uu 45/2009">
+  <data key="d4">10.0</data>
+  <data key="d5">UU Nomor 45 Tahun 2009 memuat ketentuan Pasal 93</data>
+  <data key="d6">hierarki perundang-undangan</data>
+  <data key="d7">chunk-0075</data>
+</edge>
+<edge source="uu nomor 45 tahun 2009" target="pasal 93 p uu 45/2009">
+  <data key="d4">10.0</data>
+  <data key="d5">UU Nomor 45 Tahun 2009 memuat ketentuan Pasal 93 P</data>
+  <data key="d6">hierarki perundang-undangan</data>
+  <data key="d7">chunk-0076</data>
+</edge>
+<edge source="uu nomor 45 tahun 2009" target="pasal 98 uu 45/2009">
+  <data key="d4">10.0</data>
+  <data key="d5">UU Nomor 45 Tahun 2009 memuat ketentuan Pasal 98</data>
+  <data key="d6">hierarki perundang-undangan</data>
+  <data key="d7">chunk-0077</data>
+</edge>
+<edge source="uu nomor 45 tahun 2009" target="pasal 98">
+  <data key="d4">10.0</data>
+  <data key="d5">UU Nomor 45 Tahun 2009 memuat Pasal 98 sebagai bagian dari ketentuan hukumnya.</data>
+  <data key="d6">hierarki peraturan</data>
+  <data key="d7">chunk-0077</data>
+</edge>
+<edge source="uu nomor 45 tahun 2009" target="pasal 98 p uu 45/2009">
+  <data key="d4">10.0</data>
+  <data key="d5">UU Nomor 45 Tahun 2009 memuat ketentuan Pasal 98 P</data>
+  <data key="d6">hierarki perundang-undangan</data>
+  <data key="d7">chunk-0078</data>
+</edge>
+<edge source="uu nomor 45 tahun 2009" target="pasal 100a uu 45/2009">
+  <data key="d4">10.0</data>
+  <data key="d5">UU Nomor 45 Tahun 2009 memuat ketentuan Pasal 100A</data>
+  <data key="d6">hierarki perundang-undangan</data>
+  <data key="d7">chunk-0079</data>
+</edge>
+<edge source="uu nomor 45 tahun 2009" target="pasal 100b uu 45/2009">
+  <data key="d4">10.0</data>
+  <data key="d5">UU Nomor 45 Tahun 2009 memuat ketentuan Pasal 100B</data>
+  <data key="d6">hierarki perundang-undangan</data>
+  <data key="d7">chunk-0080</data>
+</edge>
+<edge source="uu nomor 45 tahun 2009" target="pasal 100c uu 45/2009">
+  <data key="d4">10.0</data>
+  <data key="d5">UU Nomor 45 Tahun 2009 memuat ketentuan Pasal 100C</data>
+  <data key="d6">hierarki perundang-undangan</data>
+  <data key="d7">chunk-0081</data>
+</edge>
+<edge source="uu nomor 45 tahun 2009" target="pasal 100d uu 45/2009">
+  <data key="d4">10.0</data>
+  <data key="d5">UU Nomor 45 Tahun 2009 memuat ketentuan Pasal 100D</data>
+  <data key="d6">hierarki perundang-undangan</data>
+  <data key="d7">chunk-0082</data>
+</edge>
+<edge source="uu nomor 45 tahun 2009" target="pasal 105 uu 45/2009">
+  <data key="d4">10.0</data>
+  <data key="d5">UU Nomor 45 Tahun 2009 memuat ketentuan Pasal 105</data>
+  <data key="d6">hierarki perundang-undangan</data>
+  <data key="d7">chunk-0083</data>
+</edge>
+<edge source="uu nomor 45 tahun 2009" target="pasal 110 uu 45/2009">
+  <data key="d4">10.0</data>
+  <data key="d5">UU Nomor 45 Tahun 2009 memuat ketentuan Pasal 110</data>
+  <data key="d6">hierarki perundang-undangan</data>
+  <data key="d7">chunk-0084</data>
+</edge>
+<edge source="uu nomor 45 tahun 2009" target="pasal 110 p uu 45/2009">
+  <data key="d4">10.0</data>
+  <data key="d5">UU Nomor 45 Tahun 2009 memuat ketentuan Pasal 110 P</data>
+  <data key="d6">hierarki perundang-undangan</data>
+  <data key="d7">chunk-0085</data>
+</edge>
+<edge source="uu nomor 45 tahun 2009" target="pasal 110a uu 45/2009">
+  <data key="d4">10.0</data>
+  <data key="d5">UU Nomor 45 Tahun 2009 memuat ketentuan Pasal 110A</data>
+  <data key="d6">hierarki perundang-undangan</data>
+  <data key="d7">chunk-0086</data>
+</edge>
+<edge source="uu nomor 45 tahun 2009" target="pasal 1 c uu 45/2009">
+  <data key="d4">10.0</data>
+  <data key="d5">UU Nomor 45 Tahun 2009 memuat ketentuan Pasal 1 C</data>
+  <data key="d6">hierarki perundang-undangan</data>
+  <data key="d7">chunk-0090</data>
+</edge>
+<edge source="uu nomor 45 tahun 2009" target="penjelasan resmi">
+  <data key="d4">18.0</data>
+  <data key="d5">UU Nomor 45 Tahun 2009 memuat bagian Penjelasan Resmi sebagai pelengkap interpretasi hukum.</data>
+  <data key="d6">hierarki peraturan</data>
+  <data key="d7">chunk-0095</data>
+</edge>
+<edge source="uu nomor 45 tahun 2009" target="pasal 25 c uu 45/2009">
+  <data key="d4">10.0</data>
+  <data key="d5">UU Nomor 45 Tahun 2009 memuat ketentuan Pasal 25 C</data>
+  <data key="d6">hierarki perundang-undangan</data>
+  <data key="d7">chunk-0098</data>
+</edge>
+<edge source="uu nomor 45 tahun 2009" target="pasal 27 a uu 45/2009">
+  <data key="d4">10.0</data>
+  <data key="d5">UU Nomor 45 Tahun 2009 memuat ketentuan Pasal 27 A</data>
+  <data key="d6">hierarki perundang-undangan</data>
+  <data key="d7">chunk-0102</data>
+</edge>
+<edge source="uu nomor 45 tahun 2009" target="pasal 32 c uu 45/2009">
+  <data key="d4">10.0</data>
+  <data key="d5">UU Nomor 45 Tahun 2009 memuat ketentuan Pasal 32 C</data>
+  <data key="d6">hierarki perundang-undangan</data>
+  <data key="d7">chunk-0105</data>
+</edge>
+<edge source="uu nomor 45 tahun 2009" target="pasal 42 a uu 45/2009">
+  <data key="d4">10.0</data>
+  <data key="d5">UU Nomor 45 Tahun 2009 memuat ketentuan Pasal 42 A</data>
+  <data key="d6">hierarki perundang-undangan</data>
+  <data key="d7">chunk-0110</data>
+</edge>
+<edge source="uu nomor 45 tahun 2009" target="pasal 43 c uu 45/2009">
+  <data key="d4">10.0</data>
+  <data key="d5">UU Nomor 45 Tahun 2009 memuat ketentuan Pasal 43 C</data>
+  <data key="d6">hierarki perundang-undangan</data>
+  <data key="d7">chunk-0111</data>
+</edge>
+<edge source="uu nomor 45 tahun 2009" target="pasal 44 c uu 45/2009">
+  <data key="d4">10.0</data>
+  <data key="d5">UU Nomor 45 Tahun 2009 memuat ketentuan Pasal 44 C</data>
+  <data key="d6">hierarki perundang-undangan</data>
+  <data key="d7">chunk-0112</data>
+</edge>
+<edge source="uu nomor 45 tahun 2009" target="pasal 50 c uu 45/2009">
+  <data key="d4">10.0</data>
+  <data key="d5">UU Nomor 45 Tahun 2009 memuat ketentuan Pasal 50 C</data>
+  <data key="d6">hierarki perundang-undangan</data>
+  <data key="d7">chunk-0116</data>
+</edge>
+<edge source="uu nomor 45 tahun 2009" target="pasal 65 c uu 45/2009">
+  <data key="d4">10.0</data>
+  <data key="d5">UU Nomor 45 Tahun 2009 memuat ketentuan Pasal 65 C</data>
+  <data key="d6">hierarki perundang-undangan</data>
+  <data key="d7">chunk-0117</data>
+</edge>
+<edge source="uu nomor 45 tahun 2009" target="pasal 66 c uu 45/2009">
+  <data key="d4">10.0</data>
+  <data key="d5">UU Nomor 45 Tahun 2009 memuat ketentuan Pasal 66 C</data>
+  <data key="d6">hierarki perundang-undangan</data>
+  <data key="d7">chunk-0118</data>
+</edge>
+<edge source="uu nomor 45 tahun 2009" target="pasal 71 c uu 45/2009">
+  <data key="d4">10.0</data>
+  <data key="d5">UU Nomor 45 Tahun 2009 memuat ketentuan Pasal 71 C</data>
+  <data key="d6">hierarki perundang-undangan</data>
+  <data key="d7">chunk-0121</data>
+</edge>
+<edge source="uu nomor 45 tahun 2009" target="pasal 73 a uu 45/2009">
+  <data key="d4">10.0</data>
+  <data key="d5">UU Nomor 45 Tahun 2009 memuat ketentuan Pasal 73 A</data>
+  <data key="d6">hierarki perundang-undangan</data>
+  <data key="d7">chunk-0123</data>
+</edge>
+<edge source="uu nomor 45 tahun 2009" target="pasal 76 c uu 45/2009">
+  <data key="d4">10.0</data>
+  <data key="d5">UU Nomor 45 Tahun 2009 memuat ketentuan Pasal 76 C</data>
+  <data key="d6">hierarki perundang-undangan</data>
+  <data key="d7">chunk-0127</data>
+</edge>
+<edge source="uu nomor 45 tahun 2009" target="pasal 85 c uu 45/2009">
+  <data key="d4">10.0</data>
+  <data key="d5">UU Nomor 45 Tahun 2009 memuat ketentuan Pasal 85 C</data>
+  <data key="d6">hierarki perundang-undangan</data>
+  <data key="d7">chunk-0133</data>
+</edge>
+<edge source="uu nomor 45 tahun 2009" target="pasal 93 c uu 45/2009">
+  <data key="d4">10.0</data>
+  <data key="d5">UU Nomor 45 Tahun 2009 memuat ketentuan Pasal 93 C</data>
+  <data key="d6">hierarki perundang-undangan</data>
+  <data key="d7">chunk-0134</data>
+</edge>
+<edge source="uu nomor 45 tahun 2009" target="pasal 94a uu 45/2009">
+  <data key="d4">10.0</data>
+  <data key="d5">UU Nomor 45 Tahun 2009 memuat ketentuan Pasal 94A</data>
+  <data key="d6">hierarki perundang-undangan</data>
+  <data key="d7">chunk-0135</data>
+</edge>
+<edge source="uu nomor 45 tahun 2009" target="pasal 98 c uu 45/2009">
+  <data key="d4">10.0</data>
+  <data key="d5">UU Nomor 45 Tahun 2009 memuat ketentuan Pasal 98 C</data>
+  <data key="d6">hierarki perundang-undangan</data>
+  <data key="d7">chunk-0136</data>
+</edge>
+<edge source="uu nomor 45 tahun 2009" target="pasal 110 c uu 45/2009">
+  <data key="d4">10.0</data>
+  <data key="d5">UU Nomor 45 Tahun 2009 memuat ketentuan Pasal 110 C</data>
+  <data key="d6">hierarki perundang-undangan</data>
+  <data key="d7">chunk-0141</data>
+</edge>
+<edge source="uu nomor 45 tahun 2009" target="penjelasan umum">
+  <data key="d4">10.0</data>
+  <data key="d5">UU Nomor 45 Tahun 2009 memuat Penjelasan Umum sebagai pengantar dokumen.</data>
+  <data key="d6">struktur dokumen</data>
+  <data key="d7">chunk-0143</data>
+</edge>
+<edge source="umum uu 45/2009" target="&lt;name&gt;">
+  <data key="d4">9.0</data>
+  <data key="d5">Umum mengatur dan memuat ketentuan terkait &lt;name&gt;</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0000</data>
+</edge>
+<edge source="umum uu 45/2009" target="ketentuan umum">
+  <data key="d4">9.0</data>
+  <data key="d5">Umum mengatur dan memuat ketentuan terkait Ketentuan Umum</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0087</data>
+</edge>
+<edge source="umum uu 45/2009" target="penjelasan resmi">
+  <data key="d4">9.0</data>
+  <data key="d5">Umum mengatur dan memuat ketentuan terkait Penjelasan Resmi</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0089</data>
+</edge>
+<edge source="umum uu 45/2009" target="penjelasan pasal demi pasal">
+  <data key="d4">9.0</data>
+  <data key="d5">Umum mengatur dan memuat ketentuan terkait Penjelasan Pasal demi Pasal</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0089</data>
+</edge>
+<edge source="umum uu 45/2009" target="pasal demi pasal">
+  <data key="d4">9.0</data>
+  <data key="d5">Umum mengatur dan memuat ketentuan terkait PASAL DEMI PASAL</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0089</data>
+</edge>
+<edge source="umum uu 45/2009" target="pasal i">
+  <data key="d4">9.0</data>
+  <data key="d5">Umum mengatur dan memuat ketentuan terkait Pasal I</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0089</data>
+</edge>
+<edge source="umum uu 45/2009" target="penjelasan angka 17">
+  <data key="d4">9.0</data>
+  <data key="d5">Umum mengatur dan memuat ketentuan terkait Penjelasan Angka 17</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0108</data>
+</edge>
+<edge source="umum uu 45/2009" target="pelabuhan perikanan samudera">
+  <data key="d4">9.0</data>
+  <data key="d5">Umum mengatur dan memuat ketentuan terkait Pelabuhan Perikanan Samudera</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0108</data>
+</edge>
+<edge source="umum uu 45/2009" target="pelabuhan perikanan nusantara">
+  <data key="d4">9.0</data>
+  <data key="d5">Umum mengatur dan memuat ketentuan terkait Pelabuhan Perikanan Nusantara</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0108</data>
+</edge>
+<edge source="umum uu 45/2009" target="penjelasan umum">
+  <data key="d4">9.0</data>
+  <data key="d5">Umum mengatur dan memuat ketentuan terkait Penjelasan Umum</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0143</data>
+</edge>
+<edge source="umum uu 45/2009" target="tambahan lembaran negara republik indonesia nomor 5073">
+  <data key="d4">9.0</data>
+  <data key="d5">Umum mengatur dan memuat ketentuan terkait TAMBAHAN LEMBARAN NEGARA REPUBLIK INDONESIA NOMOR 5073</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0143</data>
+</edge>
+<edge source="&lt;name&gt;" target="pasal 20 p uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 20 P mengatur dan memuat ketentuan terkait &lt;name&gt;</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0001</data>
+</edge>
+<edge source="&lt;name&gt;" target="pasal 1 uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 1 mengatur dan memuat ketentuan terkait &lt;name&gt;</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0003</data>
+</edge>
+<edge source="&lt;name&gt;" target="pasal 1 p uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 1 P mengatur dan memuat ketentuan terkait &lt;name&gt;</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0004</data>
+</edge>
+<edge source="&lt;name&gt;" target="pasal 2 uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 2 mengatur dan memuat ketentuan terkait &lt;name&gt;</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0005</data>
+</edge>
+<edge source="&lt;name&gt;" target="pasal 7 uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 7 mengatur dan memuat ketentuan terkait &lt;name&gt;</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0007</data>
+</edge>
+<edge source="&lt;name&gt;" target="pasal 7 p uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 7 P mengatur dan memuat ketentuan terkait &lt;name&gt;</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0008</data>
+</edge>
+<edge source="&lt;name&gt;" target="pasal 9 uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 9 mengatur dan memuat ketentuan terkait &lt;name&gt;</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0009</data>
+</edge>
+<edge source="&lt;name&gt;" target="pasal 9 p uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 9 P mengatur dan memuat ketentuan terkait &lt;name&gt;</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0010</data>
+</edge>
+<edge source="&lt;name&gt;" target="pasal 14 uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 14 mengatur dan memuat ketentuan terkait &lt;name&gt;</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0011</data>
+</edge>
+<edge source="&lt;name&gt;" target="pasal 14 p uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 14 P mengatur dan memuat ketentuan terkait &lt;name&gt;</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0012</data>
+</edge>
+<edge source="&lt;name&gt;" target="pasal 15a uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 15A mengatur dan memuat ketentuan terkait &lt;name&gt;</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0013</data>
+</edge>
+<edge source="&lt;name&gt;" target="pasal 18 uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 18 mengatur dan memuat ketentuan terkait &lt;name&gt;</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0014</data>
+</edge>
+<edge source="&lt;name&gt;" target="pasal 18 p uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 18 P mengatur dan memuat ketentuan terkait &lt;name&gt;</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0015</data>
+</edge>
+<edge source="&lt;name&gt;" target="pasal 23 p uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 23 P mengatur dan memuat ketentuan terkait &lt;name&gt;</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0017</data>
+</edge>
+<edge source="&lt;name&gt;" target="pasal 25 uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 25 mengatur dan memuat ketentuan terkait &lt;name&gt;</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0018</data>
+</edge>
+<edge source="&lt;name&gt;" target="pasal 25 p uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 25 P mengatur dan memuat ketentuan terkait &lt;name&gt;</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0019</data>
+</edge>
+<edge source="&lt;name&gt;" target="pasal 25a uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 25A mengatur dan memuat ketentuan terkait &lt;name&gt;</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0020</data>
+</edge>
+<edge source="&lt;name&gt;" target="pasal 25b uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 25B mengatur dan memuat ketentuan terkait &lt;name&gt;</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0021</data>
+</edge>
+<edge source="&lt;name&gt;" target="pasal 25c uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 25C mengatur dan memuat ketentuan terkait &lt;name&gt;</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0022</data>
+</edge>
+<edge source="&lt;name&gt;" target="pasal 27 uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 27 mengatur dan memuat ketentuan terkait &lt;name&gt;</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0023</data>
+</edge>
+<edge source="&lt;name&gt;" target="pasal 27 p uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 27 P mengatur dan memuat ketentuan terkait &lt;name&gt;</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0024</data>
+</edge>
+<edge source="&lt;name&gt;" target="pasal 28 uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 28 mengatur dan memuat ketentuan terkait &lt;name&gt;</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0025</data>
+</edge>
+<edge source="&lt;name&gt;" target="pasal 28 p uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 28 P mengatur dan memuat ketentuan terkait &lt;name&gt;</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0026</data>
+</edge>
+<edge source="&lt;name&gt;" target="pasal 32 p uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 32 P mengatur dan memuat ketentuan terkait &lt;name&gt;</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0029</data>
+</edge>
+<edge source="&lt;name&gt;" target="pasal 35a uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 35A mengatur dan memuat ketentuan terkait &lt;name&gt;</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0030</data>
+</edge>
+<edge source="&lt;name&gt;" target="pasal 36 p uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 36 P mengatur dan memuat ketentuan terkait &lt;name&gt;</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0032</data>
+</edge>
+<edge source="&lt;name&gt;" target="pasal 41 uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 41 mengatur dan memuat ketentuan terkait &lt;name&gt;</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0033</data>
+</edge>
+<edge source="&lt;name&gt;" target="pasal 41 p uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 41 P mengatur dan memuat ketentuan terkait &lt;name&gt;</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0034</data>
+</edge>
+<edge source="&lt;name&gt;" target="pasal 41a uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 41A mengatur dan memuat ketentuan terkait &lt;name&gt;</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0035</data>
+</edge>
+<edge source="&lt;name&gt;" target="pasal 42 uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 42 mengatur dan memuat ketentuan terkait &lt;name&gt;</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0036</data>
+</edge>
+<edge source="&lt;name&gt;" target="pasal 42 p uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 42 P mengatur dan memuat ketentuan terkait &lt;name&gt;</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0037</data>
+</edge>
+<edge source="&lt;name&gt;" target="pasal 43 uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 43 mengatur dan memuat ketentuan terkait &lt;name&gt;</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0038</data>
+</edge>
+<edge source="&lt;name&gt;" target="pasal 43 p uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 43 P mengatur dan memuat ketentuan terkait &lt;name&gt;</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0039</data>
+</edge>
+<edge source="&lt;name&gt;" target="pasal 44 p uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 44 P mengatur dan memuat ketentuan terkait &lt;name&gt;</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0041</data>
+</edge>
+<edge source="&lt;name&gt;" target="pasal 46 p uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 46 P mengatur dan memuat ketentuan terkait &lt;name&gt;</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0043</data>
+</edge>
+<edge source="&lt;name&gt;" target="pasal 48 uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 48 mengatur dan memuat ketentuan terkait &lt;name&gt;</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0045</data>
+</edge>
+<edge source="&lt;name&gt;" target="pasal 48 p uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 48 P mengatur dan memuat ketentuan terkait &lt;name&gt;</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0046</data>
+</edge>
+<edge source="&lt;name&gt;" target="pasal 50 p uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 50 P mengatur dan memuat ketentuan terkait &lt;name&gt;</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0048</data>
+</edge>
+<edge source="&lt;name&gt;" target="pasal 65 p uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 65 P mengatur dan memuat ketentuan terkait &lt;name&gt;</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0050</data>
+</edge>
+<edge source="&lt;name&gt;" target="pasal 66 p uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 66 P mengatur dan memuat ketentuan terkait &lt;name&gt;</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0052</data>
+</edge>
+<edge source="&lt;name&gt;" target="pasal 66a uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 66A mengatur dan memuat ketentuan terkait &lt;name&gt;</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0053</data>
+</edge>
+<edge source="&lt;name&gt;" target="pasal 66b uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 66B mengatur dan memuat ketentuan terkait &lt;name&gt;</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0054</data>
+</edge>
+<edge source="&lt;name&gt;" target="pasal 66c uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 66C mengatur dan memuat ketentuan terkait &lt;name&gt;</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0055</data>
+</edge>
+<edge source="&lt;name&gt;" target="pasal 69 p uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 69 P mengatur dan memuat ketentuan terkait &lt;name&gt;</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0056</data>
+</edge>
+<edge source="&lt;name&gt;" target="pasal 71 uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 71 mengatur dan memuat ketentuan terkait &lt;name&gt;</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0057</data>
+</edge>
+<edge source="&lt;name&gt;" target="pasal 71 p uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 71 P mengatur dan memuat ketentuan terkait &lt;name&gt;</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0058</data>
+</edge>
+<edge source="&lt;name&gt;" target="pasal 71a uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 71A mengatur dan memuat ketentuan terkait &lt;name&gt;</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0059</data>
+</edge>
+<edge source="&lt;name&gt;" target="pasal 73 uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 73 mengatur dan memuat ketentuan terkait &lt;name&gt;</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0060</data>
+</edge>
+<edge source="&lt;name&gt;" target="pasal 73 p uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 73 P mengatur dan memuat ketentuan terkait &lt;name&gt;</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0061</data>
+</edge>
+<edge source="&lt;name&gt;" target="pasal 73a uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 73A mengatur dan memuat ketentuan terkait &lt;name&gt;</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0062</data>
+</edge>
+<edge source="&lt;name&gt;" target="pasal 73b uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 73B mengatur dan memuat ketentuan terkait &lt;name&gt;</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0063</data>
+</edge>
+<edge source="&lt;name&gt;" target="pasal 75 uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 75 mengatur dan memuat ketentuan terkait &lt;name&gt;</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0064</data>
+</edge>
+<edge source="&lt;name&gt;" target="pasal 75 p uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 75 P mengatur dan memuat ketentuan terkait &lt;name&gt;</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0065</data>
+</edge>
+<edge source="&lt;name&gt;" target="pasal 76 uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 76 mengatur dan memuat ketentuan terkait &lt;name&gt;</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0066</data>
+</edge>
+<edge source="&lt;name&gt;" target="pasal 76 p uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 76 P mengatur dan memuat ketentuan terkait &lt;name&gt;</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0067</data>
+</edge>
+<edge source="&lt;name&gt;" target="pasal 76a uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 76A mengatur dan memuat ketentuan terkait &lt;name&gt;</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0068</data>
+</edge>
+<edge source="&lt;name&gt;" target="pasal 76b uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 76B mengatur dan memuat ketentuan terkait &lt;name&gt;</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0069</data>
+</edge>
+<edge source="&lt;name&gt;" target="pasal 76c uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 76C mengatur dan memuat ketentuan terkait &lt;name&gt;</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0070</data>
+</edge>
+<edge source="&lt;name&gt;" target="pasal 78a uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 78A mengatur dan memuat ketentuan terkait &lt;name&gt;</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0071</data>
+</edge>
+<edge source="&lt;name&gt;" target="pasal 83a uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 83A mengatur dan memuat ketentuan terkait &lt;name&gt;</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0072</data>
+</edge>
+<edge source="&lt;name&gt;" target="pasal 85 p uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 85 P mengatur dan memuat ketentuan terkait &lt;name&gt;</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0074</data>
+</edge>
+<edge source="&lt;name&gt;" target="pasal 93 uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 93 mengatur dan memuat ketentuan terkait &lt;name&gt;</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0075</data>
+</edge>
+<edge source="&lt;name&gt;" target="pasal 93 p uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 93 P mengatur dan memuat ketentuan terkait &lt;name&gt;</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0076</data>
+</edge>
+<edge source="&lt;name&gt;" target="pasal 98 p uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 98 P mengatur dan memuat ketentuan terkait &lt;name&gt;</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0078</data>
+</edge>
+<edge source="&lt;name&gt;" target="pasal 100b uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 100B mengatur dan memuat ketentuan terkait &lt;name&gt;</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0080</data>
+</edge>
+<edge source="&lt;name&gt;" target="pasal 100c uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 100C mengatur dan memuat ketentuan terkait &lt;name&gt;</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0081</data>
+</edge>
+<edge source="&lt;name&gt;" target="pasal 100d uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 100D mengatur dan memuat ketentuan terkait &lt;name&gt;</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0082</data>
+</edge>
+<edge source="&lt;name&gt;" target="pasal 105 uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 105 mengatur dan memuat ketentuan terkait &lt;name&gt;</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0083</data>
+</edge>
+<edge source="&lt;name&gt;" target="pasal 110 uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 110 mengatur dan memuat ketentuan terkait &lt;name&gt;</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0084</data>
+</edge>
+<edge source="&lt;name&gt;" target="pasal 110 p uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 110 P mengatur dan memuat ketentuan terkait &lt;name&gt;</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0085</data>
+</edge>
+<edge source="&lt;name&gt;" target="pasal 110a uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 110A mengatur dan memuat ketentuan terkait &lt;name&gt;</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0086</data>
+</edge>
+<edge source="&lt;name&gt;" target="pasal 1 c uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 1 C mengatur dan memuat ketentuan terkait &lt;name&gt;</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0090</data>
+</edge>
+<edge source="&lt;name&gt;" target="pasal 2 p uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 2 P mengatur dan memuat ketentuan terkait &lt;name&gt;</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0091</data>
+</edge>
+<edge source="&lt;name&gt;" target="pasal 25 c uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 25 C mengatur dan memuat ketentuan terkait &lt;name&gt;</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0098</data>
+</edge>
+<edge source="&lt;name&gt;" target="pasal 27 a uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 27 A mengatur dan memuat ketentuan terkait &lt;name&gt;</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0102</data>
+</edge>
+<edge source="&lt;name&gt;" target="pasal 28a uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 28A mengatur dan memuat ketentuan terkait &lt;name&gt;</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0104</data>
+</edge>
+<edge source="&lt;name&gt;" target="pasal 32 c uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 32 C mengatur dan memuat ketentuan terkait &lt;name&gt;</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0105</data>
+</edge>
+<edge source="&lt;name&gt;" target="pasal 42 a uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 42 A mengatur dan memuat ketentuan terkait &lt;name&gt;</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0110</data>
+</edge>
+<edge source="&lt;name&gt;" target="pasal 43 c uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 43 C mengatur dan memuat ketentuan terkait &lt;name&gt;</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0111</data>
+</edge>
+<edge source="&lt;name&gt;" target="pasal 44 c uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 44 C mengatur dan memuat ketentuan terkait &lt;name&gt;</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0112</data>
+</edge>
+<edge source="&lt;name&gt;" target="pasal 46a uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 46A mengatur dan memuat ketentuan terkait &lt;name&gt;</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0114</data>
+</edge>
+<edge source="&lt;name&gt;" target="pasal 50 c uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 50 C mengatur dan memuat ketentuan terkait &lt;name&gt;</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0116</data>
+</edge>
+<edge source="&lt;name&gt;" target="pasal 65 c uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 65 C mengatur dan memuat ketentuan terkait &lt;name&gt;</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0117</data>
+</edge>
+<edge source="&lt;name&gt;" target="pasal 66 c uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 66 C mengatur dan memuat ketentuan terkait &lt;name&gt;</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0118</data>
+</edge>
+<edge source="&lt;name&gt;" target="pasal 71 c uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 71 C mengatur dan memuat ketentuan terkait &lt;name&gt;</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0121</data>
+</edge>
+<edge source="&lt;name&gt;" target="pasal 73 a uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 73 A mengatur dan memuat ketentuan terkait &lt;name&gt;</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0123</data>
+</edge>
+<edge source="&lt;name&gt;" target="pasal 76 c uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 76 C mengatur dan memuat ketentuan terkait &lt;name&gt;</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0127</data>
+</edge>
+<edge source="&lt;name&gt;" target="pasal 85 c uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 85 C mengatur dan memuat ketentuan terkait &lt;name&gt;</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0133</data>
+</edge>
+<edge source="&lt;name&gt;" target="pasal 93 c uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 93 C mengatur dan memuat ketentuan terkait &lt;name&gt;</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0134</data>
+</edge>
+<edge source="&lt;name&gt;" target="pasal 94a uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 94A mengatur dan memuat ketentuan terkait &lt;name&gt;</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0135</data>
+</edge>
+<edge source="&lt;name&gt;" target="pasal 100a uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 100A mengatur dan memuat ketentuan terkait &lt;name&gt;</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0137</data>
+</edge>
+<edge source="&lt;name&gt;" target="pasal 110 c uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 110 C mengatur dan memuat ketentuan terkait &lt;name&gt;</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0141</data>
+</edge>
+<edge source="&lt;source&gt;" target="&lt;target&gt;">
+  <data key="d4">160.0</data>
+  <data key="d5">&lt;description&gt;</data>
+  <data key="d6">&lt;keywords&gt;</data>
+  <data key="d7">chunk-0000</data>
+</edge>
+<edge source="pasal 1 uu 45/2009" target="ketentuan umum">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 1 mengatur dan memuat ketentuan terkait Ketentuan Umum</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0003</data>
+</edge>
+<edge source="pasal 1 uu 45/2009" target="pasal 1">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 1 mengatur dan memuat ketentuan terkait Pasal 1</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0003</data>
+</edge>
+<edge source="pasal 1 uu 45/2009" target="angka 11">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 1 mengatur dan memuat ketentuan terkait Angka 11</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0003</data>
+</edge>
+<edge source="pasal 1 uu 45/2009" target="angka 24">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 1 mengatur dan memuat ketentuan terkait Angka 24</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0003</data>
+</edge>
+<edge source="ketentuan umum" target="pasal 7 uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 7 mengatur dan memuat ketentuan terkait Ketentuan Umum</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0007</data>
+</edge>
+<edge source="ketentuan umum" target="pasal 7">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 7 berada di bawah lingkup Ketentuan Umum dalam struktur undang-undang.</data>
+  <data key="d6">hierarki struktur</data>
+  <data key="d7">chunk-0007</data>
+</edge>
+<edge source="ketentuan umum" target="pasal 9 uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 9 mengatur dan memuat ketentuan terkait Ketentuan Umum</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0009</data>
+</edge>
+<edge source="ketentuan umum" target="pasal 9">
+  <data key="d4">10.0</data>
+  <data key="d5">Pasal 9 merupakan bagian dari struktur Ketentuan Umum.</data>
+  <data key="d6">hierarki struktur</data>
+  <data key="d7">chunk-0009</data>
+</edge>
+<edge source="ketentuan umum" target="pasal 9 p uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 9 P mengatur dan memuat ketentuan terkait Ketentuan Umum</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0010</data>
+</edge>
+<edge source="ketentuan umum" target="pasal 14 uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 14 mengatur dan memuat ketentuan terkait Ketentuan Umum</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0011</data>
+</edge>
+<edge source="ketentuan umum" target="pasal 15a uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 15A mengatur dan memuat ketentuan terkait Ketentuan Umum</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0013</data>
+</edge>
+<edge source="ketentuan umum" target="pasal 18 uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 18 mengatur dan memuat ketentuan terkait Ketentuan Umum</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0014</data>
+</edge>
+<edge source="ketentuan umum" target="pasal 23 uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 23 mengatur dan memuat ketentuan terkait Ketentuan Umum</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0016</data>
+</edge>
+<edge source="ketentuan umum" target="pasal 25 p uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 25 P mengatur dan memuat ketentuan terkait Ketentuan Umum</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0019</data>
+</edge>
+<edge source="ketentuan umum" target="pasal 25b uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 25B mengatur dan memuat ketentuan terkait Ketentuan Umum</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0021</data>
+</edge>
+<edge source="ketentuan umum" target="pasal 32 uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 32 mengatur dan memuat ketentuan terkait Ketentuan Umum</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0028</data>
+</edge>
+<edge source="ketentuan umum" target="pasal 36 uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 36 mengatur dan memuat ketentuan terkait Ketentuan Umum</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0031</data>
+</edge>
+<edge source="ketentuan umum" target="pasal 36">
+  <data key="d4">10.0</data>
+  <data key="d5">Pasal 36 merupakan bagian dari struktur Ketentuan Umum dalam undang-undang.</data>
+  <data key="d6">hierarki struktur</data>
+  <data key="d7">chunk-0031</data>
+</edge>
+<edge source="ketentuan umum" target="pasal 41 uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 41 mengatur dan memuat ketentuan terkait Ketentuan Umum</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0033</data>
+</edge>
+<edge source="ketentuan umum" target="pasal 41">
+  <data key="d4">10.0</data>
+  <data key="d5">Pasal 41 merupakan bagian dari struktur Ketentuan Umum.</data>
+  <data key="d6">hierarki struktur</data>
+  <data key="d7">chunk-0033</data>
+</edge>
+<edge source="ketentuan umum" target="pasal 42 uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 42 mengatur dan memuat ketentuan terkait Ketentuan Umum</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0036</data>
+</edge>
+<edge source="ketentuan umum" target="pasal 44 uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 44 mengatur dan memuat ketentuan terkait Ketentuan Umum</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0040</data>
+</edge>
+<edge source="ketentuan umum" target="pasal 44">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 44 berada di bawah lingkup Ketentuan Umum dalam struktur undang-undang.</data>
+  <data key="d6">hierarki struktur</data>
+  <data key="d7">chunk-0040</data>
+</edge>
+<edge source="ketentuan umum" target="pasal 44 p uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 44 P mengatur dan memuat ketentuan terkait Ketentuan Umum</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0041</data>
+</edge>
+<edge source="ketentuan umum" target="pasal 46 uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 46 mengatur dan memuat ketentuan terkait Ketentuan Umum</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0042</data>
+</edge>
+<edge source="ketentuan umum" target="pasal 46 p uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 46 P mengatur dan memuat ketentuan terkait Ketentuan Umum</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0043</data>
+</edge>
+<edge source="ketentuan umum" target="pasal 46a uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 46A mengatur dan memuat ketentuan terkait Ketentuan Umum</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0044</data>
+</edge>
+<edge source="ketentuan umum" target="pasal 50 uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 50 mengatur dan memuat ketentuan terkait Ketentuan Umum</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0047</data>
+</edge>
+<edge source="ketentuan umum" target="pasal 65 uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 65 mengatur dan memuat ketentuan terkait Ketentuan Umum</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0049</data>
+</edge>
+<edge source="ketentuan umum" target="pasal 65 p uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 65 P mengatur dan memuat ketentuan terkait Ketentuan Umum</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0050</data>
+</edge>
+<edge source="ketentuan umum" target="pasal 76 uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 76 mengatur dan memuat ketentuan terkait Ketentuan Umum</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0066</data>
+</edge>
+<edge source="ketentuan umum" target="pasal 76">
+  <data key="d4">10.0</data>
+  <data key="d5">Pasal 76 merupakan bagian dari struktur Ketentuan Umum.</data>
+  <data key="d6">hierarki struktur</data>
+  <data key="d7">chunk-0066</data>
+</edge>
+<edge source="ketentuan umum" target="pasal 85 uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 85 mengatur dan memuat ketentuan terkait Ketentuan Umum</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0073</data>
+</edge>
+<edge source="ketentuan umum" target="pasal 98 uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 98 mengatur dan memuat ketentuan terkait Ketentuan Umum</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0077</data>
+</edge>
+<edge source="ketentuan umum" target="pasal 98 p uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 98 P mengatur dan memuat ketentuan terkait Ketentuan Umum</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0078</data>
+</edge>
+<edge source="ketentuan umum" target="pasal 100c uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 100C mengatur dan memuat ketentuan terkait Ketentuan Umum</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0081</data>
+</edge>
+<edge source="ketentuan umum" target="pasal 100d uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 100D mengatur dan memuat ketentuan terkait Ketentuan Umum</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0082</data>
+</edge>
+<edge source="ketentuan umum" target="pasal 110 uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 110 mengatur dan memuat ketentuan terkait Ketentuan Umum</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0084</data>
+</edge>
+<edge source="ketentuan umum" target="pasal 110 p uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 110 P mengatur dan memuat ketentuan terkait Ketentuan Umum</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0085</data>
+</edge>
+<edge source="pasal 7 uu 45/2009" target="pasal 7">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 7 mengatur dan memuat ketentuan terkait Pasal 7</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0007</data>
+</edge>
+<edge source="pasal 7 uu 45/2009" target="perubahan pasal 7">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 7 mengatur dan memuat ketentuan terkait Perubahan Pasal 7</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0007</data>
+</edge>
+<edge source="pasal 7" target="perubahan pasal 7">
+  <data key="d4">10.0</data>
+  <data key="d5">Perubahan Pasal 7 merupakan tindakan hukum untuk mengubah isi dari Pasal 7.</data>
+  <data key="d6">amandemen hukum</data>
+  <data key="d7">chunk-0007</data>
+</edge>
+<edge source="pasal 9 uu 45/2009" target="pasal 9">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 9 mengatur dan memuat ketentuan terkait Pasal 9</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0009</data>
+</edge>
+<edge source="pasal 9 p uu 45/2009" target="penjelasan pasal 9">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 9 P mengatur dan memuat ketentuan terkait Penjelasan Pasal 9</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0093</data>
+</edge>
+<edge source="pasal 9 p uu 45/2009" target="alat penangkapan ikan">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 9 P mengatur dan memuat ketentuan terkait Alat Penangkapan Ikan</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0093</data>
+</edge>
+<edge source="pasal 9 p uu 45/2009" target="alat bantu penangkapan ikan">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 9 P mengatur dan memuat ketentuan terkait Alat Bantu Penangkapan Ikan</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0093</data>
+</edge>
+<edge source="pasal 14 uu 45/2009" target="pasal 14">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 14 mengatur dan memuat ketentuan terkait Pasal 14</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0011</data>
+</edge>
+<edge source="pasal 14 uu 45/2009" target="ayat (3">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 14 mengatur dan memuat ketentuan terkait Ayat (3</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0011</data>
+</edge>
+<edge source="pasal 14" target="pasal 14 p uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 14 P mengatur dan memuat ketentuan terkait Pasal 14</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0094</data>
+</edge>
+<edge source="ayat (3" target="pasal 18 uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 18 mengatur dan memuat ketentuan terkait Ayat (3</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0014</data>
+</edge>
+<edge source="ayat (3" target="pasal 23 uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 23 mengatur dan memuat ketentuan terkait Ayat (3</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0016</data>
+</edge>
+<edge source="ayat (3" target="pasal 36 p uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 36 P mengatur dan memuat ketentuan terkait Ayat (3</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0032</data>
+</edge>
+<edge source="ayat (3" target="pasal 28 p uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 28 P mengatur dan memuat ketentuan terkait Ayat (3</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0103</data>
+</edge>
+<edge source="pasal 14 p uu 45/2009" target="ayat (1">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 14 P mengatur dan memuat ketentuan terkait Ayat (1</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0094</data>
+</edge>
+<edge source="pasal 14 p uu 45/2009" target="plasma nutfah">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 14 P mengatur dan memuat ketentuan terkait Plasma Nutfah</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0094</data>
+</edge>
+<edge source="pasal 15a uu 45/2009" target="pasal 15a">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 15A mengatur dan memuat ketentuan terkait Pasal 15A</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0013</data>
+</edge>
+<edge source="pasal 15a uu 45/2009" target="penjelasan resmi">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 15A mengatur dan memuat ketentuan terkait Penjelasan Resmi</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0095</data>
+</edge>
+<edge source="pasal 15a uu 45/2009" target="angka 6">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 15A mengatur dan memuat ketentuan terkait Angka 6</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0095</data>
+</edge>
+<edge source="pasal 15a uu 45/2009" target="cukup jelas">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 15A mengatur dan memuat ketentuan terkait Cukup Jelas</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0095</data>
+</edge>
+<edge source="pasal 18 uu 45/2009" target="pasal 18">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 18 mengatur dan memuat ketentuan terkait Pasal 18</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0014</data>
+</edge>
+<edge source="pasal 18 uu 45/2009" target="ayat (4">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 18 mengatur dan memuat ketentuan terkait Ayat (4</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0014</data>
+</edge>
+<edge source="pasal 18" target="pasal 18 p uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 18 P mengatur dan memuat ketentuan terkait Pasal 18</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0096</data>
+</edge>
+<edge source="ayat (4" target="pasal 28 p uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 28 P mengatur dan memuat ketentuan terkait Ayat (4</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0103</data>
+</edge>
+<edge source="pasal 18 p uu 45/2009" target="penjelasan pasal 18">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 18 P mengatur dan memuat ketentuan terkait Penjelasan Pasal 18</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0096</data>
+</edge>
+<edge source="pasal 18 p uu 45/2009" target="ayat (1">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 18 P mengatur dan memuat ketentuan terkait Ayat (1</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0096</data>
+</edge>
+<edge source="pasal 18 p uu 45/2009" target="tata pemanfaatan air dan lahan pembudidayaan ikan">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 18 P mengatur dan memuat ketentuan terkait Tata Pemanfaatan Air dan Lahan Pembudidayaan Ikan</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0096</data>
+</edge>
+<edge source="pasal 18 p uu 45/2009" target="pembudidayaan ikan">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 18 P mengatur dan memuat ketentuan terkait Pembudidayaan Ikan</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0096</data>
+</edge>
+<edge source="pasal 18 p uu 45/2009" target="sabuk hijau (greenbelt">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 18 P mengatur dan memuat ketentuan terkait Sabuk Hijau (Greenbelt</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0096</data>
+</edge>
+<edge source="pasal 23 uu 45/2009" target="&lt;entity_name&gt;">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 23 mengatur dan memuat ketentuan terkait &lt;entity_name&gt;</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0016</data>
+</edge>
+<edge source="pasal 23 uu 45/2009" target="pasal 23">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 23 mengatur dan memuat ketentuan terkait Pasal 23</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0016</data>
+</edge>
+<edge source="&lt;entity_name&gt;" target="pasal 28a uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 28A mengatur dan memuat ketentuan terkait &lt;entity_name&gt;</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0027</data>
+</edge>
+<edge source="&lt;entity_name&gt;" target="pasal 32 uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 32 mengatur dan memuat ketentuan terkait &lt;entity_name&gt;</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0028</data>
+</edge>
+<edge source="&lt;entity_name&gt;" target="pasal 36 uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 36 mengatur dan memuat ketentuan terkait &lt;entity_name&gt;</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0031</data>
+</edge>
+<edge source="&lt;entity_name&gt;" target="pasal 46 uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 46 mengatur dan memuat ketentuan terkait &lt;entity_name&gt;</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0042</data>
+</edge>
+<edge source="&lt;entity_name&gt;" target="pasal 50 uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 50 mengatur dan memuat ketentuan terkait &lt;entity_name&gt;</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0047</data>
+</edge>
+<edge source="&lt;entity_name&gt;" target="pasal 85 uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 85 mengatur dan memuat ketentuan terkait &lt;entity_name&gt;</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0073</data>
+</edge>
+<edge source="&lt;entity_name&gt;" target="pasal 78a uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 78A mengatur dan memuat ketentuan terkait &lt;entity_name&gt;</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0131</data>
+</edge>
+<edge source="&lt;entity_name&gt;" target="pasal 98 c uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 98 C mengatur dan memuat ketentuan terkait &lt;entity_name&gt;</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0136</data>
+</edge>
+<edge source="&lt;source_entity&gt;" target="&lt;target_entity&gt;">
+  <data key="d4">13.0</data>
+  <data key="d5">&lt;relationship_description&gt;</data>
+  <data key="d6">&lt;relationship_keywords&gt;</data>
+  <data key="d7">chunk-0016</data>
+</edge>
+<edge source="pasal 23 p uu 45/2009" target="penjelasan pasal 23">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 23 P mengatur dan memuat ketentuan terkait Penjelasan Pasal 23</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0097</data>
+</edge>
+<edge source="pasal 25 p uu 45/2009" target="pasal 25">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 25 P mengatur dan memuat ketentuan terkait Pasal 25</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0019</data>
+</edge>
+<edge source="pasal 25 p uu 45/2009" target="ayat (1">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 25 P mengatur dan memuat ketentuan terkait Ayat (1</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0019</data>
+</edge>
+<edge source="pasal 25 p uu 45/2009" target="usaha perikanan">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 25 P mengatur dan memuat ketentuan terkait Usaha Perikanan</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0019</data>
+</edge>
+<edge source="pasal 25" target="pasal 25 c uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 25 C mengatur dan memuat ketentuan terkait Pasal 25</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0098</data>
+</edge>
+<edge source="ayat (1" target="pasal 25b uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 25B mengatur dan memuat ketentuan terkait Ayat (1</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0021</data>
+</edge>
+<edge source="ayat (1" target="pasal 36 p uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 36 P mengatur dan memuat ketentuan terkait Ayat (1</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0032</data>
+</edge>
+<edge source="ayat (1" target="pasal 44 uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 44 mengatur dan memuat ketentuan terkait Ayat (1</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0040</data>
+</edge>
+<edge source="ayat (1" target="pasal 44">
+  <data key="d4">8.0</data>
+  <data key="d5"></data>
+  <data key="d6">hubungan hukum</data>
+  <data key="d7">chunk-0040</data>
+</edge>
+<edge source="ayat (1" target="pasal 44 p uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 44 P mengatur dan memuat ketentuan terkait Ayat (1</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0041</data>
+</edge>
+<edge source="ayat (1" target="pasal 48 p uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 48 P mengatur dan memuat ketentuan terkait Ayat (1</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0046</data>
+</edge>
+<edge source="ayat (1" target="pasal 65 uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 65 mengatur dan memuat ketentuan terkait Ayat (1</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0049</data>
+</edge>
+<edge source="ayat (1" target="pasal 28 p uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 28 P mengatur dan memuat ketentuan terkait Ayat (1</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0103</data>
+</edge>
+<edge source="pasal 25a uu 45/2009" target="penjelasan resmi">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 25A mengatur dan memuat ketentuan terkait Penjelasan Resmi</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0099</data>
+</edge>
+<edge source="pasal 25a uu 45/2009" target="angka 10">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 25A mengatur dan memuat ketentuan terkait Angka 10</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0099</data>
+</edge>
+<edge source="pasal 25a uu 45/2009" target="pasal 25a">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 25A mengatur dan memuat ketentuan terkait Pasal 25A</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0099</data>
+</edge>
+<edge source="pasal 25a uu 45/2009" target="cukup jelas">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 25A mengatur dan memuat ketentuan terkait Cukup Jelas</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0099</data>
+</edge>
+<edge source="pasal 25b uu 45/2009" target="pasal 25b">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 25B mengatur dan memuat ketentuan terkait Pasal 25B</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0021</data>
+</edge>
+<edge source="pasal 25b uu 45/2009" target="pemerintah">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 25B mengatur dan memuat ketentuan terkait Pemerintah</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0021</data>
+</edge>
+<edge source="pasal 25b uu 45/2009" target="penjelasan resmi">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 25B mengatur dan memuat ketentuan terkait Penjelasan Resmi</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0100</data>
+</edge>
+<edge source="pemerintah" target="pasal 46a uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 46A mengatur dan memuat ketentuan terkait Pemerintah</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0044</data>
+</edge>
+<edge source="pemerintah" target="pasal 65 p uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 65 P mengatur dan memuat ketentuan terkait Pemerintah</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0050</data>
+</edge>
+<edge source="pasal 25c uu 45/2009" target="penjelasan resmi">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 25C mengatur dan memuat ketentuan terkait Penjelasan Resmi</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0101</data>
+</edge>
+<edge source="pasal 28 p uu 45/2009" target="pasal 28">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 28 P mengatur dan memuat ketentuan terkait Pasal 28</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0103</data>
+</edge>
+<edge source="pasal 28 p uu 45/2009" target="ayat (2">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 28 P mengatur dan memuat ketentuan terkait Ayat (2</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0103</data>
+</edge>
+<edge source="pasal 28 p uu 45/2009" target="sikpi asli">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 28 P mengatur dan memuat ketentuan terkait SIKPI asli</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0103</data>
+</edge>
+<edge source="pasal 32 uu 45/2009" target="pasal 32">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 32 mengatur dan memuat ketentuan terkait Pasal 32</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0028</data>
+</edge>
+<edge source="pasal 32 uu 45/2009" target="perubahan pasal 32">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 32 mengatur dan memuat ketentuan terkait Perubahan Pasal 32</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0028</data>
+</edge>
+<edge source="pasal 32" target="perubahan pasal 32">
+  <data key="d4">10.0</data>
+  <data key="d5">Perubahan Pasal 32 merujuk pada modifikasi isi dari Pasal 32.</data>
+  <data key="d6">modifikasi hukum</data>
+  <data key="d7">chunk-0028</data>
+</edge>
+<edge source="pasal 35a uu 45/2009" target="penjelasan resmi">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 35A mengatur dan memuat ketentuan terkait Penjelasan Resmi</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0106</data>
+</edge>
+<edge source="pasal 36 uu 45/2009" target="pasal 36">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 36 mengatur dan memuat ketentuan terkait Pasal 36</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0031</data>
+</edge>
+<edge source="pasal 36" target="pasal 36 p uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 36 P mengatur dan memuat ketentuan terkait Pasal 36</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0032</data>
+</edge>
+<edge source="pasal 36 p uu 45/2009" target="ayat (2">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 36 P mengatur dan memuat ketentuan terkait Ayat (2</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0032</data>
+</edge>
+<edge source="ayat (2" target="pasal 48 p uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 48 P mengatur dan memuat ketentuan terkait Ayat (2</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0115</data>
+</edge>
+<edge source="pasal 41 uu 45/2009" target="pasal 41">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 41 mengatur dan memuat ketentuan terkait Pasal 41</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0033</data>
+</edge>
+<edge source="pasal 41a uu 45/2009" target="penjelasan resmi">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 41A mengatur dan memuat ketentuan terkait Penjelasan Resmi</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0109</data>
+</edge>
+<edge source="pasal 42 uu 45/2009" target="pasal 42">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 42 mengatur dan memuat ketentuan terkait Pasal 42</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0036</data>
+</edge>
+<edge source="pasal 42 uu 45/2009" target="perubahan pasal 42">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 42 mengatur dan memuat ketentuan terkait Perubahan Pasal 42</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0036</data>
+</edge>
+<edge source="pasal 44 uu 45/2009" target="pasal 44">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 44 mengatur dan memuat ketentuan terkait Pasal 44</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0040</data>
+</edge>
+<edge source="pasal 44 uu 45/2009" target="perubahan pasal 44">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 44 mengatur dan memuat ketentuan terkait Perubahan Pasal 44</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0040</data>
+</edge>
+<edge source="pasal 44" target="perubahan pasal 44">
+  <data key="d4">10.0</data>
+  <data key="d5">Pasal 44 adalah objek yang mengalami perubahan ketentuan.</data>
+  <data key="d6">objek perubahan</data>
+  <data key="d7">chunk-0040</data>
+</edge>
+<edge source="pasal 44" target="pasal 44 p uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 44 P mengatur dan memuat ketentuan terkait Pasal 44</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0041</data>
+</edge>
+<edge source="pasal 44" target="pasal 44 c uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 44 C mengatur dan memuat ketentuan terkait Pasal 44</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0112</data>
+</edge>
+<edge source="pasal 46 uu 45/2009" target="pasal 46">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 46 mengatur dan memuat ketentuan terkait Pasal 46</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0042</data>
+</edge>
+<edge source="pasal 46a uu 45/2009" target="pasal 46a">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 46A mengatur dan memuat ketentuan terkait Pasal 46A</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0044</data>
+</edge>
+<edge source="pasal 46a uu 45/2009" target="kerahasiaan data dan informasi perikanan">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 46A mengatur dan memuat ketentuan terkait Kerahasiaan Data dan Informasi Perikanan</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0044</data>
+</edge>
+<edge source="pasal 46a uu 45/2009" target="data log book penangkapan dan pengangkutan ikan">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 46A mengatur dan memuat ketentuan terkait Data Log Book Penangkapan dan Pengangkutan Ikan</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0044</data>
+</edge>
+<edge source="pasal 46a uu 45/2009" target="data pengamat">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 46A mengatur dan memuat ketentuan terkait Data Pengamat</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0044</data>
+</edge>
+<edge source="pasal 46a uu 45/2009" target="data perusahaan">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 46A mengatur dan memuat ketentuan terkait Data Perusahaan</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0044</data>
+</edge>
+<edge source="pasal 46a uu 45/2009" target="proses perizinan usaha perikanan">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 46A mengatur dan memuat ketentuan terkait Proses Perizinan Usaha Perikanan</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0044</data>
+</edge>
+<edge source="pasal 46a uu 45/2009" target="penjelasan resmi">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 46A mengatur dan memuat ketentuan terkait Penjelasan Resmi</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0114</data>
+</edge>
+<edge source="pasal 48 p uu 45/2009" target="pasal 48">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 48 P mengatur dan memuat ketentuan terkait Pasal 48</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0046</data>
+</edge>
+<edge source="pasal 48 p uu 45/2009" target="ayat (1a">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 48 P mengatur dan memuat ketentuan terkait Ayat (1a</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0046</data>
+</edge>
+<edge source="pasal 50 uu 45/2009" target="pasal 50">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 50 mengatur dan memuat ketentuan terkait Pasal 50</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0047</data>
+</edge>
+<edge source="pasal 50 uu 45/2009" target="perubahan pasal 50">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 50 mengatur dan memuat ketentuan terkait Perubahan Pasal 50</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0047</data>
+</edge>
+<edge source="pasal 50" target="perubahan pasal 50">
+  <data key="d4">10.0</data>
+  <data key="d5">Perubahan Pasal 50 merupakan tindakan hukum untuk mengubah isi Pasal 50.</data>
+  <data key="d6">modifikasi hukum</data>
+  <data key="d7">chunk-0047</data>
+</edge>
+<edge source="pasal 65 uu 45/2009" target="name">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 65 mengatur dan memuat ketentuan terkait name</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0049</data>
+</edge>
+<edge source="pasal 65 uu 45/2009" target="pasal 65">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 65 mengatur dan memuat ketentuan terkait Pasal 65</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0049</data>
+</edge>
+<edge source="pasal 65" target="pasal 65 p uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 65 P mengatur dan memuat ketentuan terkait Pasal 65</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0050</data>
+</edge>
+<edge source="source" target="target">
+  <data key="d4">8.0</data>
+  <data key="d5">description</data>
+  <data key="d6">keywords</data>
+  <data key="d7">chunk-0049</data>
+</edge>
+<edge source="pasal 66 p uu 45/2009" target="pasal 66">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 66 P mengatur dan memuat ketentuan terkait Pasal 66</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0052</data>
+</edge>
+<edge source="pasal 71 p uu 45/2009" target="pasal 71">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 71 P mengatur dan memuat ketentuan terkait Pasal 71</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0058</data>
+</edge>
+<edge source="pasal 71 p uu 45/2009" target="pengadilan perikanan">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 71 P mengatur dan memuat ketentuan terkait Pengadilan Perikanan</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0058</data>
+</edge>
+<edge source="pasal 71 p uu 45/2009" target="peradilan umum">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 71 P mengatur dan memuat ketentuan terkait Peradilan Umum</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0058</data>
+</edge>
+<edge source="pasal 73 p uu 45/2009" target="pasal 73">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 73 P mengatur dan memuat ketentuan terkait Pasal 73</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0061</data>
+</edge>
+<edge source="pasal 73 p uu 45/2009" target="penyidik pegawai negeri sipil perikanan">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 73 P mengatur dan memuat ketentuan terkait Penyidik Pegawai Negeri Sipil Perikanan</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0061</data>
+</edge>
+<edge source="pasal 73 p uu 45/2009" target="penyidik perwira tni al">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 73 P mengatur dan memuat ketentuan terkait Penyidik Perwira TNI AL</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0061</data>
+</edge>
+<edge source="pasal 73a uu 45/2009" target="penjelasan resmi">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 73A mengatur dan memuat ketentuan terkait Penjelasan Resmi</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0124</data>
+</edge>
+<edge source="pasal 73a uu 45/2009" target="pasal 73a">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 73A mengatur dan memuat ketentuan terkait Pasal 73A</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0124</data>
+</edge>
+<edge source="pasal 73b uu 45/2009" target="penjelasan resmi">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 73B mengatur dan memuat ketentuan terkait Penjelasan Resmi</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0125</data>
+</edge>
+<edge source="pasal 73b uu 45/2009" target="pasal 73b">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 73B mengatur dan memuat ketentuan terkait Pasal 73B</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0125</data>
+</edge>
+<edge source="pasal 73b uu 45/2009" target="cukup jelas">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 73B mengatur dan memuat ketentuan terkait Cukup jelas</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0125</data>
+</edge>
+<edge source="pasal 76 uu 45/2009" target="pasal 76">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 76 mengatur dan memuat ketentuan terkait Pasal 76</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0066</data>
+</edge>
+<edge source="pasal 76 uu 45/2009" target="ayat (9">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 76 mengatur dan memuat ketentuan terkait Ayat (9</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0066</data>
+</edge>
+<edge source="pasal 76" target="ayat (9">
+  <data key="d4">8.0</data>
+  <data key="d5"></data>
+  <data key="d6">hubungan hukum</data>
+  <data key="d7">chunk-0066</data>
+</edge>
+<edge source="pasal 76 p uu 45/2009" target="penjelasan resmi">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 76 P mengatur dan memuat ketentuan terkait Penjelasan Resmi</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0129</data>
+</edge>
+<edge source="pasal 76 p uu 45/2009" target="penjelasan pasal 76">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 76 P mengatur dan memuat ketentuan terkait Penjelasan Pasal 76</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0129</data>
+</edge>
+<edge source="pasal 76 p uu 45/2009" target="pasal 76 b">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 76 P mengatur dan memuat ketentuan terkait Pasal 76 B</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0129</data>
+</edge>
+<edge source="pasal 76 p uu 45/2009" target="cukup jelas">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 76 P mengatur dan memuat ketentuan terkait Cukup Jelas</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0129</data>
+</edge>
+<edge source="pasal 85 uu 45/2009" target="pasal 85">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 85 mengatur dan memuat ketentuan terkait Pasal 85</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0073</data>
+</edge>
+<edge source="pasal 85 uu 45/2009" target="perubahan pasal 85">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 85 mengatur dan memuat ketentuan terkait Perubahan Pasal 85</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0073</data>
+</edge>
+<edge source="pasal 85" target="perubahan pasal 85">
+  <data key="d4">10.0</data>
+  <data key="d5">Pasal 85 adalah objek yang mengalami perubahan dalam ketentuan ini.</data>
+  <data key="d6">objek perubahan</data>
+  <data key="d7">chunk-0073</data>
+</edge>
+<edge source="pasal 85" target="pasal 85 p uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 85 P mengatur dan memuat ketentuan terkait Pasal 85</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0074</data>
+</edge>
+<edge source="pasal 98 uu 45/2009" target="pasal 98">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 98 mengatur dan memuat ketentuan terkait Pasal 98</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0077</data>
+</edge>
+<edge source="pasal 98 uu 45/2009" target="perubahan pasal 98">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 98 mengatur dan memuat ketentuan terkait Perubahan Pasal 98</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0077</data>
+</edge>
+<edge source="pasal 98" target="perubahan pasal 98">
+  <data key="d4">10.0</data>
+  <data key="d5">Pasal 98 adalah objek yang diubah dalam ketentuan ini.</data>
+  <data key="d6">objek perubahan</data>
+  <data key="d7">chunk-0077</data>
+</edge>
+<edge source="pasal 98" target="pasal 98 p uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 98 P mengatur dan memuat ketentuan terkait Pasal 98</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0078</data>
+</edge>
+<edge source="pasal 100a uu 45/2009" target="penjelasan resmi">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 100A mengatur dan memuat ketentuan terkait Penjelasan Resmi</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0137</data>
+</edge>
+<edge source="pasal 100a uu 45/2009" target="penjelasan angka 43">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 100A mengatur dan memuat ketentuan terkait Penjelasan Angka 43</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0137</data>
+</edge>
+<edge source="pasal 100a uu 45/2009" target="pasal 100a">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 100A mengatur dan memuat ketentuan terkait Pasal 100A</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0137</data>
+</edge>
+<edge source="pasal 100a uu 45/2009" target="pasal 100b">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 100A mengatur dan memuat ketentuan terkait Pasal 100B</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0137</data>
+</edge>
+<edge source="pasal 100a uu 45/2009" target="cukup jelas">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 100A mengatur dan memuat ketentuan terkait Cukup Jelas</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0137</data>
+</edge>
+<edge source="pasal 100c uu 45/2009" target="pasal 100c">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 100C mengatur dan memuat ketentuan terkait Pasal 100C</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0081</data>
+</edge>
+<edge source="pasal 100c uu 45/2009" target="pasal 7 ayat (2">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 100C mengatur dan memuat ketentuan terkait Pasal 7 ayat (2</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0081</data>
+</edge>
+<edge source="pasal 100c uu 45/2009" target="nelayan kecil">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 100C mengatur dan memuat ketentuan terkait Nelayan Kecil</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0081</data>
+</edge>
+<edge source="pasal 100c uu 45/2009" target="pembudi daya-ikan kecil">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 100C mengatur dan memuat ketentuan terkait Pembudi Daya-Ikan Kecil</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0081</data>
+</edge>
+<edge source="pasal 100c uu 45/2009" target="tindak pidana">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 100C mengatur dan memuat ketentuan terkait Tindak Pidana</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0081</data>
+</edge>
+<edge source="pasal 100c uu 45/2009" target="pidana denda paling banyak rp100.000.000,00">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 100C mengatur dan memuat ketentuan terkait Pidana Denda Paling Banyak Rp100.000.000,00</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0081</data>
+</edge>
+<edge source="pasal 100c uu 45/2009" target="penjelasan resmi">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 100C mengatur dan memuat ketentuan terkait Penjelasan Resmi</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0138</data>
+</edge>
+<edge source="pasal 100d uu 45/2009" target="pasal 100d">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 100D mengatur dan memuat ketentuan terkait Pasal 100D</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0082</data>
+</edge>
+<edge source="pasal 100d uu 45/2009" target="pengadilan">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 100D mengatur dan memuat ketentuan terkait Pengadilan</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0082</data>
+</edge>
+<edge source="pasal 100d uu 45/2009" target="pidana denda">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 100D mengatur dan memuat ketentuan terkait Pidana Denda</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0082</data>
+</edge>
+<edge source="pasal 100d uu 45/2009" target="kas negara">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 100D mengatur dan memuat ketentuan terkait Kas Negara</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0082</data>
+</edge>
+<edge source="pasal 100d uu 45/2009" target="penerimaan negara bukan pajak">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 100D mengatur dan memuat ketentuan terkait Penerimaan Negara Bukan Pajak</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0082</data>
+</edge>
+<edge source="pasal 100d uu 45/2009" target="kementerian yang membidangi urusan perikanan">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 100D mengatur dan memuat ketentuan terkait Kementerian yang membidangi urusan perikanan</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0082</data>
+</edge>
+<edge source="pasal 100d uu 45/2009" target="kewajiban penyetoran denda">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 100D mengatur dan memuat ketentuan terkait Kewajiban Penyetoran Denda</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0082</data>
+</edge>
+<edge source="pasal 110 uu 45/2009" target="pasal 110">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 110 mengatur dan memuat ketentuan terkait Pasal 110</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0084</data>
+</edge>
+<edge source="pasal 110 uu 45/2009" target="perubahan pasal 110">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 110 mengatur dan memuat ketentuan terkait Perubahan Pasal 110</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0084</data>
+</edge>
+<edge source="pasal 110" target="pasal 110 p uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 110 P mengatur dan memuat ketentuan terkait Pasal 110</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0085</data>
+</edge>
+<edge source="pasal 110" target="pasal 110 c uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 110 C mengatur dan memuat ketentuan terkait Pasal 110</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0141</data>
+</edge>
+<edge source="pasal 110a uu 45/2009" target="penjelasan resmi">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 110A mengatur dan memuat ketentuan terkait Penjelasan Resmi</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0142</data>
+</edge>
+<edge source="pasal 110a uu 45/2009" target="penjelasan angka 46">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 110A mengatur dan memuat ketentuan terkait Penjelasan Angka 46</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0142</data>
+</edge>
+<edge source="pasal 110a uu 45/2009" target="pasal 110a">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 110A mengatur dan memuat ketentuan terkait Pasal 110A</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0142</data>
+</edge>
+<edge source="pasal 110a uu 45/2009" target="pasal ii">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 110A mengatur dan memuat ketentuan terkait Pasal II</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0142</data>
+</edge>
+<edge source="pasal 110a uu 45/2009" target="cukup jelas">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 110A mengatur dan memuat ketentuan terkait Cukup Jelas</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0142</data>
+</edge>
+<edge source="penjelasan resmi" target="pasal 25 c uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 25 C mengatur dan memuat ketentuan terkait Penjelasan Resmi</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0098</data>
+</edge>
+<edge source="penjelasan resmi" target="penjelasan angka 9">
+  <data key="d4">10.0</data>
+  <data key="d5">Penjelasan Resmi memuat Penjelasan Angka 9 sebagai bagian dari rincian penjelasan.</data>
+  <data key="d6">hierarki struktur</data>
+  <data key="d7">chunk-0098</data>
+</edge>
+<edge source="penjelasan resmi" target="angka 10">
+  <data key="d4">10.0</data>
+  <data key="d5">Penjelasan Resmi mengandung Angka 10 sebagai bagian dari struktur penjelasan.</data>
+  <data key="d6">hierarki struktur</data>
+  <data key="d7">chunk-0099</data>
+</edge>
+<edge source="penjelasan resmi" target="pasal 44 c uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 44 C mengatur dan memuat ketentuan terkait Penjelasan Resmi</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0112</data>
+</edge>
+<edge source="penjelasan resmi" target="penjelasan angka 21">
+  <data key="d4">10.0</data>
+  <data key="d5">Penjelasan Resmi memuat Penjelasan Angka 21 sebagai bagian dari struktur penjelasan.</data>
+  <data key="d6">hierarki struktur</data>
+  <data key="d7">chunk-0112</data>
+</edge>
+<edge source="penjelasan resmi" target="pasal 66 c uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 66 C mengatur dan memuat ketentuan terkait Penjelasan Resmi</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0118</data>
+</edge>
+<edge source="penjelasan resmi" target="pasal 71 c uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 71 C mengatur dan memuat ketentuan terkait Penjelasan Resmi</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0121</data>
+</edge>
+<edge source="penjelasan resmi" target="pasal 73b">
+  <data key="d4">10.0</data>
+  <data key="d5">Penjelasan Resmi memberikan interpretasi terhadap Pasal 73B.</data>
+  <data key="d6">interpretasi pasal</data>
+  <data key="d7">chunk-0125</data>
+</edge>
+<edge source="penjelasan resmi" target="pasal 76 c uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 76 C mengatur dan memuat ketentuan terkait Penjelasan Resmi</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0127</data>
+</edge>
+<edge source="penjelasan resmi" target="pasal 98 c uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 98 C mengatur dan memuat ketentuan terkait Penjelasan Resmi</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0136</data>
+</edge>
+<edge source="penjelasan resmi" target="pasal 110 c uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 110 C mengatur dan memuat ketentuan terkait Penjelasan Resmi</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0141</data>
+</edge>
+<edge source="penjelasan resmi" target="penjelasan angka 45">
+  <data key="d4">10.0</data>
+  <data key="d5">Penjelasan Resmi memuat Penjelasan Angka 45 sebagai bagian dari penjelasan pasal.</data>
+  <data key="d6">hierarki struktur</data>
+  <data key="d7">chunk-0141</data>
+</edge>
+<edge source="cukup jelas" target="pasal 25 c uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 25 C mengatur dan memuat ketentuan terkait Cukup Jelas</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0098</data>
+</edge>
+<edge source="cukup jelas" target="pasal 44 c uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 44 C mengatur dan memuat ketentuan terkait Cukup Jelas</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0112</data>
+</edge>
+<edge source="cukup jelas" target="pasal 110 c uu 45/2009">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 110 C mengatur dan memuat ketentuan terkait Cukup Jelas</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0141</data>
+</edge>
+<edge source="pasal 25 c uu 45/2009" target="penjelasan angka 9">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 25 C mengatur dan memuat ketentuan terkait Penjelasan Angka 9</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0098</data>
+</edge>
+<edge source="pasal 44 c uu 45/2009" target="penjelasan angka 21">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 44 C mengatur dan memuat ketentuan terkait Penjelasan Angka 21</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0112</data>
+</edge>
+<edge source="pasal 110 c uu 45/2009" target="penjelasan angka 45">
+  <data key="d4">9.0</data>
+  <data key="d5">Pasal 110 C mengatur dan memuat ketentuan terkait Penjelasan Angka 45</data>
+  <data key="d6">muatan materi pasal</data>
+  <data key="d7">chunk-0141</data>
+</edge>
+</graph></graphml>
