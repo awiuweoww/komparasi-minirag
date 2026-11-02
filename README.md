@@ -154,7 +154,19 @@ Seluruh berkas otentik MinerU (`content_list.json`, `output.md`, `origin.pdf`) d
 
 ---
 
-### Tahap 3: Menjalankan Indexing MiniRAG (Gemma 4:12B)
+### Tahap 3: Re-Chunking Standar MiniRAG (512 Token + 100 Overlap)
+
+Sebelum indexing, potong teks bersih `output.md` MinerU v4 menjadi blok 512 token:
+```bash
+# Di terminal HPC (mahoni01):
+cd ~/projek-legal-rag/3_minirag_chandra/proses_indexing
+$HOME/miniconda3/envs/minirag/bin/python rechunk_512.py
+```
+*(Menghasilkan 58 chunk padat konteks, menghilangkan label buatan P/C, dan menjaga 26 definisi Pasal 1 serta 11 asas tetap utuh).*
+
+---
+
+### Tahap 4: Menjalankan Indexing MiniRAG (Gemma 4:12B)
 
 **Di Terminal HPC (`csupriatna@mahoni01`):**
 1. Masuk ke folder skrip indexing:
@@ -162,7 +174,7 @@ Seluruh berkas otentik MinerU (`content_list.json`, `output.md`, `origin.pdf`) d
    cd ~/projek-legal-rag/3_minirag_chandra/proses_indexing
    ```
 
-2. Jalankan job batch SLURM (4 slot paralel A100):
+2. Jalankan job batch SLURM (4 slot paralel A100, RAM 100G, think: false):
    ```bash
    sbatch run_indexing.sbatch
    ```
@@ -174,7 +186,7 @@ Seluruh berkas otentik MinerU (`content_list.json`, `output.md`, `origin.pdf`) d
 
 ---
 
-### Tahap 4: Menyimpan Hasil Indexing MiniRAG ke Laptop Anda
+### Tahap 5: Menyimpan Hasil Indexing MiniRAG ke Laptop Anda
 
 Setelah proses indexing selesai (ditandai `INDEXING SELESAI SUKSES`), simpan seluruh artefak graf dan vektor ke laptop Anda dengan menjalankan perintah ini **dari terminal laptop (WSL)**:
 
@@ -183,27 +195,18 @@ Setelah proses indexing selesai (ditandai `INDEXING SELESAI SUKSES`), simpan sel
 rsync -avzP mahoni01:~/projek-legal-rag/3_minirag_chandra/hasil_indexing/ /home/chandreu/brin-2026/pengujian-komparasi-minirag/3_minirag_chandra/hasil_indexing/
 ```
 
-Seluruh artefak hasil indexing akan tersimpan di:
-`3_minirag_chandra/hasil_indexing/storage_gemma4_uu45/`:
-- `graph_chunk_entity_relation.graphml` (Knowledge Graph MiniRAG)
-- `vdb_entities.json` (Vektor embedding BGE-M3 1024-dim per entitas)
-- `kv_store_text_chunks.json` (KV store teks chunk pasal MinerU)
-- `indexing_summary.json` (Metadata waktu, total node, total relasi)
-
 ---
 
-### Tahap 5: Evaluasi Komparasi Densitas Graf
+### Tahap 6: Evaluasi Metrik Densitas & Konsistensi Graf
 
 Jalankan script evaluasi komparatif (bisa dijalankan di HPC maupun langsung di laptop Anda):
 
 ```bash
-# Di HPC (mahoni01):
-cd ~/projek-legal-rag/3_minirag_chandra/proses_indexing
-$HOME/miniconda3/envs/minirag/bin/python evaluate_density.py
-
-# Atau di Laptop (WSL):
-cd /home/chandreu/brin-2026/pengujian-komparasi-minirag/3_minirag_chandra/proses_indexing
+# Evaluasi Komparasi Densitas (Gemma 3 Arjun vs Gemma 4 Chandra):
 python3 evaluate_density.py
+
+# Evaluasi Konsistensi 2x Running Gemma 4 (Run 1 vs Run 2):
+python3 evaluate_consistency.py
 ```
 
 ---
@@ -228,7 +231,7 @@ cooming soon
 
 3. **Error `sbatch: error: QOSMaxMemoryPerJob`:**
    - *Penyebab:* Menghilangkan parameter `--mem` membuat SLURM meminta seluruh RAM node fisik (1 TB+) dan ditolak oleh kuota QOS cluster Mahameru.
-   - *Solusi:* Selalu cantumkan `--mem=32G` dan `--cpus-per-task=4` pada file `.sbatch`.
+   - *Solusi:* Selalu cantumkan `--mem=100G` (maksimal 120G sesuai kuota QOS) dan `--cpus-per-task=4` pada file `.sbatch`.
 
 ---
 
