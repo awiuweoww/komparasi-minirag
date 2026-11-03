@@ -5,10 +5,8 @@
 
 # Skrip Evaluasi & Pengecekan
 **/evaluate_density.py
-**/evaluate_mentor_metrics.py
 **/evaluate_consistency.py
 evaluate_density.py
-evaluate_mentor_metrics.py
 evaluate_consistency.py
 
 # Python Cache & Bytecode

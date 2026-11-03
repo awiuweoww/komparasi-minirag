@@ -1,5 +1,7 @@
 # Dokumentasi Komparasi MiniRAG UU 45 Tahun 2009
+
 ## Gemma 3:12B (Baseline M. Arjun Dewana) vs Gemma 4:12B (Chandra Supriatna)
+
 **Cluster:** BRIN MAHAMERU-AI (NVIDIA DGX A100)
 
 ---
@@ -10,6 +12,7 @@
 pengujian-komparasi-minirag/
 ├── README.md                                # Dokumentasi panduan eksekusi komprehensif
 ├── LOG_VERSION.md                           # Log riwayat pembaruan antar versi (V1 -> V2 -> V3)
+├── ANALISA_PERCOBAAN_1_DAN_2.md             # Analisis mendalam komparasi stabilitas Percobaan 1 vs 2
 ├── check_env.sh                             # Skrip otomatis pengecekan tools & environment
 ├── extract_mineru_hpc.py                    # Ekstraksi MinerU v4 & chunker pasal
 ├── run_mineru_extract.sbatch                # SLURM script ekstraksi MinerU di DGX A100
@@ -56,10 +59,12 @@ pengujian-komparasi-minirag/
 Sebelum menjalankan proses ekstraksi atau indexing, pastikan seluruh dependensi sudah terpasang dengan benar di login node (`mahoni01`).
 
 ### A. Pengecekan Otomatis (1 Perintah)
+
 ```bash
 cd ~/projek-legal-rag
 bash check_env.sh
 ```
+
 Skrip akan memeriksa Miniconda, Python 3.10, modul-modul library, biner Ollama, serta ketersediaan model AI.
 
 ---
@@ -67,6 +72,7 @@ Skrip akan memeriksa Miniconda, Python 3.10, modul-modul library, biner Ollama, 
 ### B. Panduan Instalasi Jika Komponen Belum Lengkap
 
 #### 1. Pasang Miniconda & Buat Environment `minirag` (Jika Belum Ada)
+
 ```bash
 # 1. Pasang Miniconda
 curl -sLO https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
@@ -83,6 +89,7 @@ $HOME/miniconda3/envs/minirag/bin/pip install tiktoken nano-vectordb ollama tena
 ```
 
 #### 2. Pasang Biner Ollama v0.40.13 Portabel (Jika Belum Ada)
+
 ```bash
 mkdir -p ~/projek-legal-rag/bin
 curl -sL https://github.com/ollama/ollama/releases/download/v0.40.13/ollama-linux-amd64.tar.zst -o /tmp/ollama.tar.zst
@@ -92,22 +99,26 @@ rm -f /tmp/ollama.tar.zst
 ```
 
 #### 3. Unduh Model AI ke Folder `models` Proyek (Jika Belum Ada)
-*Catatan: Dijalankan di Login Node (`mahoni01`).*
+
+_Catatan: Dijalankan di Login Node (`mahoni01`)._
 
 ```bash
 cd ~/projek-legal-rag
 bash pull_models.sh
 ```
+
 Skrip ini secara otomatis mengunduh:
+
 - **`gemma4:12b`** (~7.4 GB)
 - **`bge-m3:latest`** (~1.2 GB)
-langsung ke folder `~/projek-legal-rag/models` pada port terisolasi 11500.
+  langsung ke folder `~/projek-legal-rag/models` pada port terisolasi 11500.
 
 ---
 
 ## 3. Manajemen Job SLURM
 
 ### Membatalkan / Menghentikan Job yang Sedang Berjalan
+
 ```bash
 # Batalkan job berdasarkan Job ID tertentu
 scancel <JOB_ID>
@@ -120,6 +131,7 @@ squeue -u $USER
 ```
 
 ### Menghentikan Proses Ollama Background (Jika Masih Berjalan)
+
 ```bash
 pkill -f ollama
 ```
@@ -129,15 +141,18 @@ pkill -f ollama
 ## 4. Alur Lengkap Eksekusi Pengujian
 
 ### Tahap 1: Ekstraksi Dokumen MinerU v4 di HPC
+
 Menjalankan ekstraksi otentik MinerU v4 pada PDF naskah resmi menggunakan GPU NVIDIA A100. Menghasilkan `content_list.json`, `output.md`, `origin.pdf`, dan chunk pasal.
 
 **Di Terminal HPC (`csupriatna@mahoni01`):**
+
 ```bash
 cd ~/projek-legal-rag
 sbatch run_mineru_extract.sbatch
 ```
 
 Pantau progresnya:
+
 ```bash
 tail -f mineru_*.log
 ```
@@ -145,6 +160,7 @@ tail -f mineru_*.log
 ---
 
 ### Tahap 2: Menyimpan Hasil Ekstraksi ke Laptop Anda
+
 Setelah job ekstraksi MinerU selesai di HPC, jalankan perintah sinkronisasi berikut **dari terminal laptop (WSL)** Anda:
 
 ```bash
@@ -152,6 +168,7 @@ Setelah job ekstraksi MinerU selesai di HPC, jalankan perintah sinkronisasi beri
 rsync -avzP csupriatna@mahoni01:~/projek-legal-rag/1_dokumen_sumber/ /home/chandreu/brin-2026/pengujian-komparasi-minirag/1_dokumen_sumber/
 rsync -avzP csupriatna@mahoni01:~/projek-legal-rag/3_minirag_chandra/proses_indexing/data/ /home/chandreu/brin-2026/pengujian-komparasi-minirag/3_minirag_chandra/proses_indexing/data/
 ```
+
 Seluruh berkas otentik MinerU (`content_list.json`, `output.md`, `origin.pdf`) dan chunk JSON pasal akan tersimpan rapi di laptop Anda.
 
 ---
@@ -159,25 +176,31 @@ Seluruh berkas otentik MinerU (`content_list.json`, `output.md`, `origin.pdf`) d
 ### Tahap 3: Re-Chunking Standar MiniRAG (512 Token + 100 Overlap)
 
 Sebelum indexing, potong teks bersih `output.md` MinerU v4 menjadi blok 512 token:
+
 ```bash
 # Di terminal HPC (mahoni01):
 cd ~/projek-legal-rag/4_minirag_chandra_v2/proses_indexing
 $HOME/miniconda3/envs/minirag/bin/python rechunk_512.py
 ```
-*(Menghasilkan 58 chunk padat konteks, menghilangkan label buatan P/C, dan menjaga 26 definisi Pasal 1 serta 11 asas tetap utuh).*
+
+_(Menghasilkan 58 chunk padat konteks, menghilangkan label buatan P/C, dan menjaga 26 definisi Pasal 1 serta 11 asas tetap utuh)._
 
 ---
 
 ### Tahap 4: Menjalankan Indexing MiniRAG (Gemma 4:12B)
 
 **Di Terminal HPC (`csupriatna@mahoni01`):**
+
 1. Masuk ke folder skrip indexing (Versi 2 - Rekomendasi Tuned):
+
    ```bash
    cd ~/projek-legal-rag/4_minirag_chandra_v2/proses_indexing
    ```
-   *(Atau ke `3_minirag_chandra/proses_indexing` jika ingin menjalankan Versi 1 awal).*
+
+   _(Atau ke `3_minirag_chandra/proses_indexing` jika ingin menjalankan Versi 1 awal)._
 
 2. Jalankan job batch SLURM (4 slot paralel A100, RAM 100G, NUM_PREDICT=3072, think: false):
+
    ```bash
    sbatch run_indexing.sbatch
    ```
@@ -208,53 +231,49 @@ rsync -avzP csupriatna@mahoni01:~/projek-legal-rag/3_minirag_chandra/hasil_index
 Jalankan script evaluasi komparatif (bisa dijalankan di HPC maupun langsung di laptop Anda):
 
 ```bash
-# Evaluasi Lengkap 11 Parameter Mentor (3-Way: Chandra V2 vs Chandra V1 vs Arjun):
+# Evaluasi Lengkap 11 Parameter Mentor & Konsistensi Multi-Run (Run 1 vs Run 2 vs V1 vs Arjun):
 $HOME/miniconda3/envs/minirag/bin/python evaluate_mentor_metrics.py
 
 # Evaluasi Komparasi Densitas:
 python3 evaluate_density.py
-
-# Evaluasi Konsistensi 2x Running Gemma 4 (Run 1 vs Run 2):
-python3 evaluate_consistency.py
 ```
 
 ---
 
 ## 5. Tabel Hasil Komparasi Metrik Graf (Audit Mentor)
 
-
-| Parameter Metrik | Chandra V2 (Tuned Baru) | Chandra V1 (Baseline Awal) | Arjun (Baseline Gemma 3) | Analisis Evaluasi |
-| :--- | :---: | :---: | :---: | :--- |
-| **Jumlah Node / Edge** | **595 / 817** | 218 / 428 | 6.876 / 1.451 | Relasi meningkat tajam tanpa gelembung entitas (rasio edge/node 1.37) |
-| **Chunk Teks** | **60 chunks** | 144 chunks | 53 / 53 | Standar 512 token window + header regulasi kanonik |
-| **Pasal yang Diubah (~55)** | **47 dari ~55** | 49 dari ~55 | 50 dari ~55 | Seluruh pasal materi muatan utama tertangkap |
-| **26 Definisi di Pasal 1** | **20 persis** | 2 persis, 5 seb | 21 / 26 | 100% definisi nyata yang ada di naskah UU 45/2009 tertangkap |
-| **11 Asas Pengelolaan** | **10 / 11** | 0 / 11 | 10 / 11 | 100% asas materi muatan UU 45/2009 tertangkap utuh |
-| **5 Singkatan (SIUP/SIPI/SIKPI/ZEEI/PNBP)** | **5 / 5** | 2 / 5 | 5 / 5 | 100% instrumen perizinan & finansial terkanonikalisasi |
-| **Kemunculan di Teks UU (%)** | **64.7%** | 36.7% | 21.4% | Kepatuhan faktual 3x lipat dibanding baseline Arjun |
-| **Node Terisolasi (Degree = 0)** | **0 (0.0%)** | 0 (0.0%) | 5.773 (84.0%) | Zero isolated nodes melalui Hierarchical Article Anchoring |
-| **Kelompok Hampir Duplikat** | **10 kelompok** | 50 kelompok | 765 kelompok | Turun 80% dari V1 dan turun 98.7% dari Arjun via `normalisasi_entitas.py` |
-| **Node Sampah / Placeholder** | **0 node** | 18 node | 18 node | Zero leakage template prompt (`<name>`, `GT`, dll) |
-| **Waktu Indexing (DGX A100)** | **9.41 menit** | 6.24 menit | ~45 menit | Efisiensi tinggi dengan 4 slot paralel GPU A100 |
+| Parameter Metrik | Chandra V2 (Run 1) | Chandra V2 (Run 2) | Chandra V1 (Awal) | Arjun (Baseline) |
+| :--- | :---: | :---: | :---: | :---: |
+| **Jumlah node / edge** | **595 / 817** | **619 / 850** | 218 / 428 | 6.876 / 1.451 |
+| **Chunk teks** | **60 chunks** | **60 chunks** | 144 chunks | 53 / 53 |
+| **Pasal yang diubah (~55)** | **47 dari ~55** | **47 dari ~55** | 49 dari ~55 | 50 dari ~55 |
+| **26 definisi di Pasal 1** | **20 persis, 0 seb** | **20 persis, 0 seb** | 2 persis, 5 seb | 21 / 26 |
+| **11 asas perikanan** | **10 / 11** | **10 / 11** | 0 / 11 | 10 / 11 |
+| **SIUP / SIPI / SIKPI / ZEEI / PNBP** | **5 / 5** | **5 / 5** | 2 / 5 | 5 / 5 |
+| **Nama node muncul di teks UU (%)** | **64.7%** | **64.8%** | 36.7% | 21.4% |
+| **Node terisolasi** | **0 (19 komp)** | **0 (19 komp)** | 0 (4 komp) | 5.773 (84.0%) |
+| **Kelompok nama hampir duplikat** | **10** | **13** | 50 | 765 |
+| **Node sampah / placeholder** | **0 node** | **0 node** | 18 node | 18 node |
 
 > [!NOTE]
-> Rincian teknis kode diff dan riwayat perubahan antar versi terdokumentasi lengkap di [**`LOG_VERSION.md`**](LOG_VERSION.md).
+> - Analisis mendalam mengenai faktor penyebab selisih (+24 node, +33 edge) antara Run 1 dan Run 2 terdokumentasi lengkap di [**`ANALISA_PERCOBAAN_1_DAN_2.md`**](ANALISA_PERCOBAAN_1_DAN_2.md).
+> - Rincian teknis kode diff dan riwayat pembaruan antar-versi terdokumentasi lengkap di [**`LOG_VERSION.md`**](LOG_VERSION.md).
 
 ---
 
 ## 6. Catatan Teknis & Solusi Kendala (Troubleshooting)
 
 1. **Error `412: The model requires a newer version of Ollama` saat pull model:**
-   - *Penyebab:* Port default `11434` di login node menjalankan server Ollama bawaan sistem lama (v0.11.10).
-   - *Solusi:* Gunakan skrip `bash pull_models.sh` yang secara otomatis menjalankan Ollama v0.40.13 di port terisolasi `11500`.
+   - _Penyebab:_ Port default `11434` di login node menjalankan server Ollama bawaan sistem lama (v0.11.10).
+   - _Solusi:_ Gunakan skrip `bash pull_models.sh` yang secara otomatis menjalankan Ollama v0.40.13 di port terisolasi `11500`.
 
 2. **Error `TypeError: 'type' object is not subscriptable` saat eksekusi Python:**
-   - *Penyebab:* Shell terminal menggunakan Python sistem CentOS 7 (Python 3.6).
-   - *Solusi:* Jalankan skrip menggunakan Python conda: `$HOME/miniconda3/envs/minirag/bin/python <script.py>` (skrip `extract_mineru_hpc.py` juga sudah dilengkapi fitur auto re-exec ke Python conda).
+   - _Penyebab:_ Shell terminal menggunakan Python sistem CentOS 7 (Python 3.6).
+   - _Solusi:_ Jalankan skrip menggunakan Python conda: `$HOME/miniconda3/envs/minirag/bin/python <script.py>` (skrip `extract_mineru_hpc.py` juga sudah dilengkapi fitur auto re-exec ke Python conda).
 
 3. **Error `sbatch: error: QOSMaxMemoryPerJob`:**
-   - *Penyebab:* Menghilangkan parameter `--mem` membuat SLURM meminta seluruh RAM node fisik (1 TB+) dan ditolak oleh kuota QOS cluster Mahameru.
-   - *Solusi:* Selalu cantumkan `--mem=100G` (maksimal 120G sesuai kuota QOS) dan `--cpus-per-task=4` pada file `.sbatch`.
+   - _Penyebab:_ Menghilangkan parameter `--mem` membuat SLURM meminta seluruh RAM node fisik (1 TB+) dan ditolak oleh kuota QOS cluster Mahameru.
+   - _Solusi:_ Selalu cantumkan `--mem=100G` (maksimal 120G sesuai kuota QOS) dan `--cpus-per-task=4` pada file `.sbatch`.
 
 ---
 
@@ -263,7 +282,9 @@ python3 evaluate_consistency.py
 Teknik ini digunakan untuk mendistribusikan atau memperbarui kumpulan skrip ke server HPC secara instan tanpa perlu SCP bertingkat dan tanpa meninggalkan file arsip sementara di server.
 
 ### A. Cara Membuat Bundle (Di Laptop / PC Lokal)
+
 Bungkus seluruh folder proyek atau skrip tertentu menjadi arsip biner `tar.gz`, lalu ubah menjadi teks Base64:
+
 ```bash
 # Di terminal laptop:
 cd /home/chandreu/brin-2026/pengujian-komparasi-minirag
@@ -271,6 +292,7 @@ tar --exclude='*.log' --exclude='storage_*' -czf - . | base64 > pengujian_bundle
 ```
 
 ### B. Upload ke GitHub Gist
+
 1. Buka [gist.github.com](https://gist.github.com).
 2. Buat file baru bernama `pengujian_bundle.b64`, lalu paste seluruh isi teksnya.
 3. Klik **Create Public Gist**.
@@ -278,15 +300,19 @@ tar --exclude='*.log' --exclude='storage_*' -czf - . | base64 > pengujian_bundle
    `https://gist.githubusercontent.com/<username>/<id_gist>/raw/pengujian_bundle.b64`
 
 ### C. Ekstrak Langsung di Server HPC (1 Baris Perintah)
+
 Di terminal HPC (`mahoni01`), jalankan perintah pipeline streaming berikut:
+
 ```bash
 cd ~/projek-legal-rag
 curl -sL "https://gist.githubusercontent.com/awiuweoww/0e14fe0cebfb1c48e503e7115db5d4ad/raw/pengujian_bundle.b64?t=$(date +%s)" | base64 -d | tar -xzf -
 ```
 
-**Penjelasan Alur Perintah (*Piping*):**
-- `curl -sL "<URL>"`: Mengunduh teks dari Gist dan langsung mengalirkannya ke *stdout* memori (tanpa menulis file sementara ke harddisk).
-- `?t=$(date +%s)`: *Cache buster* (stempel waktu unix) agar CDN GitHub selalu mengirim versi teranyar tanpa terkena cache.
-- `| base64 -d`: Membaca stream teks dari *stdin* dan memulihkannya kembali menjadi data biner `tar.gz`.
-- `| tar -xzf -`: Menangkap data biner dari *stdin* (`-`) dan langsung mengekstrak seluruh file ke folder saat itu tanpa meninggalkan file arsip sisa.
+**Penjelasan Alur Perintah (_Piping_):**
+
+- `curl -sL "<URL>"`: Mengunduh teks dari Gist dan langsung mengalirkannya ke _stdout_ memori (tanpa menulis file sementara ke harddisk).
+- `?t=$(date +%s)`: _Cache buster_ (stempel waktu unix) agar CDN GitHub selalu mengirim versi teranyar tanpa terkena cache.
+- `| base64 -d`: Membaca stream teks dari _stdin_ dan memulihkannya kembali menjadi data biner `tar.gz`.
+- `| tar -xzf -`: Menangkap data biner dari _stdin_ (`-`) dan langsung mengekstrak seluruh file ke folder saat itu tanpa meninggalkan file arsip sisa.
+
 # komparasi-minirag

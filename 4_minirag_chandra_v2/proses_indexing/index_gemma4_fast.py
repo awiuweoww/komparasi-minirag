@@ -283,7 +283,7 @@ async def extract_chunk_streamlined(
 
 async def main():
     print("=" * 70)
-    print("MEMULAI INDEXING MINIRAG V2 TUNED: GEMMA 4:12B + BGE-M3 (PROMPT v2.2.0 + KANONIKAL)")
+    print("MEMULAI INDEXING MINIRAG V2 TUNED: GEMMA 4:12B + BGE-M3 (PROMPT v2.0)")
     print(f"Ollama Host   : {OLLAMA_HOST}")
     print(f"LLM Model     : {OLLAMA_MODEL} (think: false)")
     print(f"Embed Model   : {EMBEDDING_MODEL} (1024-dim)")
@@ -299,7 +299,7 @@ async def main():
         chunks = json.load(f)
 
     total_chunks = len(chunks)
-    print(f"Dokumen MinerU berhasil dimuat: {total_chunks} chunk (Header Kanonik + 512 token).\n", flush=True)
+    print(f"Dokumen MinerU berhasil dimuat: {total_chunks} chunk (512 token).\n", flush=True)
 
     sem = asyncio.Semaphore(CONCURRENCY)
     start_time = time.time()

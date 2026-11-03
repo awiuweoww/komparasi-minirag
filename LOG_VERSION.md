@@ -745,6 +745,81 @@ Menyelaraskan salinan berkas prompt yang disimpan di direktori arsip hasil index
 
 ---
 
+#### 1. Judul Perbaikan
+**Unifikasi Skrip Evaluasi Mentor & Konsistensi Multi-Run (Run 1 vs Run 2 vs V1 vs Arjun)**
+
+#### 2. Deskripsi Perbaikan
+Menghapus skrip terpisah `evaluate_consistency.py` dan mengintegrasikan seluruh metrik konsistensi 2x running (Jaccard similarity untuk nodes dan edges) langsung ke dalam `evaluate_mentor_metrics.py`. Menambahkan kolom perbandingan independen untuk `CHANDRA V2 (RUN 1)` dan `CHANDRA V2 (RUN 2)` secara berdampingan dengan `CHANDRA V1 (AWAL)` dan `ARJUN (BASELINE)`. Skrip secara otomatis mendeteksi keberadaan subdirektori `percobaan_ke1` dan `percobaan_ke2` dengan fallback adaptif.
+
+#### 3. Path File
+`4_minirag_chandra_v2/proses_indexing/evaluate_mentor_metrics.py`
+
+#### 4. File Pembaruan
+`evaluate_mentor_metrics.py`
+
+```diff
+- DIR_CHANDRA_V2 = os.path.join(BASE_DIR, "4_minirag_chandra_v2", "hasil_indexing", "storage_gemma4_uu45")
++ # Chandra V2 Percobaan 1 & Percobaan 2
++ DIR_CHANDRA_V2_RUN1 = os.path.join(BASE_DIR, "4_minirag_chandra_v2", "hasil_indexing", "percobaan_ke1", "storage_gemma4_uu45")
++ DIR_CHANDRA_V2_RUN2 = os.path.join(BASE_DIR, "4_minirag_chandra_v2", "hasil_indexing", "percobaan_ke2", "storage_gemma4_uu45")
++ 
++ def calculate_graph_overlap(G1: nx.Graph, G2: nx.Graph):
++     nodes1 = {n.lower().strip() for n in G1.nodes()}
++     nodes2 = {n.lower().strip() for n in G2.nodes()}
++     inter_n = len(nodes1.intersection(nodes2))
++     union_n = len(nodes1.union(nodes2))
++     jaccard_n = (inter_n / union_n * 100) if union_n > 0 else 0
++     edges1 = {tuple(sorted([s.lower().strip(), t.lower().strip()])) for s, t in G1.edges()}
++     edges2 = {tuple(sorted([s.lower().strip(), t.lower().strip()])) for s, t in G2.edges()}
++     inter_e = len(edges1.intersection(edges2))
++     union_e = len(edges1.union(edges2))
++     jaccard_e = (inter_e / union_e * 100) if union_e > 0 else 0
++     return {"jaccard_nodes": jaccard_n, "jaccard_edges": jaccard_e, ...}
+```
+
+---
+
+#### 1. Judul Perbaikan
+**Dokumentasi Komprehensif Analisis Percobaan 1 vs Percobaan 2 & Rangkuman Perubahan V2**
+
+#### 2. Deskripsi Perbaikan
+Menambahkan dokumen teknis independen `ANALISA_PERCOBAAN_1_DAN_2.md` yang merangkum seluruh perubahan sistem di V2 (alokasi SLURM `--mem=100G`, prompt v2.2.0 BRIN, rechunking ber-header kanonik, normalisasi singkatan, zero-isolates hierarchical anchoring) serta membedah akar penyebab selisih node dan edge antara Percobaan 1 (595/817) dan Percobaan 2 (619/850) secara objektif dan ilmiah.
+
+#### 3. Path File
+`ANALISA_PERCOBAAN_1_DAN_2.md`
+
+#### 4. File Pembaruan
+`ANALISA_PERCOBAAN_1_DAN_2.md` (Berkas Baru)
+
+```diff
++ # ANALISIS PENGUJIAN KOMPARASI MINIRAG: PERCOBAAN 1 VS PERCOBAAN 2 (V2 TUNED)
++ **Dokumen Pengujian:** Undang-Undang Nomor 45 Tahun 2009 tentang Perikanan
++ **Model LLM:** Gemma 4:12B (think: false, temperature: 0.0, num_predict: 3072)
++ **Model Embedding:** BAAI/bge-m3 (1024-dimensi)
++ 
++ ## BAGIAN 1: RINGKASAN PERUBAHAN SISTEM PADA VERSI 2 (V2)
++ - Memori Komputasi: Mengubah alokasi memori SLURM menjadi --mem=100G
++ - Dynamic Port: PORT=$((11600 + ($SLURM_JOB_ID % 1000))) anti-port collision
++ - Token Prediction: NUM_PREDICT=3072 kuota ekstraksi luas
++ - Boundary-Aware Rechunking: 490+90 overlap ber-header regulasi kanonik (60 chunk)
++ - Prompt v2.2.0 BRIN: 6 pilar UU 12/2011, aturan penamaan kanonik, handler 'Cukup jelas'
++ - Normalisasi ALIASES: 5 singkatan kunci (SIUP/SIPI/SIKPI/ZEEI/PNBP) & _canonical_legal_ref
++ - Hierarchical Anchoring: Zero isolates (0.0%) dengan struktur pohon yuridis
++ 
++ ## BAGIAN 2: HASIL EVALUASI METRIK KOMPARATIF (RUN 1 VS RUN 2 VS V1 VS ARJUN)
++ ## BAGIAN 3: ANALISIS MENDALAM AKAR PENYEBAB SELISIH (+24 NODE, +33 EDGE)
++ - Pola A: Inkonsistensi Awalan Kategori ('hak memeriksa...' vs 'memeriksa...')
++ - Pola B: Distraksi Taksonomi Biota pada Penjelasan Definisi Ikan (Pasal 1 angka 4)
++ - Pola C: Parafrase Frasa Panjang ('paling sedikit 70%' vs 'minimal 70%')
++ - Pola D: Kedalaman Pemecahan Klausul Huruf di Pasal 41a
++ 
++ ## BAGIAN 4: FAKTOR TEKNIS GPU A100 FLOATING-POINT NON-DETERMINISM
++ ## BAGIAN 5: PENILAIAN OBJEKTIF & DAMPAK TERHADAP RETRIEVAL RAG
++ ## BAGIAN 6: REKOMENDASI PERBAIKAN UNTUK VERSI 3 (V3)
+```
+
+---
+
 ======================================
 perbaikan V3 (Template / Rencana Mendatang)
 ======================================
