@@ -35,6 +35,9 @@ if not os.path.exists(DIR_CHANDRA_V2_RUN1):
 DIR_CHANDRA_V2_RUN2 = os.path.join(BASE_DIR, "4_minirag_chandra_v2", "hasil_indexing", "percobaan_ke2", "storage_gemma4_uu45")
 if not os.path.exists(DIR_CHANDRA_V2_RUN2):
     DIR_CHANDRA_V2_RUN2 = os.path.join(BASE_DIR, "4_minirag_chandra_v2", "hasil_indexing", "storage_gemma4_uu45_run2")
+
+# Chandra V2.1 (Strict MinerU JSON AST Mode)
+DIR_CHANDRA_V2_1 = os.path.join(BASE_DIR, "5_minirag_chandra_v2.1", "hasil_indexing", "storage_gemma4_uu45")
 DIR_CHANDRA = DIR_CHANDRA_V2_RUN1
 
 # 1. Daftar Ground Truth 26 Definisi di Pasal 1
@@ -163,6 +166,34 @@ def audit_knowledge_graph(dir_path: str, doc_raw_text: str):
     graphml_path = os.path.join(dir_path, "graph_chunk_entity_relation.graphml")
     chunks_path = os.path.join(dir_path, "kv_store_text_chunks.json")
     
+    if not os.path.exists(graphml_path):
+        base_parent = os.path.dirname(os.path.dirname(dir_path))
+        data_chunk_path = os.path.join(base_parent, "proses_indexing", "data", "chunks_uu_45_2009.json")
+        c_count = 0
+        if os.path.exists(data_chunk_path):
+            try:
+                with open(data_chunk_path, "r", encoding="utf-8") as f:
+                    c_count = len(json.load(f))
+            except Exception:
+                pass
+        return {
+            "is_pending": True,
+            "num_nodes": "[Pending HPC]",
+            "num_edges": "-",
+            "total_chunks": f"{c_count} chunks (Siap)" if c_count else "[Pending]",
+            "pasal_found": "-",
+            "def_exact": "-",
+            "def_partial": "-",
+            "asas_found": "-",
+            "singkatan_found": "-",
+            "pct_in_text": "-",
+            "num_isolated": "-",
+            "num_components": "-",
+            "duplicate_groups": "-",
+            "junk_nodes": [],
+            "graph": nx.Graph()
+        }
+
     G = load_graphml(graphml_path)
     
     # 1. Total Node & Edge
@@ -326,6 +357,9 @@ def main():
     with open(TEXT_PATH, "r", encoding="utf-8") as f:
         doc_raw = f.read()
         
+    print(f"Menganalisis Graf Chandra V2.1 (Strict JSON AST): {DIR_CHANDRA_V2_1} ...")
+    res_v2_1 = audit_knowledge_graph(DIR_CHANDRA_V2_1, doc_raw)
+
     print(f"Menganalisis Graf Chandra V2 (Percobaan 1): {DIR_CHANDRA_V2_RUN1} ...")
     res_v2_r1 = audit_knowledge_graph(DIR_CHANDRA_V2_RUN1, doc_raw)
 
@@ -341,86 +375,125 @@ def main():
     # Hitung metrik stabilitas / overlap Run 1 vs Run 2
     overlap_res = calculate_graph_overlap(res_v2_r1["graph"], res_v2_r2["graph"])
 
-    def fmt_nodes(r): return f"{r['num_nodes']} / {r['num_edges']}"
-    def fmt_chunks(r): return f"{r['total_chunks']} chunks"
-    def fmt_pasal(r): return f"{r['pasal_found']} dari ~55"
-    def fmt_def(r): return f"{r['def_exact']} persis, {r['def_partial']} seb"
-    def fmt_asas(r): return f"{r['asas_found']} / 11"
-    def fmt_sing(r): return f"{r['singkatan_found']} / 5"
-    def fmt_pct(r): return f"{r['pct_in_text']}%"
-    def fmt_iso(r): return f"{r['num_isolated']} ({r['num_components']} komp)"
-    def fmt_dup(r): return str(r['duplicate_groups'])
-    def fmt_junk(r): return f"{len(r['junk_nodes'])} node"
+    def fmt_nodes(r):
+        if r.get("is_pending"): return "[Pending HPC]"
+        return f"{r['num_nodes']} / {r['num_edges']}"
+    def fmt_chunks(r):
+        if r.get("is_pending"): return str(r['total_chunks'])
+        return f"{r['total_chunks']} chunks"
+    def fmt_pasal(r):
+        if r.get("is_pending"): return "-"
+        return f"{r['pasal_found']} dari ~55"
+    def fmt_def(r):
+        if r.get("is_pending"): return "-"
+        return f"{r['def_exact']} persis, {r['def_partial']} seb"
+    def fmt_asas(r):
+        if r.get("is_pending"): return "-"
+        return f"{r['asas_found']} / 11"
+    def fmt_sing(r):
+        if r.get("is_pending"): return "-"
+        return f"{r['singkatan_found']} / 5"
+    def fmt_pct(r):
+        if r.get("is_pending"): return "-"
+        return f"{r['pct_in_text']}%"
+    def fmt_iso(r):
+        if r.get("is_pending"): return "-"
+        return f"{r['num_isolated']} ({r['num_components']} komp)"
+    def fmt_dup(r):
+        if r.get("is_pending"): return "-"
+        return str(r['duplicate_groups'])
+    def fmt_junk(r):
+        if r.get("is_pending"): return "-"
+        return f"{len(r['junk_nodes'])} node"
 
     # Format nilai untuk kolom tabel
-    val_nodes_r1 = fmt_nodes(res_v2_r1)
-    val_nodes_r2 = fmt_nodes(res_v2_r2)
-    val_nodes_v1 = fmt_nodes(res_v1)
-    val_nodes_a  = fmt_nodes(res_a)
+    val_nodes_v21 = fmt_nodes(res_v2_1)
+    val_nodes_r1  = fmt_nodes(res_v2_r1)
+    val_nodes_r2  = fmt_nodes(res_v2_r2)
+    val_nodes_v1  = fmt_nodes(res_v1)
+    val_nodes_a   = fmt_nodes(res_a)
 
-    val_chunks_r1 = fmt_chunks(res_v2_r1)
-    val_chunks_r2 = fmt_chunks(res_v2_r2)
-    val_chunks_v1 = fmt_chunks(res_v1)
-    val_chunks_a  = f"{res_a['total_chunks']} / {res_a['total_chunks']}"
+    val_chunks_v21 = fmt_chunks(res_v2_1)
+    val_chunks_r1  = fmt_chunks(res_v2_r1)
+    val_chunks_r2  = fmt_chunks(res_v2_r2)
+    val_chunks_v1  = fmt_chunks(res_v1)
+    val_chunks_a   = f"{res_a['total_chunks']} / {res_a['total_chunks']}"
 
-    val_pasal_r1 = fmt_pasal(res_v2_r1)
-    val_pasal_r2 = fmt_pasal(res_v2_r2)
-    val_pasal_v1 = fmt_pasal(res_v1)
-    val_pasal_a  = fmt_pasal(res_a)
+    val_pasal_v21 = fmt_pasal(res_v2_1)
+    val_pasal_r1  = fmt_pasal(res_v2_r1)
+    val_pasal_r2  = fmt_pasal(res_v2_r2)
+    val_pasal_v1  = fmt_pasal(res_v1)
+    val_pasal_a   = fmt_pasal(res_a)
 
-    val_def_r1 = fmt_def(res_v2_r1)
-    val_def_r2 = fmt_def(res_v2_r2)
-    val_def_v1 = fmt_def(res_v1)
-    val_def_a  = f"{res_a['def_exact']} / 26"
+    val_def_v21 = fmt_def(res_v2_1)
+    val_def_r1  = fmt_def(res_v2_r1)
+    val_def_r2  = fmt_def(res_v2_r2)
+    val_def_v1  = fmt_def(res_v1)
+    val_def_a   = f"{res_a['def_exact']} / 26"
 
-    val_asas_r1 = fmt_asas(res_v2_r1)
-    val_asas_r2 = fmt_asas(res_v2_r2)
-    val_asas_v1 = fmt_asas(res_v1)
-    val_asas_a  = fmt_asas(res_a)
+    val_asas_v21 = fmt_asas(res_v2_1)
+    val_asas_r1  = fmt_asas(res_v2_r1)
+    val_asas_r2  = fmt_asas(res_v2_r2)
+    val_asas_v1  = fmt_asas(res_v1)
+    val_asas_a   = fmt_asas(res_a)
 
-    val_sing_r1 = fmt_sing(res_v2_r1)
-    val_sing_r2 = fmt_sing(res_v2_r2)
-    val_sing_v1 = fmt_sing(res_v1)
-    val_sing_a  = fmt_sing(res_a)
+    val_sing_v21 = fmt_sing(res_v2_1)
+    val_sing_r1  = fmt_sing(res_v2_r1)
+    val_sing_r2  = fmt_sing(res_v2_r2)
+    val_sing_v1  = fmt_sing(res_v1)
+    val_sing_a   = fmt_sing(res_a)
 
-    val_pct_r1 = fmt_pct(res_v2_r1)
-    val_pct_r2 = fmt_pct(res_v2_r2)
-    val_pct_v1 = fmt_pct(res_v1)
-    val_pct_a  = fmt_pct(res_a)
+    val_pct_v21 = fmt_pct(res_v2_1)
+    val_pct_r1  = fmt_pct(res_v2_r1)
+    val_pct_r2  = fmt_pct(res_v2_r2)
+    val_pct_v1  = fmt_pct(res_v1)
+    val_pct_a   = fmt_pct(res_a)
 
-    val_iso_r1 = fmt_iso(res_v2_r1)
-    val_iso_r2 = fmt_iso(res_v2_r2)
-    val_iso_v1 = fmt_iso(res_v1)
-    val_iso_a  = f"{res_a['num_isolated']} ({res_a['pct_isolated']}%)"
+    val_iso_v21 = fmt_iso(res_v2_1)
+    val_iso_r1  = fmt_iso(res_v2_r1)
+    val_iso_r2  = fmt_iso(res_v2_r2)
+    val_iso_v1  = fmt_iso(res_v1)
+    val_iso_a   = f"{res_a['num_isolated']} ({res_a['pct_isolated']}%)"
 
-    val_dup_r1 = fmt_dup(res_v2_r1)
-    val_dup_r2 = fmt_dup(res_v2_r2)
-    val_dup_v1 = fmt_dup(res_v1)
-    val_dup_a  = fmt_dup(res_a)
+    val_dup_v21 = fmt_dup(res_v2_1)
+    val_dup_r1  = fmt_dup(res_v2_r1)
+    val_dup_r2  = fmt_dup(res_v2_r2)
+    val_dup_v1  = fmt_dup(res_v1)
+    val_dup_a   = fmt_dup(res_a)
 
-    val_junk_r1 = fmt_junk(res_v2_r1)
-    val_junk_r2 = fmt_junk(res_v2_r2)
-    val_junk_v1 = fmt_junk(res_v1)
-    val_junk_a  = fmt_junk(res_a)
+    val_junk_v21 = fmt_junk(res_v2_1)
+    val_junk_r1  = fmt_junk(res_v2_r1)
+    val_junk_r2  = fmt_junk(res_v2_r2)
+    val_junk_v1  = fmt_junk(res_v1)
+    val_junk_a   = fmt_junk(res_a)
 
-    w_p, w_r1, w_r2, w_v1, w_a = 32, 20, 20, 18, 18
-    total_len = w_p + w_r1 + w_r2 + w_v1 + w_a + 12
+    w_p, w_v21, w_r1, w_r2, w_v1, w_a = 32, 22, 20, 20, 18, 18
+    total_len = w_p + w_v21 + w_r1 + w_r2 + w_v1 + w_a + 15
     sep_line = "=" * total_len
 
     print("\n" + sep_line)
-    print(f"{'PARAMETER METRIK':<{w_p}} | {'CHANDRA V2 (RUN 1)':<{w_r1}} | {'CHANDRA V2 (RUN 2)':<{w_r2}} | {'CHANDRA V1 (AWAL)':<{w_v1}} | {'ARJUN (BASELINE)':<{w_a}}")
+    print(f"{'PARAMETER METRIK':<{w_p}} | {'CHANDRA V2.1 (NEW)':<{w_v21}} | {'CHANDRA V2 (RUN 1)':<{w_r1}} | {'CHANDRA V2 (RUN 2)':<{w_r2}} | {'CHANDRA V1 (AWAL)':<{w_v1}} | {'ARJUN (BASELINE)':<{w_a}}")
     print(sep_line)
-    print(f"{'Jumlah node / edge':<{w_p}} | {val_nodes_r1:<{w_r1}} | {val_nodes_r2:<{w_r2}} | {val_nodes_v1:<{w_v1}} | {val_nodes_a:<{w_a}}")
-    print(f"{'Chunk teks':<{w_p}} | {val_chunks_r1:<{w_r1}} | {val_chunks_r2:<{w_r2}} | {val_chunks_v1:<{w_v1}} | {val_chunks_a:<{w_a}}")
-    print(f"{'Pasal yang diubah (~55)':<{w_p}} | {val_pasal_r1:<{w_r1}} | {val_pasal_r2:<{w_r2}} | {val_pasal_v1:<{w_v1}} | {val_pasal_a:<{w_a}}")
-    print(f"{'26 definisi di Pasal 1':<{w_p}} | {val_def_r1:<{w_r1}} | {val_def_r2:<{w_r2}} | {val_def_v1:<{w_v1}} | {val_def_a:<{w_a}}")
-    print(f"{'11 asas':<{w_p}} | {val_asas_r1:<{w_r1}} | {val_asas_r2:<{w_r2}} | {val_asas_v1:<{w_v1}} | {val_asas_a:<{w_a}}")
-    print(f"{'SIUP / SIPI / SIKPI / ZEEI / PNBP':<{w_p}} | {val_sing_r1:<{w_r1}} | {val_sing_r2:<{w_r2}} | {val_sing_v1:<{w_v1}} | {val_sing_a:<{w_a}}")
-    print(f"{'Nama node muncul di teks UU (%)':<{w_p}} | {val_pct_r1:<{w_r1}} | {val_pct_r2:<{w_r2}} | {val_pct_v1:<{w_v1}} | {val_pct_a:<{w_a}}")
-    print(f"{'Node terisolasi':<{w_p}} | {val_iso_r1:<{w_r1}} | {val_iso_r2:<{w_r2}} | {val_iso_v1:<{w_v1}} | {val_iso_a:<{w_a}}")
-    print(f"{'Kelompok nama hampir duplikat':<{w_p}} | {val_dup_r1:<{w_r1}} | {val_dup_r2:<{w_r2}} | {val_dup_v1:<{w_v1}} | {val_dup_a:<{w_a}}")
-    print(f"{'Node sampah / placeholder':<{w_p}} | {val_junk_r1:<{w_r1}} | {val_junk_r2:<{w_r2}} | {val_junk_v1:<{w_v1}} | {val_junk_a:<{w_a}}")
+    print(f"{'Jumlah node / edge':<{w_p}} | {val_nodes_v21:<{w_v21}} | {val_nodes_r1:<{w_r1}} | {val_nodes_r2:<{w_r2}} | {val_nodes_v1:<{w_v1}} | {val_nodes_a:<{w_a}}")
+    print(f"{'Chunk teks':<{w_p}} | {val_chunks_v21:<{w_v21}} | {val_chunks_r1:<{w_r1}} | {val_chunks_r2:<{w_r2}} | {val_chunks_v1:<{w_v1}} | {val_chunks_a:<{w_a}}")
+    print(f"{'Pasal yang diubah (~55)':<{w_p}} | {val_pasal_v21:<{w_v21}} | {val_pasal_r1:<{w_r1}} | {val_pasal_r2:<{w_r2}} | {val_pasal_v1:<{w_v1}} | {val_pasal_a:<{w_a}}")
+    print(f"{'26 definisi di Pasal 1':<{w_p}} | {val_def_v21:<{w_v21}} | {val_def_r1:<{w_r1}} | {val_def_r2:<{w_r2}} | {val_def_v1:<{w_v1}} | {val_def_a:<{w_a}}")
+    print(f"{'11 asas':<{w_p}} | {val_asas_v21:<{w_v21}} | {val_asas_r1:<{w_r1}} | {val_asas_r2:<{w_r2}} | {val_asas_v1:<{w_v1}} | {val_asas_a:<{w_a}}")
+    print(f"{'SIUP / SIPI / SIKPI / ZEEI / PNBP':<{w_p}} | {val_sing_v21:<{w_v21}} | {val_sing_r1:<{w_r1}} | {val_sing_r2:<{w_r2}} | {val_sing_v1:<{w_v1}} | {val_sing_a:<{w_a}}")
+    print(f"{'Nama node muncul di teks UU (%)':<{w_p}} | {val_pct_v21:<{w_v21}} | {val_pct_r1:<{w_r1}} | {val_pct_r2:<{w_r2}} | {val_pct_v1:<{w_v1}} | {val_pct_a:<{w_a}}")
+    print(f"{'Node terisolasi':<{w_p}} | {val_iso_v21:<{w_v21}} | {val_iso_r1:<{w_r1}} | {val_iso_r2:<{w_r2}} | {val_iso_v1:<{w_v1}} | {val_iso_a:<{w_a}}")
+    print(f"{'Kelompok nama hampir duplikat':<{w_p}} | {val_dup_v21:<{w_v21}} | {val_dup_r1:<{w_r1}} | {val_dup_r2:<{w_r2}} | {val_dup_v1:<{w_v1}} | {val_dup_a:<{w_a}}")
+    print(f"{'Node sampah / placeholder':<{w_p}} | {val_junk_v21:<{w_v21}} | {val_junk_r1:<{w_r1}} | {val_junk_r2:<{w_r2}} | {val_junk_v1:<{w_v1}} | {val_junk_a:<{w_a}}")
     print(sep_line)
+
+    if not res_v2_1.get("is_pending"):
+        overlap_v21 = calculate_graph_overlap(res_v2_1["graph"], res_v2_r1["graph"])
+        print("\n" + sep_line)
+        print("=== ANALISIS STABILITAS GEMMA 4:12B CHANDRA V2.1 vs CHANDRA V2 ===")
+        print(sep_line)
+        print(f"Stabilitas / Overlap Entitas (Jaccard Nodes) : {overlap_v21['jaccard_nodes']:.2f}% (Irisan: {overlap_v21['inter_nodes']} / Gabungan: {overlap_v21['union_nodes']})")
+        print(f"Stabilitas / Overlap Relasi  (Jaccard Edges) : {overlap_v21['jaccard_edges']:.2f}% (Irisan: {overlap_v21['inter_edges']} / Gabungan: {overlap_v21['union_edges']})")
+        print(sep_line + "\n")
 
     print("\n" + sep_line)
     print("=== ANALISIS STABILITAS & KONSISTENSI DUA KALI RUNNING GEMMA 4:12B (V2) ===")

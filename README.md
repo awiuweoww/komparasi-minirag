@@ -40,16 +40,26 @@ pengujian-komparasi-minirag/
 │   │   └── minirag/prompt_id_revisi.py      # Prompt revisi V1
 │   └── hasil_indexing/
 │       └── storage_gemma4_uu45/             # Hasil V1 (218 Node / 428 Edge)
-└── 4_minirag_chandra_v2/                    # Indexing Gemma 4:12B - Versi 2 (Tuned: 595 Node / 817 Edge)
+├── 4_minirag_chandra_v2/                    # Indexing Gemma 4:12B - Versi 2 (Tuned: 595 Node / 817 Edge)
+│   ├── proses_indexing/
+│   │   ├── rechunk_512.py                   # Re-chunking 512 token boundary-aware & legal header
+│   │   ├── normalisasi_entitas.py           # Modul kanonikalisasi ALIASES & dedup_graph resmi BRIN
+│   │   ├── index_gemma4_fast.py             # Script indexing V2 (Prompt v2.2.0, balanced parser, hierarchical anchoring)
+│   │   ├── run_indexing.sbatch              # SLURM batch V2 (dynamic port anti-collision, 4 parallel slot A100)
+│   │   ├── data/chunks_uu_45_2009.json      # 60 chunk token standar ber-header kanonik
+│   │   └── minirag/prompt_id_revisi.py      # Prompt Indexing Resmi BRIN v2.2.0
+│   └── hasil_indexing/
+│       └── storage_gemma4_uu45/             # Hasil V2 (595 Node / 817 Edge, 0 Isolates, 0 Junk, 10 Duplikat)
+└── 5_minirag_chandra_v2.1/                  # Indexing Gemma 4:12B - Versi 2.1 (Strict MinerU JSON AST Mode)
     ├── proses_indexing/
-    │   ├── rechunk_512.py                   # Re-chunking 512 token boundary-aware & legal header
+    │   ├── universal_legal_chunker.py       # Engine chunking yuridis universal (Strict JSON AST & Zero-Tolerance Guard)
     │   ├── normalisasi_entitas.py           # Modul kanonikalisasi ALIASES & dedup_graph resmi BRIN
-    │   ├── index_gemma4_fast.py             # Script indexing V2 (Prompt v2.2.0, balanced parser, hierarchical anchoring)
-    │   ├── run_indexing.sbatch              # SLURM batch V2 (dynamic port anti-collision, 4 parallel slot A100)
-    │   ├── data/chunks_uu_45_2009.json      # 60 chunk token standar ber-header kanonik
-    │   └── minirag/prompt_id_revisi.py      # Prompt Indexing Resmi BRIN v2.2.0
+    │   ├── index_gemma4_fast.py             # Script indexing V2.1
+    │   ├── run_indexing.sbatch              # SLURM batch V2.1
+    │   ├── evaluate_mentor_metrics.py       # Audit 11 parameter metrik mentor (V2.1, V2, V1, Arjun)
+    │   └── data/chunks_uu_45_2009.json      # 60 chunk hasil ekstraksi layout-aware MinerU AST
     └── hasil_indexing/
-        └── storage_gemma4_uu45/             # Hasil V2 (595 Node / 817 Edge, 0 Isolates, 0 Junk, 10 Duplikat)
+        └── storage_gemma4_uu45/             # Target output graf V2.1
 ```
 
 ---
@@ -314,5 +324,57 @@ curl -sL "https://gist.githubusercontent.com/awiuweoww/0e14fe0cebfb1c48e503e7115
 - `?t=$(date +%s)`: _Cache buster_ (stempel waktu unix) agar CDN GitHub selalu mengirim versi teranyar tanpa terkena cache.
 - `| base64 -d`: Membaca stream teks dari _stdin_ dan memulihkannya kembali menjadi data biner `tar.gz`.
 - `| tar -xzf -`: Menangkap data biner dari _stdin_ (`-`) dan langsung mengekstrak seluruh file ke folder saat itu tanpa meninggalkan file arsip sisa.
+
+---
+
+## 8. Panduan Sinkronisasi Langsung (WSL / Lokal ke HPC via `rsync`)
+
+Metode sinkronisasi langsung menggunakan `rsync` melalui SSH ProxyJump adalah cara tercepat untuk mengirim folder atau file hasil modifikasi dari laptop/WSL lokal langsung ke server HPC tanpa perlu melakukan commit & push ke Git terlebih dahulu.
+
+### A. Pola Perintah Universal
+
+```bash
+# Pola Umum:
+rsync -avz <path_atau_nama_folder_lokal> <host_hpc>:<path_tujuan_di_hpc>/
+```
+
+### B. Kasus Penggunaan Universal
+
+#### 1. Sinkronisasi Folder Pipeline Tertentu (Lokal ke HPC)
+Untuk menyinkronkan satu folder pipeline lengkap (misalnya versi pengujian baru):
+```bash
+rsync -avz /home/chandreu/brin-2026/pengujian-komparasi-minirag/<nama_folder> mahoni01:~/projek-legal-rag/
+```
+*Contoh konkret:*
+```bash
+rsync -avz /home/chandreu/brin-2026/pengujian-komparasi-minirag/5_minirag_chandra_v2.1 mahoni01:~/projek-legal-rag/
+```
+
+#### 2. Sinkronisasi File Tertentu Saja (Lokal ke HPC)
+Untuk memperbarui satu file skrip tertentu ke dalam subfolder HPC:
+```bash
+rsync -avz /home/chandreu/brin-2026/pengujian-komparasi-minirag/<path_subfolder>/<nama_file> mahoni01:~/projek-legal-rag/<path_subfolder>/
+```
+*Contoh konkret:*
+```bash
+rsync -avz /home/chandreu/brin-2026/pengujian-komparasi-minirag/5_minirag_chandra_v2.1/proses_indexing/universal_legal_chunker.py mahoni01:~/projek-legal-rag/5_minirag_chandra_v2.1/proses_indexing/
+```
+
+#### 3. Mengambil Hasil Indexing / Artefak (HPC ke Lokal)
+Untuk menarik hasil graf (`storage_*`), log indexing, atau metrik evaluasi dari HPC kembali ke laptop lokal:
+```bash
+rsync -avz mahoni01:~/projek-legal-rag/<path_folder_di_hpc> <path_tujuan_lokal>/
+```
+*Contoh konkret:*
+```bash
+rsync -avz mahoni01:~/projek-legal-rag/5_minirag_chandra_v2.1/hasil_indexing/storage_gemma4_uu45 /home/chandreu/brin-2026/pengujian-komparasi-minirag/5_minirag_chandra_v2.1/hasil_indexing/
+```
+
+### C. Penjelasan Parameter `rsync`:
+- `-a` (*archive*): Menyalin secara rekursif serta mempertahankan hak akses (*permissions*), kepemilikan, dan stempel waktu (*timestamps*).
+- `-v` (*verbose*): Menampilkan detail file yang sedang ditransfer secara real-time.
+- `-z` (*compress*): Mengompresi data saat transfer jaringan untuk menghemat bandwidth dan mempercepat transfer file besar (seperti chunks JSON dan GraphML).
+- `--progress` *(opsional)*: Menampilkan progress bar dan kecepatan transfer per file.
+- `--exclude='*.log'` *(opsional)*: Mengabaikan file log besar agar tidak membebani transfer.
 
 # komparasi-minirag

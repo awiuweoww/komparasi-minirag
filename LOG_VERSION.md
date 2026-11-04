@@ -820,6 +820,185 @@ Menambahkan dokumen teknis independen `ANALISA_PERCOBAAN_1_DAN_2.md` yang merang
 
 ---
 
+#### 1. Judul Perbaikan
+**Perbaikan Logika Penentuan Header Pasal pada Re-Chunking (`rechunk_512.py`) - Eliminasi *Lookahead Leak***
+
+#### 2. Deskripsi Perbaikan
+Memperbaiki kelemahan struktural pada skrip `rechunk_512.py` di mana variabel `current_pasal` sebelumnya selalu ter-update secara progresif hingga paragraf terakhir di dalam chunk (atau paragraf luapan ke chunk berikutnya). Akibatnya, kepala teks regulasi kanonik (`UU Nomor 45 Tahun 2009 | Pasal X`) selalu tertempel menggunakan nomor pasal terakhir yang muncul di ekor chunk, bukan pasal induk dari teks yang sedang bergulir di awal chunk (*lookahead leak*).
+
+Contoh kasus kritis:
+- Pada `chunk-0038`, isi teks diawali dengan kelanjutan klausul pidana **Pasal 93 ayat (2), (3), dan (4)**, tetapi di ujung akhir chunk terdapat potongan teks pengantar `"42. Ketentuan Pasal 98 diubah..."`. Karena logika lama mengambil pasal terakhir, header `chunk-0038` keliru distempel menjadi `UU Nomor 45 Tahun 2009 | Pasal 98`.
+- Hal ini menyebabkan LLM (Gemma 4) mengekstrak entitas hukum halusinasi: `pasal 98 ayat (2)`, `pasal 98 ayat (3)`, dan `pasal 98 ayat (4)`—klausul yang sebenarnya tidak pernah ada di dalam hukum positif Indonesia (seharusnya milik Pasal 93).
+- Pergeseran serupa juga terjadi di seluruh dokumen (misal `chunk-0005` definisi Pasal 1 tertempel `Pasal 2`, `chunk-0006` tertempel `Pasal 7`, `chunk-0039` Pasal 98 tertempel `Pasal 100B`).
+
+Perbaikan yang diterapkan:
+1. Menyimpan status pasal kontekstual pada setiap paragraf dalam bentuk tuple `(teks_paragraf, pasal_aktif)` di dalam `curr_paras`.
+2. Menentukan header chunk dan atribut `pasal_ref` berdasarkan pasal dari **paragraf substantif pertama** di awal chunk (`get_chunk_pasal(curr_paras)`), dengan mengabaikan baris *catchword* peralihan halaman cetak (seperti `. . .`).
+3. Memperkaya regex `detect_article_label` agar mengenali klausul pasal sisipan (`disisipkan ... yakni Pasal X`), penomoran Romawi (`PASAL I`, `PASAL II`), dan format heading tebal/tag Markdown (`**Pasal X**`, `## Pasal X`).
+
+Hasil:
+- Seluruh 60 chunk tetap terjaga secara jumlah dan panjang token (rata-rata 475.4 token).
+- `chunk-0038` kini ber-header otentik: `UU Nomor 45 Tahun 2009 | Pasal 93` (selaras arahan evaluasi mentor).
+- `chunk-0039` ber-header: `UU Nomor 45 Tahun 2009 | Pasal 98`.
+- `chunk-0040` ber-header: `UU Nomor 45 Tahun 2009 | Pasal 100B`.
+- Berkas sumber di `4_minirag_chandra_v2/proses_indexing/data/chunks_uu_45_2009.json` dan `1_dokumen_sumber/chunks_uu_45_2009_512.json` telah diperbarui dan disinkronkan ke HPC Mahameru BRIN.
+
+#### 3. Path File
+`4_minirag_chandra_v2/proses_indexing/rechunk_512.py`  
+`4_minirag_chandra_v2/proses_indexing/data/chunks_uu_45_2009.json`  
+`1_dokumen_sumber/chunks_uu_45_2009_512.json`
+
+#### 4. File Pembaruan
+`rechunk_512.py`
+
+```diff
+@@ -29,29 +29,49 @@ def clean_markdown_text(text: str) -> str:
+ 
+ def detect_article_label(text: str, current_state: str) -> str:
+     """Melacak pasal aktif secara kontekstual."""
+-    is_penjelasan = "penjelasan" in current_state.lower() or "# penjelasan" in text.lower()
+-    m_pasal = re.search(r"(?:##\s*|Ketentuan\s+|Angka\s+\d+\s+)(Pasal\s+\d+[a-zA-Z]?)", text, re.IGNORECASE)
++    p_lower = text.lower()
++    is_penjelasan = "penjelasan" in current_state.lower() or "penjelasan atas" in p_lower or "# penjelasan" in p_lower
+     
+     if is_penjelasan:
+-        if m_pasal:
+-            return f"Penjelasan {m_pasal.group(1).title()}"
++        m_penj_pasal = re.search(r"(?:(?:##|\*\*|Angka\s+\d+)\s*)?(?:Pasal|PASAL)\s+(\d+[a-zA-Z]?|[IVXLCDM]+)", text)
++        if m_penj_pasal and ("angka" in p_lower or "pasal" in p_lower) and ("cukup jelas" in p_lower or "ayat" in p_lower or "huruf" in p_lower or text.startswith("##") or text.startswith("**Pasal")):
++            return f"Penjelasan Pasal {m_penj_pasal.group(1).upper()}"
+         return current_state if "penjelasan" in current_state.lower() else "Penjelasan Umum"
+         
+-    if "menimbang" in text.lower() or "mengingat" in text.lower() or "memutuskan" in text.lower():
+-        if not m_pasal or "pasal 20" in text.lower():
++    if any(k in p_lower for k in ["menimbang", "mengingat", "memutuskan", "presiden republik indonesia"]) and not ("pasal i" in p_lower or "ketentuan pasal" in p_lower):
++        if not re.search(r"##\s*Pasal", text, re.I):
+             return "Pembukaan & Konsiderans"
+-            
++
++    # Pola penyisipan: 'disisipkan ... yakni Pasal X'
++    m_ins = re.search(r"disisipkan[^\n.]+?yakni\s+(?:Pasal|PASAL)\s+(\d+[a-zA-Z]?)", text, re.IGNORECASE)
++    if m_ins:
++        return f"Pasal {m_ins.group(1).upper()}"
++        
++    # Pola perubahan / heading pasal
++    m_pasal = re.search(r"(?:##\s*|\*\*|Ketentuan\s+|Angka\s+\d+\s+)(?:Pasal|PASAL)\s+(\d+[a-zA-Z]?|[IVXLCDM]+)", text, re.IGNORECASE)
+     if m_pasal:
+-        return m_pasal.group(1).title()
++        return f"Pasal {m_pasal.group(1).upper()}"
+         
++    # Standalone header: ## PASAL II atau **Pasal II**
++    m_standalone = re.match(r"^(?:##|\*\*)\s*(?:Pasal|PASAL)\s+(\d+[a-zA-Z]?|[IVXLCDM]+)", text, re.IGNORECASE)
++    if m_standalone:
++        return f"Pasal {m_standalone.group(1).upper()}"
++        
+     return current_state
+ 
++def get_chunk_pasal(paras_list):
++    """Mengambil pasal acuan chunk dari paragraf substantif pertama (mengabaikan catchword . . .)."""
++    for p_text, p_pasal in paras_list:
++        if not re.search(r"\.\s*\.\s*\.(?:\*\*)?\s*$", p_text):
++            return p_pasal
++    return paras_list[0][1]
++
+ def chunk_with_legal_headers(text: str, chunk_size: int = 490, overlap: int = 90):
+     enc = tiktoken.get_encoding("cl100k_base")
+     paragraphs = [p.strip() for p in text.split("\n\n") if p.strip()]
+     
+     chunks = []
+-    curr_paras = []
++    curr_paras = []  # list of tuple: (p_text, p_pasal)
+     curr_tokens = 0
+     current_pasal = "Pembukaan"
+     
+@@ -73,15 +93,17 @@ def chunk_with_legal_headers(text: str, chunk_size: int = 490, overlap: int = 90
+                 s_tok = len(enc.encode(s))
+                 if curr_tokens + s_tok > chunk_size and curr_paras:
+-                    raw_chunk = "\n\n".join(curr_paras)
+-                    header = f"UU Nomor 45 Tahun 2009 | {current_pasal}\n\n"
++                    start_pasal = get_chunk_pasal(curr_paras)
++                    header = f"UU Nomor 45 Tahun 2009 | {start_pasal}\n\n"
++                    raw_chunk = "\n\n".join([cp[0] for cp in curr_paras])
+                     full_content = header + raw_chunk
+@@ -99,14 +121,16 @@ def chunk_with_legal_headers(text: str, chunk_size: int = 490, overlap: int = 90
+             if curr_tokens + p_tokens > chunk_size and curr_paras:
+-                raw_chunk = "\n\n".join(curr_paras)
+-                header = f"UU Nomor 45 Tahun 2009 | {current_pasal}\n\n"
++                start_pasal = get_chunk_pasal(curr_paras)
++                header = f"UU Nomor 45 Tahun 2009 | {start_pasal}\n\n"
++                raw_chunk = "\n\n".join([cp[0] for cp in curr_paras])
+                 full_content = header + raw_chunk
+```
+
+---
+
+======================================
+perbaikan V2.1
+======================================
+
+### Rincian Perubahan V2.1 (Strict MinerU JSON AST & Zero-Defect Universal Chunker)
+
+#### 1. Judul Perbaikan
+**Migrasi Penuh ke Universal Legal Chunker v2.3 (Paten Strict JSON AST & Penghapusan File Rechunk Lama)**
+
+#### 2. Deskripsi Perbaikan
+Menghapus seluruh dependensi pemotongan teks berbasis regex Markdown (`rechunk_512.py` lama dan fallback `output.md`) yang rentan salah potong, judul menggantung (*dangling*), dan teks hilang. Menggantinya secara langsung dengan engine tunggal `universal_legal_chunker.py` yang memproses struktur tata letak asli (`content_list.json`) hasil ekstraksi Computer Vision MinerU.
+
+Pembaruan utama:
+1. **Penghapusan Total File `rechunk_512.py`:** File wrapper lama `rechunk_512.py` dihapus. `universal_legal_chunker.py` kini bertindak sebagai engine utama sekaligus script mandiri yang dapat langsung dieksekusi (`python3 universal_legal_chunker.py`) untuk menghasilkan potongan data `data/chunks_uu_45_2009.json`.
+2. **Paten Strict JSON AST (No Fallback):** Strategi *fallback* ke Markdown (`output.md`) telah dihapus secara permanen. Jika `content_list.json` tidak ditemukan, proses langsung ditolak (`FileNotFoundError`) untuk mencegah regresi data dan isu salah potong.
+3. **Automated Assertion Guard (Zero-Tolerance 2-Step Verification):** Setiap eksekusi chunking secara otomatis menguji 7 guardrails ketat:
+   - Verbatim Coverage Rate == 100.0% (Zero Text Loss).
+   - Maximum Token <= 520 (Kepatuhan ketat kuota jendela konteks LLM).
+   - Dangling Headings == 0 (Tidak ada judul pasal tertinggal sendirian di baris akhir).
+   - Misalignment == 0 (Nama pasal di header terikat 100% dengan kalimat pembuka body).
+   - Subordinate Clause Continuity == 100% (Ayat lanjutan bersambung dari pasal induk sebelumnya).
+   - Base64 / Media Bomb Neutralizer == 0.
+   - Catchword Elipsis Leak == 0.
+4. **Isolasi Folder Baru `5_minirag_chandra_v2.1`:** Memisahkan seluruh pipeline indexing baru ke direktori `5_minirag_chandra_v2.1` agar artefak hasil V2 sebelumnya tetap utuh dan terlindungi untuk audit komparasi.
+5. **Pembaruan Script Audit Mentor (`evaluate_mentor_metrics.py`):** Menambahkan kolom `CHANDRA V2.1 (NEW)` ke dalam tabel 11 parameter evaluasi mentor untuk perbandingan head-to-head langsung dengan V2 Run 1, V2 Run 2, V1, dan Arjun.
+
+#### 3. Path File Terkait
+- `5_minirag_chandra_v2.1/proses_indexing/universal_legal_chunker.py`
+- `5_minirag_chandra_v2.1/proses_indexing/run_indexing.sbatch`
+- `5_minirag_chandra_v2.1/proses_indexing/evaluate_mentor_metrics.py`
+- `5_minirag_chandra_v2.1/proses_indexing/data/chunks_uu_45_2009.json`
+
+#### 4. File Pembaruan & Diffs
+
+```diff
+# 5_minirag_chandra_v2.1/proses_indexing/run_indexing.sbatch
+-#SBATCH --job-name=minirag_gemma4_fast
++#SBATCH --job-name=minirag_v2_1
+-cd $HOME/projek-legal-rag/4_minirag_chandra_v2/proses_indexing
++cd $HOME/projek-legal-rag/5_minirag_chandra_v2.1/proses_indexing 2>/dev/null || cd "$(dirname "$0")"
+
+# universal_legal_chunker.py (Penghapusan Fallback MD & Penegakan Strict JSON)
+-    def chunk_auto(self, path_or_dir: str, prefer_ast: bool = True):
+-        if prefer_ast and os.path.exists(json_file):
+-            return self.chunk_from_content_list(json_file)
+-        elif os.path.exists(md_file):
+-            return self.chunk_from_markdown(md_file)
++    def chunk_auto(self, path_or_dir: str):
++        if os.path.isdir(path_or_dir):
++            json_file = os.path.join(path_or_dir, "content_list.json")
++            if os.path.exists(json_file):
++                return self.chunk_from_content_list(json_file)
++            raise FileNotFoundError("[STRICT PIPELINE POLICY] File 'content_list.json' tidak ditemukan! Fallback ke MD dilarang.")
+```
+
+#### 5. Prosedur Sinkronisasi Langsung ke HPC (Universal `rsync`)
+Untuk mengirim folder kerja atau file ke server HPC tanpa harus menunggu commit Git:
+```bash
+rsync -avz <path_atau_nama_folder_lokal> mahoni01:~/projek-legal-rag/
+```
+*Contoh V2.1:*
+```bash
+rsync -avz /home/chandreu/brin-2026/pengujian-komparasi-minirag/5_minirag_chandra_v2.1 mahoni01:~/projek-legal-rag/
+```
+
+---
+
 ======================================
 perbaikan V3 (Template / Rencana Mendatang)
 ======================================

@@ -37,3 +37,7 @@ Thumbs.db
 *.tmp
 *.temp
 
+# Folder Pengujian Chunking Khusus (Universal Legal Chunking & Test Output)
+pengujian_chunking/
+5_pengujian_chunking_universal/
+
