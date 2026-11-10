@@ -1,0 +1,352 @@
+{
+ "peraturan": {
+  "tipe_dokumen": "Peraturan Perundang-undangan",
+  "judul": "Undang-undang (UU) Nomor 6 Tahun 2023 tentang Penetapan Peraturan Pemerintah Pengganti Undang-Undang Nomor 2 Tahun 2022 tentang Cipta Kerja menjadi Undang-Undang",
+  "teu": "Indonesia, Pemerintah Pusat",
+  "nomor": "6",
+  "bentuk": "Undang-undang (UU)",
+  "bentuk_singkat": "UU",
+  "tahun": 2023,
+  "tempat_penetapan": "Jakarta",
+  "tanggal_penetapan": "2023-03-31",
+  "tanggal_pengundangan": "2023-03-31",
+  "tanggal_berlaku": "2023-03-31",
+  "sumber": "LN.2023/No.41, TLN No.6856, jdih.setneg.go.id: 4 hlm.",
+  "subjek": [
+   "CIPTA KERJA"
+  ],
+  "status": "Berlaku",
+  "bahasa": "Bahasa Indonesia",
+  "lokasi": "Pemerintah Pusat",
+  "bidang": [
+   "HUKUM UMUM"
+  ],
+  "alias": [
+   "UU No. 6 Tahun 2023",
+   "UU 6/2023",
+   "UU Nomor 6 Tahun 2023"
+  ],
+  "sumber_terurai": {
+   "ln_tahun": 2023,
+   "ln_nomor": 41,
+   "tln": 6856,
+   "penerbit": "jdih.setneg.go.id",
+   "halaman": 4
+  },
+  "id": "uu/2023/6",
+  "label": "UU Nomor 6 Tahun 2023",
+  "url_sumber": "https://peraturan.bpk.go.id/Details/226786/uu-no-6-tahun-2023",
+  "bpk_id": 226786,
+  "uji_materi": [
+   "putusan/mk/273-puu-xxiii-2025",
+   "putusan/mk/168-puu-xxi-2023",
+   "putusan/mk/39-puu-xxi-2023"
+  ],
+  "relasi": {
+   "mencabut": [
+    "uu/2020/11"
+   ],
+   "menetapkan": [
+    "perpu/2022/2"
+   ],
+   "mengubah": [
+    "uu/2009/45",
+    "uu/2004/31"
+   ]
+  },
+  "_di_luar_lingkup": [
+   "dicabut_sebagian_dengan: uu/2026/27",
+   "diubah_dengan: uu/2026/5",
+   "diubah_dengan: uu/2026/1",
+   "diubah_dengan: uu/2025/2",
+   "diubah_dengan: uu/2025/18",
+   "diubah_dengan: uu/2025/16",
+   "diubah_dengan: uu/2025/14",
+   "diubah_dengan: uu/2025/1",
+   "diubah_dengan: uu/2024/66",
+   "diubah_dengan: uu/2024/65",
+   "diubah_dengan: uu/2024/63",
+   "diubah_dengan: uu/2024/3",
+   "mencabut: Staatsblad Tahun 1926 Nomor 226 juncto Staatsblad Tahun 1940",
+   "mengubah: uu/2022/2",
+   "mengubah: uu/2021/7",
+   "mengubah: uu/2020/3",
+   "mengubah: uu/2019/8",
+   "mengubah: uu/2019/22",
+   "mengubah: uu/2019/17",
+   "mengubah: uu/2019/11",
+   "mengubah: uu/2017/6",
+   "mengubah: uu/2017/2",
+   "mengubah: uu/2017/18",
+   "mengubah: uu/2016/7",
+   "mengubah: uu/2016/20",
+   "mengubah: uu/2016/13",
+   "mengubah: uu/2015/9",
+   "mengubah: uu/2015/2",
+   "mengubah: uu/2014/7",
+   "mengubah: uu/2014/6",
+   "mengubah: uu/2014/41",
+   "mengubah: uu/2014/39",
+   "mengubah: uu/2014/33",
+   "mengubah: uu/2014/32",
+   "mengubah: uu/2014/30",
+   "mengubah: uu/2014/3",
+   "mengubah: uu/2014/23",
+   "mengubah: uu/2014/21",
+   "mengubah: uu/2014/1",
+   "mengubah: uu/2013/19",
+   "mengubah: uu/2013/18",
+   "mengubah: uu/2012/2",
+   "mengubah: uu/2012/18",
+   "mengubah: uu/2012/16",
+   "mengubah: uu/2011/6",
+   "mengubah: uu/2011/4",
+   "mengubah: uu/2011/24",
+   "mengubah: uu/2011/20",
+   "mengubah: uu/2011/1",
+   "mengubah: uu/2010/13",
+   "mengubah: uu/2009/44",
+   "mengubah: uu/2009/41",
+   "mengubah: uu/2009/4",
+   "mengubah: uu/2009/39",
+   "mengubah: uu/2009/38",
+   "mengubah: uu/2009/36",
+   "mengubah: uu/2009/35",
+   "mengubah: uu/2009/33",
+   "mengubah: uu/2009/32",
+   "mengubah: uu/2009/30",
+   "mengubah: uu/2009/22",
+   "mengubah: uu/2009/18",
+   "mengubah: uu/2009/10",
+   "mengubah: uu/2009/1",
+   "mengubah: uu/2008/21",
+   "mengubah: uu/2008/20",
+   "mengubah: uu/2008/17",
+   "mengubah: uu/2007/44",
+   "mengubah: uu/2007/40",
+   "mengubah: uu/2007/27",
+   "mengubah: uu/2007/26",
+   "mengubah: uu/2007/25",
+   "mengubah: uu/2007/23",
+   "mengubah: uu/2004/40",
+   "mengubah: uu/2004/38",
+   "mengubah: uu/2004/19",
+   "mengubah: uu/2003/19",
+   "mengubah: uu/2003/13",
+   "mengubah: uu/2002/32",
+   "mengubah: uu/2002/28",
+   "mengubah: uu/2002/2",
+   "mengubah: uu/2001/22",
+   "mengubah: uu/2000/37",
+   "mengubah: uu/2000/36",
+   "mengubah: uu/2000/29",
+   "mengubah: uu/1999/5",
+   "mengubah: uu/1999/41",
+   "mengubah: uu/1999/36",
+   "mengubah: uu/1998/10",
+   "mengubah: uu/1997/5",
+   "mengubah: uu/1997/10",
+   "mengubah: uu/1992/7",
+   "mengubah: uu/1992/25",
+   "mengubah: uu/1983/8",
+   "mengubah: uu/1983/7",
+   "mengubah: uu/1983/6",
+   "mengubah: uu/1982/3",
+   "mengubah: uu/1981/2"
+  ]
+ },
+ "putusan": [
+  {
+   "id": "putusan/mk/273-puu-xxiii-2025",
+   "label": "Putusan MK Nomor 273/PUU-XXIII/2025",
+   "lembaga": "MK",
+   "menguji": [
+    {
+     "id": "uu/2023/6",
+     "sasaran": "Pasal 28 ayat (1) dalam Pasal 71 angka 2 Lampiran",
+     "unsur": "pasal",
+     "jenis_amar": "inkonstitusional_bersyarat",
+     "tafsir": "Besaran tarif penyelenggaraan jaringan telekomunikasi dan/atau penyelenggaraan jasa telekomunikasi ditetapkan oleh penyelenggara jaringan telekomunikasi dan/atau jasa telekomunikasi berdasarkan formula yang ditetapkan oleh Pemerintah Pusat dengan kewajiban menyediakan pilihan layanan jasa telekomunikasi yang menjamin sisa kuota milik pengguna jasa telekomunikasi tetap aktif dan dapat digunakan"
+    }
+   ],
+   "url_sumber": "https://peraturan.bpk.go.id/Details/226786/uu-no-6-tahun-2023"
+  },
+  {
+   "id": "putusan/mk/168-puu-xxi-2023",
+   "label": "Putusan MK Nomor 168/PUU-XXI/2023",
+   "lembaga": "MK",
+   "menguji": [
+    {
+     "id": "uu/2023/6",
+     "sasaran": "Pasal 42 ayat (1) dalam Pasal 81 angka 4 Lampiran",
+     "unsur": "frasa",
+     "jenis_amar": "inkonstitusional_bersyarat",
+     "tafsir": "menteri yang bertanggungjawab di bidang (urusan) ketenagakerjaan, in casu menteri Tenaga Kerja"
+    },
+    {
+     "id": "uu/2023/6",
+     "sasaran": "Pasal 42 ayat (4) dalam Pasal 81 angka 4 Lampiran",
+     "unsur": "pasal",
+     "jenis_amar": "inkonstitusional_bersyarat",
+     "tafsir": "Tenaga Kerja Asing dapat dipekerjakan di Indonesia hanya dalam Hubungan Kerja untuk jabatan tertentu dan waktu tertentu serta memiliki kompetensi sesuai dengan jabatan yang akan diduduki, dengan memerhatikan pengutamaan penggunaan tenaga kerja Indonesia"
+    },
+    {
+     "id": "uu/2023/6",
+     "sasaran": "Pasal 56 ayat (3) dalam Pasal 81 angka 12 Lampiran",
+     "unsur": "pasal",
+     "jenis_amar": "inkonstitusional_bersyarat",
+     "tafsir": "Jangka waktu selesainya suatu pekerjaan tertentu dibuat tidak melebihi paling lama 5 (lima) tahun, termasuk jika terdapat perpanjangan"
+    },
+    {
+     "id": "uu/2023/6",
+     "sasaran": "Pasal 57 ayat (1) dalam Pasal 81 angka 13 Lampiran",
+     "unsur": "pasal",
+     "jenis_amar": "inkonstitusional_bersyarat",
+     "tafsir": "Perjanjian kerja waktu tertentu harus dibuat secara tertulis dengan menggunakan bahasa Indonesia dan huruf latin"
+    },
+    {
+     "id": "uu/2023/6",
+     "sasaran": "Pasal 64 ayat (2) dalam Pasal 81 angka 18 Lampiran",
+     "unsur": "pasal",
+     "jenis_amar": "inkonstitusional_bersyarat",
+     "tafsir": "Menteri menetapkan sebagian pelaksanaan pekerjaan sebagaimana dimaksud pada ayat (1) sesuai dengan jenis dan bidang pekerjaan alih daya yang diperjanjikan dalam perjanjian tertulis alih daya"
+    },
+    {
+     "id": "uu/2023/6",
+     "sasaran": "Pasal 79 ayat (2) huruf b dalam Pasal 81 angka 25 Lampiran",
+     "unsur": "pasal",
+     "jenis_amar": "inkonstitusional_bersyarat",
+     "tafsir": "atau 2 (dua) hari untuk 5 (lima) hari kerja dalam 1 (satu) minggu"
+    },
+    {
+     "id": "uu/2023/6",
+     "sasaran": "Pasal 79 ayat (5) dalam Pasal 81 angka 25 Lampiran",
+     "unsur": "kata",
+     "jenis_amar": "tidak_mengikat",
+     "tafsir": null
+    },
+    {
+     "id": "uu/2023/6",
+     "sasaran": "Pasal 88 ayat (1) dalam Pasal 81 angka 27 Lampiran",
+     "unsur": "pasal",
+     "jenis_amar": "inkonstitusional_bersyarat",
+     "tafsir": "termasuk penghasilan yang memenuhi penghidupan yang merupakan jumlah penerimaan atau pendapatan pekerja/buruh dari hasil pekerjaannya sehingga mampu memenuhi kebutuhan hidup pekerja/buruh dan keluarganya secara wajar yang meliputi makanan dan minuman, sandang, perumahan, pendidikan, kesehatan, rekreasi, dan jaminan hari tua"
+    },
+    {
+     "id": "uu/2023/6",
+     "sasaran": "Pasal 88 ayat (2) dalam Pasal 81 angka 27 Lampiran",
+     "unsur": "pasal",
+     "jenis_amar": "inkonstitusional_bersyarat",
+     "tafsir": "dengan melibatkan dewan pengupahan daerah yang di dalamnya terdapat unsur pemerintah daerah dalam perumusan kebijakan pengupahan yang menjadi bahan bagi pemerintah pusat untuk penetapan kebijakan pengupahan"
+    },
+    {
+     "id": "uu/2023/6",
+     "sasaran": "Pasal 88 ayat (3) huruf b dalam Pasal 81 angka 27 Lampiran",
+     "unsur": "frasa",
+     "jenis_amar": "inkonstitusional_bersyarat",
+     "tafsir": "struktur dan skala upah yang proporsional"
+    },
+    {
+     "id": "uu/2023/6",
+     "sasaran": "Pasal 88C dalam Pasal 81 angka 28 Lampiran",
+     "unsur": "pasal",
+     "jenis_amar": "inkonstitusional_bersyarat",
+     "tafsir": "termasuk gubernur wajib menetapkan upah minimum sektoral pada wilayah provinsi dan dapat untuk kabupaten/kota"
+    },
+    {
+     "id": "uu/2023/6",
+     "sasaran": "Pasal 88D ayat (2) dalam Pasal 81 angka 28 Lampiran",
+     "unsur": "frasa",
+     "jenis_amar": "inkonstitusional_bersyarat",
+     "tafsir": "indeks tertentu merupakan variabel yang mewakili kontribusi tenaga kerja terhadap pertumbuhan ekonomi provinsi atau kabupaten/kota dengan memperhatikan kepentingan perusahaan dan pekerja/buruh serta prinsip proporsionalitas untuk memenuhi kebutuhan hidup layak (KHL) bagi pekerja/buruh"
+    },
+    {
+     "id": "uu/2023/6",
+     "sasaran": "Pasal 88F dalam Pasal 81 angka 28 Lampiran",
+     "unsur": "frasa",
+     "jenis_amar": "inkonstitusional_bersyarat",
+     "tafsir": "Yang dimaksud dengan "
+    },
+    {
+     "id": "uu/2023/6",
+     "sasaran": "Pasal 90A dalam Pasal 81 angka 31 Lampiran",
+     "unsur": "pasal",
+     "jenis_amar": "inkonstitusional_bersyarat",
+     "tafsir": "Upah di atas Upah minimum ditetapkan berdasarkan kesepakatan antara Pengusaha dan Pekerja/Buruh atau Serikat Pekerja/Serikat Buruh di perusahaan"
+    },
+    {
+     "id": "uu/2023/6",
+     "sasaran": "Pasal 92 ayat (1) dalam Pasal 81 angka 33 Lampiran",
+     "unsur": "pasal",
+     "jenis_amar": "inkonstitusional_bersyarat",
+     "tafsir": "Pengusaha wajib menyusun struktur dan skala Upah di Perusahaan dengan memperhatikan kemampuan Perusahaan dan produktivitas, serta golongan, jabatan, masa kerja, pendidikan, dan kompetensi"
+    },
+    {
+     "id": "uu/2023/6",
+     "sasaran": "Pasal 95 ayat (3) dalam Pasal 81 angka 36 Lampiran",
+     "unsur": "pasal",
+     "jenis_amar": "inkonstitusional_bersyarat",
+     "tafsir": "Hak lainnya dari Pekerja/Buruh sebagaimana dimaksud pada ayat (1) didahulukan pembayarannya atas semua kreditur termasuk kreditur preferen kecuali para kreditur pemegang hak jaminan kebendaan"
+    },
+    {
+     "id": "uu/2023/6",
+     "sasaran": "Pasal 98 ayat (1) dalam Pasal 81 angka 39 Lampiran",
+     "unsur": "pasal",
+     "jenis_amar": "inkonstitusional_bersyarat",
+     "tafsir": "Untuk memberikan saran dan pertimbangan kepada Pemerintah Pusat atau Pemerintah Daerah dalam perumusan kebijakan pengupahan serta pengembangan sistem pengupahan dibentuk dewan pengupahan yang berpartisipasi secara aktif"
+    },
+    {
+     "id": "uu/2023/6",
+     "sasaran": "Frasa “wajib dilakukan melalui perundingan bipartit antara Pengusaha dengan Pekerja/Buruh dan/atau Serikat Pekerja/Serikat Buruh”, dalam Pasal 151 ayat (3) dalam Pasal 81 angka 40 Lampiran",
+     "unsur": "frasa",
+     "jenis_amar": "inkonstitusional_bersyarat",
+     "tafsir": "wajib dilakukan melalui perundingan bipartit secara musyawarah untuk mufakat antara Pengusaha dengan Pekerja/Buruh dan/atau Serikat Pekerja/Serikat Buruh"
+    },
+    {
+     "id": "uu/2023/6",
+     "sasaran": "Pasal 151 ayat (4) dalam Pasal 81 angka 40 Lampiran",
+     "unsur": "frasa",
+     "jenis_amar": "inkonstitusional_bersyarat",
+     "tafsir": "Dalam hal perundingan bipartit sebagaimana dimaksud pada ayat (3) tidak mendapatkan kesepakatan maka Pemutusan Hubungan Kerja hanya dapat dilakukan setelah memperoleh penetapan dari lembaga penyelesaian perselisihan hubungan industrial yang putusannya telah berkekuatan hukum tetap"
+    },
+    {
+     "id": "uu/2023/6",
+     "sasaran": "Pasal 157A ayat (3) dalam Pasal 81 angka 49 Lampiran",
+     "unsur": "frasa",
+     "jenis_amar": "inkonstitusional_bersyarat",
+     "tafsir": "sampai berakhirnya proses penyelesaian perselisihan hubungan industrial yang berkekuatan hukum tetap sesuai dengan ketentuan dalam undang-undang PPHI"
+    },
+    {
+     "id": "uu/2023/6",
+     "sasaran": "Pasal 156 ayat (2) dalam Pasal 81 angka 47 Lampiran",
+     "unsur": "frasa",
+     "jenis_amar": "inkonstitusional_bersyarat",
+     "tafsir": "paling sedikit."
+    }
+   ],
+   "url_sumber": "https://peraturan.bpk.go.id/Details/226786/uu-no-6-tahun-2023"
+  },
+  {
+   "id": "putusan/mk/39-puu-xxi-2023",
+   "label": "Putusan MK Nomor 39/PUU-XXI/2023",
+   "lembaga": "MK",
+   "menguji": [
+    {
+     "id": "uu/2023/6",
+     "sasaran": "Pasal 7 ayat (1) dalam Pasal 42 angka 5 Lampiran",
+     "unsur": "pasal",
+     "jenis_amar": "inkonstitusional_bersyarat",
+     "tafsir": "Rencana Umum Ketenagalistrikan Nasional disusun berdasarkan kebijakan energi nasional dan ditetapkan oleh Pemerintah Pusat setelah mendapat pertimbangan DPR RI"
+    },
+    {
+     "id": "uu/2023/6",
+     "sasaran": "Pasal 10 ayat (2) dalam Pasal 42 angka 6 Lampiran",
+     "unsur": "kata",
+     "jenis_amar": "tidak_mengikat",
+     "tafsir": null
+    }
+   ],
+   "url_sumber": "https://peraturan.bpk.go.id/Details/226786/uu-no-6-tahun-2023"
+  }
+ ]
+}

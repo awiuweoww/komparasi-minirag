@@ -16,7 +16,7 @@ Keluaran (folder --out):
   lapisan1.graphml   graf Lapisan 1 (node: Peraturan, Pasal, VersiPasal, PeristiwaPerubahan, PutusanPengadilan)
   lapisan1.json      node dan edge dalam JSON
   jangkar.json       peta label <-> ID untuk chunker dan penautan Lapisan 2
-  laporan.txt        hasil validasi
+  laporan_validasi_lapisan1.md  hasil validasi dalam format Markdown
 
 Contoh:
   python3 bangun_lapisan1.py --metadata metadata_regulasi.json \
@@ -405,23 +405,37 @@ def main():
     kelas = collections.Counter(d.get("kelas") for _, d in L.G.nodes(data=True))
     rel = collections.Counter(d.get("relasi") for _, _, d in L.G.edges(data=True))
     pasal_perlu_cek = sum(1 for _, d in L.G.nodes(data=True) if d.get('status_verifikasi') == 'perlu_cek' and d.get('kelas') == 'Pasal')
-    lines = [
-        "# Laporan Validasi Lapisan 1 (Versi Asli Mentor)",
+    
+    md_lines = [
+        "# Laporan Validasi Graf Lapisan 1 (Silsilah Regulasi & Versi Pasal)",
         "",
-        "## 1. Pemrosesan Dokumen",
-    ] + [f"- {r}" for r in report] + [
+        "## 1. Ringkasan Pemrosesan Naskah",
+    ]
+    for r in report:
+        md_lines.append(f"- {r}")
+    md_lines.extend([
         "",
         "## 2. Statistik Topologi Graf",
         f"- **Node per kelas:** `{dict(kelas)}`",
         f"- **Edge per relasi:** `{dict(rel)}`",
         f"- **Pasal berstatus `perlu_cek` (dirujuk/disasar, teks versinya belum di-index):** {pasal_perlu_cek}",
         "",
-        "## 3. Catatan Validasi",
-    ] + ([f"- [ ] {iss}" for iss in L.issues] if L.issues else ["- *(Tidak ada catatan)*"])
-    rep_path = os.path.join(a.out, "laporan_validasi_lapisan1.md")
-    open(rep_path, "w", encoding="utf-8").write("\n".join(lines))
+        "## 3. Catatan Validasi & Integritas Silsilah",
+    ])
+    if L.issues:
+        for iss in L.issues:
+            md_lines.append(f"- [ ] {iss}")
+    else:
+        md_lines.append("- *(Tidak ditemukan anomali; seluruh silsilah valid)*")
+    md_lines.append("")
+    
+    rep_md_path = os.path.join(a.out, "laporan_validasi_lapisan1.md")
+    open(rep_md_path, "w", encoding="utf-8").write("\n".join(md_lines))
+    
     print("\n".join(report[:8]))
-    print(f"catatan validasi: {len(L.issues)} (lihat {rep_path})")
+    print(f"Node per kelas: {dict(kelas)}")
+    print(f"Edge per relasi: {dict(rel)}")
+    print(f"Catatan validasi: {len(L.issues)} (Laporan lengkap tersimpan di: {rep_md_path})")
 
 
 if __name__ == "__main__":

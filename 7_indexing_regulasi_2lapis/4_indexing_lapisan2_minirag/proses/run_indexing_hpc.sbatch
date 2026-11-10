@@ -13,7 +13,7 @@ echo "Started at   : $(date)"
 echo "Task         : Indexing Lapisan 2 MiniRAG (Prompt V3 Berjangkar)"
 echo "=========================================================="
 
-cd "$(dirname "$0")"
+cd $HOME/projek-legal-rag/7_indexing_regulasi_2lapis/4_indexing_lapisan2_minirag/proses 2>/dev/null || cd "$(dirname "$0")"
 
 unset SSL_CERT_FILE
 

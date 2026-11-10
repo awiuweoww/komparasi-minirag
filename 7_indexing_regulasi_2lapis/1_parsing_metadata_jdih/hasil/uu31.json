@@ -1,0 +1,51 @@
+{
+ "peraturan": {
+  "tipe_dokumen": "Peraturan Perundang-undangan",
+  "judul": "Undang-undang (UU) Nomor 31 Tahun 2004 tentang Perikanan",
+  "teu": "Indonesia, Pemerintah Pusat",
+  "nomor": "31",
+  "bentuk": "Undang-undang (UU)",
+  "bentuk_singkat": "UU",
+  "tahun": 2004,
+  "tempat_penetapan": "Jakarta",
+  "tanggal_penetapan": "2004-10-06",
+  "tanggal_pengundangan": "2004-10-06",
+  "tanggal_berlaku": "2004-10-06",
+  "sumber": "LN. 2004/ No. 118, TLN NO. 4433, LL SETNEG : 51 HLM",
+  "subjek": [
+   "PERIKANAN DAN KELAUTAN"
+  ],
+  "status": "Berlaku",
+  "bahasa": "Bahasa Indonesia",
+  "lokasi": "Pemerintah Pusat",
+  "bidang": [],
+  "alias": [
+   "UU No. 31 Tahun 2004",
+   "UU 31/2004",
+   "UU Nomor 31 Tahun 2004"
+  ],
+  "sumber_terurai": {
+   "ln_tahun": 2004,
+   "ln_nomor": 118,
+   "tln": 4433,
+   "penerbit": "LL SETNEG",
+   "halaman": 51
+  },
+  "id": "uu/2004/31",
+  "label": "UU Nomor 31 Tahun 2004",
+  "url_sumber": "https://peraturan.bpk.go.id/Details/28551/uu-no-31-tahun-2004",
+  "bpk_id": 28551,
+  "relasi": {
+   "diubah_dengan": [
+    "uu/2023/6",
+    "perpu/2022/2",
+    "uu/2020/11",
+    "uu/2009/45"
+   ]
+  },
+  "_di_luar_lingkup": [
+   "mencabut: uu/1985/9"
+  ]
+ },
+ "putusan": []
+}

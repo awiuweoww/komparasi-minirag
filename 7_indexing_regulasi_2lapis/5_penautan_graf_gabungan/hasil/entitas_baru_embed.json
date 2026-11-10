@@ -1,0 +1,2310 @@
+{
+ "entitas": [
+  {
+   "nama": "UU Nomor 31 Tahun 2004",
+   "entity_type": "peraturan",
+   "description": "UU Nomor 31 Tahun 2004. Undang-undang (UU) Nomor 31 Tahun 2004 tentang Perikanan. status Berlaku. berlaku 2004-10-06"
+  },
+  {
+   "nama": "UU Nomor 45 Tahun 2009",
+   "entity_type": "peraturan",
+   "description": "UU Nomor 45 Tahun 2009. Undang-undang (UU) Nomor 45 Tahun 2009 tentang Perubahan Atas Undang-Undang Nomor 31 Tahun 2004 Tentang Perikanan. status Berlaku. berlaku 2009-10-29"
+  },
+  {
+   "nama": "UU Nomor 11 Tahun 2020",
+   "entity_type": "peraturan",
+   "description": "UU Nomor 11 Tahun 2020. Undang-undang (UU) Nomor 11 Tahun 2020 tentang Cipta Kerja. status Tidak Berlaku. berlaku 2020-11-02"
+  },
+  {
+   "nama": "Perpu Nomor 2 Tahun 2022",
+   "entity_type": "peraturan",
+   "description": "Perpu Nomor 2 Tahun 2022. Peraturan Pemerintah Pengganti Undang-Undang (Perpu) Nomor 2 Tahun 2022 tentang Cipta Kerja. status Berlaku. berlaku 2022-12-30"
+  },
+  {
+   "nama": "UU Nomor 6 Tahun 2023",
+   "entity_type": "peraturan",
+   "description": "UU Nomor 6 Tahun 2023. Undang-undang (UU) Nomor 6 Tahun 2023 tentang Penetapan Peraturan Pemerintah Pengganti Undang-Undang Nomor 2 Tahun 2022 tentang Cipta Kerja menjadi Undang-Undang. status Berlaku. berlaku 2023-03-31"
+  },
+  {
+   "nama": "UU Nomor 1 Tahun 2026",
+   "entity_type": "peraturan",
+   "description": "UU Nomor 1 Tahun 2026. Penyesuaian Pidana. status Berlaku. berlaku 2026-01-02"
+  },
+  {
+   "nama": "Putusan MK Nomor 91/PUU-XVIII/2020",
+   "entity_type": "putusanpengadilan",
+   "description": "Putusan MK Nomor 91/PUU-XVIII/2020"
+  },
+  {
+   "nama": "Putusan MK Nomor 273/PUU-XXIII/2025",
+   "entity_type": "putusanpengadilan",
+   "description": "Putusan MK Nomor 273/PUU-XXIII/2025"
+  },
+  {
+   "nama": "Putusan MK Nomor 273/PUU-XXIII/2025 amar 1",
+   "entity_type": "butiramar",
+   "description": "Putusan MK Nomor 273/PUU-XXIII/2025 amar 1. Pasal 28 ayat (1) dalam Pasal 71 angka 2 Lampiran. inkonstitusional_bersyarat. Besaran tarif penyelenggaraan jaringan telekomunikasi dan/atau penyelenggaraan jasa telekomunikasi ditetapkan oleh penyelenggara jaringan telekomunikasi dan/atau jasa telekomunikasi berdasarkan formula yang ditetapkan oleh Pemerintah Pusat dengan kewajiban menyediakan pilihan layanan jasa telekomunikasi yang menjamin sisa kuota milik pengguna jasa telekomunikasi tetap aktif dan dapat digunakan"
+  },
+  {
+   "nama": "Putusan MK Nomor 168/PUU-XXI/2023",
+   "entity_type": "putusanpengadilan",
+   "description": "Putusan MK Nomor 168/PUU-XXI/2023"
+  },
+  {
+   "nama": "Putusan MK Nomor 168/PUU-XXI/2023 amar 1",
+   "entity_type": "butiramar",
+   "description": "Putusan MK Nomor 168/PUU-XXI/2023 amar 1. Pasal 42 ayat (1) dalam Pasal 81 angka 4 Lampiran. inkonstitusional_bersyarat. menteri yang bertanggungjawab di bidang (urusan) ketenagakerjaan, in casu menteri Tenaga Kerja"
+  },
+  {
+   "nama": "Putusan MK Nomor 168/PUU-XXI/2023 amar 2",
+   "entity_type": "butiramar",
+   "description": "Putusan MK Nomor 168/PUU-XXI/2023 amar 2. Pasal 42 ayat (4) dalam Pasal 81 angka 4 Lampiran. inkonstitusional_bersyarat. Tenaga Kerja Asing dapat dipekerjakan di Indonesia hanya dalam Hubungan Kerja untuk jabatan tertentu dan waktu tertentu serta memiliki kompetensi sesuai dengan jabatan yang akan diduduki, dengan memerhatikan pengutamaan penggunaan tenaga kerja Indonesia"
+  },
+  {
+   "nama": "Putusan MK Nomor 168/PUU-XXI/2023 amar 3",
+   "entity_type": "butiramar",
+   "description": "Putusan MK Nomor 168/PUU-XXI/2023 amar 3. Pasal 56 ayat (3) dalam Pasal 81 angka 12 Lampiran. inkonstitusional_bersyarat. Jangka waktu selesainya suatu pekerjaan tertentu dibuat tidak melebihi paling lama 5 (lima) tahun, termasuk jika terdapat perpanjangan"
+  },
+  {
+   "nama": "Putusan MK Nomor 168/PUU-XXI/2023 amar 4",
+   "entity_type": "butiramar",
+   "description": "Putusan MK Nomor 168/PUU-XXI/2023 amar 4. Pasal 57 ayat (1) dalam Pasal 81 angka 13 Lampiran. inkonstitusional_bersyarat. Perjanjian kerja waktu tertentu harus dibuat secara tertulis dengan menggunakan bahasa Indonesia dan huruf latin"
+  },
+  {
+   "nama": "Putusan MK Nomor 168/PUU-XXI/2023 amar 5",
+   "entity_type": "butiramar",
+   "description": "Putusan MK Nomor 168/PUU-XXI/2023 amar 5. Pasal 64 ayat (2) dalam Pasal 81 angka 18 Lampiran. inkonstitusional_bersyarat. Menteri menetapkan sebagian pelaksanaan pekerjaan sebagaimana dimaksud pada ayat (1) sesuai dengan jenis dan bidang pekerjaan alih daya yang diperjanjikan dalam perjanjian tertulis alih daya"
+  },
+  {
+   "nama": "Putusan MK Nomor 168/PUU-XXI/2023 amar 6",
+   "entity_type": "butiramar",
+   "description": "Putusan MK Nomor 168/PUU-XXI/2023 amar 6. Pasal 79 ayat (2) huruf b dalam Pasal 81 angka 25 Lampiran. inkonstitusional_bersyarat. atau 2 (dua) hari untuk 5 (lima) hari kerja dalam 1 (satu) minggu"
+  },
+  {
+   "nama": "Putusan MK Nomor 168/PUU-XXI/2023 amar 7",
+   "entity_type": "butiramar",
+   "description": "Putusan MK Nomor 168/PUU-XXI/2023 amar 7. Pasal 79 ayat (5) dalam Pasal 81 angka 25 Lampiran. tidak_mengikat"
+  },
+  {
+   "nama": "Putusan MK Nomor 168/PUU-XXI/2023 amar 8",
+   "entity_type": "butiramar",
+   "description": "Putusan MK Nomor 168/PUU-XXI/2023 amar 8. Pasal 88 ayat (1) dalam Pasal 81 angka 27 Lampiran. inkonstitusional_bersyarat. termasuk penghasilan yang memenuhi penghidupan yang merupakan jumlah penerimaan atau pendapatan pekerja/buruh dari hasil pekerjaannya sehingga mampu memenuhi kebutuhan hidup pekerja/buruh dan keluarganya secara wajar yang meliputi makanan dan minuman, sandang, perumahan, pendidikan, kesehatan, rekreasi, dan jaminan hari tua"
+  },
+  {
+   "nama": "Putusan MK Nomor 168/PUU-XXI/2023 amar 9",
+   "entity_type": "butiramar",
+   "description": "Putusan MK Nomor 168/PUU-XXI/2023 amar 9. Pasal 88 ayat (2) dalam Pasal 81 angka 27 Lampiran. inkonstitusional_bersyarat. dengan melibatkan dewan pengupahan daerah yang di dalamnya terdapat unsur pemerintah daerah dalam perumusan kebijakan pengupahan yang menjadi bahan bagi pemerintah pusat untuk penetapan kebijakan pengupahan"
+  },
+  {
+   "nama": "Putusan MK Nomor 168/PUU-XXI/2023 amar 10",
+   "entity_type": "butiramar",
+   "description": "Putusan MK Nomor 168/PUU-XXI/2023 amar 10. Pasal 88 ayat (3) huruf b dalam Pasal 81 angka 27 Lampiran. inkonstitusional_bersyarat. struktur dan skala upah yang proporsional"
+  },
+  {
+   "nama": "Putusan MK Nomor 168/PUU-XXI/2023 amar 11",
+   "entity_type": "butiramar",
+   "description": "Putusan MK Nomor 168/PUU-XXI/2023 amar 11. Pasal 88C dalam Pasal 81 angka 28 Lampiran. inkonstitusional_bersyarat. termasuk gubernur wajib menetapkan upah minimum sektoral pada wilayah provinsi dan dapat untuk kabupaten/kota"
+  },
+  {
+   "nama": "Putusan MK Nomor 168/PUU-XXI/2023 amar 12",
+   "entity_type": "butiramar",
+   "description": "Putusan MK Nomor 168/PUU-XXI/2023 amar 12. Pasal 88D ayat (2) dalam Pasal 81 angka 28 Lampiran. inkonstitusional_bersyarat. indeks tertentu merupakan variabel yang mewakili kontribusi tenaga kerja terhadap pertumbuhan ekonomi provinsi atau kabupaten/kota dengan memperhatikan kepentingan perusahaan dan pekerja/buruh serta prinsip proporsionalitas untuk memenuhi kebutuhan hidup layak (KHL) bagi pekerja/buruh"
+  },
+  {
+   "nama": "Putusan MK Nomor 168/PUU-XXI/2023 amar 13",
+   "entity_type": "butiramar",
+   "description": "Putusan MK Nomor 168/PUU-XXI/2023 amar 13. Pasal 88F dalam Pasal 81 angka 28 Lampiran. inkonstitusional_bersyarat. Yang dimaksud dengan "
+  },
+  {
+   "nama": "Putusan MK Nomor 168/PUU-XXI/2023 amar 14",
+   "entity_type": "butiramar",
+   "description": "Putusan MK Nomor 168/PUU-XXI/2023 amar 14. Pasal 90A dalam Pasal 81 angka 31 Lampiran. inkonstitusional_bersyarat. Upah di atas Upah minimum ditetapkan berdasarkan kesepakatan antara Pengusaha dan Pekerja/Buruh atau Serikat Pekerja/Serikat Buruh di perusahaan"
+  },
+  {
+   "nama": "Putusan MK Nomor 168/PUU-XXI/2023 amar 15",
+   "entity_type": "butiramar",
+   "description": "Putusan MK Nomor 168/PUU-XXI/2023 amar 15. Pasal 92 ayat (1) dalam Pasal 81 angka 33 Lampiran. inkonstitusional_bersyarat. Pengusaha wajib menyusun struktur dan skala Upah di Perusahaan dengan memperhatikan kemampuan Perusahaan dan produktivitas, serta golongan, jabatan, masa kerja, pendidikan, dan kompetensi"
+  },
+  {
+   "nama": "Putusan MK Nomor 168/PUU-XXI/2023 amar 16",
+   "entity_type": "butiramar",
+   "description": "Putusan MK Nomor 168/PUU-XXI/2023 amar 16. Pasal 95 ayat (3) dalam Pasal 81 angka 36 Lampiran. inkonstitusional_bersyarat. Hak lainnya dari Pekerja/Buruh sebagaimana dimaksud pada ayat (1) didahulukan pembayarannya atas semua kreditur termasuk kreditur preferen kecuali para kreditur pemegang hak jaminan kebendaan"
+  },
+  {
+   "nama": "Putusan MK Nomor 168/PUU-XXI/2023 amar 17",
+   "entity_type": "butiramar",
+   "description": "Putusan MK Nomor 168/PUU-XXI/2023 amar 17. Pasal 98 ayat (1) dalam Pasal 81 angka 39 Lampiran. inkonstitusional_bersyarat. Untuk memberikan saran dan pertimbangan kepada Pemerintah Pusat atau Pemerintah Daerah dalam perumusan kebijakan pengupahan serta pengembangan sistem pengupahan dibentuk dewan pengupahan yang berpartisipasi secara aktif"
+  },
+  {
+   "nama": "Putusan MK Nomor 168/PUU-XXI/2023 amar 18",
+   "entity_type": "butiramar",
+   "description": "Putusan MK Nomor 168/PUU-XXI/2023 amar 18. Frasa “wajib dilakukan melalui perundingan bipartit antara Pengusaha dengan Pekerja/Buruh dan/atau Serikat Pekerja/Serikat Buruh”, dalam Pasal 151 ayat (3) dalam Pasal 81 angka 40 Lampiran. inkonstitusional_bersyarat. wajib dilakukan melalui perundingan bipartit secara musyawarah untuk mufakat antara Pengusaha dengan Pekerja/Buruh dan/atau Serikat Pekerja/Serikat Buruh"
+  },
+  {
+   "nama": "Putusan MK Nomor 168/PUU-XXI/2023 amar 19",
+   "entity_type": "butiramar",
+   "description": "Putusan MK Nomor 168/PUU-XXI/2023 amar 19. Pasal 151 ayat (4) dalam Pasal 81 angka 40 Lampiran. inkonstitusional_bersyarat. Dalam hal perundingan bipartit sebagaimana dimaksud pada ayat (3) tidak mendapatkan kesepakatan maka Pemutusan Hubungan Kerja hanya dapat dilakukan setelah memperoleh penetapan dari lembaga penyelesaian perselisihan hubungan industrial yang putusannya telah berkekuatan hukum tetap"
+  },
+  {
+   "nama": "Putusan MK Nomor 168/PUU-XXI/2023 amar 20",
+   "entity_type": "butiramar",
+   "description": "Putusan MK Nomor 168/PUU-XXI/2023 amar 20. Pasal 157A ayat (3) dalam Pasal 81 angka 49 Lampiran. inkonstitusional_bersyarat. sampai berakhirnya proses penyelesaian perselisihan hubungan industrial yang berkekuatan hukum tetap sesuai dengan ketentuan dalam undang-undang PPHI"
+  },
+  {
+   "nama": "Putusan MK Nomor 168/PUU-XXI/2023 amar 21",
+   "entity_type": "butiramar",
+   "description": "Putusan MK Nomor 168/PUU-XXI/2023 amar 21. Pasal 156 ayat (2) dalam Pasal 81 angka 47 Lampiran. inkonstitusional_bersyarat. paling sedikit."
+  },
+  {
+   "nama": "Putusan MK Nomor 39/PUU-XXI/2023",
+   "entity_type": "putusanpengadilan",
+   "description": "Putusan MK Nomor 39/PUU-XXI/2023"
+  },
+  {
+   "nama": "Putusan MK Nomor 39/PUU-XXI/2023 amar 1",
+   "entity_type": "butiramar",
+   "description": "Putusan MK Nomor 39/PUU-XXI/2023 amar 1. Pasal 7 ayat (1) dalam Pasal 42 angka 5 Lampiran. inkonstitusional_bersyarat. Rencana Umum Ketenagalistrikan Nasional disusun berdasarkan kebijakan energi nasional dan ditetapkan oleh Pemerintah Pusat setelah mendapat pertimbangan DPR RI"
+  },
+  {
+   "nama": "Putusan MK Nomor 39/PUU-XXI/2023 amar 2",
+   "entity_type": "butiramar",
+   "description": "Putusan MK Nomor 39/PUU-XXI/2023 amar 2. Pasal 10 ayat (2) dalam Pasal 42 angka 6 Lampiran. tidak_mengikat"
+  },
+  {
+   "nama": "Pasal 1 UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 1 UU Perikanan"
+  },
+  {
+   "nama": "UU Nomor 45 Tahun 2009 Pasal I angka 1",
+   "entity_type": "peristiwaperubahan",
+   "description": "UU Nomor 45 Tahun 2009 Pasal I angka 1"
+  },
+  {
+   "nama": "Pasal 1 UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 1 UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: Dalam Undang-Undang ini yang dimaksud dengan: 1. Perikanan adalah semua kegiatan yang berhubungan dengan pengelolaan dan pemanfaatan sumber daya ikan dan lingkungannya mulai dari praproduksi, produksi, pengolahan sampai dengan pemasaran yang dilaksanakan dalam suatu sistem bisnis perikanan. 2. Sumber daya ikan adalah potensi semua jenis ikan. 3. Lingkungan sumber daya ikan adalah perairan tempat k"
+  },
+  {
+   "nama": "Pasal 1 angka 11 UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 1 angka 11 UU Perikanan"
+  },
+  {
+   "nama": "Pasal 1 angka 11 UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 1 angka 11 UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: 11. Nelayan Kecil adalah orang yang mata pencahariannya melakukan penangkapan ikan untuk memenuhi kebutuhan hidup sehari-hari yang menggunakan kapal perikanan berukuran paling besar 5 (lima) gross ton (GT)."
+  },
+  {
+   "nama": "Pasal 1 angka 24 UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 1 angka 24 UU Perikanan"
+  },
+  {
+   "nama": "Pasal 1 angka 24 UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 1 angka 24 UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: 24. Menteri adalah menteri yang membidangi urusan perikanan."
+  },
+  {
+   "nama": "Pasal 2 UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 2 UU Perikanan"
+  },
+  {
+   "nama": "UU Nomor 45 Tahun 2009 Pasal I angka 2",
+   "entity_type": "peristiwaperubahan",
+   "description": "UU Nomor 45 Tahun 2009 Pasal I angka 2"
+  },
+  {
+   "nama": "Pasal 2 UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 2 UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: Pengelolaan perikanan dilakukan berdasarkan asas: a. manfaat; b. keadilan; c. kebersamaan; d. kemitraan; e. kemandirian; f. pemerataan; g. keterpaduan; h. keterbukaan; i. efisiensi; j. kelestarian; dan k. pembangunan yang berkelanjutan."
+  },
+  {
+   "nama": "Pasal 7 UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 7 UU Perikanan"
+  },
+  {
+   "nama": "UU Nomor 45 Tahun 2009 Pasal I angka 3",
+   "entity_type": "peristiwaperubahan",
+   "description": "UU Nomor 45 Tahun 2009 Pasal I angka 3"
+  },
+  {
+   "nama": "Pasal 7 UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 7 UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (1) Dalam rangka mendukung kebijakan pengelolaan sumber daya ikan, Menteri menetapkan: a. rencana pengelolaan perikanan; b. potensi dan alokasi sumber daya ikan di wilayah pengelolaan perikanan Negara Republik Indonesia; c. jumlah . c. jumlah tangkapan yang diperbolehkan di wilayah pengelolaan perikanan Negara Republik Indonesia; d. potensi dan alokasi lahan pembudidayaan ikan di wilayah pengelola"
+  },
+  {
+   "nama": "Pasal 7 ayat (1) UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 7 ayat (1) UU Perikanan"
+  },
+  {
+   "nama": "Pasal 7 ayat (2) UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 7 ayat (2) UU Perikanan"
+  },
+  {
+   "nama": "Pasal 7 ayat (4) UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 7 ayat (4) UU Perikanan"
+  },
+  {
+   "nama": "Pasal 7 ayat (1) UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 7 ayat (1) UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (1) Dalam rangka mendukung kebijakan pengelolaan sumber daya ikan, Menteri menetapkan:"
+  },
+  {
+   "nama": "Pasal 7 ayat (2) UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 7 ayat (2) UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (2) Setiap orang yang melakukan usaha dan/atau kegiatan pengelolaan perikanan wajib mematuhi ketentuan sebagaimana dimaksud pada ayat (1) mengenai:"
+  },
+  {
+   "nama": "Pasal 7 ayat (3) UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 7 ayat (3) UU Perikanan"
+  },
+  {
+   "nama": "Pasal 7 ayat (3) UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 7 ayat (3) UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (3) Kewajiban mematuhi ketentuan mengenai sistem pemantauan kapal perikanan sebagaimana dimaksud pada ayat (2) huruf e, tidak berlaku bagi nelayan kecil dan/atau pembudi daya-ikan kecil."
+  },
+  {
+   "nama": "Pasal 7 ayat (4) UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 7 ayat (4) UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (4) Menteri menetapkan potensi dan jumlah tangkapan yang diperbolehkan sebagaimana dimaksud pada ayat (1) huruf b dan huruf c setelah mempertimbangkan rekomendasi dari komisi nasional yang mengkaji sumber daya ikan."
+  },
+  {
+   "nama": "Pasal 7 ayat (5) UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 7 ayat (5) UU Perikanan"
+  },
+  {
+   "nama": "Pasal 7 ayat (5) UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 7 ayat (5) UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (5) Komisi nasional sebagaimana dimaksud pada ayat (4) dibentuk oleh Menteri dan beranggotakan para ahli di bidangnya yang berasal dari lembaga terkait."
+  },
+  {
+   "nama": "Pasal 7 ayat (6) UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 7 ayat (6) UU Perikanan"
+  },
+  {
+   "nama": "Pasal 7 ayat (6) UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 7 ayat (6) UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (6) Menteri menetapkan jenis ikan yang dilindungi dan kawasan konservasi perairan untuk kepentingan ilmu pengetahuan, kebudayaan, pariwisata, dan/atau kelestarian sumber daya ikan dan/atau lingkungannya."
+  },
+  {
+   "nama": "Pasal 9 UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 9 UU Perikanan"
+  },
+  {
+   "nama": "UU Nomor 45 Tahun 2009 Pasal I angka 4",
+   "entity_type": "peristiwaperubahan",
+   "description": "UU Nomor 45 Tahun 2009 Pasal I angka 4"
+  },
+  {
+   "nama": "Pasal 9 UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 9 UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (1) Setiap orang dilarang memiliki, menguasai, membawa, dan/atau menggunakan alat penangkapan dan/atau alat bantu penangkapan ikan yang mengganggu dan merusak keberlanjutan sumber daya ikan di kapal penangkap ikan di wilayah pengelolaan perikanan Negara Republik Indonesia. (2) Ketentuan mengenai alat penangkapan dan/atau alat bantu penangkapan ikan yang mengganggu dan merusak keberlanjutan sumber "
+  },
+  {
+   "nama": "Pasal 9 ayat (1) UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 9 ayat (1) UU Perikanan"
+  },
+  {
+   "nama": "Pasal 9 ayat (1) UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 9 ayat (1) UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (1) Setiap orang dilarang memiliki, menguasai, membawa, dan/atau menggunakan alat penangkapan dan/atau alat bantu penangkapan ikan yang mengganggu dan merusak keberlanjutan sumber daya ikan di kapal penangkap ikan di wilayah pengelolaan perikanan Negara Republik Indonesia."
+  },
+  {
+   "nama": "Pasal 9 ayat (2) UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 9 ayat (2) UU Perikanan"
+  },
+  {
+   "nama": "Pasal 9 ayat (2) UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 9 ayat (2) UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (2) Ketentuan mengenai alat penangkapan dan/atau alat bantu penangkapan ikan yang mengganggu dan merusak keberlanjutan sumber daya ikan sebagaimana dimaksud pada ayat (1) diatur dengan Peraturan Menteri."
+  },
+  {
+   "nama": "Pasal 14 UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 14 UU Perikanan"
+  },
+  {
+   "nama": "UU Nomor 45 Tahun 2009 Pasal I angka 5",
+   "entity_type": "peristiwaperubahan",
+   "description": "UU Nomor 45 Tahun 2009 Pasal I angka 5"
+  },
+  {
+   "nama": "Pasal 14 UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 14 UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (1) Pemerintah mengatur dan/atau mengembangkan pemanfaatan plasma nutfah yang berkaitan dengan sumber daya ikan dalam rangka pelestarian ekosistem dan pemuliaan sumber daya ikan. (2) Setiap orang wajib melestarikan plasma nutfah yang berkaitan dengan sumber daya ikan. (3) Pemerintah mengendalikan pemasukan dan/atau pengeluaran ikan jenis baru dari dan ke luar negeri dan/atau lalu lintas antarpulau"
+  },
+  {
+   "nama": "Pasal 14 ayat (1) UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 14 ayat (1) UU Perikanan"
+  },
+  {
+   "nama": "Pasal 14 ayat (1) UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 14 ayat (1) UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (1) Pemerintah mengatur dan/atau mengembangkan pemanfaatan plasma nutfah yang berkaitan dengan sumber daya ikan dalam rangka pelestarian ekosistem dan pemuliaan sumber daya ikan."
+  },
+  {
+   "nama": "Pasal 14 ayat (2) UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 14 ayat (2) UU Perikanan"
+  },
+  {
+   "nama": "Pasal 14 ayat (2) UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 14 ayat (2) UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (2) Setiap orang wajib melestarikan plasma nutfah yang berkaitan dengan sumber daya ikan."
+  },
+  {
+   "nama": "Pasal 14 ayat (3) UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 14 ayat (3) UU Perikanan"
+  },
+  {
+   "nama": "Pasal 14 ayat (3) UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 14 ayat (3) UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (3) Pemerintah mengendalikan pemasukan dan/atau pengeluaran ikan jenis baru dari dan ke luar negeri dan/atau lalu lintas antarpulau untuk menjamin kelestarian plasma nutfah yang berkaitan dengan sumber daya ikan."
+  },
+  {
+   "nama": "Pasal 14 ayat (4) UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 14 ayat (4) UU Perikanan"
+  },
+  {
+   "nama": "Pasal 14 ayat (4) UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 14 ayat (4) UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (4) Setiap orang dilarang merusak plasma nutfah yang berkaitan dengan sumber daya ikan."
+  },
+  {
+   "nama": "Pasal 14 ayat (5) UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 14 ayat (5) UU Perikanan"
+  },
+  {
+   "nama": "Pasal 14 ayat (5) UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 14 ayat (5) UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (5) Ketentuan lebih lanjut mengenai pemanfaatan dan pelestarian plasma nutfah sumber daya ikan sebagaimana dimaksud pada ayat (1), ayat (2), dan ayat (3), diatur dengan Peraturan Pemerintah."
+  },
+  {
+   "nama": "Pasal 15A UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 15A UU Perikanan"
+  },
+  {
+   "nama": "UU Nomor 45 Tahun 2009 Pasal I angka 6",
+   "entity_type": "peristiwaperubahan",
+   "description": "UU Nomor 45 Tahun 2009 Pasal I angka 6"
+  },
+  {
+   "nama": "Pasal 15A UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 15A UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: Pemerintah mengatur pengendalian mutu induk dan benih ikan yang dibudidayakan."
+  },
+  {
+   "nama": "Pasal 18 UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 18 UU Perikanan"
+  },
+  {
+   "nama": "UU Nomor 45 Tahun 2009 Pasal I angka 7",
+   "entity_type": "peristiwaperubahan",
+   "description": "UU Nomor 45 Tahun 2009 Pasal I angka 7"
+  },
+  {
+   "nama": "Pasal 18 UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 18 UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (1) Pemerintah mengatur dan membina tata pemanfaatan air dan lahan pembudidayaan ikan. (2) Pengaturan dan pembinaan tata pemanfaatan air dan lahan pembudidayaan ikan, sebagaimana dimaksud pada ayat (1) dilakukan dalam rangka menjamin kuantitas dan kualitas air untuk kepentingan pembudidayaan ikan. (3) Pelaksanaan tata pemanfaatan air dan lahan pembudidayaan ikan dilakukan oleh pemerintah daerah. ("
+  },
+  {
+   "nama": "Pasal 18 ayat (1) UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 18 ayat (1) UU Perikanan"
+  },
+  {
+   "nama": "Pasal 18 ayat (1) UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 18 ayat (1) UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (1) Pemerintah mengatur dan membina tata pemanfaatan air dan lahan pembudidayaan ikan."
+  },
+  {
+   "nama": "Pasal 18 ayat (2) UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 18 ayat (2) UU Perikanan"
+  },
+  {
+   "nama": "Pasal 18 ayat (2) UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 18 ayat (2) UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (2) Pengaturan dan pembinaan tata pemanfaatan air dan lahan pembudidayaan ikan, sebagaimana dimaksud pada ayat (1) dilakukan dalam rangka menjamin kuantitas dan kualitas air untuk kepentingan pembudidayaan ikan."
+  },
+  {
+   "nama": "Pasal 18 ayat (3) UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 18 ayat (3) UU Perikanan"
+  },
+  {
+   "nama": "Pasal 18 ayat (3) UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 18 ayat (3) UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (3) Pelaksanaan tata pemanfaatan air dan lahan pembudidayaan ikan dilakukan oleh pemerintah daerah."
+  },
+  {
+   "nama": "Pasal 18 ayat (4) UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 18 ayat (4) UU Perikanan"
+  },
+  {
+   "nama": "Pasal 18 ayat (4) UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 18 ayat (4) UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (4) Ketentuan lebih lanjut mengenai pengaturan dan pembinaan tata pemanfaatan air dan lahan pembudidayaan ikan sebagaimana dimaksud pada ayat (1) dan ayat (2) diatur dengan Peraturan Pemerintah."
+  },
+  {
+   "nama": "Pasal 23 UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 23 UU Perikanan"
+  },
+  {
+   "nama": "UU Nomor 45 Tahun 2009 Pasal I angka 8",
+   "entity_type": "peristiwaperubahan",
+   "description": "UU Nomor 45 Tahun 2009 Pasal I angka 8"
+  },
+  {
+   "nama": "Pasal 23 UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 23 UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (1) Setiap orang dilarang menggunakan bahan baku, bahan tambahan makanan, bahan penolong, dan/atau alat yang membahayakan kesehatan manusia dan/atau lingkungan dalam melaksanakan penanganan dan pengolahan ikan. (2) Pemerintah menetapkan bahan baku, bahan tambahan makanan, bahan penolong, dan/atau alat yang membahayakan kesehatan manusia dan/atau lingkungan sebagaimana dimaksud pada ayat (1). (3) P"
+  },
+  {
+   "nama": "Pasal 23 ayat (1) UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 23 ayat (1) UU Perikanan"
+  },
+  {
+   "nama": "Pasal 23 ayat (1) UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 23 ayat (1) UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (1) Setiap orang dilarang menggunakan bahan baku, bahan tambahan makanan, bahan penolong, dan/atau alat yang membahayakan kesehatan manusia dan/atau lingkungan dalam melaksanakan penanganan dan pengolahan ikan."
+  },
+  {
+   "nama": "Pasal 23 ayat (2) UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 23 ayat (2) UU Perikanan"
+  },
+  {
+   "nama": "Pasal 23 ayat (2) UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 23 ayat (2) UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (2) Pemerintah menetapkan bahan baku, bahan tambahan makanan, bahan penolong, dan/atau alat yang membahayakan kesehatan manusia dan/atau lingkungan sebagaimana dimaksud pada ayat (1)."
+  },
+  {
+   "nama": "Pasal 23 ayat (3) UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 23 ayat (3) UU Perikanan"
+  },
+  {
+   "nama": "Pasal 23 ayat (3) UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 23 ayat (3) UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (3) Pemerintah melakukan sosialisasi bahan baku, bahan tambahan makanan, bahan penolong, dan/atau alat yang membahayakan kesehatan manusia dan/atau lingkungan."
+  },
+  {
+   "nama": "Pasal 25 UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 25 UU Perikanan"
+  },
+  {
+   "nama": "UU Nomor 45 Tahun 2009 Pasal I angka 9",
+   "entity_type": "peristiwaperubahan",
+   "description": "UU Nomor 45 Tahun 2009 Pasal I angka 9"
+  },
+  {
+   "nama": "Pasal 25 UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 25 UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (1) Usaha perikanan dilaksanakan dalam sistem bisnis perikanan, meliputi praproduksi, produksi, pengolahan, dan pemasaran. (2) Ketentuan lebih lanjut mengenai praproduksi, produksi, pengolahan, dan pemasaran sebagaimana dimaksud pada ayat (1) diatur dalam Peraturan Menteri."
+  },
+  {
+   "nama": "Pasal 25 ayat (1) UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 25 ayat (1) UU Perikanan"
+  },
+  {
+   "nama": "Pasal 25 ayat (1) UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 25 ayat (1) UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (1) Usaha perikanan dilaksanakan dalam sistem bisnis perikanan, meliputi praproduksi, produksi, pengolahan, dan pemasaran."
+  },
+  {
+   "nama": "Pasal 25 ayat (2) UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 25 ayat (2) UU Perikanan"
+  },
+  {
+   "nama": "Pasal 25 ayat (2) UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 25 ayat (2) UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (2) Ketentuan lebih lanjut mengenai praproduksi, produksi, pengolahan, dan pemasaran sebagaimana dimaksud pada ayat (1) diatur dalam Peraturan Menteri."
+  },
+  {
+   "nama": "Pasal 25A UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 25A UU Perikanan"
+  },
+  {
+   "nama": "Pasal 25B UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 25B UU Perikanan"
+  },
+  {
+   "nama": "Pasal 25C UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 25C UU Perikanan"
+  },
+  {
+   "nama": "UU Nomor 45 Tahun 2009 Pasal I angka 10",
+   "entity_type": "peristiwaperubahan",
+   "description": "UU Nomor 45 Tahun 2009 Pasal I angka 10"
+  },
+  {
+   "nama": "Pasal 25A UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 25A UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (1) Pelaku usaha perikanan dalam melaksanakan bisnis perikanan harus memperhatikan standar mutu hasil perikanan. (2) Pemerintah dan pemerintah daerah membina dan memfasilitasi pengembangan usaha perikanan agar memenuhi standar mutu hasil perikanan. (3) Ketentuan lebih lanjut mengenai standar mutu hasil perikanan diatur dalam Peraturan Menteri."
+  },
+  {
+   "nama": "Pasal 25A ayat (1) UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 25A ayat (1) UU Perikanan"
+  },
+  {
+   "nama": "Pasal 25A ayat (1) UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 25A ayat (1) UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (1) Pelaku usaha perikanan dalam melaksanakan bisnis perikanan harus memperhatikan standar mutu hasil perikanan."
+  },
+  {
+   "nama": "Pasal 25A ayat (2) UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 25A ayat (2) UU Perikanan"
+  },
+  {
+   "nama": "Pasal 25A ayat (2) UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 25A ayat (2) UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (2) Pemerintah dan pemerintah daerah membina dan memfasilitasi pengembangan usaha perikanan agar memenuhi standar mutu hasil perikanan."
+  },
+  {
+   "nama": "Pasal 25A ayat (3) UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 25A ayat (3) UU Perikanan"
+  },
+  {
+   "nama": "Pasal 25A ayat (3) UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 25A ayat (3) UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (3) Ketentuan lebih lanjut mengenai standar mutu hasil perikanan diatur dalam Peraturan Menteri."
+  },
+  {
+   "nama": "Pasal 25B UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 25B UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (1) Pemerintah berkewajiban menyelenggarakan dan memfasilitasi kegiatan pemasaran usaha perikanan baik di dalam negeri maupun ke luar negeri. (2) Pengeluaran hasil produksi usaha perikanan ke luar negeri dilakukan apabila produksi dan pasokan di dalam negeri telah mencukupi kebutuhan konsumsi nasional. (3) Pemerintah berkewajiban menciptakan iklim usaha perikanan yang sehat sesuai dengan ketentuan"
+  },
+  {
+   "nama": "Pasal 25B ayat (1) UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 25B ayat (1) UU Perikanan"
+  },
+  {
+   "nama": "Pasal 25B ayat (1) UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 25B ayat (1) UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (1) Pemerintah berkewajiban menyelenggarakan dan memfasilitasi kegiatan pemasaran usaha perikanan baik di dalam negeri maupun ke luar negeri."
+  },
+  {
+   "nama": "Pasal 25B ayat (2) UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 25B ayat (2) UU Perikanan"
+  },
+  {
+   "nama": "Pasal 25B ayat (2) UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 25B ayat (2) UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (2) Pengeluaran hasil produksi usaha perikanan ke luar negeri dilakukan apabila produksi dan pasokan di dalam negeri telah mencukupi kebutuhan konsumsi nasional."
+  },
+  {
+   "nama": "Pasal 25B ayat (3) UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 25B ayat (3) UU Perikanan"
+  },
+  {
+   "nama": "Pasal 25B ayat (3) UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 25B ayat (3) UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (3) Pemerintah berkewajiban menciptakan iklim usaha perikanan yang sehat sesuai dengan ketentuan peraturan perundang-undangan."
+  },
+  {
+   "nama": "Pasal 25C UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 25C UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (1) Pemerintah membina dan memfasilitasi berkembangnya industri perikanan nasional dengan mengutamakan penggunaan bahan baku dan sumber daya manusia dalam negeri. (2) Pemerintah membina terselenggaranya kebersamaan dan kemitraan yang sehat antara industri perikanan, nelayan dan/atau koperasi perikanan. (3) Ketentuan mengenai pembinaan, pemberian fasilitas, kebersamaan, dan kemitraan sebagaimana di"
+  },
+  {
+   "nama": "Pasal 25C ayat (1) UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 25C ayat (1) UU Perikanan"
+  },
+  {
+   "nama": "Pasal 25C ayat (1) UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 25C ayat (1) UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (1) Pemerintah membina dan memfasilitasi berkembangnya industri perikanan nasional dengan mengutamakan penggunaan bahan baku dan sumber daya manusia dalam negeri."
+  },
+  {
+   "nama": "Pasal 25C ayat (2) UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 25C ayat (2) UU Perikanan"
+  },
+  {
+   "nama": "Pasal 25C ayat (2) UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 25C ayat (2) UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (2) Pemerintah membina terselenggaranya kebersamaan dan kemitraan yang sehat antara industri perikanan, nelayan dan/atau koperasi perikanan."
+  },
+  {
+   "nama": "Pasal 25C ayat (3) UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 25C ayat (3) UU Perikanan"
+  },
+  {
+   "nama": "Pasal 25C ayat (3) UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 25C ayat (3) UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (3) Ketentuan mengenai pembinaan, pemberian fasilitas, kebersamaan, dan kemitraan sebagaimana dimaksud pada ayat (1) dan ayat (2) dilakukan sesuai dengan ketentuan peraturan perundangundangan."
+  },
+  {
+   "nama": "Pasal 27 UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 27 UU Perikanan"
+  },
+  {
+   "nama": "UU Nomor 45 Tahun 2009 Pasal I angka 11",
+   "entity_type": "peristiwaperubahan",
+   "description": "UU Nomor 45 Tahun 2009 Pasal I angka 11"
+  },
+  {
+   "nama": "Pasal 27 UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 27 UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (1) Setiap orang yang memiliki dan/atau mengoperasikan kapal penangkap ikan berbendera Indonesia yang digunakan untuk melakukan penangkapan ikan di wilayah pengelolaan perikanan Negara Republik Indonesia dan/atau laut lepas wajib memiliki SIPI. (2) Setiap orang yang memiliki dan/atau mengoperasikan kapal penangkap ikan berbendera asing yang digunakan untuk melakukan penangkapan ikan di ZEEI wajib "
+  },
+  {
+   "nama": "Pasal 27 ayat (1) UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 27 ayat (1) UU Perikanan"
+  },
+  {
+   "nama": "Pasal 27 ayat (3) UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 27 ayat (3) UU Perikanan"
+  },
+  {
+   "nama": "Pasal 27 ayat (1) UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 27 ayat (1) UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (1) Setiap orang yang memiliki dan/atau mengoperasikan kapal penangkap ikan berbendera Indonesia yang digunakan untuk melakukan penangkapan ikan di wilayah pengelolaan perikanan Negara Republik Indonesia dan/atau laut lepas wajib memiliki SIPI."
+  },
+  {
+   "nama": "Pasal 27 ayat (2) UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 27 ayat (2) UU Perikanan"
+  },
+  {
+   "nama": "Pasal 27 ayat (2) UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 27 ayat (2) UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (2) Setiap orang yang memiliki dan/atau mengoperasikan kapal penangkap ikan berbendera asing yang digunakan untuk melakukan penangkapan ikan di ZEEI wajib memiliki SIPI."
+  },
+  {
+   "nama": "Pasal 27 ayat (3) UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 27 ayat (3) UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (3) Setiap orang yang mengoperasikan kapal penangkap ikan berbendera Indonesia di wilayah pengelolaan perikanan Negara Republik Indonesia atau mengoperasikan kapal penangkap ikan berbendera asing di ZEEI wajib membawa SIPI asli."
+  },
+  {
+   "nama": "Pasal 27 ayat (4) UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 27 ayat (4) UU Perikanan"
+  },
+  {
+   "nama": "Pasal 27 ayat (4) UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 27 ayat (4) UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (4) Kapal penangkap ikan berbendera Indonesia yang melakukan penangkapan ikan di wilayah yurisdiksi negara lain harus terlebih dahulu mendapatkan persetujuan dari Pemerintah."
+  },
+  {
+   "nama": "Pasal 27 ayat (5) UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 27 ayat (5) UU Perikanan"
+  },
+  {
+   "nama": "Pasal 27 ayat (5) UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 27 ayat (5) UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (5) Kewajiban memiliki SIPI sebagaimana dimaksud pada ayat (1) dan/atau membawa SIPI asli sebagaimana dimaksud pada ayat (3), tidak berlaku bagi nelayan kecil."
+  },
+  {
+   "nama": "Pasal 28 UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 28 UU Perikanan"
+  },
+  {
+   "nama": "UU Nomor 45 Tahun 2009 Pasal I angka 12",
+   "entity_type": "peristiwaperubahan",
+   "description": "UU Nomor 45 Tahun 2009 Pasal I angka 12"
+  },
+  {
+   "nama": "Pasal 28 UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 28 UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (1) Setiap orang yang memiliki dan/atau mengoperasikan kapal pengangkut ikan berbendera Indonesia di wilayah pengelolaan perikanan Negara Republik Indonesia wajib memiliki SIKPI. (2) Setiap orang yang memiliki dan/atau mengoperasikan kapal pengangkut ikan berbendera asing yang digunakan untuk melakukan pengangkutan ikan di wilayah pengelolaan perikanan Negara Republik Indonesia wajib memiliki SIKP"
+  },
+  {
+   "nama": "Pasal 28 ayat (1) UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 28 ayat (1) UU Perikanan"
+  },
+  {
+   "nama": "Pasal 28 ayat (3) UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 28 ayat (3) UU Perikanan"
+  },
+  {
+   "nama": "Pasal 28 ayat (1) UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 28 ayat (1) UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (1) Setiap orang yang memiliki dan/atau mengoperasikan kapal pengangkut ikan berbendera Indonesia di wilayah pengelolaan perikanan Negara Republik Indonesia wajib memiliki SIKPI."
+  },
+  {
+   "nama": "Pasal 28 ayat (2) UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 28 ayat (2) UU Perikanan"
+  },
+  {
+   "nama": "Pasal 28 ayat (2) UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 28 ayat (2) UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (2) Setiap orang yang memiliki dan/atau mengoperasikan kapal pengangkut ikan berbendera asing yang digunakan untuk melakukan pengangkutan ikan di wilayah pengelolaan perikanan Negara Republik Indonesia wajib memiliki SIKPI."
+  },
+  {
+   "nama": "Pasal 28 ayat (3) UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 28 ayat (3) UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (3) Setiap orang yang mengoperasikan kapal pengangkut ikan di wilayah pengelolaan perikanan Negara Republik Indonesia wajib membawa SIKPI asli."
+  },
+  {
+   "nama": "Pasal 28 ayat (4) UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 28 ayat (4) UU Perikanan"
+  },
+  {
+   "nama": "Pasal 28 ayat (4) UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 28 ayat (4) UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (4) Kewajiban memiliki SIKPI sebagaimana dimaksud pada ayat (1) dan/atau membawa SIKPI asli sebagaimana dimaksud pada ayat (3), tidak berlaku bagi nelayan kecil dan/atau pembudi daya-ikan kecil."
+  },
+  {
+   "nama": "Pasal 28A UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 28A UU Perikanan"
+  },
+  {
+   "nama": "UU Nomor 45 Tahun 2009 Pasal I angka 13",
+   "entity_type": "peristiwaperubahan",
+   "description": "UU Nomor 45 Tahun 2009 Pasal I angka 13"
+  },
+  {
+   "nama": "Pasal 28A UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 28A UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: Setiap orang dilarang: a. memalsukan SIUP, SIPI, dan SIKPI; dan/atau b. menggunakan SIUP, SIPI, dan SIKPI palsu."
+  },
+  {
+   "nama": "Pasal 32 UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 32 UU Perikanan"
+  },
+  {
+   "nama": "UU Nomor 45 Tahun 2009 Pasal I angka 14",
+   "entity_type": "peristiwaperubahan",
+   "description": "UU Nomor 45 Tahun 2009 Pasal I angka 14"
+  },
+  {
+   "nama": "Pasal 32 UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 32 UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: Ketentuan lebih lanjut mengenai penerbitan, tata cara, dan syarat-syarat pemberian SIUP, SIPI, dan SIKPI diatur dengan Peraturan Menteri."
+  },
+  {
+   "nama": "Pasal 35A UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 35A UU Perikanan"
+  },
+  {
+   "nama": "UU Nomor 45 Tahun 2009 Pasal I angka 15",
+   "entity_type": "peristiwaperubahan",
+   "description": "UU Nomor 45 Tahun 2009 Pasal I angka 15"
+  },
+  {
+   "nama": "Pasal 35A UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 35A UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (1) Kapal perikanan berbendera Indonesia yang melakukan penangkapan ikan di wilayah pengelolaan perikanan Negara Republik Indonesia wajib menggunakan nakhoda dan anak buah kapal berkewarganegaraan Indonesia. (2) Kapal perikanan berbendera asing yang melakukan penangkapan ikan di ZEEI wajib menggunakan anak buah kapal berkewarganegaraan Indonesia paling sedikit 70% (tujuh puluh persen) dari jumlah "
+  },
+  {
+   "nama": "Pasal 35A ayat (2) UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 35A ayat (2) UU Perikanan"
+  },
+  {
+   "nama": "Pasal 35A ayat (3) UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 35A ayat (3) UU Perikanan"
+  },
+  {
+   "nama": "Pasal 35A ayat (1) UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 35A ayat (1) UU Perikanan"
+  },
+  {
+   "nama": "Pasal 35A ayat (1) UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 35A ayat (1) UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (1) Kapal perikanan berbendera Indonesia yang melakukan penangkapan ikan di wilayah pengelolaan perikanan Negara Republik Indonesia wajib menggunakan nakhoda dan anak buah kapal berkewarganegaraan Indonesia."
+  },
+  {
+   "nama": "Pasal 35A ayat (2) UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 35A ayat (2) UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (2) Kapal perikanan berbendera asing yang melakukan penangkapan ikan di ZEEI wajib menggunakan anak buah kapal berkewarganegaraan Indonesia paling sedikit 70% (tujuh puluh persen) dari jumlah anak buah kapal."
+  },
+  {
+   "nama": "Pasal 35A ayat (3) UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 35A ayat (3) UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (3) Pelanggaran terhadap ketentuan penggunaan anak buah kapal sebagaimana dimaksud pada ayat (2) dikenakan sanksi administratif berupa peringatan, pembekuan izin, atau pencabutan izin."
+  },
+  {
+   "nama": "Pasal 35A ayat (4) UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 35A ayat (4) UU Perikanan"
+  },
+  {
+   "nama": "Pasal 35A ayat (4) UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 35A ayat (4) UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (4) Ketentuan lebih lanjut mengenai pengenaan sanksi administratif sebagaimana dimaksud pada ayat (3) diatur dalam Peraturan Menteri."
+  },
+  {
+   "nama": "Pasal 36 UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 36 UU Perikanan"
+  },
+  {
+   "nama": "UU Nomor 45 Tahun 2009 Pasal I angka 16",
+   "entity_type": "peristiwaperubahan",
+   "description": "UU Nomor 45 Tahun 2009 Pasal I angka 16"
+  },
+  {
+   "nama": "Pasal 36 UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 36 UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (1) Kapal perikanan milik orang Indonesia yang dioperasikan di wilayah pengelolaan perikanan Negara Republik Indonesia dan laut lepas wajib didaftarkan terlebih dahulu sebagai kapal perikanan Indonesia. (2) Pendaftaran kapal perikanan sebagaimana dimaksud pada ayat (1) dilengkapi dengan dokumen yang berupa: a. bukti kepemilikan; b. identitas pemilik; dan c. surat ukur. (3) Pendaftaran kapal perika"
+  },
+  {
+   "nama": "Pasal 36 ayat (1) UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 36 ayat (1) UU Perikanan"
+  },
+  {
+   "nama": "Pasal 36 ayat (2) UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 36 ayat (2) UU Perikanan"
+  },
+  {
+   "nama": "Pasal 36 ayat (1) UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 36 ayat (1) UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (1) Kapal perikanan milik orang Indonesia yang dioperasikan di wilayah pengelolaan perikanan Negara Republik Indonesia dan laut lepas wajib didaftarkan terlebih dahulu sebagai kapal perikanan Indonesia."
+  },
+  {
+   "nama": "Pasal 36 ayat (2) UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 36 ayat (2) UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (2) Pendaftaran kapal perikanan sebagaimana dimaksud pada ayat (1) dilengkapi dengan dokumen yang berupa:"
+  },
+  {
+   "nama": "Pasal 36 ayat (3) UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 36 ayat (3) UU Perikanan"
+  },
+  {
+   "nama": "Pasal 36 ayat (3) UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 36 ayat (3) UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (3) Pendaftaran kapal perikanan yang dibeli atau diperoleh dari luar negeri dan sudah terdaftar di negara asal untuk didaftar sebagai kapal perikanan Indonesia, selain dilengkapi dengan dokumen sebagaimana dimaksud pada ayat (2) harus dilengkapi pula dengan surat keterangan penghapusan dari daftar kapal yang diterbitkan oleh negara asal."
+  },
+  {
+   "nama": "Pasal 36 ayat (4) UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 36 ayat (4) UU Perikanan"
+  },
+  {
+   "nama": "Pasal 36 ayat (4) UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 36 ayat (4) UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (4) Kapal perikanan yang telah terdaftar sebagaimana dimaksud pada ayat (1), diberikan surat tanda kebangsaan sesuai dengan ketentuan peraturan perundang-undangan."
+  },
+  {
+   "nama": "Pasal 36 ayat (5) UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 36 ayat (5) UU Perikanan"
+  },
+  {
+   "nama": "Pasal 36 ayat (5) UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 36 ayat (5) UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (5) Ketentuan lebih lanjut mengenai pendaftaran sebagaimana dimaksud pada ayat (1), ayat (2), dan ayat (3) diatur dengan Peraturan Menteri."
+  },
+  {
+   "nama": "Pasal 41 UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 41 UU Perikanan"
+  },
+  {
+   "nama": "UU Nomor 45 Tahun 2009 Pasal I angka 17",
+   "entity_type": "peristiwaperubahan",
+   "description": "UU Nomor 45 Tahun 2009 Pasal I angka 17"
+  },
+  {
+   "nama": "Pasal 41 UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 41 UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (1) Pemerintah menyelenggarakan dan melakukan pembinaan pengelolaan pelabuhan perikanan. (2) Penyelenggaraan dan pembinaan pengelolaan pelabuhan perikanan sebagaimana dimaksud pada ayat (1), Menteri menetapkan: a. rencana induk pelabuhan perikanan secara nasional; b. klasifikasi pelabuhan perikanan; c. pengelolaan pelabuhan perikanan; d. persyaratan dan/atau standar teknis dalam perencanaan, pemba"
+  },
+  {
+   "nama": "Pasal 41 ayat (1) UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 41 ayat (1) UU Perikanan"
+  },
+  {
+   "nama": "Pasal 41 ayat (3) UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 41 ayat (3) UU Perikanan"
+  },
+  {
+   "nama": "Pasal 41 ayat (4) UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 41 ayat (4) UU Perikanan"
+  },
+  {
+   "nama": "Pasal 41 ayat (1) UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 41 ayat (1) UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (1) Pemerintah menyelenggarakan dan melakukan pembinaan pengelolaan pelabuhan perikanan."
+  },
+  {
+   "nama": "Pasal 41 ayat (2) UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 41 ayat (2) UU Perikanan"
+  },
+  {
+   "nama": "Pasal 41 ayat (2) UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 41 ayat (2) UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (2) Penyelenggaraan dan pembinaan pengelolaan pelabuhan perikanan sebagaimana dimaksud pada ayat (1), Menteri menetapkan:"
+  },
+  {
+   "nama": "Pasal 41 ayat (3) UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 41 ayat (3) UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (3) Setiap kapal penangkap ikan dan kapal pengangkut ikan harus mendaratkan ikan tangkapan di pelabuhan perikanan yang ditetapkan atau pelabuhan lainnya yang ditunjuk."
+  },
+  {
+   "nama": "Pasal 41 ayat (4) UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 41 ayat (4) UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (4) Setiap orang yang memiliki dan/atau mengoperasikan kapal penangkap ikan dan/atau kapal pengangkut ikan yang tidak melakukan bongkar muat ikan tangkapan di pelabuhan perikanan yang ditetapkan atau pelabuhan lainnya yang ditunjuk sebagaimana dimaksud pada ayat (3) dikenai sanksi administratif berupa peringatan, pembekuan izin, atau pencabutan izin."
+  },
+  {
+   "nama": "Pasal 41 ayat (5) UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 41 ayat (5) UU Perikanan"
+  },
+  {
+   "nama": "Pasal 41 ayat (5) UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 41 ayat (5) UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (5) Ketentuan lebih lanjut mengenai pengenaan sanksi administratif sebagaimana dimaksud pada ayat (4) diatur dalam Peraturan Menteri."
+  },
+  {
+   "nama": "Pasal 41A UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 41A UU Perikanan"
+  },
+  {
+   "nama": "UU Nomor 45 Tahun 2009 Pasal I angka 18",
+   "entity_type": "peristiwaperubahan",
+   "description": "UU Nomor 45 Tahun 2009 Pasal I angka 18"
+  },
+  {
+   "nama": "Pasal 41A UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 41A UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (1) Pelabuhan perikanan mempunyai fungsi pemerintahan dan pengusahaan guna mendukung kegiatan yang berhubungan dengan pengelolaan dan pemanfaatan sumber daya ikan dan lingkungannya mulai dari praproduksi, produksi, pengolahan sampai dengan pemasaran. (2) Fungsi pelabuhan perikanan dalam mendukung kegiatan yang berhubungan dengan pengelolaan dan pemanfaatan sumber daya ikan dan lingkungannya sebaga"
+  },
+  {
+   "nama": "Pasal 41A ayat (1) UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 41A ayat (1) UU Perikanan"
+  },
+  {
+   "nama": "Pasal 41A ayat (1) UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 41A ayat (1) UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (1) Pelabuhan perikanan mempunyai fungsi pemerintahan dan pengusahaan guna mendukung kegiatan yang berhubungan dengan pengelolaan dan pemanfaatan sumber daya ikan dan lingkungannya mulai dari praproduksi, produksi, pengolahan sampai dengan pemasaran."
+  },
+  {
+   "nama": "Pasal 41A ayat (2) UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 41A ayat (2) UU Perikanan"
+  },
+  {
+   "nama": "Pasal 41A ayat (2) UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 41A ayat (2) UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (2) Fungsi pelabuhan perikanan dalam mendukung kegiatan yang berhubungan dengan pengelolaan dan pemanfaatan sumber daya ikan dan lingkungannya sebagaimana dimaksud pada ayat (1) dapat berupa:"
+  },
+  {
+   "nama": "Pasal 42 UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 42 UU Perikanan"
+  },
+  {
+   "nama": "UU Nomor 45 Tahun 2009 Pasal I angka 19",
+   "entity_type": "peristiwaperubahan",
+   "description": "UU Nomor 45 Tahun 2009 Pasal I angka 19"
+  },
+  {
+   "nama": "Pasal 42 UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 42 UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (1) Dalam rangka keselamatan operasional kapal perikanan, ditunjuk syahbandar di pelabuhan perikanan. (2) Syahbandar di pelabuhan perikanan mempunyai tugas dan wewenang: a. menerbitkan Surat Persetujuan Berlayar; b. mengatur kedatangan dan keberangkatan kapal perikanan; c. memeriksa ulang kelengkapan dokumen kapal perikanan; d. memeriksa teknis dan nautis kapal perikanan dan memeriksa alat penangk"
+  },
+  {
+   "nama": "Pasal 42 ayat (1) UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 42 ayat (1) UU Perikanan"
+  },
+  {
+   "nama": "Pasal 42 ayat (1) UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 42 ayat (1) UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (1) Dalam rangka keselamatan operasional kapal perikanan, ditunjuk syahbandar di pelabuhan perikanan."
+  },
+  {
+   "nama": "Pasal 42 ayat (2) UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 42 ayat (2) UU Perikanan"
+  },
+  {
+   "nama": "Pasal 42 ayat (2) UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 42 ayat (2) UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (2) Syahbandar di pelabuhan perikanan mempunyai tugas dan wewenang:"
+  },
+  {
+   "nama": "Pasal 42 ayat (3) UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 42 ayat (3) UU Perikanan"
+  },
+  {
+   "nama": "Pasal 42 ayat (3) UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 42 ayat (3) UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (3) Setiap kapal perikanan yang akan berlayar melakukan penangkapan ikan dan/atau pengangkutan ikan dari pelabuhan perikanan wajib memiliki Surat Persetujuan Berlayar yang dikeluarkan oleh syahbandar di pelabuhan perikanan."
+  },
+  {
+   "nama": "Pasal 42 ayat (4) UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 42 ayat (4) UU Perikanan"
+  },
+  {
+   "nama": "Pasal 42 ayat (4) UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 42 ayat (4) UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (4) Syahbandar di pelabuhan perikanan sebagaimana dimaksud pada ayat (1) diangkat oleh menteri yang membidangi urusan pelayaran."
+  },
+  {
+   "nama": "Pasal 42 ayat (5) UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 42 ayat (5) UU Perikanan"
+  },
+  {
+   "nama": "Pasal 42 ayat (5) UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 42 ayat (5) UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (5) Dalam melaksanakan tugasnya, syahbandar di pelabuhan perikanan dikoordinasikan oleh pejabat yang bertanggung jawab di pelabuhan perikanan setempat."
+  },
+  {
+   "nama": "Pasal 42 ayat (6) UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 42 ayat (6) UU Perikanan"
+  },
+  {
+   "nama": "Pasal 42 ayat (6) UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 42 ayat (6) UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (6) Ketentuan lebih lanjut mengenai kesyahbandaran di pelabuhan perikanan dilaksanakan sesuai dengan ketentuan peraturan perundang-undangan."
+  },
+  {
+   "nama": "Pasal 43 UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 43 UU Perikanan"
+  },
+  {
+   "nama": "UU Nomor 45 Tahun 2009 Pasal I angka 20",
+   "entity_type": "peristiwaperubahan",
+   "description": "UU Nomor 45 Tahun 2009 Pasal I angka 20"
+  },
+  {
+   "nama": "Pasal 43 UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 43 UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: Setiap kapal perikanan yang melakukan kegiatan perikanan wajib memiliki surat laik operasi kapal perikanan dari pengawas perikanan tanpa dikenai biaya."
+  },
+  {
+   "nama": "Pasal 44 UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 44 UU Perikanan"
+  },
+  {
+   "nama": "UU Nomor 45 Tahun 2009 Pasal I angka 21",
+   "entity_type": "peristiwaperubahan",
+   "description": "UU Nomor 45 Tahun 2009 Pasal I angka 21"
+  },
+  {
+   "nama": "Pasal 44 UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 44 UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (1) Surat Persetujuan Berlayar sebagaimana dimaksud dalam pasal 42 ayat (2) huruf a dikeluarkan oleh syahbandar setelah kapal perikanan mendapatkan surat laik operasi. (2) Surat laik operasi sebagaimana dimaksud pada ayat (1) dikeluarkan oleh pengawas perikanan setelah dipenuhi persyaratan administrasi dan kelayakan teknis. (3) Ketentuan lebih lanjut mengenai persyaratan administrasi dan kelayakan"
+  },
+  {
+   "nama": "Pasal 42 ayat (2) huruf a UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 42 ayat (2) huruf a UU Perikanan"
+  },
+  {
+   "nama": "Pasal 44 ayat (1) UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 44 ayat (1) UU Perikanan"
+  },
+  {
+   "nama": "Pasal 44 ayat (2) UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 44 ayat (2) UU Perikanan"
+  },
+  {
+   "nama": "Pasal 44 ayat (1) UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 44 ayat (1) UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (1) Surat Persetujuan Berlayar sebagaimana dimaksud dalam pasal 42 ayat (2) huruf a dikeluarkan oleh syahbandar setelah kapal perikanan mendapatkan surat laik operasi."
+  },
+  {
+   "nama": "Pasal 44 ayat (2) UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 44 ayat (2) UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (2) Surat laik operasi sebagaimana dimaksud pada ayat (1) dikeluarkan oleh pengawas perikanan setelah dipenuhi persyaratan administrasi dan kelayakan teknis."
+  },
+  {
+   "nama": "Pasal 44 ayat (3) UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 44 ayat (3) UU Perikanan"
+  },
+  {
+   "nama": "Pasal 44 ayat (3) UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 44 ayat (3) UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (3) Ketentuan lebih lanjut mengenai persyaratan administrasi dan kelayakan teknis sebagaimana dimaksud pada ayat (2) diatur dalam Peraturan Menteri."
+  },
+  {
+   "nama": "Pasal 46 UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 46 UU Perikanan"
+  },
+  {
+   "nama": "UU Nomor 45 Tahun 2009 Pasal I angka 22",
+   "entity_type": "peristiwaperubahan",
+   "description": "UU Nomor 45 Tahun 2009 Pasal I angka 22"
+  },
+  {
+   "nama": "Pasal 46 UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 46 UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (1) Pemerintah dan pemerintah daerah menyusun dan mengembangkan sistem informasi dan data statistik perikanan serta menyelenggarakan pengumpulan, pengolahan, analisis, penyimpanan, penyajian, dan penyebaran data potensi, pemutakhiran data pergerakan ikan, sarana dan prasarana, produksi, penanganan, pengolahan dan pemasaran ikan, serta data sosial ekonomi yang berkaitan dengan pelaksanaan pengelola"
+  },
+  {
+   "nama": "Pasal 46 ayat (1) UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 46 ayat (1) UU Perikanan"
+  },
+  {
+   "nama": "Pasal 46 ayat (1) UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 46 ayat (1) UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (1) Pemerintah dan pemerintah daerah menyusun dan mengembangkan sistem informasi dan data statistik perikanan serta menyelenggarakan pengumpulan, pengolahan, analisis, penyimpanan, penyajian, dan penyebaran data potensi, pemutakhiran data pergerakan ikan, sarana dan prasarana, produksi, penanganan, pengolahan dan pemasaran ikan, serta data sosial ekonomi yang berkaitan dengan pelaksanaan pengelola"
+  },
+  {
+   "nama": "Pasal 46 ayat (2) UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 46 ayat (2) UU Perikanan"
+  },
+  {
+   "nama": "Pasal 46 ayat (2) UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 46 ayat (2) UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (2) Pemerintah dan pemerintah daerah mengadakan pusat data dan informasi perikanan untuk menyelenggarakan sistem informasi dan data statistik perikanan."
+  },
+  {
+   "nama": "Pasal 46A UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 46A UU Perikanan"
+  },
+  {
+   "nama": "UU Nomor 45 Tahun 2009 Pasal I angka 23",
+   "entity_type": "peristiwaperubahan",
+   "description": "UU Nomor 45 Tahun 2009 Pasal I angka 23"
+  },
+  {
+   "nama": "Pasal 46A UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 46A UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: Pemerintah menjamin kerahasiaan data dan informasi perikanan yang berkaitan dengan data log book penangkapan dan pengangkutan ikan, data yang diperoleh pengamat, dan data perusahaan dalam proses perizinan usaha perikanan."
+  },
+  {
+   "nama": "Pasal 48 UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 48 UU Perikanan"
+  },
+  {
+   "nama": "UU Nomor 45 Tahun 2009 Pasal I angka 24",
+   "entity_type": "peristiwaperubahan",
+   "description": "UU Nomor 45 Tahun 2009 Pasal I angka 24"
+  },
+  {
+   "nama": "Pasal 48 UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 48 UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (1) Setiap orang yang memperoleh manfaat langsung dari sumber daya ikan dan lingkungannya di wilayah pengelolaan perikanan Negara Republik Indonesia dan di luar wilayah pengelolaan perikanan Negara Republik Indonesia dikenakan pungutan perikanan. (1a) Pungutan perikanan sebagaimana dimaksud pada ayat (1) merupakan penerimaan negara bukan pajak. (2) Pungutan perikanan sebagaimana dimaksud pada ayat"
+  },
+  {
+   "nama": "Pasal 48 ayat (1) UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 48 ayat (1) UU Perikanan"
+  },
+  {
+   "nama": "Pasal 48 ayat (1) UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 48 ayat (1) UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (1) Setiap orang yang memperoleh manfaat langsung dari sumber daya ikan dan lingkungannya di wilayah pengelolaan perikanan Negara Republik Indonesia dan di luar wilayah pengelolaan perikanan Negara Republik Indonesia dikenakan pungutan perikanan."
+  },
+  {
+   "nama": "Pasal 48 ayat (1a) UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 48 ayat (1a) UU Perikanan"
+  },
+  {
+   "nama": "Pasal 48 ayat (1a) UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 48 ayat (1a) UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (1a) Pungutan perikanan sebagaimana dimaksud pada ayat (1) merupakan penerimaan negara bukan pajak."
+  },
+  {
+   "nama": "Pasal 48 ayat (2) UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 48 ayat (2) UU Perikanan"
+  },
+  {
+   "nama": "Pasal 48 ayat (2) UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 48 ayat (2) UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (2) Pungutan perikanan sebagaimana dimaksud pada ayat (1) tidak dikenakan bagi nelayan kecil dan pembudi daya-ikan kecil."
+  },
+  {
+   "nama": "Pasal 50 UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 50 UU Perikanan"
+  },
+  {
+   "nama": "UU Nomor 45 Tahun 2009 Pasal I angka 25",
+   "entity_type": "peristiwaperubahan",
+   "description": "UU Nomor 45 Tahun 2009 Pasal I angka 25"
+  },
+  {
+   "nama": "Pasal 50 UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 50 UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: Pungutan perikanan sebagaimana dimaksud dalam Pasal 48 dan Pasal 49 digunakan untuk pembangunan perikanan serta kegiatan konservasi sumber daya ikan dan lingkungannya."
+  },
+  {
+   "nama": "Pasal 65 UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 65 UU Perikanan"
+  },
+  {
+   "nama": "UU Nomor 45 Tahun 2009 Pasal I angka 26",
+   "entity_type": "peristiwaperubahan",
+   "description": "UU Nomor 45 Tahun 2009 Pasal I angka 26"
+  },
+  {
+   "nama": "Pasal 65 UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 65 UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: Pemerintah dapat memberikan tugas kepada pemerintah daerah untuk melaksanakan urusan tugas pembantuan di bidang perikanan."
+  },
+  {
+   "nama": "Pasal 66 UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 66 UU Perikanan"
+  },
+  {
+   "nama": "UU Nomor 45 Tahun 2009 Pasal I angka 27",
+   "entity_type": "peristiwaperubahan",
+   "description": "UU Nomor 45 Tahun 2009 Pasal I angka 27"
+  },
+  {
+   "nama": "Pasal 66 UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 66 UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (1) Pengawasan perikanan dilakukan oleh pengawas perikanan. (2) Pengawas perikanan bertugas untuk mengawasi tertib pelaksanaan ketentuan peraturan perundang-undangan di bidang perikanan. (3) Pengawasan tertib pelaksanaan peraturan perundang-undangan sebagaimana dimaksud pada ayat (2) meliputi: a. kegiatan penangkapan ikan; b. pembudidayaan ikan, perbenihan; c. pengolahan, distribusi keluar masuk i"
+  },
+  {
+   "nama": "Pasal 66 ayat (2) UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 66 ayat (2) UU Perikanan"
+  },
+  {
+   "nama": "Pasal 66 ayat (1) UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 66 ayat (1) UU Perikanan"
+  },
+  {
+   "nama": "Pasal 66 ayat (1) UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 66 ayat (1) UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (1) Pengawasan perikanan dilakukan oleh pengawas perikanan."
+  },
+  {
+   "nama": "Pasal 66 ayat (2) UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 66 ayat (2) UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (2) Pengawas perikanan bertugas untuk mengawasi tertib pelaksanaan ketentuan peraturan perundang-undangan di bidang perikanan."
+  },
+  {
+   "nama": "Pasal 66 ayat (3) UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 66 ayat (3) UU Perikanan"
+  },
+  {
+   "nama": "Pasal 66 ayat (3) UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 66 ayat (3) UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (3) Pengawasan tertib pelaksanaan peraturan perundang-undangan sebagaimana dimaksud pada ayat (2) meliputi:"
+  },
+  {
+   "nama": "Pasal 66A UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 66A UU Perikanan"
+  },
+  {
+   "nama": "Pasal 66B UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 66B UU Perikanan"
+  },
+  {
+   "nama": "Pasal 66C UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 66C UU Perikanan"
+  },
+  {
+   "nama": "UU Nomor 45 Tahun 2009 Pasal I angka 28",
+   "entity_type": "peristiwaperubahan",
+   "description": "UU Nomor 45 Tahun 2009 Pasal I angka 28"
+  },
+  {
+   "nama": "Pasal 66A UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 66A UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (1) Pengawas perikanan sebagaimana dimaksud dalam Pasal 66 merupakan pegawai negeri sipil yang bekerja di bidang perikanan yang diangkat oleh menteri atau pejabat yang ditunjuk. (2) Pengawas perikanan sebagaimana dimaksud pada ayat (1) dapat dididik untuk menjadi Penyidik Pengawai Negeri Sipil Perikanan. (3) Pengawas perikanan sebagaimana dimaksud pada ayat (2) dapat ditetapkan sebagai pejabat fun"
+  },
+  {
+   "nama": "Pasal 66A ayat (1) UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 66A ayat (1) UU Perikanan"
+  },
+  {
+   "nama": "Pasal 66A ayat (2) UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 66A ayat (2) UU Perikanan"
+  },
+  {
+   "nama": "Pasal 66A ayat (3) UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 66A ayat (3) UU Perikanan"
+  },
+  {
+   "nama": "Pasal 66A ayat (1) UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 66A ayat (1) UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (1) Pengawas perikanan sebagaimana dimaksud dalam Pasal 66 merupakan pegawai negeri sipil yang bekerja di bidang perikanan yang diangkat oleh menteri atau pejabat yang ditunjuk."
+  },
+  {
+   "nama": "Pasal 66A ayat (2) UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 66A ayat (2) UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (2) Pengawas perikanan sebagaimana dimaksud pada ayat (1) dapat dididik untuk menjadi Penyidik Pengawai Negeri Sipil Perikanan."
+  },
+  {
+   "nama": "Pasal 66A ayat (3) UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 66A ayat (3) UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (3) Pengawas perikanan sebagaimana dimaksud pada ayat (2) dapat ditetapkan sebagai pejabat fungsional pengawas perikanan."
+  },
+  {
+   "nama": "Pasal 66A ayat (4) UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 66A ayat (4) UU Perikanan"
+  },
+  {
+   "nama": "Pasal 66A ayat (4) UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 66A ayat (4) UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (4) Ketentuan lebih lanjut mengenai jabatan fungsional pengawas perikanan sebagaimana dimaksud pada ayat (3) diatur dengan Peraturan Menteri."
+  },
+  {
+   "nama": "Pasal 66B UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 66B UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (1) Pengawas perikanan sebagaimana dimaksud dalam Pasal 66 melaksanakan tugas di: a. wilayah pengelolaan perikanan Negara Republik Indonesia; b. kapal perikanan; c. pelabuhan perikanan dan/atau pelabuhan lainnya yang ditunjuk; d. pelabuhan tangkahan; e. sentra kegiatan perikanan; f. area pembenihan ikan; g. area pembudidayaan ikan; h. unit pengolahan ikan; dan/atau i. kawasan konservasi perairan. "
+  },
+  {
+   "nama": "Pasal 66B ayat (1) UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 66B ayat (1) UU Perikanan"
+  },
+  {
+   "nama": "Pasal 66B ayat (1) UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 66B ayat (1) UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (1) Pengawas perikanan sebagaimana dimaksud dalam Pasal 66 melaksanakan tugas di:"
+  },
+  {
+   "nama": "Pasal 66B ayat (2) UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 66B ayat (2) UU Perikanan"
+  },
+  {
+   "nama": "Pasal 66B ayat (2) UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 66B ayat (2) UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (2) Ketentuan lebih lanjut mengenai pelaksanaan tugas pengawas perikanan sebagaimana dimaksud pada ayat (1) diatur dalam Peraturan Menteri."
+  },
+  {
+   "nama": "Pasal 66C UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 66C UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (1) Dalam melaksanakan tugas sebagaimana dimaksud dalam Pasal 66, pengawas perikanan berwenang: a. memasuki dan memeriksa tempat kegiatan usaha perikanan; b. memeriksa kelengkapan dan keabsahan dokumen usaha perikanan; c. memeriksa kegiatan usaha perikanan; d. memeriksa sarana dan prasarana yang digunakan untuk kegiatan perikanan; e. memverifikasi kelengkapan dan keabsahan SIPI dan SIKPI; f. mendo"
+  },
+  {
+   "nama": "Pasal 66C ayat (1) UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 66C ayat (1) UU Perikanan"
+  },
+  {
+   "nama": "Pasal 66C ayat (1) UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 66C ayat (1) UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (1) Dalam melaksanakan tugas sebagaimana dimaksud dalam Pasal 66, pengawas perikanan berwenang:"
+  },
+  {
+   "nama": "Pasal 66C ayat (2) UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 66C ayat (2) UU Perikanan"
+  },
+  {
+   "nama": "Pasal 66C ayat (2) UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 66C ayat (2) UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (2) Pengawas perikanan sebagaimana dimaksud pada ayat (1) dalam melaksanakan tugasnya dapat dilengkapi dengan kapal pengawas perikanan, senjata api, dan/atau alat pengaman diri."
+  },
+  {
+   "nama": "Pasal 69 UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 69 UU Perikanan"
+  },
+  {
+   "nama": "UU Nomor 45 Tahun 2009 Pasal I angka 29",
+   "entity_type": "peristiwaperubahan",
+   "description": "UU Nomor 45 Tahun 2009 Pasal I angka 29"
+  },
+  {
+   "nama": "Pasal 69 UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 69 UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (1) Kapal pengawas perikanan berfungsi melaksanakan pengawasan dan penegakan hukum di bidang perikanan dalam wilayah pengelolaan perikanan Negara Republik Indonesia. (2) Kapal pengawas perikanan sebagaimana dimaksud pada ayat (1), dapat dilengkapi dengan senjata api. (3) Kapal pengawas perikanan dapat menghentikan, memeriksa, membawa, dan menahan kapal yang diduga atau patut diduga melakukan pelan"
+  },
+  {
+   "nama": "Pasal 69 ayat (1) UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 69 ayat (1) UU Perikanan"
+  },
+  {
+   "nama": "Pasal 69 ayat (1) UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 69 ayat (1) UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (1) Kapal pengawas perikanan berfungsi melaksanakan pengawasan dan penegakan hukum di bidang perikanan dalam wilayah pengelolaan perikanan Negara Republik Indonesia."
+  },
+  {
+   "nama": "Pasal 69 ayat (2) UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 69 ayat (2) UU Perikanan"
+  },
+  {
+   "nama": "Pasal 69 ayat (2) UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 69 ayat (2) UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (2) Kapal pengawas perikanan sebagaimana dimaksud pada ayat (1), dapat dilengkapi dengan senjata api."
+  },
+  {
+   "nama": "Pasal 69 ayat (3) UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 69 ayat (3) UU Perikanan"
+  },
+  {
+   "nama": "Pasal 69 ayat (3) UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 69 ayat (3) UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (3) Kapal pengawas perikanan dapat menghentikan, memeriksa, membawa, dan menahan kapal yang diduga atau patut diduga melakukan pelanggaran di wilayah pengelolaan perikanan Negara Republik Indonesia ke pelabuhan terdekat untuk pemrosesan lebih lanjut."
+  },
+  {
+   "nama": "Pasal 69 ayat (4) UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 69 ayat (4) UU Perikanan"
+  },
+  {
+   "nama": "Pasal 69 ayat (4) UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 69 ayat (4) UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (4) Dalam melaksanakan fungsi sebagaimana dimaksud pada ayat (1) penyidik dan/atau pengawas perikanan dapat melakukan tindakan khusus berupa pembakaran dan/atau penenggelaman kapal perikanan yang berbendera asing berdasarkan bukti permulaan yang cukup."
+  },
+  {
+   "nama": "Pasal 71 UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 71 UU Perikanan"
+  },
+  {
+   "nama": "UU Nomor 45 Tahun 2009 Pasal I angka 30",
+   "entity_type": "peristiwaperubahan",
+   "description": "UU Nomor 45 Tahun 2009 Pasal I angka 30"
+  },
+  {
+   "nama": "Pasal 71 UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 71 UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (1) Dengan Undang-Undang ini dibentuk pengadilan perikanan yang berwenang memeriksa, mengadili, dan memutus tindak pidana di bidang perikanan. (2) Pengadilan perikanan sebagaimana dimaksud pada ayat (1) merupakan pengadilan khusus yang berada dalam lingkungan peradilan umum. (3) Pengadilan perikanan sebagaimana dimaksud pada ayat (1) akan dibentuk di Pengadilan Negeri Jakarta Utara, Medan, Pontian"
+  },
+  {
+   "nama": "Pasal 71 ayat (1) UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 71 ayat (1) UU Perikanan"
+  },
+  {
+   "nama": "Pasal 71 ayat (1) UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 71 ayat (1) UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (1) Dengan Undang-Undang ini dibentuk pengadilan perikanan yang berwenang memeriksa, mengadili, dan memutus tindak pidana di bidang perikanan."
+  },
+  {
+   "nama": "Pasal 71 ayat (2) UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 71 ayat (2) UU Perikanan"
+  },
+  {
+   "nama": "Pasal 71 ayat (2) UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 71 ayat (2) UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (2) Pengadilan perikanan sebagaimana dimaksud pada ayat (1) merupakan pengadilan khusus yang berada dalam lingkungan peradilan umum."
+  },
+  {
+   "nama": "Pasal 71 ayat (3) UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 71 ayat (3) UU Perikanan"
+  },
+  {
+   "nama": "Pasal 71 ayat (3) UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 71 ayat (3) UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (3) Pengadilan perikanan sebagaimana dimaksud pada ayat (1) akan dibentuk di Pengadilan Negeri Jakarta Utara, Medan, Pontianak, Bitung, dan Tual."
+  },
+  {
+   "nama": "Pasal 71 ayat (4) UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 71 ayat (4) UU Perikanan"
+  },
+  {
+   "nama": "Pasal 71 ayat (4) UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 71 ayat (4) UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (4) Pengadilan perikanan sebagaimana dimaksud pada ayat (1) berkedudukan di pengadilan negeri."
+  },
+  {
+   "nama": "Pasal 71 ayat (5) UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 71 ayat (5) UU Perikanan"
+  },
+  {
+   "nama": "Pasal 71 ayat (5) UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 71 ayat (5) UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (5) Pembentukan pengadilan perikanan selanjutnya dilakukan secara bertahap sesuai dengan kebutuhan yang ditetapkan dengan Keputusan Presiden."
+  },
+  {
+   "nama": "Pasal 71A UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 71A UU Perikanan"
+  },
+  {
+   "nama": "UU Nomor 45 Tahun 2009 Pasal I angka 31",
+   "entity_type": "peristiwaperubahan",
+   "description": "UU Nomor 45 Tahun 2009 Pasal I angka 31"
+  },
+  {
+   "nama": "Pasal 71A UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 71A UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: Pengadilan perikanan berwenang memeriksa, mengadili, dan memutuskan perkara tindak pidana di bidang perikanan yang terjadi di wilayah pengelolaan perikanan Negara Republik Indonesia, baik yang dilakukan oleh warga negara Indonesia maupun warga negara asing."
+  },
+  {
+   "nama": "Pasal 73 UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 73 UU Perikanan"
+  },
+  {
+   "nama": "UU Nomor 45 Tahun 2009 Pasal I angka 32",
+   "entity_type": "peristiwaperubahan",
+   "description": "UU Nomor 45 Tahun 2009 Pasal I angka 32"
+  },
+  {
+   "nama": "Pasal 73 UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 73 UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (1) Penyidikan tindak pidana di bidang perikanan di wilayah pengelolaan perikanan Negara Republik Indonesia dilakukan oleh Penyidik Pegawai Negeri Sipil Perikanan, Penyidik Perwira TNI AL, dan/atau Penyidik Kepolisian Negara Republik Indonesia. (2) Selain penyidik TNI AL, Penyidik Pegawai Negeri Sipil Perikanan berwenang melakukan penyidikan terhadap tindak pidana di bidang perikanan yang terjadi "
+  },
+  {
+   "nama": "Pasal 73 ayat (1) UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 73 ayat (1) UU Perikanan"
+  },
+  {
+   "nama": "Pasal 73 ayat (4) UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 73 ayat (4) UU Perikanan"
+  },
+  {
+   "nama": "Pasal 73 ayat (1) UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 73 ayat (1) UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (1) Penyidikan tindak pidana di bidang perikanan di wilayah pengelolaan perikanan Negara Republik Indonesia dilakukan oleh Penyidik Pegawai Negeri Sipil Perikanan, Penyidik Perwira TNI AL, dan/atau Penyidik Kepolisian Negara Republik Indonesia."
+  },
+  {
+   "nama": "Pasal 73 ayat (2) UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 73 ayat (2) UU Perikanan"
+  },
+  {
+   "nama": "Pasal 73 ayat (2) UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 73 ayat (2) UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (2) Selain penyidik TNI AL, Penyidik Pegawai Negeri Sipil Perikanan berwenang melakukan penyidikan terhadap tindak pidana di bidang perikanan yang terjadi di ZEEI."
+  },
+  {
+   "nama": "Pasal 73 ayat (3) UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 73 ayat (3) UU Perikanan"
+  },
+  {
+   "nama": "Pasal 73 ayat (3) UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 73 ayat (3) UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (3) Penyidikan terhadap tindak pidana di bidang perikanan yang terjadi di pelabuhan perikanan, diutamakan dilakukan oleh Penyidik Pegawai Negeri Sipil Perikanan."
+  },
+  {
+   "nama": "Pasal 73 ayat (4) UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 73 ayat (4) UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (4) Penyidik sebagaimana dimaksud pada ayat (1) dapat melakukan koordinasi dalam penanganan penyidikan tindak pidana di bidang perikanan."
+  },
+  {
+   "nama": "Pasal 73 ayat (5) UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 73 ayat (5) UU Perikanan"
+  },
+  {
+   "nama": "Pasal 73 ayat (5) UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 73 ayat (5) UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (5) Untuk melakukan koordinasi dalam penanganan tindak pidana di bidang perikanan sebagaimana dimaksud pada ayat (4), Menteri membentuk forum koordinasi."
+  },
+  {
+   "nama": "Pasal 73A UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 73A UU Perikanan"
+  },
+  {
+   "nama": "Pasal 73B UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 73B UU Perikanan"
+  },
+  {
+   "nama": "UU Nomor 45 Tahun 2009 Pasal I angka 33",
+   "entity_type": "peristiwaperubahan",
+   "description": "UU Nomor 45 Tahun 2009 Pasal I angka 33"
+  },
+  {
+   "nama": "Pasal 73A UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 73A UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: Penyidik sebagaimana dimaksud dalam Pasal 73 berwenang: a. menerima laporan atau pengaduan dari seseorang tentang adanya tindak pidana di bidang perikanan; b. memanggil dan memeriksa tersangka dan/atau saksi untuk didengar keterangannya; c. membawa dan menghadapkan seseorang sebagai tersangka dan/atau saksi untuk didengar keterangannya; d. menggeledah sarana dan prasarana perikanan yang diduga dig"
+  },
+  {
+   "nama": "Pasal 73B UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 73B UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (1) Penyidik sebagaimana dimaksud dalam Pasal 73 memberitahukan dimulainya penyidikan kepada penuntut umum paling lama 7 (tujuh) hari sejak ditemukan adanya tindak pidana di bidang perikanan. (2) Untuk kepentingan penyidikan, penyidik dapat menahan tersangka paling lama 20 (dua puluh) hari. (3) Jangka waktu sebagaimana dimaksud pada ayat (2), apabila diperlukan untuk kepentingan pemeriksaan yang b"
+  },
+  {
+   "nama": "Pasal 73B ayat (2) UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 73B ayat (2) UU Perikanan"
+  },
+  {
+   "nama": "Pasal 73B ayat (1) UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 73B ayat (1) UU Perikanan"
+  },
+  {
+   "nama": "Pasal 73B ayat (1) UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 73B ayat (1) UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (1) Penyidik sebagaimana dimaksud dalam Pasal 73 memberitahukan dimulainya penyidikan kepada penuntut umum paling lama 7 (tujuh) hari sejak ditemukan adanya tindak pidana di bidang perikanan."
+  },
+  {
+   "nama": "Pasal 73B ayat (2) UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 73B ayat (2) UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (2) Untuk kepentingan penyidikan, penyidik dapat menahan tersangka paling lama 20 (dua puluh) hari."
+  },
+  {
+   "nama": "Pasal 73B ayat (3) UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 73B ayat (3) UU Perikanan"
+  },
+  {
+   "nama": "Pasal 73B ayat (3) UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 73B ayat (3) UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (3) Jangka waktu sebagaimana dimaksud pada ayat (2), apabila diperlukan untuk kepentingan pemeriksaan yang belum selesai, dapat diperpanjang oleh penuntut umum paling lama 10 (sepuluh) hari."
+  },
+  {
+   "nama": "Pasal 73B ayat (4) UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 73B ayat (4) UU Perikanan"
+  },
+  {
+   "nama": "Pasal 73B ayat (4) UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 73B ayat (4) UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (4) Ketentuan sebagaimana dimaksud pada ayat (2) dan ayat (3) tidak menutup kemungkinan tersangka dikeluarkan dari tahanan sebelum berakhir waktu penahanan tersebut, jika kepentingan pemeriksaan sudah terpenuhi."
+  },
+  {
+   "nama": "Pasal 73B ayat (5) UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 73B ayat (5) UU Perikanan"
+  },
+  {
+   "nama": "Pasal 73B ayat (5) UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 73B ayat (5) UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (5) Setelah waktu 30 (tiga puluh) hari tersebut, penyidik harus sudah mengeluarkan tersangka dari tahanan demi hukum."
+  },
+  {
+   "nama": "Pasal 73B ayat (6) UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 73B ayat (6) UU Perikanan"
+  },
+  {
+   "nama": "Pasal 73B ayat (6) UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 73B ayat (6) UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (6) Penyidik sebagaimana dimaksud dalam Pasal 73A menyampaikan hasil penyidikan ke penuntut umum paling lama 30 (tiga puluh) hari sejak pemberitahuan dimulainya penyidikan."
+  },
+  {
+   "nama": "Pasal 75 UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 75 UU Perikanan"
+  },
+  {
+   "nama": "UU Nomor 45 Tahun 2009 Pasal I angka 34",
+   "entity_type": "peristiwaperubahan",
+   "description": "UU Nomor 45 Tahun 2009 Pasal I angka 34"
+  },
+  {
+   "nama": "Pasal 75 UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 75 UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (1) Penuntutan terhadap tindak pidana di bidang perikanan dilakukan oleh penuntut umum yang ditetapkan oleh Jaksa Agung. (2) Penuntut umum perkara tindak pidana di bidang perikanan sebagaimana dimaksud pada ayat (1) harus memenuhi persyaratan sebagai berikut: a. berpengalaman menjadi penuntut umum sekurang-kurangnya 2 (dua) tahun; b. telah mengikuti pendidikan dan pelatihan teknis di bidang perika"
+  },
+  {
+   "nama": "Pasal 75 ayat (1) UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 75 ayat (1) UU Perikanan"
+  },
+  {
+   "nama": "Pasal 75 ayat (1) UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 75 ayat (1) UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (1) Penuntutan terhadap tindak pidana di bidang perikanan dilakukan oleh penuntut umum yang ditetapkan oleh Jaksa Agung."
+  },
+  {
+   "nama": "Pasal 75 ayat (2) UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 75 ayat (2) UU Perikanan"
+  },
+  {
+   "nama": "Pasal 75 ayat (2) UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 75 ayat (2) UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (2) Penuntut umum perkara tindak pidana di bidang perikanan sebagaimana dimaksud pada ayat (1) harus memenuhi persyaratan sebagai berikut:"
+  },
+  {
+   "nama": "Pasal 76 UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 76 UU Perikanan"
+  },
+  {
+   "nama": "UU Nomor 45 Tahun 2009 Pasal I angka 35",
+   "entity_type": "peristiwaperubahan",
+   "description": "UU Nomor 45 Tahun 2009 Pasal I angka 35"
+  },
+  {
+   "nama": "Pasal 76 UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 76 UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (1) Penuntut umum setelah menerima hasil penyidikan dari penyidik wajib memberitahukan hasil penelitiannya kepada penyidik dalam waktu 5 (lima) hari terhitung sejak tanggal diterimanya berkas penyidikan. (2) Dalam hal hasil penyidikan yang disampaikan tidak lengkap, penuntut umum harus mengembalikan berkas perkara kepada penyidik yang disertai dengan petunjuk tentang hal-hal yang harus dilengkapi."
+  },
+  {
+   "nama": "Pasal 76 ayat (6) UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 76 ayat (6) UU Perikanan"
+  },
+  {
+   "nama": "Pasal 76 ayat (1) UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 76 ayat (1) UU Perikanan"
+  },
+  {
+   "nama": "Pasal 76 ayat (1) UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 76 ayat (1) UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (1) Penuntut umum setelah menerima hasil penyidikan dari penyidik wajib memberitahukan hasil penelitiannya kepada penyidik dalam waktu 5 (lima) hari terhitung sejak tanggal diterimanya berkas penyidikan."
+  },
+  {
+   "nama": "Pasal 76 ayat (2) UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 76 ayat (2) UU Perikanan"
+  },
+  {
+   "nama": "Pasal 76 ayat (2) UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 76 ayat (2) UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (2) Dalam hal hasil penyidikan yang disampaikan tidak lengkap, penuntut umum harus mengembalikan berkas perkara kepada penyidik yang disertai dengan petunjuk tentang hal-hal yang harus dilengkapi."
+  },
+  {
+   "nama": "Pasal 76 ayat (3) UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 76 ayat (3) UU Perikanan"
+  },
+  {
+   "nama": "Pasal 76 ayat (3) UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 76 ayat (3) UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (3) Dalam waktu paling lama 10 (sepuluh) hari terhitung sejak tanggal penerimaan berkas, penyidik harus menyampaikan kembali berkas perkara tersebut kepada penuntut umum."
+  },
+  {
+   "nama": "Pasal 76 ayat (4) UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 76 ayat (4) UU Perikanan"
+  },
+  {
+   "nama": "Pasal 76 ayat (4) UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 76 ayat (4) UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (4) Penyidikan dianggap telah selesai apabila dalam waktu 5 (lima) hari penuntut umum tidak mengembalikan hasil penyidikan atau apabila sebelum batas waktu tersebut berakhir sudah ada pemberitahuan tentang hal itu dari penuntut umum kepada penyidik."
+  },
+  {
+   "nama": "Pasal 76 ayat (5) UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 76 ayat (5) UU Perikanan"
+  },
+  {
+   "nama": "Pasal 76 ayat (5) UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 76 ayat (5) UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (5) Dalam hal penuntut umum menyatakan hasil penyidikan tersebut lengkap dalam waktu paling lama 10 (sepuluh) hari terhitung sejak tanggal penerimaan berkas dari penyidik dinyatakan lengkap, penuntut umum harus melimpahkan perkara tersebut kepada pengadilan perikanan."
+  },
+  {
+   "nama": "Pasal 76 ayat (6) UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 76 ayat (6) UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (6) Untuk kepentingan penuntutan, penuntut umum berwenang melakukan penahanan atau penahanan lanjutan selama 10 (sepuluh) hari."
+  },
+  {
+   "nama": "Pasal 76 ayat (7) UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 76 ayat (7) UU Perikanan"
+  },
+  {
+   "nama": "Pasal 76 ayat (7) UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 76 ayat (7) UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (7) Jangka waktu sebagaimana dimaksud pada ayat (6), apabila diperlukan guna kepentingan pemeriksaan yang belum selesai, dapat diperpanjang oleh ketua pengadilan negeri yang berwenang paling lama 10 (sepuluh) hari."
+  },
+  {
+   "nama": "Pasal 76 ayat (8) UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 76 ayat (8) UU Perikanan"
+  },
+  {
+   "nama": "Pasal 76 ayat (8) UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 76 ayat (8) UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (8) Ketentuan sebagaimana dimaksud pada ayat (6) dan ayat (7) tidak menutup kemungkinan tersangka dikeluarkan dari tahanan sebelum jangka waktu penahanan berakhir jika kepentingan pemeriksaan sudah terpenuhi."
+  },
+  {
+   "nama": "Pasal 76 ayat (9) UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 76 ayat (9) UU Perikanan"
+  },
+  {
+   "nama": "Pasal 76 ayat (9) UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 76 ayat (9) UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (9) Penuntut umum menyampaikan berkas perkara kepada ketua pengadilan negeri yang berwenang paling lama 30 (tiga puluh) hari sejak tanggal penerimaan berkas dari penyidik dinyatakan lengkap."
+  },
+  {
+   "nama": "UU Nomor 45 Tahun 2009 Pasal I angka 36",
+   "entity_type": "peristiwaperubahan",
+   "description": "UU Nomor 45 Tahun 2009 Pasal I angka 36"
+  },
+  {
+   "nama": "Pasal 76A UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 76A UU Perikanan"
+  },
+  {
+   "nama": "Pasal 76A UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 76A UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: Benda dan/atau alat yang digunakan dalam dan/atau yang dihasilkan dari tindak pidana perikanan dapat dirampas untuk negara atau dimusnahkan setelah mendapat persetujuan ketua pengadilan negeri."
+  },
+  {
+   "nama": "Pasal 76B UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 76B UU Perikanan"
+  },
+  {
+   "nama": "Pasal 76B UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 76B UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (1) Barang bukti hasil tindak pidana perikanan yang mudah rusak atau memerlukan biaya perawatan yang tinggi dapat dilelang dengan persetujuan ketua pengadilan negeri. (2) Barang bukti hasil tindak pidana perikanan yang mudah rusak sebagaimana dimaksud pada ayat (1) berupa jenis ikan terlebih dahulu disisihkan sebagian untuk kepentingan pembuktian di pengadilan."
+  },
+  {
+   "nama": "Pasal 76B ayat (1) UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 76B ayat (1) UU Perikanan"
+  },
+  {
+   "nama": "Pasal 76B ayat (1) UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 76B ayat (1) UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (1) Barang bukti hasil tindak pidana perikanan yang mudah rusak atau memerlukan biaya perawatan yang tinggi dapat dilelang dengan persetujuan ketua pengadilan negeri."
+  },
+  {
+   "nama": "Pasal 76B ayat (2) UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 76B ayat (2) UU Perikanan"
+  },
+  {
+   "nama": "Pasal 76B ayat (2) UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 76B ayat (2) UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (2) Barang bukti hasil tindak pidana perikanan yang mudah rusak sebagaimana dimaksud pada ayat (1) berupa jenis ikan terlebih dahulu disisihkan sebagian untuk kepentingan pembuktian di pengadilan."
+  },
+  {
+   "nama": "Pasal 76C UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 76C UU Perikanan"
+  },
+  {
+   "nama": "Pasal 76C UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 76C UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (1) Benda dan/atau alat yang dirampas dari hasil tindak pidana perikanan sebagaimana dimaksud dalam Pasal 76A dapat dilelang untuk negara. (2) Pelaksanaan lelang dilakukan oleh badan lelang negara sesuai dengan ketentuan peraturan perundang-undangan. (3) Uang hasil pelelangan dari hasil penyitaan tindak pidana perikanan disetor ke kas negara sebagai penerimaan negara bukan pajak. (4) Aparat penega"
+  },
+  {
+   "nama": "Pasal 76C ayat (1) UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 76C ayat (1) UU Perikanan"
+  },
+  {
+   "nama": "Pasal 76C ayat (1) UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 76C ayat (1) UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (1) Benda dan/atau alat yang dirampas dari hasil tindak pidana perikanan sebagaimana dimaksud dalam Pasal 76A dapat dilelang untuk negara."
+  },
+  {
+   "nama": "Pasal 76C ayat (2) UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 76C ayat (2) UU Perikanan"
+  },
+  {
+   "nama": "Pasal 76C ayat (2) UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 76C ayat (2) UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (2) Pelaksanaan lelang dilakukan oleh badan lelang negara sesuai dengan ketentuan peraturan perundang-undangan."
+  },
+  {
+   "nama": "Pasal 76C ayat (3) UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 76C ayat (3) UU Perikanan"
+  },
+  {
+   "nama": "Pasal 76C ayat (3) UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 76C ayat (3) UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (3) Uang hasil pelelangan dari hasil penyitaan tindak pidana perikanan disetor ke kas negara sebagai penerimaan negara bukan pajak."
+  },
+  {
+   "nama": "Pasal 76C ayat (4) UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 76C ayat (4) UU Perikanan"
+  },
+  {
+   "nama": "Pasal 76C ayat (4) UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 76C ayat (4) UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (4) Aparat penegak hukum di bidang perikanan yang berhasil menjalankan tugasnya dengan baik dan pihak yang berjasa dalam upaya penyelamatan kekayaan negara diberi penghargaan sesuai dengan ketentuan peraturan perundang-undangan."
+  },
+  {
+   "nama": "Pasal 76C ayat (5) UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 76C ayat (5) UU Perikanan"
+  },
+  {
+   "nama": "Pasal 76C ayat (5) UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 76C ayat (5) UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (5) Benda dan/atau alat yang dirampas dari hasil tindak pidana perikanan yang berupa kapal perikanan dapat diserahkan kepada kelompok usaha bersama nelayan dan/atau koperasi perikanan."
+  },
+  {
+   "nama": "Pasal 76C ayat (6) UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 76C ayat (6) UU Perikanan"
+  },
+  {
+   "nama": "Pasal 76C ayat (6) UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 76C ayat (6) UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (6) Ketentuan lebih lanjut mengenai pemberian penghargaan diatur dengan Peraturan Pemerintah."
+  },
+  {
+   "nama": "Pasal 78A UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 78A UU Perikanan"
+  },
+  {
+   "nama": "UU Nomor 45 Tahun 2009 Pasal I angka 37",
+   "entity_type": "peristiwaperubahan",
+   "description": "UU Nomor 45 Tahun 2009 Pasal I angka 37"
+  },
+  {
+   "nama": "Pasal 78A UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 78A UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (1) Setiap pengadilan negeri yang telah ada pengadilan perikanan, dibentuk subkepaniteraan pengadilan perikanan yang dipimpin oleh seorang panitera muda. (2) Dalam melaksanakan tugasnya, panitera muda sebagaimana dimaksud pada ayat (1) dibantu oleh beberapa orang panitera pengganti. (3) Panitera muda dan panitera pengganti pengadilan perikanan berasal dari lingkungan pengadilan negeri. (4) Ketentu"
+  },
+  {
+   "nama": "Pasal 78A ayat (1) UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 78A ayat (1) UU Perikanan"
+  },
+  {
+   "nama": "Pasal 78A ayat (1) UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 78A ayat (1) UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (1) Setiap pengadilan negeri yang telah ada pengadilan perikanan, dibentuk subkepaniteraan pengadilan perikanan yang dipimpin oleh seorang panitera muda."
+  },
+  {
+   "nama": "Pasal 78A ayat (2) UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 78A ayat (2) UU Perikanan"
+  },
+  {
+   "nama": "Pasal 78A ayat (2) UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 78A ayat (2) UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (2) Dalam melaksanakan tugasnya, panitera muda sebagaimana dimaksud pada ayat (1) dibantu oleh beberapa orang panitera pengganti."
+  },
+  {
+   "nama": "Pasal 78A ayat (3) UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 78A ayat (3) UU Perikanan"
+  },
+  {
+   "nama": "Pasal 78A ayat (3) UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 78A ayat (3) UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (3) Panitera muda dan panitera pengganti pengadilan perikanan berasal dari lingkungan pengadilan negeri."
+  },
+  {
+   "nama": "Pasal 78A ayat (4) UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 78A ayat (4) UU Perikanan"
+  },
+  {
+   "nama": "Pasal 78A ayat (4) UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 78A ayat (4) UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (4) Ketentuan mengenai persyaratan, tata cara pengangkatan, dan pemberhentian panitera muda dan panitera pengganti pengadilan perikanan serta susunan organisasi, tugas, dan tata kerja subkepaniteraan pengadilan perikanan diatur dengan peraturan Mahkamah Agung sesuai dengan ketentuan peraturan perundang-undangan."
+  },
+  {
+   "nama": "Pasal 83A UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 83A UU Perikanan"
+  },
+  {
+   "nama": "UU Nomor 45 Tahun 2009 Pasal I angka 38",
+   "entity_type": "peristiwaperubahan",
+   "description": "UU Nomor 45 Tahun 2009 Pasal I angka 38"
+  },
+  {
+   "nama": "Pasal 83A UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 83A UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (1) Selain yang ditetapkan sebagai tersangka dalam tindak pidana perikanan atau tindak pidana lainnya, awak kapal lainnya dapat dipulangkan termasuk yang berkewarganegaraan asing. (2) Pemulangan awak kapal berkewarganegaraan asing sebagaimana dimaksud pada ayat (1) dilakukan oleh instansi yang bertanggung jawab di bidang keimigrasian melalui kedutaan atau perwakilan negara asal awak kapal. (3) Ket"
+  },
+  {
+   "nama": "Pasal 83A ayat (1) UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 83A ayat (1) UU Perikanan"
+  },
+  {
+   "nama": "Pasal 83A ayat (1) UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 83A ayat (1) UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (1) Selain yang ditetapkan sebagai tersangka dalam tindak pidana perikanan atau tindak pidana lainnya, awak kapal lainnya dapat dipulangkan termasuk yang berkewarganegaraan asing."
+  },
+  {
+   "nama": "Pasal 83A ayat (2) UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 83A ayat (2) UU Perikanan"
+  },
+  {
+   "nama": "Pasal 83A ayat (2) UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 83A ayat (2) UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (2) Pemulangan awak kapal berkewarganegaraan asing sebagaimana dimaksud pada ayat (1) dilakukan oleh instansi yang bertanggung jawab di bidang keimigrasian melalui kedutaan atau perwakilan negara asal awak kapal."
+  },
+  {
+   "nama": "Pasal 83A ayat (3) UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 83A ayat (3) UU Perikanan"
+  },
+  {
+   "nama": "Pasal 83A ayat (3) UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 83A ayat (3) UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: (3) Ketentuan mengenai pemulangan awak kapal berkewarganegaraan asing sebagaimana dimaksud pada ayat (1) dilaksanakan sesuai dengan ketentuan peraturan perundang-undangan."
+  },
+  {
+   "nama": "Pasal 85 UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 85 UU Perikanan"
+  },
+  {
+   "nama": "UU Nomor 45 Tahun 2009 Pasal I angka 39",
+   "entity_type": "peristiwaperubahan",
+   "description": "UU Nomor 45 Tahun 2009 Pasal I angka 39"
+  },
+  {
+   "nama": "Pasal 85 UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 85 UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). perlu dicek: ancaman pidana disesuaikan uu/2026/1 sejak 2026-01-02; cek Lampiran uu/2026/1. teks: Setiap orang yang dengan sengaja memiliki, menguasai, membawa, dan/atau menggunakan alat penangkap ikan dan/atau alat bantu penangkapan ikan yang mengganggu dan merusak keberlanjutan sumber daya ikan di kapal penangkap ikan di wilayah pengelolaan perikanan Negara Republik Indonesia sebagaimana dimaksud dalam Pasal 9 dipidana dengan pidana penjara paling lama 5 (lima) tahun dan denda paling banyak "
+  },
+  {
+   "nama": "Pasal 93 UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 93 UU Perikanan"
+  },
+  {
+   "nama": "UU Nomor 45 Tahun 2009 Pasal I angka 40",
+   "entity_type": "peristiwaperubahan",
+   "description": "UU Nomor 45 Tahun 2009 Pasal I angka 40"
+  },
+  {
+   "nama": "Pasal 93 UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 93 UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). perlu dicek: ancaman pidana disesuaikan uu/2026/1 sejak 2026-01-02; cek Lampiran uu/2026/1. teks: (1) Setiap orang yang memiliki dan/atau mengoperasikan kapal penangkap ikan berbendera Indonesia melakukan penangkapan ikan di wilayah pengelolaan perikanan Negara Republik Indonesia dan/atau di laut lepas, yang tidak memiliki SIPI sebagaimana dimaksud dalam Pasal 27 ayat (1), dipidana dengan pidana penjara paling lama 6 (enam) tahun dan denda paling banyak Rp2.000.000.000,00 (dua miliar rupiah). "
+  },
+  {
+   "nama": "Pasal 93 ayat (1) UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 93 ayat (1) UU Perikanan"
+  },
+  {
+   "nama": "Pasal 93 ayat (1) UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 93 ayat (1) UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). perlu dicek: ancaman pidana disesuaikan uu/2026/1 sejak 2026-01-02; cek Lampiran uu/2026/1. teks: (1) Setiap orang yang memiliki dan/atau mengoperasikan kapal penangkap ikan berbendera Indonesia melakukan penangkapan ikan di wilayah pengelolaan perikanan Negara Republik Indonesia dan/atau di laut lepas, yang tidak memiliki SIPI sebagaimana dimaksud dalam Pasal 27 ayat (1), dipidana dengan pidana penjara paling lama 6 (enam) tahun dan denda paling banyak Rp2.000.000.000,00 (dua miliar rupiah)."
+  },
+  {
+   "nama": "Pasal 93 ayat (2) UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 93 ayat (2) UU Perikanan"
+  },
+  {
+   "nama": "Pasal 93 ayat (2) UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 93 ayat (2) UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). perlu dicek: ancaman pidana disesuaikan uu/2026/1 sejak 2026-01-02; cek Lampiran uu/2026/1. teks: (2) Setiap orang yang memiliki dan/atau mengoperasikan kapal penangkap ikan berbendera asing melakukan penangkapan ikan di ZEEI yang tidak memiliki SIPI sebagaimana dimaksud dalam Pasal 27 ayat (2), dipidana dengan pidana penjara paling lama 6 (enam) tahun dan denda paling banyak Rp20.000.000.000,00 (dua puluh miliar rupiah)."
+  },
+  {
+   "nama": "Pasal 93 ayat (3) UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 93 ayat (3) UU Perikanan"
+  },
+  {
+   "nama": "Pasal 93 ayat (3) UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 93 ayat (3) UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). perlu dicek: ancaman pidana disesuaikan uu/2026/1 sejak 2026-01-02; cek Lampiran uu/2026/1. teks: (3) Setiap orang yang mengoperasikan kapal penangkap ikan berbendera Indonesia di wilayah pengelolaan perikanan Negara Republik Indonesia, yang tidak membawa SIPI asli sebagaimana dimaksud dalam Pasal 27 ayat (3), dipidana dengan pidana penjara paling lama 6 (enam) tahun dan denda paling banyak Rp2.000.000.000,00 (dua miliar rupiah)."
+  },
+  {
+   "nama": "Pasal 93 ayat (4) UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 93 ayat (4) UU Perikanan"
+  },
+  {
+   "nama": "Pasal 93 ayat (4) UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 93 ayat (4) UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). perlu dicek: ancaman pidana disesuaikan uu/2026/1 sejak 2026-01-02; cek Lampiran uu/2026/1. teks: (4) Setiap orang yang mengoperasikan kapal penangkap ikan berbendera asing di ZEEI, yang tidak membawa SIPI asli sebagaimana dimaksud dalam Pasal 27 ayat (3), dipidana dengan pidana penjara paling lama 6 (enam) tahun dan denda paling banyak Rp20.000.000.000,00 (dua puluh miliar rupiah)."
+  },
+  {
+   "nama": "Pasal 94A UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 94A UU Perikanan"
+  },
+  {
+   "nama": "UU Nomor 45 Tahun 2009 Pasal I angka 41",
+   "entity_type": "peristiwaperubahan",
+   "description": "UU Nomor 45 Tahun 2009 Pasal I angka 41"
+  },
+  {
+   "nama": "Pasal 94A UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 94A UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). perlu dicek: ancaman pidana disesuaikan uu/2026/1 sejak 2026-01-02; cek Lampiran uu/2026/1. teks: Setiap orang yang memalsukan dan/atau menggunakan SIUP, SIPI, dan SIKPI palsu sebagaimana dimaksud dalam Pasal 28A dipidana dengan pidana penjara paling lama 7 (tujuh) tahun dan denda paling banyak Rp3.000.000.000,00 (tiga miliar rupiah)."
+  },
+  {
+   "nama": "Pasal 98 UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 98 UU Perikanan"
+  },
+  {
+   "nama": "UU Nomor 45 Tahun 2009 Pasal I angka 42",
+   "entity_type": "peristiwaperubahan",
+   "description": "UU Nomor 45 Tahun 2009 Pasal I angka 42"
+  },
+  {
+   "nama": "Pasal 98 UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 98 UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). perlu dicek: ancaman pidana disesuaikan uu/2026/1 sejak 2026-01-02; cek Lampiran uu/2026/1. teks: Nakhoda kapal perikanan yang tidak memiliki surat persetujuan berlayar sebagaimana dimaksud dalam Pasal 42 ayat (3) dipidana dengan pidana penjara paling lama 1 (satu) tahun dan denda paling banyak Rp200.000.000,00 (dua ratus juta rupiah)."
+  },
+  {
+   "nama": "Pasal 100A UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 100A UU Perikanan"
+  },
+  {
+   "nama": "Pasal 100B UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 100B UU Perikanan"
+  },
+  {
+   "nama": "Pasal 100C UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 100C UU Perikanan"
+  },
+  {
+   "nama": "Pasal 100D UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 100D UU Perikanan"
+  },
+  {
+   "nama": "UU Nomor 45 Tahun 2009 Pasal I angka 43",
+   "entity_type": "peristiwaperubahan",
+   "description": "UU Nomor 45 Tahun 2009 Pasal I angka 43"
+  },
+  {
+   "nama": "Pasal 100A UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 100A UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: Dalam hal tindak pidana sebagaimana dimaksud dalam Pasal 28A, pemalsuan persetujuan sebagaimana dimaksud dalam Pasal 35 ayat (1), dan pemalsuan pendaftaran sebagaimana dimaksud dalam Pasal 36 yang melibatkan pejabat, pidananya ditambah 1/3 (satu pertiga) dari ancaman pidana pokok."
+  },
+  {
+   "nama": "Pasal 35 ayat (1) UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 35 ayat (1) UU Perikanan"
+  },
+  {
+   "nama": "Pasal 35 UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 35 UU Perikanan"
+  },
+  {
+   "nama": "Pasal 100B UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 100B UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). perlu dicek: ancaman pidana disesuaikan uu/2026/1 sejak 2026-01-02; cek Lampiran uu/2026/1. teks: Dalam hal tindak pidana sebagaimana dimaksud dalam Pasal 8, Pasal 9, Pasal 12, Pasal 14 ayat (4), Pasal 16 ayat (1), Pasal 20 ayat (3), Pasal 21, Pasal 23 ayat (1), Pasal 26 ayat (1), Pasal 27 ayat (1), Pasal 27 ayat (3), Pasal 28 ayat (1), Pasal 28 ayat (3), Pasal 35 ayat (1), Pasal 36 ayat (1), Pasal 38, Pasal 42 ayat (3), atau Pasal 55 ayat (1) yang dilakukan oleh nelayan kecil dan/atau pembudi"
+  },
+  {
+   "nama": "Pasal 8 UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 8 UU Perikanan"
+  },
+  {
+   "nama": "Pasal 100C UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 100C UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). perlu dicek: ancaman pidana disesuaikan uu/2026/1 sejak 2026-01-02; cek Lampiran uu/2026/1. teks: Dalam hal tindak pidana sebagaimana dimaksud dalam Pasal 7 ayat (2) dilakukan oleh nelayan kecil dan/atau pembudi daya-ikan kecil dipidana dengan pidana denda paling banyak Rp100.000.000,00 (seratus juta rupiah)."
+  },
+  {
+   "nama": "Pasal 100D UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 100D UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: Dalam hal pengadilan menjatuhkan pidana denda, maka denda dimaksud wajib disetorkan ke kas negara sebagai penerimaan negara bukan pajak kementerian yang membidangi urusan perikanan."
+  },
+  {
+   "nama": "Pasal 105 UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 105 UU Perikanan"
+  },
+  {
+   "nama": "UU Nomor 45 Tahun 2009 Pasal I angka 44",
+   "entity_type": "peristiwaperubahan",
+   "description": "UU Nomor 45 Tahun 2009 Pasal I angka 44"
+  },
+  {
+   "nama": "Pasal 110 UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 110 UU Perikanan"
+  },
+  {
+   "nama": "UU Nomor 45 Tahun 2009 Pasal I angka 45",
+   "entity_type": "peristiwaperubahan",
+   "description": "UU Nomor 45 Tahun 2009 Pasal I angka 45"
+  },
+  {
+   "nama": "Pasal 110 UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 110 UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: Pada saat Undang-Undang ini mulai berlaku: a. Undang-Undang Nomor 9 Tahun 1985 tentang Perikanan (Lembaran Negara Republik Indonesia Tahun 1985 Nomor 46, Tambahan Lembaran Negara Republik Indonesia Nomor 3299); dan b. Ketentuan mengenai penyidikan sebagaimana diatur dalam Pasal 14 dan ketentuan mengenai pidana denda dalam Pasal 16 ayat (1) Undang-Undang Nomor 5 Tahun 1983 tentang Zona Ekonomi Eksk"
+  },
+  {
+   "nama": "Pasal 110A UU Perikanan",
+   "entity_type": "pasal",
+   "description": "Pasal 110A UU Perikanan"
+  },
+  {
+   "nama": "UU Nomor 45 Tahun 2009 Pasal I angka 46",
+   "entity_type": "peristiwaperubahan",
+   "description": "UU Nomor 45 Tahun 2009 Pasal I angka 46"
+  },
+  {
+   "nama": "Pasal 110A UU Perikanan versi UU Nomor 45 Tahun 2009",
+   "entity_type": "versipasal",
+   "description": "Pasal 110A UU Perikanan versi UU Nomor 45 Tahun 2009. berlaku sejak 2009-10-29 (masih berlaku). teks: Semua Peraturan Pemerintah yang diamanatkan untuk melaksanakan ketentuan Undang-Undang ini harus ditetapkan paling lama 1 (satu) tahun sejak Undang-Undang ini diundangkan."
+  }
+ ],
+ "catatan": "Node Lapisan 1 belum ada di vdb_entities MiniRAG; embed ulang dengan model yang sama (bge-m3)."
+}

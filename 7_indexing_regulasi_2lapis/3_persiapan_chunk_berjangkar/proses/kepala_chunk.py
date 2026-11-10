@@ -18,6 +18,7 @@ Pemakaian:
 """
 import argparse
 import json
+import os
 import re
 
 SEG = re.compile(r"^(Penjelasan\s+)?Pasal\s+(\d+[A-Z]?)(?:\s+ayat\s+\((\w+)\)(?:-\((\w+)\))?)?"

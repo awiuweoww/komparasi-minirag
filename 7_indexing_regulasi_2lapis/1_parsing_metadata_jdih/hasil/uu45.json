@@ -1,0 +1,50 @@
+{
+ "peraturan": {
+  "tipe_dokumen": "Peraturan Perundang-undangan",
+  "judul": "Undang-undang (UU) Nomor 45 Tahun 2009 tentang Perubahan Atas Undang-Undang Nomor 31 Tahun 2004 Tentang Perikanan",
+  "teu": "Indonesia, Pemerintah Pusat",
+  "nomor": "45",
+  "bentuk": "Undang-undang (UU)",
+  "bentuk_singkat": "UU",
+  "tahun": 2009,
+  "tempat_penetapan": "Jakarta",
+  "tanggal_penetapan": "2009-10-29",
+  "tanggal_pengundangan": "2009-10-29",
+  "tanggal_berlaku": "2009-10-29",
+  "sumber": "LN. 2009/ No. 154, TLN NO. 5073, LL SETNEG : 33 HLM",
+  "subjek": [
+   "PERIKANAN DAN KELAUTAN"
+  ],
+  "status": "Berlaku",
+  "bahasa": "Bahasa Indonesia",
+  "lokasi": "Pemerintah Pusat",
+  "bidang": [],
+  "alias": [
+   "UU No. 45 Tahun 2009",
+   "UU 45/2009",
+   "UU Nomor 45 Tahun 2009"
+  ],
+  "sumber_terurai": {
+   "ln_tahun": 2009,
+   "ln_nomor": 154,
+   "tln": 5073,
+   "penerbit": "LL SETNEG",
+   "halaman": 33
+  },
+  "id": "uu/2009/45",
+  "label": "UU Nomor 45 Tahun 2009",
+  "url_sumber": "https://peraturan.bpk.go.id/Details/38790/uu-no-45-tahun-2009",
+  "bpk_id": 38790,
+  "relasi": {
+   "diubah_dengan": [
+    "uu/2023/6",
+    "perpu/2022/2",
+    "uu/2020/11"
+   ],
+   "mengubah": [
+    "uu/2004/31"
+   ]
+  }
+ },
+ "putusan": []
+}
