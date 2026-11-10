@@ -41,3 +41,17 @@ Thumbs.db
 pengujian_chunking/
 5_pengujian_chunking_universal/
 
+# Folder Pengujian Khusus Putusan Pidana (Isolasi Eksperimen Kasus Peradilan)
+6_minirag_putusan_pidana/
+
+indexing_hirarki/
+
+# Plan & Panduan Internal Tracking
+*PLAN*.md
+*PANDUAN*.md
+*KOMPARASI_ASLI*.md
+**/PLAN*.md
+**/PANDUAN*.md
+**/KOMPARASI_ASLI*.md
+
+

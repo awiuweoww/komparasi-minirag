@@ -1,0 +1,378 @@
+# =====================================================================================
+# Skema relasi antar-regulasi (Lapisan 1) dan jangkar konten norma (Lapisan 2)
+# Versi 1.2 - 08-11-2026 (v1.2: bagian layer2 menjadi sumber prompt dan aturan penautan)
+# Versi 1.1 - 08-11-2026 (direvisi dari halaman Details BPK: UU 31/2004, UU 45/2009,
+#              UU 11/2020, Perpu 2/2022, UU 6/2023; diambil 2026-11-08)
+#
+# Perubahan dari v1.0:
+#   - label BPK "Ditetapkan dengan" (Perpu -> UU penetapan) kini sumber bpk, bukan turunan
+#   - setiap relasi status BPK boleh membawa `catatan` (teks pasal apa adanya), bukan hanya
+#     "Dicabut sebagian dengan"; "Diubah dengan" juga punya catatan (mis. UU 1/2026)
+#   - UJI MATERI dimodelkan per butir amar: sasaran pasal bertingkat, jenis_amar, tafsir
+#   - rujukan omnibus bertingkat: "Pasal X dalam Pasal Y angka N Lampiran UU 6/2023"
+#   - sasaran_efektif: BPK mencatat UU 45/2009 "Diubah dengan" UU 11/2020 dst., padahal
+#     yang berubah adalah rumusan UU 31/2004 -> versi dibuat pada Work UU induk
+#   - Perpu yang ditetapkan menjadi UU: ID versi memakai Perpu (asal teks), label memakai
+#     UU penetapan, alias keduanya masuk jangkar.json
+#   - pencabutan omnibus: berlaku_sampai versi UU 11/2020 = sehari sebelum Perpu berlaku
+#   - penyesuaian umum tanpa daftar pasal (UU 1/2026 Penyesuaian Pidana): relasi baru
+#     menyesuaikan_pidana, sumber manual, status perlu_cek
+#   - properti Peraturan baru: bpk_id, sumber_terurai, isi_lampiran, diambil_pada
+#
+# Acuan:
+#   - Struktur metadata database peraturan BPK (peraturan.bpk.go.id, halaman "Details"):
+#     blok METADATA PERATURAN dan blok STATUS PERATURAN (Diubah dengan, Dicabut dengan,
+#     Dicabut sebagian dengan, Mengubah, Mencabut, Menetapkan) serta UJI MATERI.
+#   - Pemisahan Work / Expression ala FRBR, seperti dipakai European Legislation Identifier
+#     (ELI) dan Akoma Ntoso: Pasal = Work (identitas lintas versi), VersiPasal = Expression.
+#
+# Prinsip:
+#   1. Lapisan 1 (struktur & relasi antar-regulasi) DIBANGUN OLEH KODE dari metadata dan
+#      kalimat perubahan, BUKAN diekstrak LLM.
+#   2. Lapisan 2 (kewajiban, larangan, tindak pidana, sanksi, pihak, konsep) diekstrak LLM
+#      per chunk dan WAJIB berjangkar ke satu VersiPasal milik chunk tersebut.
+#   3. Setiap node Lapisan 1 punya ID stabil (gaya ELI) dan label yang dipakai di graf/prompt.
+# =====================================================================================
+
+schema: skema-relasi-regulasi
+version: "1.2"
+
+# -------------------------------------------------------------------------------------
+# ATURAN ID DAN LABEL
+# -------------------------------------------------------------------------------------
+id_rules:
+  peraturan: "{bentuk_singkat}/{tahun}/{nomor}"              # uu/2004/31, perpu/2022/2, pp/2021/27
+  pasal: "{induk_id}/pasal/{nomor}[/ayat/{ayat}][/huruf/{huruf}][/angka/{angka}]"
+                                                               # uu/2004/31/pasal/93/ayat/2
+  versi_pasal: "{pasal_id}@{sumber_id}"                        # uu/2004/31/pasal/93/ayat/2@uu/2020/11
+  peristiwa_perubahan: "{pengubah_id}/pasal/{pasal_pengubah}/angka/{angka}"
+                                                               # uu/2020/11/pasal/27/angka/27
+  peristiwa_lampiran: "{uu_penetapan_id}/lampiran/pasal/{pasal_pengubah}/angka/{angka}"
+                                                               # uu/2023/6/lampiran/pasal/27/angka/27
+                                                               # = alias dari perpu/2022/2/pasal/27/angka/27
+  putusan: "putusan/{lembaga}/{nomor_normal}"                  # putusan/mk/91-puu-xviii-2020
+  chunk: "{sumber_id}/chunk/{nnnn}"                            # uu/2020/11/chunk/0042
+  catatan: >
+    bentuk_singkat ditulis huruf kecil tanpa titik (UU -> uu, PERPU/Perpu -> perpu, PP -> pp,
+    Perpres -> perpres, Permen KP -> permen-kp). ID tidak pernah berubah; label boleh diperbaiki.
+
+label_rules:
+  peraturan: "{Bentuk Singkat} Nomor {nomor} Tahun {tahun}"   # UU Nomor 11 Tahun 2020
+  pasal: "Pasal {nomor}[ ayat ({ayat})][ huruf {huruf}][ angka {angka}] {induk_alias}"
+                                                               # Pasal 93 ayat (2) UU Perikanan
+  versi_pasal: "{label_pasal} versi {label_sumber}"            # ... UU Perikanan versi UU Nomor 11 Tahun 2020
+  versi_pasal_perpu_ditetapkan: >
+    Bila sumber versi adalah Perpu yang punya relasi ditetapkan_dengan U, label utama =
+    "{label_pasal} versi {label U}" (cara orang mengutip: "UU Cipta Kerja 2023"), dan
+    "{label_pasal} versi {label Perpu}" disimpan sebagai alias. ID tetap {pasal_id}@{perpu_id}.
+  rujukan_bertingkat: >
+    Pola BPK/MK "Pasal X [ayat (n)] dalam Pasal Y angka N Lampiran {UU penetapan}" dibaca
+    sebagai: Work = Pasal X [ayat (n)] UU yang diubah oleh Pasal Y; peristiwa = Pasal Y angka N.
+    Nama UU yang diubah tidak disebut, jadi dipetakan lewat pasal_pengubah di metadata
+    (Pasal 27 -> uu/2004/31). Pasal Y yang tidak ada di pasal_pengubah = di luar lingkup.
+  induk_alias: >
+    Nama pendek undang-undang induk yang pasalnya diubah berkali-kali, diambil dari metadata
+    (field induk_alias). Untuk uu/2004/31 = "UU Perikanan".
+
+# -------------------------------------------------------------------------------------
+# LAPISAN 1 - KELAS
+# -------------------------------------------------------------------------------------
+classes:
+
+  Peraturan:
+    deskripsi: Satu peraturan perundang-undangan (UU, Perppu, PP, Perpres, Permen, Perda).
+    sumber_data: metadata BPK (otomatis) + verifikasi manual
+    properti:              # nama properti  <- label field di halaman BPK
+      id:                    {tipe: string, wajib: true}
+      label:                 {tipe: string, wajib: true}
+      bpk_id:                {tipe: integer, catatan: "angka di URL Details/{bpk_id}/..."}
+      tipe_dokumen:          {bpk: "Tipe Dokumen", tipe: string}          # Peraturan Perundang-undangan
+      judul:                 {bpk: "Judul", tipe: string, wajib: true}
+      teu:                   {bpk: "T.E.U.", tipe: string}                # Indonesia, Pemerintah Pusat
+      nomor:                 {bpk: "Nomor", tipe: string, wajib: true}
+      bentuk:                {bpk: "Bentuk", tipe: string, wajib: true}   # Undang-undang (UU)
+      bentuk_singkat:        {bpk: "Bentuk Singkat", tipe: enum, nilai: [UU, Perpu, PP, Perpres, Permen, Perda], wajib: true}
+      tahun:                 {bpk: "Tahun", tipe: integer, wajib: true}
+      tempat_penetapan:      {bpk: "Tempat Penetapan", tipe: string}
+      tanggal_penetapan:     {bpk: "Tanggal Penetapan", tipe: date}
+      tanggal_pengundangan:  {bpk: "Tanggal Pengundangan", tipe: date}
+      tanggal_berlaku:       {bpk: "Tanggal Berlaku", tipe: date}
+      sumber:                {bpk: "Sumber", tipe: string}               # LN.2020/No.245, TLN No.6573
+      sumber_terurai:        {tipe: object, catatan: "ln_tahun, ln_nomor, tln, penerbit, halaman; format BPK
+                              tidak seragam: 'LN. 2004/ No. 118, TLN NO. 4433, LL SETNEG : 51 HLM' vs
+                              'LN.2020/No.245, TLN No.6573, jdih.setneg.go.id : 769 hlm.'"}
+      subjek:                {bpk: "Subjek", tipe: "list[string]", catatan: "dipisah ' - ' di halaman BPK"}
+      status:                {bpk: "Status", tipe: enum, nilai: [Berlaku, Tidak Berlaku],
+                              catatan: "snapshot BPK pada diambil_pada; Perpu 2/2022 tetap 'Berlaku' walau sudah
+                              ditetapkan UU 6/2023 - status hukum dihitung dari relasi, bukan field ini"}
+      bahasa:                {bpk: "Bahasa", tipe: string}
+      lokasi:                {bpk: "Lokasi", tipe: string}
+      bidang:                {bpk: "Bidang", tipe: "list[string]", catatan: "sering kosong"}
+      alias:                 {bpk: "Alias", tipe: "list[string]", catatan: "dipisah ' • ' di halaman BPK"}
+      abstrak:               {bpk: "MATERI POKOK PERATURAN / Abstrak", tipe: text}
+      url_sumber:            {tipe: url}
+      diambil_pada:          {tipe: date, catatan: "tanggal halaman BPK dibaca; status dan daftar relasi berubah dari waktu ke waktu"}
+      isi_lampiran:          {tipe: "ref(Peraturan)", catatan: "UU penetapan Perpu -> Perpu yang menjadi lampirannya"}
+      pasal_pengubah:        {tipe: "map[ref(Peraturan) -> string]", catatan: "omnibus: UU sasaran -> pasal pengubah (uu/2004/31 -> Pasal 27)"}
+      induk_alias:           {tipe: string, catatan: "hanya untuk UU induk, mis. UU Perikanan"}
+      jenis_perubahan:       {tipe: enum, nilai: [induk, perubahan, omnibus, penetapan_perpu, penyesuaian_umum, pelaksana, konteks],
+                              catatan: "diisi manual; konteks = peraturan di luar korpus yang hanya muncul sebagai ujung relasi"}
+
+  Pasal:
+    deskripsi: >
+      Work - identitas pasal/ayat/huruf/angka dari UU induk, lintas semua versi perubahan.
+      Contoh "Pasal 93 ayat (2) UU Perikanan".
+    sumber_data: dibangkitkan dari VersiPasal
+    properti:
+      id: {tipe: string, wajib: true}
+      label: {tipe: string, wajib: true}
+      induk: {tipe: "ref(Peraturan)", wajib: true}
+      nomor: {tipe: string, wajib: true}       # 93, 100B, I
+      ayat: {tipe: string}
+      huruf: {tipe: string}
+      angka: {tipe: string}
+      dihapus: {tipe: boolean, default: false}
+
+  VersiPasal:
+    deskripsi: >
+      Expression - rumusan pasal sebagaimana ditetapkan oleh satu peraturan sumber
+      (rumusan asli di UU induk, atau rumusan baru dari UU perubahan / omnibus / Perppu).
+    sumber_data: parser kalimat perubahan + teks peraturan
+    properti:
+      id: {tipe: string, wajib: true}
+      label: {tipe: string, wajib: true}
+      pasal: {tipe: "ref(Pasal)", wajib: true}
+      sumber: {tipe: "ref(Peraturan)", wajib: true}
+      jenis: {tipe: enum, nilai: [asli, diubah, disisipkan], wajib: true}
+      alias_label: {tipe: "list[string]", catatan: "mis. label versi Perpu bila label utama memakai UU penetapan"}
+      teks: {tipe: text}
+      berlaku_sejak: {tipe: date, catatan: "= tanggal_berlaku peraturan sumber"}
+      berlaku_sampai: {tipe: date, catatan: "= sehari sebelum berlaku_sejak versi berikutnya, atau sehari sebelum pencabut paling awal berlaku; kosong bila masih berlaku"}
+      catatan_verifikasi: {tipe: string, catatan: "alasan perlu_cek (pencabutan tanpa pengganti, penyesuaian pidana UU 1/2026)"}
+      status_verifikasi: {tipe: enum, nilai: [otomatis, diverifikasi, perlu_cek], default: otomatis}
+
+  PeristiwaPerubahan:
+    deskripsi: Satu butir perubahan (angka) di dalam peraturan pengubah.
+    sumber_data: parser kalimat perubahan
+    properti:
+      id: {tipe: string, wajib: true}
+      pengubah: {tipe: "ref(Peraturan)", wajib: true}
+      pasal_pengubah: {tipe: string}            # Pasal I (UU 45/2009), Pasal 27 (UU 11/2020)
+      angka: {tipe: string}                    # nomor butir perubahan
+      jenis: {tipe: enum, nilai: [ubah, sisip, hapus], wajib: true}
+      kalimat: {tipe: text, catatan: "kalimat perubahan apa adanya"}
+      sasaran: {tipe: "list[ref(Pasal)]", wajib: true}
+      alias_id: {tipe: "list[string]", catatan: "uu/2023/6/lampiran/pasal/27/angka/n untuk peristiwa Perpu 2/2022"}
+
+  PutusanPengadilan:
+    deskripsi: Putusan uji materi atau putusan lain yang mempengaruhi status peraturan.
+    sumber_data: blok UJI MATERI BPK ("PUTUSAN Nomor ..." diikuti butir amar bernomor) + entri manual
+    properti:
+      id: {tipe: string, wajib: true}
+      label: {tipe: string, wajib: true}       # Putusan MK Nomor 91/PUU-XVIII/2020
+      lembaga: {tipe: enum, nilai: [MK, MA]}
+      relevan_perikanan: {tipe: boolean, catatan: "true bila ada butir yang sasarannya Work UU induk"}
+
+  ButirAmar:
+    deskripsi: >
+      Satu butir amar putusan uji materi, sebagaimana didaftar BPK. Contoh UU 6/2023:
+      "Pasal 42 ayat (1) dalam Pasal 81 angka 4 Lampiran ... bertentangan dengan UUD 1945 dan
+      tidak memiliki kekuatan hukum mengikat sepanjang tidak dimaknai, '...'".
+    sumber_data: parser blok UJI MATERI
+    properti:
+      id: {tipe: string, wajib: true}          # putusan/mk/168-puu-xxi-2023/amar/1
+      putusan: {tipe: "ref(PutusanPengadilan)", wajib: true}
+      nomor: {tipe: string}
+      sasaran_teks: {tipe: string}             # "Pasal 42 ayat (1) dalam Pasal 81 angka 4 Lampiran"
+      unsur: {tipe: enum, nilai: [pasal, ayat, frasa, kata]}
+      kutipan_unsur: {tipe: string, catatan: "frasa/kata yang diuji bila unsur frasa atau kata"}
+      jenis_amar: {tipe: enum, nilai: [inkonstitusional_bersyarat, konstitusional_bersyarat, tidak_mengikat, tidak_mengikat_kata]}
+      tafsir: {tipe: text, catatan: "isi 'sepanjang tidak dimaknai ...'"}
+
+  Chunk:
+    deskripsi: Potongan teks yang di-index; jembatan antara Lapisan 1 dan Lapisan 2.
+    properti:
+      id: {tipe: string, wajib: true}
+      sumber: {tipe: "ref(Peraturan)", wajib: true}
+      versi: {tipe: "list[ref(VersiPasal)]", catatan: "semua versi pasal yang teksnya ada di chunk"}
+      header: {tipe: string}
+
+# -------------------------------------------------------------------------------------
+# LAPISAN 1 - RELASI
+# sumber: bpk = dibaca dari blok STATUS PERATURAN / UJI MATERI; parser = dari teks;
+#         konsiderans = dari bagian Menimbang; turunan = dihitung; manual = diisi peneliti
+# -------------------------------------------------------------------------------------
+relations:
+
+  # --- antar-peraturan (label BPK) ---
+  mengubah:                {domain: Peraturan, range: Peraturan, invers: diubah_dengan, sumber: bpk, bpk_label: "Mengubah"}
+  diubah_dengan:           {domain: Peraturan, range: Peraturan, invers: mengubah, sumber: bpk, bpk_label: "Diubah dengan"}
+  mencabut:                {domain: Peraturan, range: Peraturan, invers: dicabut_dengan, sumber: bpk, bpk_label: "Mencabut"}
+  dicabut_dengan:          {domain: Peraturan, range: Peraturan, invers: mencabut, sumber: bpk, bpk_label: "Dicabut dengan"}
+  mencabut_sebagian:       {domain: Peraturan, range: Peraturan, invers: dicabut_sebagian_dengan, sumber: bpk,
+                            properti_edge: {catatan_pasal: string}, catatan: "BPK menyertakan pasal yang dicabut"}
+  dicabut_sebagian_dengan: {domain: Peraturan, range: Peraturan, invers: mencabut_sebagian, sumber: bpk,
+                            bpk_label: "Dicabut sebagian dengan", properti_edge: {catatan_pasal: string}}
+  menetapkan:              {domain: Peraturan, range: Peraturan, invers: ditetapkan_dengan, sumber: bpk, bpk_label: "Menetapkan",
+                            catatan: "UU penetapan Perpu -> Perpu (mis. UU 6/2023 -> Perpu 2/2022)"}
+  ditetapkan_dengan:       {domain: Peraturan, range: Peraturan, invers: menetapkan, sumber: bpk, bpk_label: "Ditetapkan dengan",
+                            catatan: "tercatat di halaman Perpu 2/2022"}
+  menyesuaikan_pidana:
+    domain: Peraturan
+    range: [Peraturan, VersiPasal]
+    invers: disesuaikan_pidananya_oleh
+    sumber: manual
+    properti_edge: {berlaku: date}
+    catatan: >
+      Penyesuaian umum tanpa daftar pasal di STATUS PERATURAN BPK (UU 1/2026 terhadap semua UU di
+      luar KUHP). Builder memasang edge ke setiap VersiPasal terakhir yang memuat 'dipidana' dan
+      memberi status perlu_cek; angka sanksi baru diambil dari Lampiran UU 1/2026.
+  disesuaikan_pidananya_oleh: {domain: [Peraturan, VersiPasal], range: Peraturan, invers: menyesuaikan_pidana, sumber: turunan}
+  properti_edge_status_bpk:
+    catatan: {tipe: string, catatan: "teks keterangan di bawah entri BPK, apa adanya (berlaku untuk semua label status)"}
+    sasaran_efektif: {tipe: "ref(Peraturan)", catatan: "diisi bila sasaran yang dicatat BPK adalah UU perubahan; = UU induk"}
+    sumber: {nilai: [bpk, turunan, manual]}
+  melaksanakan:            {domain: Peraturan, range: [Peraturan, Pasal], invers: dilaksanakan_dengan, sumber: konsiderans,
+                            catatan: "PP/Permen -> pasal yang didelegasikan, mis. PP 27/2021 -> Pasal 27 UU 11/2020"}
+  dilaksanakan_dengan:     {domain: [Peraturan, Pasal], range: Peraturan, invers: melaksanakan, sumber: turunan}
+  menguji:                 {domain: PutusanPengadilan, range: Peraturan, invers: diuji_dengan, sumber: bpk, bpk_label: "UJI MATERI"}
+  memuat_amar:             {domain: PutusanPengadilan, range: ButirAmar, sumber: bpk}
+  menafsirkan:             {domain: ButirAmar, range: [VersiPasal, Pasal], sumber: parser,
+                            catatan: "sasaran bertingkat dipetakan ke VersiPasal; bila pasal_pengubah tidak dikenal -> tidak dibuat"}
+  diuji_dengan:            {domain: [Peraturan, Pasal], range: PutusanPengadilan, invers: menguji, sumber: turunan}
+
+  # --- struktur pasal & versi ---
+  memuat_pasal:            {domain: Peraturan, range: Pasal, sumber: parser, catatan: "UU induk -> Work"}
+  menetapkan_versi:        {domain: Peraturan, range: VersiPasal, sumber: parser,
+                            catatan: "UU induk -> versi asli; UU perubahan/omnibus/Perppu -> versi baru"}
+  versi_dari:              {domain: VersiPasal, range: Pasal, kardinalitas: "tepat 1", sumber: parser}
+  menggantikan_versi:      {domain: VersiPasal, range: VersiPasal, invers: digantikan_oleh, sumber: turunan,
+                            catatan: "urut menurut berlaku_sejak pada Pasal yang sama"}
+  digantikan_oleh:         {domain: VersiPasal, range: VersiPasal, invers: menggantikan_versi, sumber: turunan}
+  menghapus_pasal:         {domain: Peraturan, range: Pasal, sumber: parser, catatan: "kalimat 'Pasal X dihapus.'"}
+  bagian_dari:             {domain: PeristiwaPerubahan, range: Peraturan, sumber: parser}
+  menghasilkan_versi:      {domain: PeristiwaPerubahan, range: VersiPasal, sumber: parser}
+  menyasar:                {domain: PeristiwaPerubahan, range: Pasal, sumber: parser}
+  merujuk:                 {domain: VersiPasal, range: Pasal, sumber: parser,
+                            properti_edge: {jenis: [norma, sanksi_atas_norma, definisi], frasa: string},
+                            catatan: "regex 'sebagaimana dimaksud (dalam|pada) Pasal ...'; sanksi_atas_norma bila sumber memuat 'dipidana'"}
+  bersumber_dari:          {domain: Chunk, range: [VersiPasal, Peraturan], sumber: chunker}
+
+# -------------------------------------------------------------------------------------
+# LAPISAN 2 - KELAS NORMA (diekstrak LLM) DAN JANGKARNYA
+# -------------------------------------------------------------------------------------
+layer2:
+  # v1.2: bagian ini adalah SUMBER prompt Lapisan 2 (render_minirag_skema.py) dan aturan
+  # penautan hasil ekstraksi (tautkan_lapisan2.py). Ubah di sini, bukan di prompt.
+  entity_types:
+    dasar_hukum: >
+      Peraturan DI LUAR korpus yang menjadi tujuan delegasi atau rujukan sanksi (Peraturan Pemerintah,
+      Peraturan Menteri, KUHP). Peraturan korpus tidak boleh ditulis (sudah ada di Lapisan 1).
+    struktur: >
+      HANYA node jangkar yang tertulis di kepala teks, dengan nama persis. Tidak ada node pasal lain.
+    pihak: >
+      Orang, badan, jabatan, lembaga, atau PERAN subjek (Setiap Orang, Korporasi, Pemilik Kapal Penangkap Ikan,
+      Operator Kapal Penangkap Ikan, Nelayan Kecil, Pemerintah Pusat, Menteri, Pengawas Perikanan, Penyidik).
+    kewajiban: Perbuatan yang diwajibkan atau dilarang, termasuk kewajiban prosedural aparat beserta jangka waktunya.
+    hak: Hak atau kewenangan suatu pihak, termasuk kewenangan aparat dan jangka waktunya.
+    tindak_pidana: Perbuatan yang diancam pidana oleh pasal sanksi.
+    sanksi: >
+      Ancaman pidana satu jangkar ("Ancaman Pidana <jangkar>") dan komponennya (pidana penjara, pidana denda),
+      sanksi administratif, atau tindakan khusus.
+    konsep: >
+      Istilah hukum, izin, dokumen, kapal, alat, bahan, wilayah, atau unsur akibat (Surat Izin Usaha Perikanan,
+      Perizinan Berusaha, Zona Ekonomi Eksklusif Indonesia).
+  korpus_tidak_ditulis: >
+    Label dan alias semua Peraturan di metadata ruang_lingkup.peraturan (dirender ke aturan prompt).
+  # kata kunci relasi -> relasi graf. dari/ke = jenis entitas yang sah (arah wajib).
+  # kelompok = huruf daftar relasi di prompt.
+  relasi_norma:
+    pengaturan kewajiban:  {relasi: mengatur,        dari: struktur,      ke: kewajiban,     kelompok: a}
+    pengaturan kewenangan: {relasi: mengatur,        dari: struktur,      ke: hak,           kelompok: a}
+    subjek kewajiban:      {relasi: dikenai,         dari: pihak,         ke: kewajiban,     kelompok: b}
+    pemegang kewenangan:   {relasi: berwenang,       dari: pihak,         ke: [hak, konsep], kelompok: b}
+    objek kewajiban:       {relasi: berobjek,        dari: kewajiban,     ke: konsep,        kelompok: c}
+    syarat wilayah:        {relasi: bersyarat,       dari: [kewajiban, tindak_pidana], ke: konsep, kelompok: c}
+    pengecualian:          {relasi: dikecualikan,    dari: kewajiban,     ke: pihak,         kelompok: c}
+    dasar perizinan:       {relasi: berdasar_izin,   dari: konsep,        ke: konsep,        kelompok: c}
+    rumusan tindak pidana: {relasi: merumuskan,      dari: struktur,      ke: tindak_pidana, kelompok: d}
+    pelanggaran kewajiban: {relasi: melanggar,       dari: tindak_pidana, ke: kewajiban,     kelompok: e}
+    subjek tindak pidana:  {relasi: pelaku,          dari: pihak,         ke: tindak_pidana, kelompok: e}
+    unsur akibat:          {relasi: berunsur_akibat, dari: tindak_pidana, ke: konsep,        kelompok: e}
+    ancaman pidana:        {relasi: diancam,         dari: tindak_pidana, ke: sanksi,        kelompok: e}
+    sanksi kumulatif:      {relasi: memuat_komponen, dari: sanksi,        ke: sanksi,        kelompok: f, sifat: KUMULATIF}
+    sanksi alternatif:     {relasi: memuat_komponen, dari: sanksi,        ke: sanksi,        kelompok: f, sifat: ALTERNATIF}
+    sanksi kumulatif-alternatif: {relasi: memuat_komponen, dari: sanksi,  ke: sanksi,        kelompok: f, sifat: KUMULATIF-ALTERNATIF}
+    sanksi denda saja:     {relasi: memuat_komponen, dari: sanksi,        ke: sanksi,        kelompok: f, sifat: DENDA SAJA}
+    definisi:              {relasi: mendefinisikan,  dari: struktur,      ke: konsep,        kelompok: g}
+    cakupan subjek:        {relasi: mencakup,        dari: [konsep, pihak], ke: [konsep, pihak], kelompok: g}
+    delegasi pengaturan:   {relasi: mendelegasikan,  dari: struktur,      ke: dasar_hukum,   kelompok: g}
+    penjelasan pasal:      {relasi: menjelaskan,     dari: struktur,      ke: [kewajiban, hak, tindak_pidana, konsep], kelompok: g}
+  kelompok_relasi:
+    a: jangkar menetapkan kewajiban/larangan/kewenangan
+    b: pihak dikenai kewajiban atau memegang kewenangan (jangka waktu di deskripsi)
+    c: syarat, objek, pengecualian, dan dasar izin sebuah kewajiban
+    d: jangkar merumuskan tindak pidana
+    e: tindak pidana - kewajiban yang dilanggar, pelaku, unsur akibat, ancaman
+    f: ancaman pidana memuat komponennya (sifat ditulis lewat kata kunci)
+    g: definisi, cakupan istilah, delegasi, dan penjelasan
+  jangkar:
+    aturan: >
+      Entitas struktur dicocokkan ke jangkar.json tanpa membedakan huruf besar/kecil (MiniRAG menyimpan nama
+      dalam huruf kecil), tanpa akhiran "(lanjutan)" dan tanpa awalan "Penjelasan " (bagian = penjelasan).
+      Yang tidak cocok dicocokkan ke jangkar pertama chunk dan dicatat sebagai galat; struktur yang sama sekali
+      tidak ada di kepala chunk dicatat sebagai "struktur karangan" dan relasinya dipindah ke jangkar chunk.
+      Setiap entitas norma diberi atribut versi_id (jangkar yang terhubung, atau semua jangkar chunk bila tidak
+      terhubung langsung) dan peraturan_id (sumber versi).
+    turunan:
+      mengancamkan: "VersiPasal -merumuskan-> tindak_pidana -diancam-> sanksi  =>  VersiPasal -mengancamkan-> sanksi"
+  kepala_chunk:
+    format: "{label peraturan sumber} | [{pasal pengubah} |] jangkar: {label versi}[; {label versi} ...]"
+    contoh: "UU Nomor 11 Tahun 2020 | Pasal 27 | jangkar: Pasal 92 UU Perikanan versi UU Nomor 11 Tahun 2020"
+    aturan:
+      - label diambil dari Lapisan 1 (jangkar.json), tidak pernah diketik tangan
+      - tingkat ayat bila VersiPasal ayat ada; pasal yang seluruh ayatnya di chunk ditulis tingkat pasal bila jangkar > 6
+      - pasal dihapus -> "Pasal N UU Perikanan (dihapus)"
+      - teks penjelasan -> "Penjelasan {label versi}"
+      - chunk yang hanya berlanjut dari chunk sebelumnya -> label jangkar pertama + " (lanjutan)"
+      - chunk tanpa versi pasal (pembukaan, konsiderans, ketentuan peralihan pasal II, penutup) tidak diekstrak Lapisan 2
+    metadata_chunk: [versi_id, peraturan_id, pasal_pengubah]
+
+# -------------------------------------------------------------------------------------
+# ATURAN TURUNAN DAN VALIDASI
+# -------------------------------------------------------------------------------------
+derivations:
+  invers: setiap relasi yang punya `invers` ditulis dua arah; ketidakcocokan dicatat sebagai galat
+  urutan_versi: >
+    Untuk tiap Pasal, urutkan VersiPasal menurut berlaku_sejak; buat menggantikan_versi
+    (baru -> lama) dan isi berlaku_sampai versi lama.
+  versi_berlaku_pada_tanggal_T: >
+    Versi terakhir dengan berlaku_sejak <= T, bila Pasal tidak dihapus sebelum T.
+    Versi yang sedang ditafsirkan ButirAmar dijawab bersama tafsirnya; versi yang
+    disesuaikan_pidananya_oleh UU 1/2026 dijawab dengan catatan bahwa angka sanksi berubah sejak
+    2026-01-02.
+  pencabutan_omnibus: >
+    Bila sumber versi V dicabut_dengan R (UU 11/2020 dicabut Perpu 2/2022, berlaku 2022-12-30):
+    (a) bila Pasal yang sama punya versi dari R -> urutan biasa, berlaku_sampai V = hari sebelum
+        R berlaku (2022-12-29);
+    (b) bila tidak -> berlaku_sampai V tetap diisi, status_verifikasi perlu_cek, karena pencabutan
+        tidak otomatis menghidupkan rumusan sebelumnya.
+  perpu_ditetapkan: >
+    Versi dari Perpu yang ditetapkan_dengan U tidak berakhir saat U berlaku; U tidak membuat
+    versi baru (teksnya lampiran yang sama). berlaku_sejak = tanggal_berlaku Perpu.
+  sasaran_efektif: >
+    Edge diubah_dengan yang sasarannya UU perubahan (jenis_perubahan = perubahan) dicatat apa
+    adanya dari BPK, diberi sasaran_efektif = UU induk; versi hanya dibuat pada Work UU induk.
+  diubah_setelah_dicabut: >
+    BPK mencatat UU 11/2020 "Diubah dengan" UU tahun 2022-2026 walaupun UU 11/2020 sudah dicabut;
+    yang diubah sebenarnya rumusan versi Perpu/UU 6/2023. Edge seperti itu (tanggal pengubah >
+    tanggal pencabutan) ditandai catatan 'setelah_dicabut' dan diarahkan ke penggantinya.
+validations:
+  - setiap VersiPasal punya tepat satu versi_dari dan satu menetapkan_versi
+  - setiap PeristiwaPerubahan jenis ubah/sisip menghasilkan minimal satu VersiPasal
+  - setiap Pasal yang disebut dalam merujuk ada sebagai node Pasal (bila tidak: perlu_cek)
+  - tanggal: berlaku_sejak tidak boleh lebih awal dari tanggal_berlaku peraturan sumber
+  - setiap chunk batang tubuh punya minimal satu bersumber_dari ke VersiPasal
+  - setiap relasi BPK yang ujungnya di luar ruang_lingkup tidak dibuat sebagai edge (dicatat di laporan)
+  - setiap Peraturan dalam ruang_lingkup punya bpk_id, tanggal_berlaku, dan diambil_pada
+  - butir amar abstrak UU perubahan (mis. abstrak BPK UU 45/2009) dibandingkan dengan peristiwa hasil parser
