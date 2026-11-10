@@ -54,4 +54,9 @@ indexing_hirarki/
 **/PANDUAN*.md
 **/KOMPARASI_ASLI*.md
 
+# Isolasi isi versi disempurnakan (hanya track foldernya via .gitkeep)
+7_indexing_regulasi_2lapis/2_graf_lapisan1_manual/2_versi_disempurnakan/*
+!7_indexing_regulasi_2lapis/2_graf_lapisan1_manual/2_versi_disempurnakan/.gitkeep
+
+
 
