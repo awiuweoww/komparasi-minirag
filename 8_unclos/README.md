@@ -138,7 +138,17 @@ flowchart TD
 
 ## 4. Standar Terminologi Hukum Maritim (UU No. 17 Tahun 1985)
 
-Untuk memastikan akurasi hukum internasional yang selaras dengan naskah ratifikasi Indonesia, `skrip/02_translate_gpt.py` disematkan leksikon resmi:
+### 4.1. Mengapa Penyelarasan Istilah Ini Mutlak Diperlukan?
+UNCLOS 1982 bukan naskah literatur biasa, melainkan **traktat internasional yang telah diundangkan menjadi hukum positif Indonesia melalui UU No. 17 Tahun 1985**. Penerjemahan bebas (seperti Google Translate atau LLM umum tanpa kendali ketat) akan memicu **distorsi makna hukum yang fatal**:
+
+- **"The Area"**: Jika diterjemahkan harfiah menjadi *"Daerah"* atau *"Wilayah"*, yurisdiksinya rusak. Dalam hukum internasional, *"The Area"* secara spesifik mengacu pada dasar laut internasional di luar batas landas kontinen nasional. Dalam hukum positif Indonesia, istilah resminya adalah **"Kawasan"**.
+- **"Innocent Passage"**: Penerjemah umum sering menerjemahkannya secara naif menjadi *"Lintasan Tak Bersalah"*. Istilah hukum perundang-undangan Indonesia yang sah adalah **"Hak Lintas Damai"**.
+- **"Archipelagic Waters"**: Sering diterjemahkan keliru menjadi *"Air Kepulauan"*, padahal nomenklatur resminya adalah **"Perairan Kepulauan"**.
+- **"Continental Shelf"**: Istilah resminya adalah **"Landas Kontinen"** (bukan *"Rak Benua"*).
+- **"Enterprise"**: Bukan perusahaan swasta umum, melainkan badan pelaksana operasional pertambangan di bawah Otoritas Dasar Laut Internasional, sehingga dibakukan menjadi **"Perusahaan (*The Enterprise*)"**.
+
+### 4.2. Matriks Leksikon Resmi yang Disematkan
+Leksikon berikut dikunci mati dalam *System Prompt* pada `skrip/02_translate_gpt.py`:
 
 | Naskah Asli (UNCLOS 1982) | Terjemahan Baku Resmi Indonesia |
 | :--- | :--- |
@@ -167,9 +177,36 @@ Untuk memastikan akurasi hukum internasional yang selaras dengan naskah ratifika
 
 ---
 
-## 5. Panduan Operasional & Eksekusi
+## 5. Rekayasa Hukum & Penyesuaian Algoritmik (*Beyond Plain Translation*)
 
-### 5.1. Persiapan Lingkungan & Kredensial
+Hasil dari modul ini **bukan sekadar hasil terjemahan teks biasa**, melainkan produk rekayasa hukum dan algoritma komputasi untuk menjamin kualitas RAG:
+
+### 5.1. Partisi Logis & Preservasi Konteks Hierarkis (*Strict Boundary*)
+- **Masalah:** Jika dokumen 236 halaman dikirim sekaligus ke LLM, model akan mengalami *context window exhaustion*, halusinasi, atau meringkas teks secara sepihak.
+- **Solusi:** Engine `02_translate_gpt.py` memecah naskah menjadi **524 segmen logis independen**. Setiap segmen diterjemahkan dengan membawa konteks hierarki induknya (Bagian, Bab, dan Seksi). Struktur penomoran asli (huruf, angka Romawi, dan nomor ayat) dipelihara 100% presisi.
+
+### 5.2. Injeksi Header Jangkar Otomatis (*Anchor Context Injection*)
+- **Masalah:** Pada sistem pencarian semantik (vektor / RAG), potongan chunk ayat lanjutan (misal ayat 4 dan 5 dari Pasal 19) yang berdiri sendiri akan kehilangan konteks asalnya. Model tidak dapat mengetahui apakah itu pasal tentang perikanan, kapal selam, atau pencemaran laut.
+- **Solusi:** Engine `03_universal_chunk_unclos.py` secara otomatis menyuntikkan header jangkar resmi di awal setiap chunk:
+  ```text
+  UNCLOS 1982 | Bagian II Laut Teritorial dan Zona Tambahan | Pasal 19
+  ```
+  Header ini dihitung secara matematis ke dalam anggaran token chunk sehingga total ukuran tetap patuh terhadap batas $\le 520$ token.
+
+### 5.3. Pemecahan Berbutir Halus (*Line-Level Splitting Fallback*) pada Bagian Padat
+- **Kendala Nyata:** Pada eksekusi awal, terdapat 14 chunk pada Mukadimah dan Daftar Isi yang melebihi batas kuota (mencapai 554 hingga 846 token) karena teks daftarnya padat tanpa pemisah paragraf ganda (`\n\n`).
+- **Penyesuaian Algoritma:** Chunker disempurnakan dengan *line-level granularity fallback*: jika satu blok daftar melebihi target token, algoritma secara adaptif memecahnya berbasis baris entri individual tanpa merusak struktur butir. Dengan penyesuaian ini, **100% dari 682 chunk terbukti patuh pada ambang $\le 520$ token**.
+
+### 5.4. Penyediaan Format Ganda (*Dual-Format Outputs*)
+Untuk mendukung arsitektur *Hybrid Search* dan *Knowledge Graph*:
+1. **`chunks_unclos_id_clean.json`**: Berisi array teks murni ber-header, siap langsung ditelan oleh model embedding vektor (BGE-M3 / MiniRAG).
+2. **`chunks_unclos_id_structured.json`**: Memuat metadata hierarki lengkap (`chunk_id`, `doc_id`, `bagian`, `seksi`, `pasal`, `category`, `tokens`), siap untuk penyaringan metadata SQL, graf entitas-relasi, dan penautan antar-peraturan perundang-undangan.
+
+---
+
+## 6. Panduan Operasional & Eksekusi
+
+### 6.1. Persiapan Lingkungan & Kredensial
 Salin berkas `.env.example` menjadi `.env` lalu masukkan API Key OpenAI Anda:
 ```bash
 cp .env.example .env
@@ -183,13 +220,13 @@ OPENAI_MODEL=gpt-5.4
 REQUEST_CONCURRENCY=4
 ```
 
-### 5.2. Sinkronisasi ke Klaster HPC Mahameru-AI
+### 6.2. Sinkronisasi ke Klaster HPC Mahameru-AI
 Kirim direktori kerja ke HPC:
 ```bash
 ./sync_to_hpc.sh
 ```
 
-### 5.3. Eksekusi Mandiri Bertahap di HPC
+### 6.3. Eksekusi Mandiri Bertahap di HPC
 Masuk ke klaster HPC:
 ```bash
 ssh mahoni01
@@ -212,7 +249,7 @@ Jalankan tiap tahap secara berurutan dan pantau progresnya:
    tail -f unclos_translate_*.log
    ```
    > [!TIP]
-   > Jika job terhenti karena *walltime limit*, jalankan kembali perintah di atas. Skrip otomatis melanjutkan dari titik terakhir tanpa mengulang segmen yang sudah selesai.
+   > Jika job terhenti karena *walltime limit*, jalankan kembali perintah di atas. Skrip otomatis membaca `unclos_translation_cache.json` dan melanjutkan dari titik terakhir tanpa mengulang segmen yang sudah selesai.
 
 3. **Jalankan Tahap 3 (Universal Legal Chunking v2.3):**
    ```bash
@@ -221,7 +258,7 @@ Jalankan tiap tahap secara berurutan dan pantau progresnya:
    cat unclos_chunking_*.log
    ```
 
-### 5.4. Pengambilan Hasil ke Mesin Lokal
+### 6.4. Pengambilan Hasil ke Mesin Lokal
 Dari terminal komputer lokal Anda:
 ```bash
 cd /home/chandreu/brin-2026/pengujian-komparasi-minirag/8_unclos
@@ -230,18 +267,18 @@ cd /home/chandreu/brin-2026/pengujian-komparasi-minirag/8_unclos
 
 ---
 
-## 6. Ringkasan Metrik Hasil Akhir (*Audit Benchmarks*)
+## 7. Ringkasan Metrik Hasil Akhir (*Audit Benchmarks*)
 
-| Parameter Audit | Nilai Capaian | Status / Keterangan |
+| Parameter Audit | Nilai Capaian | Makna Teknis & Status |
 | :--- | :--- | :--- |
-| **Dokumen Sumber** | UNCLOS 1982 (236 Halaman PDF) | Berhasil dimuat dan diproses utuh |
-| **Hasil Ekstraksi MinerU** | 82.106 kata bahasa Inggris | 5.573 baris Markdown bersih |
-| **Segmen Diterjemahkan** | 524 / 524 segmen (100%) | 0 segmen gagal, model `gpt-5.4` |
-| **Total Kata Bahasa Indonesia**| 71.734 kata hukum baku | Mengacu leksikon UU No. 17/1985 |
-| **Total Chunks Dihasilkan** | 682 chunk potongan regulasi | Meliputi Mukadimah, 320 Pasal, & 9 Lampiran |
-| **Pasal Unik Terpetakan** | 475 pasal / butir regulasi | Termasuk pasal-pasal Lampiran (*Annexes*) |
-| **Rata-rata Tokens / Chunk** | 269 tokens | Distribusi seimbang untuk embedding |
-| **Ukuran Chunk Minimum** | 23 tokens | Judul pasal ringkas atau klausa pembuka |
-| **Ukuran Chunk Maksimum** | 520 tokens | **Batas absolut: 520 tokens** |
-| **Kepatuhan Token Budget** | **100% Lulus ($\le 520$ tokens)**| **Nol pelanggaran kuota token** |
+| **Dokumen Sumber** | UNCLOS 1982 (236 Halaman PDF) | Berhasil dimuat dan diproses utuh tanpa korupsi berkas |
+| **Hasil Ekstraksi MinerU** | 82.106 kata bahasa Inggris | 5.573 baris Markdown bersih hasil VLM A100 |
+| **Segmen Diterjemahkan** | 524 / 524 segmen (100%) | 0 segmen gagal, diproses paralel via `gpt-5.4` |
+| **Total Kata Bahasa Indonesia**| 71.734 kata hukum baku | Efisiensi konstruksi kalimat hukum Indonesia (selaras UU 17/1985) |
+| **Total Chunks Dihasilkan** | 682 chunk potongan regulasi | Hasil pemecahan ayat panjang dari 320 pasal & 9 lampiran |
+| **Pasal Unik Terpetakan** | 475 pasal / butir regulasi | 320 Pasal Batang Tubuh + 155 Pasal dalam Lampiran I-IX |
+| **Rata-rata Tokens / Chunk** | 269 tokens | Distribusi seimbang dan optimal untuk model dense embedding |
+| **Ukuran Chunk Minimum** | 23 tokens | Pasal deklaratif singkat atau klausa pembuka |
+| **Ukuran Chunk Maksimum** | 520 tokens | **Batas absolut ketat: tepat 520 tokens** |
+| **Kepatuhan Token Budget** | **100% Lulus ($\le 520$ tokens)**| **Nol pelanggaran kuota token (14 overflow berhasil diperbaiki)** |
 | **Keamanan Kredensial** | `.env` diabaikan oleh Git | Sesuai kaidah keamanan repositori |
