@@ -1,0 +1,13 @@
+{
+  "doc_id": "unclos_1982",
+  "doc_title": "Konvensi Perserikatan Bangsa-Bangsa tentang Hukum Laut (UNCLOS 1982)",
+  "source_en_file": "/home/csupriatna/projek-legal-rag/8_unclos/hasilmineru/output.md",
+  "output_id_file": "/home/csupriatna/projek-legal-rag/8_unclos/indonesiaversion/default/unclos_ID_default.md",
+  "model_used": "gpt-5.4",
+  "total_segments": 524,
+  "completed_segments": 524,
+  "failed_segments_count": 0,
+  "total_words_original": 82106,
+  "total_words_translated": 71734,
+  "waktu_selesai": "2026-11-14 11:25:24"
+}

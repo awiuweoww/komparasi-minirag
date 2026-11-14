@@ -34,8 +34,28 @@ Thumbs.db
 
 # Log & Temporary Files
 *.log
+*.err
 *.tmp
 *.temp
+slurm-*.out
+slurm-*.err
+unclos_*_*.log
+unclos_*_*.err
+mineru_*_*.log
+mineru_*_*.err
+
+# Environment & Secret API Keys (CRITICAL SECURITY)
+.env
+.env.*
+*.env
+**/.env
+**/.env.*
+!.env.example
+!**/.env.example
+
+# Intermediate Checkpoint Caches
+*translation_cache.json
+**/*translation_cache.json
 
 # Folder Pengujian Chunking Khusus (Universal Legal Chunking & Test Output)
 pengujian_chunking/

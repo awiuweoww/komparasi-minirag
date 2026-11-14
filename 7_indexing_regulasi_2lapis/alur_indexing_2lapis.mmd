@@ -1,0 +1,51 @@
+flowchart TD
+    %% Styling Node
+    classDef cIn fill:#1E293B,stroke:#64748B,stroke-width:1.5px,color:#E2E8F0;
+    classDef cPr fill:#0C4A6E,stroke:#0284C7,stroke-width:2px,color:#BAE6FD;
+    classDef cOut fill:#064E3B,stroke:#059669,stroke-width:2px,color:#A7F3D0;
+    classDef cFinal fill:#4C1D95,stroke:#8B5CF6,stroke-width:2.5px,color:#EDE9FE;
+
+    %% TAHAP 1
+    subgraph S1 [" Tahap 1: 1_parsing_metadata_jdih "]
+        direction LR
+        IN1["📁 Input:<br/>data_mentah_bpk/"]:::cIn --> PR1["⚙️ Proses:<br/>parsing_link_jdih.py"]:::cPr --> OUT1["📄 Hasil:<br/>metadata_regulasi.json"]:::cOut
+    end
+
+    %% TAHAP 2
+    subgraph S2 [" Tahap 2: 2_graf_lapisan1_manual "]
+        direction LR
+        IN2["📋 Input:<br/>skema_relasi_regulasi.yaml<br/>+ teks sumber UU 45/2009"]:::cIn --> PR2["⚙️ Proses:<br/>graf_relasi_uu_asli.py"]:::cPr --> OUT2["📦 Hasil:<br/>lapisan1.graphml<br/>+ jangkar.json"]:::cOut
+    end
+
+    %% TAHAP 3
+    subgraph S3 [" Tahap 3: 3_persiapan_chunk_berjangkar "]
+        direction LR
+        IN3["📄 Input:<br/>chunks_uu_45_2009.json<br/>(MinerU JSON AST)"]:::cIn --> PR3["⚙️ Proses:<br/>kepala_chunk.py"]:::cPr --> OUT3["📦 Hasil:<br/>chunks_hasil_uu45_berjangkar.json"]:::cOut
+    end
+
+    %% TAHAP 4
+    subgraph S4 [" Tahap 4: 4_indexing_lapisan2_minirag "]
+        direction LR
+        IN4["🧠 Input:<br/>Prompt V3 (Norma Berjangkar)<br/>+ Gemma 4:12B (HPC DGX A100)"]:::cIn --> PR4["⚙️ Proses:<br/>index_layer2_hpc.py"]:::cPr --> OUT4["📦 Hasil:<br/>storage_lapisan2_gemma4/<br/>(Graf Norma Lapisan 2)"]:::cOut
+    end
+
+    %% TAHAP 5
+    subgraph S5 [" Tahap 5: 5_penautan_graf_gabungan "]
+        direction LR
+        IN5["🔗 Input:<br/>lapisan1.graphml<br/>+ storage_lapisan2_gemma4/"]:::cIn --> PR5["⚙️ Proses:<br/>tautkan_layer_hirarki.py"]:::cPr --> OUT5["🏆 Hasil:<br/>gabungan.graphml<br/><b>869 Node / 1.820 Edge</b>"]:::cFinal
+    end
+
+    %% TAHAP 6
+    subgraph S6 [" Tahap 6: 6_evaluasi_dan_laporan "]
+        direction LR
+        IN6["📊 Input:<br/>gabungan.graphml<br/>+ baseline graf terdahulu"]:::cIn --> PR6["⚙️ Proses:<br/>evaluate_mentor_metrics.py<br/>+ generate_html_graph.py"]:::cPr --> OUT6["📑 Hasil:<br/>LAPORAN_KOMPARASI_V3.md<br/>+ visualisasi_graf_gabungan.html"]:::cOut
+    end
+
+    %% Keterkaitan Data Antar Tahapan
+    OUT1 --> IN2
+    OUT2 -.->|Peta ID Jangkar| IN3
+    OUT3 --> IN4
+    OUT2 ==> IN5
+    OUT4 ==> IN5
+    OUT5 --> IN6
+
